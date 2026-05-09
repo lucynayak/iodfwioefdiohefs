@@ -1,0 +1,43 @@
+{
+   "content" : [
+      {
+         "path" : "blue_knight.png"
+      },
+      {
+         "path" : "blue_mech.png"
+      },
+      {
+         "path" : "blue_scout.png"
+      },
+      {
+         "path" : "green_knight.png"
+      },
+      {
+         "path" : "green_mech.png"
+      },
+      {
+         "path" : "green_scout.png"
+      },
+      {
+         "path" : "red_knight.png"
+      },
+      {
+         "path" : "red_mech.png"
+      },
+      {
+         "path" : "red_scout.png"
+      },
+      {
+         "path" : "skins.json"
+      },
+      {
+         "path" : "yellow_knight.png"
+      },
+      {
+         "path" : "yellow_mech.png"
+      },
+      {
+         "path" : "yellow_scout.png"
+      }
+   ]
+}

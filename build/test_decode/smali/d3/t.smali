@@ -1,0 +1,20 @@
+.class public interface abstract Ld3/t;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Iterable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T::",
+        "Ld3/q;",
+        ">",
+        "Ljava/lang/Object;",
+        "Ljava/lang/Iterable<",
+        "Ljava/lang/String;",
+        ">;"
+    }
+.end annotation

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/almostBlack" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/module_elevator_buttons_layout__up_button" android:background="@drawable/module_bind_background__disabled" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_arrow_up" android:layout_weight="1.0" />
+    <View android:layout_gravity="center" android:id="@id/module_elevator_buttons_layout__line0" android:background="@color/main_color" android:layout_width="fill_parent" android:layout_height="0.75dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginHorizontal="5.0dip" />
+    <ImageButton android:id="@id/module_elevator_buttons_layout__down_button" android:background="@drawable/module_bind_background__disabled" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_arrow_down" android:layout_weight="1.0" />
+</LinearLayout>

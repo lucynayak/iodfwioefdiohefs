@@ -1,0 +1,242 @@
+.class public abstract Landroid/support/design/transformation/ExpandableBehavior;
+.super Landroid/support/design/widget/CoordinatorLayout$c;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Landroid/support/design/widget/CoordinatorLayout$c<",
+        "Landroid/view/View;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public a:I
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 2
+
+    invoke-direct {p0}, Landroid/support/design/widget/CoordinatorLayout$c;-><init>()V
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Landroid/support/design/transformation/ExpandableBehavior;->a:I
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .registers 3
+
+    invoke-direct {p0, p1, p2}, Landroid/support/design/widget/CoordinatorLayout$c;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    const/4 p1, 0x0
+
+    iput p1, p0, Landroid/support/design/transformation/ExpandableBehavior;->a:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract b(Landroid/view/View;Landroid/view/View;)Z
+.end method
+
+.method public final d(Landroid/support/design/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
+    .registers 7
+
+    check-cast p3, Lm/a;
+
+    invoke-interface {p3}, Lm/a;->a()Z
+
+    move-result p1
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x2
+
+    if-eqz p1, :cond_0
+
+    .line 1
+    iget p1, p0, Landroid/support/design/transformation/ExpandableBehavior;->a:I
+
+    if-eqz p1, :cond_1
+
+    if-ne p1, v2, :cond_2
+
+    goto :goto_0
+
+    :cond_0
+    iget p1, p0, Landroid/support/design/transformation/ExpandableBehavior;->a:I
+
+    if-ne p1, v1, :cond_2
+
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
+
+    goto :goto_1
+
+    :cond_2
+    const/4 p1, 0x0
+
+    :goto_1
+    if-eqz p1, :cond_4
+
+    .line 2
+    invoke-interface {p3}, Lm/a;->a()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_3
+
+    const/4 v2, 0x1
+
+    :cond_3
+    iput v2, p0, Landroid/support/design/transformation/ExpandableBehavior;->a:I
+
+    move-object p1, p3
+
+    check-cast p1, Landroid/view/View;
+
+    invoke-interface {p3}, Lm/a;->a()Z
+
+    move-result p3
+
+    invoke-virtual {p0, p1, p2, p3, v1}, Landroid/support/design/transformation/ExpandableBehavior;->s(Landroid/view/View;Landroid/view/View;ZZ)V
+
+    return v1
+
+    :cond_4
+    return v0
+.end method
+
+.method public final f(Landroid/support/design/widget/CoordinatorLayout;Landroid/view/View;I)Z
+    .registers 8
+
+    sget-object p3, Ld0/l;->a:Ljava/util/WeakHashMap;
+
+    .line 1
+    invoke-virtual {p2}, Landroid/view/View;->isLaidOut()Z
+
+    move-result p3
+
+    const/4 v0, 0x0
+
+    if-nez p3, :cond_6
+
+    .line 2
+    invoke-virtual {p1, p2}, Landroid/support/design/widget/CoordinatorLayout;->i(Landroid/view/View;)Ljava/util/List;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/util/ArrayList;
+
+    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+
+    move-result p3
+
+    const/4 v1, 0x0
+
+    :goto_0
+    if-ge v1, p3, :cond_1
+
+    invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/view/View;
+
+    invoke-virtual {p0, p2, v2}, Landroid/support/design/transformation/ExpandableBehavior;->b(Landroid/view/View;Landroid/view/View;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    check-cast v2, Lm/a;
+
+    goto :goto_1
+
+    :cond_0
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v2, 0x0
+
+    :goto_1
+    if-eqz v2, :cond_6
+
+    .line 3
+    invoke-interface {v2}, Lm/a;->a()Z
+
+    move-result p1
+
+    const/4 p3, 0x2
+
+    const/4 v1, 0x1
+
+    if-eqz p1, :cond_2
+
+    .line 4
+    iget p1, p0, Landroid/support/design/transformation/ExpandableBehavior;->a:I
+
+    if-eqz p1, :cond_3
+
+    if-ne p1, p3, :cond_4
+
+    goto :goto_2
+
+    :cond_2
+    iget p1, p0, Landroid/support/design/transformation/ExpandableBehavior;->a:I
+
+    if-ne p1, v1, :cond_4
+
+    :cond_3
+    :goto_2
+    const/4 p1, 0x1
+
+    goto :goto_3
+
+    :cond_4
+    const/4 p1, 0x0
+
+    :goto_3
+    if-eqz p1, :cond_6
+
+    .line 5
+    invoke-interface {v2}, Lm/a;->a()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_5
+
+    const/4 p3, 0x1
+
+    :cond_5
+    iput p3, p0, Landroid/support/design/transformation/ExpandableBehavior;->a:I
+
+    invoke-virtual {p2}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+
+    move-result-object p1
+
+    new-instance v1, Landroid/support/design/transformation/ExpandableBehavior$a;
+
+    invoke-direct {v1, p0, p2, p3, v2}, Landroid/support/design/transformation/ExpandableBehavior$a;-><init>(Landroid/support/design/transformation/ExpandableBehavior;Landroid/view/View;ILm/a;)V
+
+    invoke-virtual {p1, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
+
+    :cond_6
+    return v0
+.end method
+
+.method public abstract s(Landroid/view/View;Landroid/view/View;ZZ)V
+.end method

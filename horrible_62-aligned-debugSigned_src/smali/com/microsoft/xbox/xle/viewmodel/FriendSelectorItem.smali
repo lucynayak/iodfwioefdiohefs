@@ -1,0 +1,233 @@
+.class public final Lcom/microsoft/xbox/xle/viewmodel/FriendSelectorItem;
+.super Lcom/microsoft/xbox/service/model/FollowersData;
+.source "SourceFile"
+
+
+# static fields
+.field private static final serialVersionUID:J = 0x507b6988af949efeL
+
+
+# instance fields
+.field private selected:Z
+
+
+# direct methods
+.method public constructor <init>(Lcom/microsoft/xbox/service/model/FollowersData;)V
+    .registers 2
+
+    invoke-direct {p0, p1}, Lcom/microsoft/xbox/service/model/FollowersData;-><init>(Lcom/microsoft/xbox/service/model/FollowersData;)V
+
+    const/4 p1, 0x0
+
+    iput-boolean p1, p0, Lcom/microsoft/xbox/xle/viewmodel/FriendSelectorItem;->selected:Z
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/microsoft/xbox/service/model/ProfileModel;)V
+    .registers 4
+
+    invoke-direct {p0}, Lcom/microsoft/xbox/service/model/FollowersData;-><init>()V
+
+    invoke-virtual {p1}, Lcom/microsoft/xbox/service/model/ProfileModel;->getXuid()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/microsoft/xbox/service/model/FollowersData;->xuid:Ljava/lang/String;
+
+    new-instance v0, Lcom/microsoft/xbox/service/model/UserProfileData;
+
+    invoke-direct {v0}, Lcom/microsoft/xbox/service/model/UserProfileData;-><init>()V
+
+    iput-object v0, p0, Lcom/microsoft/xbox/service/model/FollowersData;->userProfileData:Lcom/microsoft/xbox/service/model/UserProfileData;
+
+    invoke-virtual {p1}, Lcom/microsoft/xbox/service/model/ProfileModel;->getGamerTag()Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lcom/microsoft/xbox/service/model/UserProfileData;->gamerTag:Ljava/lang/String;
+
+    iget-object v0, p0, Lcom/microsoft/xbox/service/model/FollowersData;->userProfileData:Lcom/microsoft/xbox/service/model/UserProfileData;
+
+    invoke-virtual {p1}, Lcom/microsoft/xbox/service/model/ProfileModel;->getXuid()Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lcom/microsoft/xbox/service/model/UserProfileData;->xuid:Ljava/lang/String;
+
+    iget-object v0, p0, Lcom/microsoft/xbox/service/model/FollowersData;->userProfileData:Lcom/microsoft/xbox/service/model/UserProfileData;
+
+    invoke-virtual {p1}, Lcom/microsoft/xbox/service/model/ProfileModel;->getGamerPicImageUrl()Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lcom/microsoft/xbox/service/model/UserProfileData;->profileImageUrl:Ljava/lang/String;
+
+    iget-object v0, p0, Lcom/microsoft/xbox/service/model/FollowersData;->userProfileData:Lcom/microsoft/xbox/service/model/UserProfileData;
+
+    invoke-virtual {p1}, Lcom/microsoft/xbox/service/model/ProfileModel;->getGamerScore()Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lcom/microsoft/xbox/service/model/UserProfileData;->gamerScore:Ljava/lang/String;
+
+    iget-object v0, p0, Lcom/microsoft/xbox/service/model/FollowersData;->userProfileData:Lcom/microsoft/xbox/service/model/UserProfileData;
+
+    invoke-virtual {p1}, Lcom/microsoft/xbox/service/model/ProfileModel;->getAppDisplayName()Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lcom/microsoft/xbox/service/model/UserProfileData;->appDisplayName:Ljava/lang/String;
+
+    iget-object v0, p0, Lcom/microsoft/xbox/service/model/FollowersData;->userProfileData:Lcom/microsoft/xbox/service/model/UserProfileData;
+
+    invoke-virtual {p1}, Lcom/microsoft/xbox/service/model/ProfileModel;->getAccountTier()Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lcom/microsoft/xbox/service/model/UserProfileData;->accountTier:Ljava/lang/String;
+
+    iget-object v0, p0, Lcom/microsoft/xbox/service/model/FollowersData;->userProfileData:Lcom/microsoft/xbox/service/model/UserProfileData;
+
+    invoke-virtual {p1}, Lcom/microsoft/xbox/service/model/ProfileModel;->getRealName()Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, v0, Lcom/microsoft/xbox/service/model/UserProfileData;->gamerRealName:Ljava/lang/String;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public equals(Ljava/lang/Object;)Z
+    .registers 5
+
+    if-ne p0, p1, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    const/4 v0, 0x0
+
+    if-nez p1, :cond_1
+
+    return v0
+
+    :cond_1
+    const-class v1, Lcom/microsoft/xbox/xle/viewmodel/FriendSelectorItem;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v2
+
+    if-eq v1, v2, :cond_2
+
+    return v0
+
+    :cond_2
+    check-cast p1, Lcom/microsoft/xbox/xle/viewmodel/FriendSelectorItem;
+
+    iget-object v1, p0, Lcom/microsoft/xbox/service/model/FollowersData;->userProfileData:Lcom/microsoft/xbox/service/model/UserProfileData;
+
+    if-eqz v1, :cond_4
+
+    iget-object v1, v1, Lcom/microsoft/xbox/service/model/UserProfileData;->gamerTag:Ljava/lang/String;
+
+    if-nez v1, :cond_3
+
+    goto :goto_0
+
+    :cond_3
+    iget-object p1, p1, Lcom/microsoft/xbox/service/model/FollowersData;->userProfileData:Lcom/microsoft/xbox/service/model/UserProfileData;
+
+    iget-object p1, p1, Lcom/microsoft/xbox/service/model/UserProfileData;->gamerTag:Ljava/lang/String;
+
+    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_5
+
+    return v0
+
+    :cond_4
+    :goto_0
+    iget-object p1, p1, Lcom/microsoft/xbox/service/model/FollowersData;->userProfileData:Lcom/microsoft/xbox/service/model/UserProfileData;
+
+    if-nez p1, :cond_6
+
+    iget-object p1, p1, Lcom/microsoft/xbox/service/model/UserProfileData;->gamerTag:Ljava/lang/String;
+
+    if-eqz p1, :cond_5
+
+    goto :goto_2
+
+    :cond_5
+    :goto_1
+    const/4 p1, 0x1
+
+    return p1
+
+    :cond_6
+    :goto_2
+    return v0
+.end method
+
+.method public getIsSelected()Z
+    .registers 2
+
+    iget-boolean v0, p0, Lcom/microsoft/xbox/xle/viewmodel/FriendSelectorItem;->selected:Z
+
+    return v0
+.end method
+
+.method public hashCode()I
+    .registers 2
+
+    iget-object v0, p0, Lcom/microsoft/xbox/service/model/FollowersData;->userProfileData:Lcom/microsoft/xbox/service/model/UserProfileData;
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, v0, Lcom/microsoft/xbox/service/model/UserProfileData;->gamerTag:Ljava/lang/String;
+
+    if-nez v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    move-result v0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 v0, 0x0
+
+    :goto_1
+    add-int/lit8 v0, v0, 0x1f
+
+    return v0
+.end method
+
+.method public setSelected(Z)V
+    .registers 2
+
+    iput-boolean p1, p0, Lcom/microsoft/xbox/xle/viewmodel/FriendSelectorItem;->selected:Z
+
+    return-void
+.end method
+
+.method public toggleSelection()V
+    .registers 2
+
+    iget-boolean v0, p0, Lcom/microsoft/xbox/xle/viewmodel/FriendSelectorItem;->selected:Z
+
+    xor-int/lit8 v0, v0, 0x1
+
+    iput-boolean v0, p0, Lcom/microsoft/xbox/xle/viewmodel/FriendSelectorItem;->selected:Z
+
+    return-void
+.end method

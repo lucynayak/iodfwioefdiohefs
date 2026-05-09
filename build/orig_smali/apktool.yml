@@ -1,0 +1,17 @@
+version: 2.11.1
+apkFileName: classes_orig_fake.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  tag: null
+sdkInfo:
+  minSdkVersion: 23
+packageInfo:
+  forcedPackageId: null
+  renameManifestPackage: null
+versionInfo:
+  versionCode: null
+  versionName: null
+sharedLibrary: false
+sparseResources: false
+compactEntries: false

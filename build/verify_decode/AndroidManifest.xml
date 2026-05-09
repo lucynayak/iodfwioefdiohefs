@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" package="dev.virus.variable" platformBuildVersionCode="35" platformBuildVersionName="15">
+    <queries>
+        <package android:name="jopa.triggertrash.minecraft"/>
+    </queries>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="true" android:appComponentFactory="android.support.v4.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="dev.virus.variable.LauncherApplication" android:requestLegacyExternalStorage="true" android:roundIcon="@drawable/ic_launcher_round" android:theme="@style/AppTheme">
+        <meta-data android:name="xperiaplayoptimized_content" android:resource="@string/xperiaplayoptimized_content"/>
+        <meta-data android:name="game_display_name" android:resource="@string/app_name"/>
+        <meta-data android:name="game_icon" android:resource="@drawable/ic_launcher"/>
+        <activity android:exported="true" android:name="dev.virus.variable.app.MainActivity" android:screenOrientation="sensorLandscape" android:theme="@style/FullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:excludeFromRecents="false" android:exported="true" android:launchMode="singleTask" android:name="dev.virus.variable.app.MinecraftActivity" android:screenOrientation="sensorLandscape" android:theme="@style/FullScreenTheme">
+            <meta-data android:name="android.app.lib_name" android:value="launcher"/>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="minecraft"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="dev.virus.variable.app.NoMinecraftActivity" android:screenOrientation="sensorLandscape" android:theme="@style/FullScreenTheme">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:exported="false" android:name="dev.virus.variable.app.UnsupportedMinecraftActivity" android:screenOrientation="sensorLandscape" android:theme="@style/FullScreenTheme">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:exported="false" android:name="dev.virus.variable.app.UpdateActivity" android:screenOrientation="sensorLandscape" android:theme="@style/FullScreenTheme">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:exported="false" android:name="dev.virus.variable.app.ScriptManagerActivity" android:screenOrientation="sensorLandscape" android:theme="@style/FullScreenTheme">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:exported="false" android:name="dev.virus.variable.app.ScriptEditorActivity" android:screenOrientation="sensorLandscape" android:theme="@style/FullScreenTheme"/>
+        <activity android:exported="false" android:name="dev.virus.variable.app.InterfaceActivity" android:screenOrientation="sensorLandscape" android:theme="@style/FullScreenTheme">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:exported="false" android:name="dev.virus.variable.app.LoadingActivity" android:screenOrientation="sensorLandscape" android:theme="@style/FullScreenTheme">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="dev.virus.variable.app.FileImportActivity" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="application/octet-stream" android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="application/zip" android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="application/javascript" android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="text/javascript" android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="application/json" android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\.js" android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\.json" android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\.mcpack" android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\.mcworld" android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\.mcaddon" android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/octet-stream"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/javascript"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/javascript"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/json"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/zip"/>
+            </intent-filter>
+        </activity>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <provider android:authorities="dev.virus.variable.provider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+    </application>
+</manifest>

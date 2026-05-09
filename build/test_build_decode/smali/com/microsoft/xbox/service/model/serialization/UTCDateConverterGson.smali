@@ -1,0 +1,272 @@
+.class public Lcom/microsoft/xbox/service/model/serialization/UTCDateConverterGson;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/microsoft/xbox/service/model/serialization/UTCDateConverterGson$UTCDateConverterJSONDeserializer;,
+        Lcom/microsoft/xbox/service/model/serialization/UTCDateConverterGson$UTCDateConverterShortDateAlternateFormatJSONDeserializer;,
+        Lcom/microsoft/xbox/service/model/serialization/UTCDateConverterGson$UTCDateConverterShortDateFormatJSONDeserializer;,
+        Lcom/microsoft/xbox/service/model/serialization/UTCDateConverterGson$UTCRoundtripDateConverterJSONDeserializer;
+    }
+.end annotation
+
+
+# static fields
+.field private static final NO_MS_STRING_LENGTH:I = 0x13
+
+.field private static defaultFormatMs:Ljava/text/SimpleDateFormat;
+
+.field private static defaultFormatNoMs:Ljava/text/SimpleDateFormat;
+
+.field private static shortDateAlternateFormat:Ljava/text/SimpleDateFormat;
+
+.field private static shortDateFormat:Ljava/text/SimpleDateFormat;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 3
+
+    new-instance v0, Ljava/text/SimpleDateFormat;
+
+    sget-object v1, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
+
+    const-string v2, "yyyy-MM-dd\'T\'HH:mm:ss"
+
+    invoke-direct {v0, v2, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
+
+    sput-object v0, Lcom/microsoft/xbox/service/model/serialization/UTCDateConverterGson;->defaultFormatNoMs:Ljava/text/SimpleDateFormat;
+
+    new-instance v0, Ljava/text/SimpleDateFormat;
+
+    const-string v2, "yyyy-MM-dd\'T\'HH:mm:ss.SSS"
+
+    invoke-direct {v0, v2, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
+
+    sput-object v0, Lcom/microsoft/xbox/service/model/serialization/UTCDateConverterGson;->defaultFormatMs:Ljava/text/SimpleDateFormat;
+
+    new-instance v0, Ljava/text/SimpleDateFormat;
+
+    const-string v2, "MM/dd/yyyy HH:mm:ss"
+
+    invoke-direct {v0, v2, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
+
+    sput-object v0, Lcom/microsoft/xbox/service/model/serialization/UTCDateConverterGson;->shortDateFormat:Ljava/text/SimpleDateFormat;
+
+    new-instance v0, Ljava/text/SimpleDateFormat;
+
+    const-string v2, "yyyy/MM/dd HH:mm:ss"
+
+    invoke-direct {v0, v2, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
+
+    sput-object v0, Lcom/microsoft/xbox/service/model/serialization/UTCDateConverterGson;->shortDateAlternateFormat:Ljava/text/SimpleDateFormat;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static synthetic access$000()Ljava/text/SimpleDateFormat;
+    .locals 1
+
+    sget-object v0, Lcom/microsoft/xbox/service/model/serialization/UTCDateConverterGson;->shortDateFormat:Ljava/text/SimpleDateFormat;
+
+    return-object v0
+.end method
+
+.method public static synthetic access$100()Ljava/text/SimpleDateFormat;
+    .locals 1
+
+    sget-object v0, Lcom/microsoft/xbox/service/model/serialization/UTCDateConverterGson;->shortDateAlternateFormat:Ljava/text/SimpleDateFormat;
+
+    return-object v0
+.end method
+
+.method public static synthetic access$200()Ljava/text/SimpleDateFormat;
+    .locals 1
+
+    sget-object v0, Lcom/microsoft/xbox/service/model/serialization/UTCDateConverterGson;->defaultFormatNoMs:Ljava/text/SimpleDateFormat;
+
+    return-object v0
+.end method
+
+.method public static convert(Ljava/lang/String;)Ljava/util/Date;
+    .locals 5
+
+    const-class v0, Lcom/microsoft/xbox/service/model/serialization/UTCDateConverterGson;
+
+    monitor-enter v0
+
+    :try_start_0
+    invoke-static {p0}, Lcom/microsoft/xbox/toolkit/JavaUtil;->isNullOrEmpty(Ljava/lang/String;)Z
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_0
+
+    goto/16 :goto_4
+
+    :cond_0
+    const-string v1, "Z"
+
+    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    const-string v1, "Z"
+
+    const-string v3, ""
+
+    invoke-virtual {p0, v1, v3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object p0
+
+    :cond_1
+    const-string v1, "+00:00"
+
+    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    const-string v1, "+00:00"
+
+    const-string v3, ""
+
+    invoke-virtual {p0, v1, v3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object p0
+
+    :cond_2
+    :goto_0
+    move-object v1, v2
+
+    goto :goto_1
+
+    :cond_3
+    const-string v1, "+01:00"
+
+    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_4
+
+    const-string v1, "+01:00"
+
+    const-string v3, ""
+
+    invoke-virtual {p0, v1, v3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v1, "GMT+01:00"
+
+    invoke-static {v1}, Ljava/util/TimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
+
+    move-result-object v1
+
+    goto :goto_1
+
+    :cond_4
+    const-string v1, "."
+
+    invoke-virtual {p0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    const-string v1, "([.][0-9]{3})[0-9]*$"
+
+    const-string v3, "$1"
+
+    invoke-virtual {p0, v1, v3}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    goto :goto_0
+
+    :goto_1
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
+
+    move-result v3
+
+    const/16 v4, 0x13
+
+    if-ne v3, v4, :cond_5
+
+    const/4 v3, 0x1
+
+    goto :goto_2
+
+    :cond_5
+    const/4 v3, 0x0
+
+    :goto_2
+    if-nez v1, :cond_6
+
+    const-string v1, "GMT"
+
+    invoke-static {v1}, Ljava/util/TimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
+
+    move-result-object v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    :cond_6
+    if-eqz v3, :cond_7
+
+    :try_start_1
+    sget-object v3, Lcom/microsoft/xbox/service/model/serialization/UTCDateConverterGson;->defaultFormatNoMs:Ljava/text/SimpleDateFormat;
+
+    invoke-virtual {v3, v1}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
+
+    sget-object v1, Lcom/microsoft/xbox/service/model/serialization/UTCDateConverterGson;->defaultFormatNoMs:Ljava/text/SimpleDateFormat;
+
+    :goto_3
+    invoke-virtual {v1, p0}, Ljava/text/DateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
+
+    move-result-object v2
+
+    goto :goto_4
+
+    :cond_7
+    sget-object v3, Lcom/microsoft/xbox/service/model/serialization/UTCDateConverterGson;->defaultFormatMs:Ljava/text/SimpleDateFormat;
+
+    invoke-virtual {v3, v1}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
+
+    sget-object v1, Lcom/microsoft/xbox/service/model/serialization/UTCDateConverterGson;->defaultFormatMs:Ljava/text/SimpleDateFormat;
+    :try_end_1
+    .catch Ljava/text/ParseException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    goto :goto_3
+
+    :catch_0
+    :goto_4
+    monitor-exit v0
+
+    return-object v2
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v0
+
+    throw p0
+.end method

@@ -1,0 +1,69 @@
+.class final Lcom/microsoft/xbox/xle/telemetry/helpers/UTCChangeRelationship$1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/microsoft/xbox/xle/telemetry/helpers/UTCEventTracker$UTCEventDelegate;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/microsoft/xbox/xle/telemetry/helpers/UTCChangeRelationship;->trackChangeRelationshipView(Ljava/lang/CharSequence;Ljava/lang/String;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic val$activityTitle:Ljava/lang/CharSequence;
+
+.field public final synthetic val$targetXUID:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/CharSequence;Ljava/lang/String;)V
+    .registers 3
+
+    iput-object p1, p0, Lcom/microsoft/xbox/xle/telemetry/helpers/UTCChangeRelationship$1;->val$activityTitle:Ljava/lang/CharSequence;
+
+    iput-object p2, p0, Lcom/microsoft/xbox/xle/telemetry/helpers/UTCChangeRelationship$1;->val$targetXUID:Ljava/lang/String;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public call()V
+    .registers 4
+
+    iget-object v0, p0, Lcom/microsoft/xbox/xle/telemetry/helpers/UTCChangeRelationship$1;->val$activityTitle:Ljava/lang/CharSequence;
+
+    invoke-static {v0}, Lcom/microsoft/xbox/xle/telemetry/helpers/UTCChangeRelationship;->access$002(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+
+    iget-object v0, p0, Lcom/microsoft/xbox/xle/telemetry/helpers/UTCChangeRelationship$1;->val$targetXUID:Ljava/lang/String;
+
+    invoke-static {v0}, Lcom/microsoft/xbox/xle/telemetry/helpers/UTCChangeRelationship;->access$102(Ljava/lang/String;)Ljava/lang/String;
+
+    invoke-static {}, Lcom/microsoft/xbox/xle/telemetry/helpers/UTCChangeRelationship;->access$000()Ljava/lang/CharSequence;
+
+    move-result-object v0
+
+    invoke-static {}, Lcom/microsoft/xbox/xle/telemetry/helpers/UTCChangeRelationship;->access$100()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/microsoft/xbox/xle/telemetry/helpers/UTCChangeRelationship;->access$200(Ljava/lang/String;)Lcom/microsoft/xbox/idp/telemetry/utc/model/UTCAdditionalInfoModel;
+
+    move-result-object v1
+
+    const-string v2, "Change Relationship - Change Relationship View"
+
+    invoke-static {v2, v0, v1}, Lcom/microsoft/xbox/idp/telemetry/helpers/UTCPageView;->track(Ljava/lang/String;Ljava/lang/CharSequence;Lcom/microsoft/xbox/idp/telemetry/utc/model/UTCAdditionalInfoModel;)V
+
+    return-void
+.end method

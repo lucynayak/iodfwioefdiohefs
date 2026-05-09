@@ -1,0 +1,23 @@
+{
+  "header": {
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "name": "Team Up!",
+    "uuid": "1ece5830-0b47-4511-8b67-04df547a4d9e"
+  },
+  "modules": [
+    {
+      "version": [
+        1,
+        0,
+        0
+      ],
+      "type": "skin_pack",
+      "uuid": "4cf5bfb5-48cb-4e44-befa-2dd9890d001f"
+    }
+  ],
+  "format_version": 1
+}

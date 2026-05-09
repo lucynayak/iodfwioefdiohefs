@@ -1,0 +1,67 @@
+{
+   "content" : [
+      {
+         "path" : "black_cat.png"
+      },
+      {
+         "path" : "budgie.png"
+      },
+      {
+         "path" : "bulldog.png"
+      },
+      {
+         "path" : "calico_cat.png"
+      },
+      {
+         "path" : "dalmation.png"
+      },
+      {
+         "path" : "female_trainer.png"
+      },
+      {
+         "path" : "german_shepherd.png"
+      },
+      {
+         "path" : "golden_retriever.png"
+      },
+      {
+         "path" : "gray_cat.png"
+      },
+      {
+         "path" : "hamster.png"
+      },
+      {
+         "path" : "male_trainer.png"
+      },
+      {
+         "path" : "mouse.png"
+      },
+      {
+         "path" : "parrot.png"
+      },
+      {
+         "path" : "pet_groomer.png"
+      },
+      {
+         "path" : "siamese_cat.png"
+      },
+      {
+         "path" : "skins.json"
+      },
+      {
+         "path" : "sun_conure.png"
+      },
+      {
+         "path" : "tabby.png"
+      },
+      {
+         "path" : "terrier.png"
+      },
+      {
+         "path" : "veterinarian.png"
+      },
+      {
+         "path" : "white_cat.png"
+      }
+   ]
+}

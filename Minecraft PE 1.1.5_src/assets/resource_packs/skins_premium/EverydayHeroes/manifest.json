@@ -1,0 +1,25 @@
+{
+  "header": {
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "description": "PLACE_HOLDER",
+    "name": "SkinPack_EverydayHeroes",
+    "uuid": "db79d265-2285-4646-916a-73228c727be9"
+  },
+  "modules": [
+    {
+      "version": [
+        1,
+        0,
+        0
+      ],
+      "description": "PLACE_HOLDER",
+      "type": "skin_pack",
+      "uuid": "731ae9ae-b9ef-40c1-9967-a9041bb5ccd2"
+    }
+  ],
+  "format_version": 1
+}

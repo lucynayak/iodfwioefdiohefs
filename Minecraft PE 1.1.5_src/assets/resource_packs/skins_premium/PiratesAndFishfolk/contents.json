@@ -1,0 +1,67 @@
+{
+   "content" : [
+      {
+         "path" : "admiral_amelia.png"
+      },
+      {
+         "path" : "admiral_flintlock.png"
+      },
+      {
+         "path" : "antonia_quickfist.png"
+      },
+      {
+         "path" : "banshee_of_the_deeps.png"
+      },
+      {
+         "path" : "beatrix.png"
+      },
+      {
+         "path" : "capn_hank_golddigger.png"
+      },
+      {
+         "path" : "captain_brandi.png"
+      },
+      {
+         "path" : "captain_crabby.png"
+      },
+      {
+         "path" : "coconut_bill.png"
+      },
+      {
+         "path" : "desmond_the_switch.png"
+      },
+      {
+         "path" : "fiskgutt.png"
+      },
+      {
+         "path" : "lady_blushe.png"
+      },
+      {
+         "path" : "lord_fancypants.png"
+      },
+      {
+         "path" : "marlin_brightfin.png"
+      },
+      {
+         "path" : "neres_brightfin.png"
+      },
+      {
+         "path" : "penelope_kidd.png"
+      },
+      {
+         "path" : "pete_plankwalker.png"
+      },
+      {
+         "path" : "quickshot_casey.png"
+      },
+      {
+         "path" : "skins.json"
+      },
+      {
+         "path" : "survivor_susie.png"
+      },
+      {
+         "path" : "ted_the_explorer.png"
+      }
+   ]
+}

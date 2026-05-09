@@ -1,0 +1,32 @@
+{
+  "apkFileName": "horrible_62-aligned-debugSigned_src.apk",
+  "PackageInfo": {
+    "forcedPackageId": "127",
+    "renameManifestPackage": null
+  },
+  "doNotCompress": [
+    "resources.arsc",
+    "png",
+    "mp3"
+  ],
+  "compressionType": false,
+  "sparseResources": false,
+  "version": "2.4.0-260328",
+  "sharedLibrary": false,
+  "VersionInfo": {
+    "versionName": "1.3.2",
+    "versionCode": "9"
+  },
+  "UsesFramework": {
+    "ids": [1],
+    "tag": null
+  },
+  "unknownFiles": {},
+  "apkFilePath": "/storage/emulated/0/Download/AyuGram/horrible_62-aligned-debugSigned.apk",
+  "compactEntries": false,
+  "isFrameworkApk": false,
+  "sdkInfo": {
+    "minSdkVersion": "21",
+    "targetSdkVersion": "29"
+  }
+}

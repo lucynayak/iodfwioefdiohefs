@@ -1,0 +1,23 @@
+{
+  "header": {
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "name": "Pastel",
+    "uuid": "bbfcfdc8-83b9-4534-9daa-0ba9aa5bb42f"
+  },
+  "modules": [
+    {
+      "version": [
+        1,
+        0,
+        0
+      ],
+      "type": "skin_pack",
+      "uuid": "d53ba52a-c318-4b74-a5e3-dc718e2a785c"
+    }
+  ],
+  "format_version": 1
+}
