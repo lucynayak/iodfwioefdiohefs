@@ -1,0 +1,23 @@
+{
+  "header": {
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "name": "TorchwallKingdom",
+    "uuid": "094c02f5-bd87-4588-acd3-8fab523f3293"
+  },
+  "modules": [
+    {
+      "version": [
+        1,
+        0,
+        0
+      ],
+      "type": "skin_pack",
+      "uuid": "c9df05e2-2633-4e94-921c-caa23cbb41a4"
+    }
+  ],
+  "format_version": 1
+}

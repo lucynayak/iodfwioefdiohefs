@@ -1,0 +1,882 @@
+.class public abstract Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;
+.super Landroid/widget/FrameLayout;
+.source "SourceFile"
+
+
+# static fields
+.field private static badList:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Landroid/view/View;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field private allEventsEnabled:Z
+
+.field private drawerEnabled:Z
+
+.field private isActive:Z
+
+.field private isEditable:Z
+
+.field private isReady:Z
+
+.field private isStarted:Z
+
+.field public isTombstoned:Z
+
+.field private onLayoutChangedListener:Ljava/lang/Runnable;
+
+.field private orientation:I
+
+.field private screenPercent:I
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .registers 1
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    sput-object v0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->badList:Ljava/util/ArrayList;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .registers 2
+
+    invoke-static {}, Lcom/microsoft/xboxtcui/XboxTcuiSdk;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;-><init>(Landroid/content/Context;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;)V
+    .registers 3
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, p1, v0}, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;-><init>(Landroid/content/Context;I)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;I)V
+    .registers 3
+
+    invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
+
+    const/4 p1, 0x0
+
+    iput-object p1, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->onLayoutChangedListener:Ljava/lang/Runnable;
+
+    const/4 p1, 0x0
+
+    iput-boolean p1, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->isEditable:Z
+
+    const/16 p1, 0x64
+
+    iput p1, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->screenPercent:I
+
+    const/4 p1, 0x1
+
+    iput-boolean p1, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->drawerEnabled:Z
+
+    iput-boolean p1, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->allEventsEnabled:Z
+
+    invoke-virtual {p0, p2}, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->Initialize(I)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .registers 5
+
+    invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->onLayoutChangedListener:Ljava/lang/Runnable;
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->isEditable:Z
+
+    const/16 v0, 0x64
+
+    iput v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->screenPercent:I
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->drawerEnabled:Z
+
+    iput-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->allEventsEnabled:Z
+
+    const-string v0, "ScreenLayout"
+
+    invoke-static {v0}, Lcom/microsoft/xbox/toolkit/XLERValueHelper;->getStyleableRValueArray(Ljava/lang/String;)[I
+
+    move-result-object v0
+
+    invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
+
+    move-result-object p1
+
+    const-string p2, "ScreenLayout_screenDIPs"
+
+    invoke-static {p2}, Lcom/microsoft/xbox/toolkit/XLERValueHelper;->getStyleableRValue(Ljava/lang/String;)I
+
+    move-result v0
+
+    invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->hasValue(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/high16 v0, 0x42c80000    # 100.0f
+
+    invoke-static {p2}, Lcom/microsoft/xbox/toolkit/XLERValueHelper;->getStyleableRValue(Ljava/lang/String;)I
+
+    move-result p2
+
+    invoke-static {}, Lcom/microsoft/xbox/toolkit/system/SystemUtil;->getScreenWidth()I
+
+    move-result v1
+
+    invoke-virtual {p1, p2, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
+
+    move-result p2
+
+    int-to-float p2, p2
+
+    invoke-static {}, Lcom/microsoft/xbox/toolkit/system/SystemUtil;->getScreenWidth()I
+
+    move-result v1
+
+    int-to-float v1, v1
+
+    div-float/2addr p2, v1
+
+    mul-float p2, p2, v0
+
+    float-to-int p2, p2
+
+    goto :goto_0
+
+    :cond_0
+    const-string p2, "ScreenLayout_screenPercent"
+
+    invoke-static {p2}, Lcom/microsoft/xbox/toolkit/XLERValueHelper;->getStyleableRValue(Ljava/lang/String;)I
+
+    move-result p2
+
+    const/4 v0, -0x2
+
+    invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getInt(II)I
+
+    move-result p2
+
+    :goto_0
+    iput p2, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->screenPercent:I
+
+    invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
+
+    const/4 p1, 0x7
+
+    invoke-virtual {p0, p1}, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->Initialize(I)V
+
+    return-void
+.end method
+
+.method public static addViewThatCausesAndroidLeaks(Landroid/view/View;)V
+    .registers 2
+
+    sget-object v0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->badList:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    return-void
+.end method
+
+.method private removeAllViewsAndWorkaroundAndroidLeaks()V
+    .registers 3
+
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/microsoft/xbox/toolkit/ThreadManager;->UIThread:Ljava/lang/Thread;
+
+    if-ne v0, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    invoke-static {v0}, Lcom/microsoft/xbox/toolkit/XLEAssert;->assertTrue(Z)V
+
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->removeAllViews()V
+
+    sget-object v0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->badList:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_1
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/view/View;
+
+    invoke-static {v1}, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->removeViewAndWorkaroundAndroidLeaks(Landroid/view/View;)V
+
+    goto :goto_1
+
+    :cond_1
+    sget-object v0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->badList:Ljava/util/ArrayList;
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
+
+    return-void
+.end method
+
+.method public static removeViewAndWorkaroundAndroidLeaks(Landroid/view/View;)V
+    .registers 5
+
+    if-eqz p0, :cond_3
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    instance-of v1, v0, Landroid/view/ViewGroup;
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
+
+    if-eqz v1, :cond_1
+
+    check-cast v0, Landroid/view/ViewGroup;
+
+    invoke-virtual {v0}, Landroid/view/ViewGroup;->removeAllViews()V
+
+    invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    invoke-static {v0}, Lcom/microsoft/xbox/toolkit/XLEAssert;->assertTrue(Z)V
+
+    :cond_1
+    instance-of v0, p0, Landroid/view/ViewGroup;
+
+    if-eqz v0, :cond_3
+
+    check-cast p0, Landroid/view/ViewGroup;
+
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->removeAllViews()V
+
+    invoke-virtual {p0}, Landroid/view/View;->destroyDrawingCache()V
+
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
+
+    move-result p0
+
+    if-nez p0, :cond_2
+
+    const/4 v2, 0x1
+
+    :cond_2
+    invoke-static {v2}, Lcom/microsoft/xbox/toolkit/XLEAssert;->assertTrue(Z)V
+
+    :cond_3
+    return-void
+.end method
+
+
+# virtual methods
+.method public Initialize(I)V
+    .registers 3
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->isReady:Z
+
+    iput-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->isActive:Z
+
+    iput-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->isStarted:Z
+
+    iput p1, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->orientation:I
+
+    return-void
+.end method
+
+.method public adjustBottomMargin(I)V
+    .registers 2
+
+    return-void
+.end method
+
+.method public abstract forceRefresh()V
+.end method
+
+.method public abstract forceUpdateViewImmediately()V
+.end method
+
+.method public getAnimateIn(Z)Lcom/microsoft/xbox/toolkit/anim/XLEAnimationPackage;
+    .registers 2
+
+    const/4 p1, 0x0
+
+    return-object p1
+.end method
+
+.method public getAnimateOut(Z)Lcom/microsoft/xbox/toolkit/anim/XLEAnimationPackage;
+    .registers 2
+
+    const/4 p1, 0x0
+
+    return-object p1
+.end method
+
+.method public getCanAutoLaunch()Z
+    .registers 2
+
+    iget-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->isEditable:Z
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public getContent()Ljava/lang/String;
+    .registers 2
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public getIsActive()Z
+    .registers 2
+
+    iget-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->isActive:Z
+
+    return v0
+.end method
+
+.method public getIsEditable()Z
+    .registers 2
+
+    iget-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->isEditable:Z
+
+    return v0
+.end method
+
+.method public getIsReady()Z
+    .registers 2
+
+    iget-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->isReady:Z
+
+    return v0
+.end method
+
+.method public getIsStarted()Z
+    .registers 2
+
+    iget-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->isStarted:Z
+
+    return v0
+.end method
+
+.method public getIsTombstoned()Z
+    .registers 2
+
+    iget-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->isTombstoned:Z
+
+    return v0
+.end method
+
+.method public getLocalClassName()Ljava/lang/String;
+    .registers 2
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public abstract getName()Ljava/lang/String;
+.end method
+
+.method public getRelativeId()Ljava/lang/String;
+    .registers 2
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public getScreenPercent()I
+    .registers 2
+
+    iget v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->screenPercent:I
+
+    return v0
+.end method
+
+.method public getShouldShowAppbar()Z
+    .registers 2
+
+    iget-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->isEditable:Z
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public getTrackPage()Ljava/lang/Boolean;
+    .registers 2
+
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    return-object v0
+.end method
+
+.method public isAllEventsEnabled()Z
+    .registers 2
+
+    iget-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->allEventsEnabled:Z
+
+    return v0
+.end method
+
+.method public isAnimateOnPop()Z
+    .registers 2
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public isAnimateOnPush()Z
+    .registers 2
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public isDrawerEnabled()Z
+    .registers 2
+
+    iget-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->drawerEnabled:Z
+
+    return v0
+.end method
+
+.method public isKeepPreviousScreen()Z
+    .registers 2
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public leaveScreen(Ljava/lang/Runnable;)V
+    .registers 2
+
+    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
+
+    return-void
+.end method
+
+.method public onActivityResult(IILandroid/content/Intent;)V
+    .registers 4
+
+    return-void
+.end method
+
+.method public abstract onAnimateInCompleted()V
+.end method
+
+.method public abstract onAnimateInStarted()V
+.end method
+
+.method public onApplicationPause()V
+    .registers 1
+
+    return-void
+.end method
+
+.method public onApplicationResume()V
+    .registers 1
+
+    return-void
+.end method
+
+.method public abstract onBackButtonPressed()Z
+.end method
+
+.method public onContextItemSelected(Landroid/view/MenuItem;)Z
+    .registers 2
+
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public onCreate()V
+    .registers 1
+
+    return-void
+.end method
+
+.method public onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
+    .registers 4
+
+    return-void
+.end method
+
+.method public onDestroy()V
+    .registers 1
+
+    invoke-direct {p0}, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->removeAllViewsAndWorkaroundAndroidLeaks()V
+
+    return-void
+.end method
+
+.method public onHoverEvent(Landroid/view/MotionEvent;)Z
+    .registers 3
+
+    iget-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->allEventsEnabled:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-super {p0, p1}, Landroid/view/View;->onHoverEvent(Landroid/view/MotionEvent;)Z
+
+    move-result p1
+
+    return p1
+
+    :cond_0
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method public onInterceptHoverEvent(Landroid/view/MotionEvent;)Z
+    .registers 3
+
+    iget-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->allEventsEnabled:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-super {p0, p1}, Landroid/view/ViewGroup;->onInterceptHoverEvent(Landroid/view/MotionEvent;)Z
+
+    move-result p1
+
+    return p1
+
+    :cond_0
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
+    .registers 3
+
+    iget-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->allEventsEnabled:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-super {p0, p1}, Landroid/view/ViewGroup;->onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
+
+    move-result p1
+
+    return p1
+
+    :cond_0
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method public onLayout(ZIIII)V
+    .registers 6
+
+    invoke-super/range {p0 .. p5}, Landroid/widget/FrameLayout;->onLayout(ZIIII)V
+
+    iget-object p1, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->onLayoutChangedListener:Ljava/lang/Runnable;
+
+    if-eqz p1, :cond_0
+
+    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public onPause()V
+    .registers 2
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->isReady:Z
+
+    return-void
+.end method
+
+.method public onRehydrate()V
+    .registers 2
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->isTombstoned:Z
+
+    invoke-virtual {p0}, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->onRehydrateOverride()V
+
+    return-void
+.end method
+
+.method public abstract onRehydrateOverride()V
+.end method
+
+.method public onRestart()V
+    .registers 1
+
+    return-void
+.end method
+
+.method public onRestoreInstanceState(Landroid/os/Bundle;)V
+    .registers 2
+
+    return-void
+.end method
+
+.method public onResume()V
+    .registers 2
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->isReady:Z
+
+    return-void
+.end method
+
+.method public onSaveInstanceState(Landroid/os/Bundle;)V
+    .registers 2
+
+    return-void
+.end method
+
+.method public onSetActive()V
+    .registers 2
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->isActive:Z
+
+    return-void
+.end method
+
+.method public onSetInactive()V
+    .registers 2
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->isActive:Z
+
+    return-void
+.end method
+
+.method public onStart()V
+    .registers 2
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->isStarted:Z
+
+    return-void
+.end method
+
+.method public onStop()V
+    .registers 2
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->isStarted:Z
+
+    return-void
+.end method
+
+.method public onTombstone()V
+    .registers 2
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->isTombstoned:Z
+
+    invoke-direct {p0}, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->removeAllViewsAndWorkaroundAndroidLeaks()V
+
+    return-void
+.end method
+
+.method public onTouchEvent(Landroid/view/MotionEvent;)Z
+    .registers 3
+
+    iget-boolean v0, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->allEventsEnabled:Z
+
+    if-eqz v0, :cond_0
+
+    invoke-super {p0, p1}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
+
+    move-result p1
+
+    return p1
+
+    :cond_0
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method public removeBottomMargin()V
+    .registers 1
+
+    return-void
+.end method
+
+.method public resetBottomMargin()V
+    .registers 1
+
+    return-void
+.end method
+
+.method public setAllEventsEnabled(Z)V
+    .registers 2
+
+    iput-boolean p1, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->allEventsEnabled:Z
+
+    return-void
+.end method
+
+.method public setContentView(I)V
+    .registers 4
+
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    move-result-object v0
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, p1, p0, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    return-void
+.end method
+
+.method public setDrawerEnabled(Z)V
+    .registers 2
+
+    iput-boolean p1, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->drawerEnabled:Z
+
+    return-void
+.end method
+
+.method public setIsEditable(Z)V
+    .registers 2
+
+    iput-boolean p1, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->isEditable:Z
+
+    return-void
+.end method
+
+.method public setOnLayoutChangedListener(Ljava/lang/Runnable;)V
+    .registers 2
+
+    iput-object p1, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->onLayoutChangedListener:Ljava/lang/Runnable;
+
+    return-void
+.end method
+
+.method public setScreenPercent(I)Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;
+    .registers 2
+
+    iput p1, p0, Lcom/microsoft/xbox/toolkit/ui/ScreenLayout;->screenPercent:I
+
+    return-object p0
+.end method
+
+.method public setScreenState(I)V
+    .registers 2
+
+    return-void
+.end method
+
+.method public xleFindViewId(I)Landroid/view/View;
+    .registers 2
+
+    invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object p1
+
+    return-object p1
+.end method

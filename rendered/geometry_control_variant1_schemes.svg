@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1900" viewBox="0 0 1600 1900">
+  <defs>
+    <style>
+      .bg { fill: #f5efe3; }
+      .card { fill: #fffdf8; stroke: #4b3f35; stroke-width: 3; }
+      .title { font: 700 40px 'DejaVu Sans', sans-serif; fill: #2f241d; }
+      .subtitle { font: 600 28px 'DejaVu Sans', sans-serif; fill: #5a4a3e; }
+      .task { font: 700 26px 'DejaVu Sans', sans-serif; fill: #2f241d; }
+      .text { font: 24px 'DejaVu Sans', sans-serif; fill: #2f241d; }
+      .small { font: 20px 'DejaVu Sans', sans-serif; fill: #5a4a3e; }
+      .line { stroke: #202020; stroke-width: 4; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .soft { stroke: #9d6b2f; stroke-width: 4; fill: none; stroke-linecap: round; }
+      .accent { stroke: #006c67; stroke-width: 5; fill: none; stroke-linecap: round; }
+      .thin { stroke: #4b3f35; stroke-width: 2.5; fill: none; stroke-linecap: round; }
+      .dot { fill: #202020; }
+      .angle { fill: #8b1e3f; font: 700 22px 'DejaVu Sans', sans-serif; }
+      .answer { fill: #006c67; font: 700 24px 'DejaVu Sans', sans-serif; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="1900" rx="24"/>
+  <text class="title" x="800" y="70" text-anchor="middle">Контрольная №4: схемы и ответы</text>
+  <text class="subtitle" x="800" y="110" text-anchor="middle">Параллельные прямые, сумма углов треугольника — вариант 1</text>
+
+  <g transform="translate(60,150)">
+    <rect class="card" x="0" y="0" width="700" height="360" rx="24"/>
+    <text class="task" x="28" y="42">1. Равнобедренный треугольник</text>
+    <text class="text" x="28" y="78">Угол при вершине: 52°</text>
+    <polygon class="line" points="350,90 170,290 530,290"/>
+    <path class="soft" d="M320 124 A42 42 0 0 1 380 124"/>
+    <path class="soft" d="M193 262 A36 36 0 0 1 238 289"/>
+    <path class="soft" d="M462 289 A36 36 0 0 1 507 262"/>
+    <circle class="dot" cx="350" cy="90" r="5"/>
+    <circle class="dot" cx="170" cy="290" r="5"/>
+    <circle class="dot" cx="530" cy="290" r="5"/>
+    <text class="text" x="342" y="80">A</text>
+    <text class="text" x="150" y="316">B</text>
+    <text class="text" x="536" y="316">C</text>
+    <text class="angle" x="350" y="145" text-anchor="middle">52°</text>
+    <text class="angle" x="236" y="265">64°</text>
+    <text class="angle" x="458" y="265">64°</text>
+    <text class="answer" x="28" y="332">Ответ: углы при основании равны 64° и 64°.</text>
+  </g>
+
+  <g transform="translate(840,150)">
+    <rect class="card" x="0" y="0" width="700" height="360" rx="24"/>
+    <text class="task" x="28" y="42">2. Параллельные прямые и секущая</text>
+    <text class="text" x="28" y="78">Один односторонний угол: 115°</text>
+    <line class="line" x1="110" y1="120" x2="610" y2="120"/>
+    <line class="line" x1="110" y1="270" x2="610" y2="270"/>
+    <line class="accent" x1="220" y1="330" x2="500" y2="50"/>
+    <text class="text" x="620" y="128">a</text>
+    <text class="text" x="620" y="278">b</text>
+    <text class="text" x="505" y="58">c</text>
+    <path class="soft" d="M336 120 A44 44 0 0 1 367 151"/>
+    <path class="soft" d="M365 239 A44 44 0 0 1 397 270"/>
+    <text class="angle" x="304" y="156">115°</text>
+    <text class="angle" x="402" y="238">65°</text>
+    <text class="answer" x="28" y="316">Ответ: все углы при пересечении — 4 по 115° и 4 по 65°.</text>
+  </g>
+
+  <g transform="translate(60,560)">
+    <rect class="card" x="0" y="0" width="700" height="360" rx="24"/>
+    <text class="task" x="28" y="42">3. Внешний угол при вершине C</text>
+    <text class="text" x="28" y="78">Внутренние углы: A = 40°, B = 60°</text>
+    <polygon class="line" points="180,285 530,285 290,110"/>
+    <line class="thin" x1="530" y1="285" x2="635" y2="285"/>
+    <path class="soft" d="M235 262 A34 34 0 0 1 262 226"/>
+    <path class="soft" d="M478 230 A40 40 0 0 1 516 285"/>
+    <path class="soft" d="M528 244 A42 42 0 0 1 568 284"/>
+    <text class="text" x="284" y="100">A</text>
+    <text class="text" x="158" y="308">B</text>
+    <text class="text" x="534" y="308">C</text>
+    <text class="angle" x="248" y="236">60°</text>
+    <text class="angle" x="324" y="156">40°</text>
+    <text class="angle" x="565" y="246">100°</text>
+    <text class="small" x="463" y="204">внешний угол</text>
+    <text class="answer" x="28" y="330">Ответ: внешний угол при C равен 100°.</text>
+  </g>
+
+  <g transform="translate(840,560)">
+    <rect class="card" x="0" y="0" width="700" height="360" rx="24"/>
+    <text class="task" x="28" y="42">4. Доказать, что KT || PE</text>
+    <text class="text" x="28" y="78">KO = OE и TO = OP, значит O — середина обеих диагоналей.</text>
+    <polygon class="line" points="170,120 520,120 600,285 250,285"/>
+    <line class="accent" x1="170" y1="120" x2="600" y2="285"/>
+    <line class="accent" x1="520" y1="120" x2="250" y2="285"/>
+    <circle class="dot" cx="385" cy="202.5" r="5"/>
+    <text class="text" x="150" y="110">K</text>
+    <text class="text" x="526" y="110">T</text>
+    <text class="text" x="606" y="308">E</text>
+    <text class="text" x="230" y="308">P</text>
+    <text class="text" x="395" y="196">O</text>
+    <text class="small" x="274" y="169">KO = OE</text>
+    <text class="small" x="404" y="214">TO = OP</text>
+    <text class="answer" x="28" y="324">Вывод: четырехугольник KTEP — параллелограмм, поэтому KT || PE.</text>
+  </g>
+
+  <g transform="translate(60,970)">
+    <rect class="card" x="0" y="0" width="1480" height="500" rx="24"/>
+    <text class="task" x="28" y="42">5. Прямоугольный треугольник и точка K на катете BC</text>
+    <text class="text" x="28" y="78">∠C = 90°, ∠A = 60°, ∠AKC = 60°, BK = 12 см</text>
+    <line class="line" x1="240" y1="390" x2="240" y2="120"/>
+    <line class="line" x1="240" y1="390" x2="890" y2="390"/>
+    <line class="line" x1="240" y1="120" x2="890" y2="390"/>
+    <line class="accent" x1="240" y1="120" x2="560" y2="390"/>
+    <rect class="thin" x="240" y="360" width="30" height="30"/>
+    <circle class="dot" cx="240" cy="120" r="5"/>
+    <circle class="dot" cx="240" cy="390" r="5"/>
+    <circle class="dot" cx="560" cy="390" r="5"/>
+    <circle class="dot" cx="890" cy="390" r="5"/>
+    <text class="text" x="220" y="110">A</text>
+    <text class="text" x="220" y="418">C</text>
+    <text class="text" x="550" y="418">K</text>
+    <text class="text" x="900" y="418">B</text>
+    <path class="soft" d="M240 170 A48 48 0 0 1 286 190"/>
+    <path class="soft" d="M518 390 A46 46 0 0 1 544 355"/>
+    <text class="angle" x="286" y="190">60°</text>
+    <text class="angle" x="494" y="356">60°</text>
+    <text class="small" x="690" y="372">BK = 12</text>
+    <text class="small" x="385" y="245">AK</text>
+    <text class="small" x="1160" y="160">Треугольник ABC: 30°–60°–90°</text>
+    <text class="small" x="1160" y="205">Треугольник AKC: 30°–60°–90°</text>
+    <text class="small" x="1160" y="250">AC = BC / √3 и AC = CK√3</text>
+    <text class="small" x="1160" y="295">CK√3 = (BK + CK) / √3</text>
+    <text class="small" x="1160" y="340">3CK = 12 + CK</text>
+    <text class="answer" x="1160" y="395">Ответ: CK = 6 см.</text>
+    <text class="answer" x="28" y="462">Итоговые ответы: 1) 64°, 64°  2) 4 угла по 115° и 4 угла по 65°  3) 100°  4) KT || PE  5) 6 см</text>
+  </g>
+
+  <text class="small" x="800" y="1850" text-anchor="middle">Файл можно открыть как обычное изображение SVG или через HTML-просмотр рядом.</text>
+</svg>

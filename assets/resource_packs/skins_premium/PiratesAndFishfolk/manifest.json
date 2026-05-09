@@ -1,0 +1,23 @@
+{
+  "header": {
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "name": "PiratesAndFishfolk",
+    "uuid": "f7c5dd73-227a-4d19-a6e8-9f7bfb87b8a1"
+  },
+  "modules": [
+    {
+      "version": [
+        1,
+        0,
+        0
+      ],
+      "type": "skin_pack",
+      "uuid": "fb5bcc2c-0d0a-4219-9c5e-9774d243b677"
+    }
+  ],
+  "format_version": 1
+}

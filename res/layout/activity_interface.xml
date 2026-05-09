@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/almostBlack"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:animateLayoutChanges="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:animateLayoutChanges="true"
+        android:layout_marginStart="8.0dip"
+        android:layout_marginEnd="8.0dip">
+        <ImageButton
+            android:layout_gravity="center_vertical"
+            android:id="@id/activity_interface__back_button"
+            android:background="@color/transparent"
+            android:layout_width="50.0dip"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_arrow_back"
+            android:onClick="onClick"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:textSize="16.0sp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:id="@id/activity_interface__title_text"
+            android:padding="10.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Interface"
+            android:layout_toStartOf="@id/activity_interface__apply_button"
+            android:layout_toEndOf="@id/activity_interface__back_button" />
+        <TextView
+            android:textSize="12.5sp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:id="@id/activity_interface__apply_button"
+            android:padding="10.0dip"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Apply (exit)"
+            android:onClick="onClick"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ScrollView
+        android:background="@drawable/views_container_background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="8.0dip">
+        <RelativeLayout
+            android:padding="4.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:textSize="16.0sp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:id="@id/activity_interface__main_color__title_text"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="30.0dip"
+                android:text="Main color"
+                android:layout_alignParentTop="true" />
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_marginTop="5.0dip"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@id/activity_interface__main_color__title_text">
+                <View
+                    android:id="@id/activity_interface__main_color__current_color_view"
+                    android:background="@color/main_color"
+                    android:layout_width="15.0dip"
+                    android:layout_height="15.0dip" />
+            </LinearLayout>
+            <TextView
+                android:textSize="12.5sp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:id="@id/activity_interface__main_color__default_button"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="30.0dip"
+                android:text="default"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/activity_interface__main_color__red_color_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:layout_below="@id/activity_interface__main_color__title_text">
+                <TextView
+                    android:textSize="15.0sp"
+                    android:textColor="@color/red"
+                    android:gravity="center"
+                    android:id="@id/activity_interface__main_color__red_color_text"
+                    android:layout_width="30.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="R"
+                    android:paddingStart="10.0dip"
+                    android:layout_alignParentStart="true" />
+                <SeekBar
+                    android:id="@id/activity_interface__main_color__red_color_slider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_toStartOf="@id/activity_interface__main_color__red_color_number_text"
+                    android:layout_toEndOf="@id/activity_interface__main_color__red_color_text"
+                    android:progressTint="@color/main_color"
+                    android:progressBackgroundTint="@color/almostAlmostAlmostBlack"
+                    android:thumbTint="@color/main_color" />
+                <TextView
+                    android:textSize="12.5sp"
+                    android:textColor="@color/white"
+                    android:gravity="start|center"
+                    android:id="@id/activity_interface__main_color__red_color_number_text"
+                    android:padding="5.0dip"
+                    android:layout_width="70.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="255 / 255"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/activity_interface__main_color__green_color_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:layout_below="@id/activity_interface__main_color__red_color_layout">
+                <TextView
+                    android:textSize="15.0sp"
+                    android:textColor="@color/green"
+                    android:gravity="center"
+                    android:id="@id/activity_interface__main_color__green_color_text"
+                    android:layout_width="30.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="G"
+                    android:paddingStart="10.0dip"
+                    android:layout_alignParentStart="true" />
+                <SeekBar
+                    android:id="@id/activity_interface__main_color__green_color_slider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_toStartOf="@id/activity_interface__main_color__green_color_number_text"
+                    android:layout_toEndOf="@id/activity_interface__main_color__green_color_text"
+                    android:progressTint="@color/main_color"
+                    android:progressBackgroundTint="@color/almostAlmostAlmostBlack"
+                    android:thumbTint="@color/main_color" />
+                <TextView
+                    android:textSize="12.5sp"
+                    android:textColor="@color/white"
+                    android:gravity="start|center"
+                    android:id="@id/activity_interface__main_color__green_color_number_text"
+                    android:padding="5.0dip"
+                    android:layout_width="70.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="152 / 255"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/activity_interface__main_color__blue_color_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:layout_below="@id/activity_interface__main_color__green_color_layout">
+                <TextView
+                    android:textSize="15.0sp"
+                    android:textColor="@color/blue"
+                    android:gravity="center"
+                    android:id="@id/activity_interface__main_color__blue_color_text"
+                    android:layout_width="30.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="B"
+                    android:paddingStart="10.0dip"
+                    android:layout_alignParentStart="true" />
+                <SeekBar
+                    android:id="@id/activity_interface__main_color__blue_color_slider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_toStartOf="@id/activity_interface__main_color__blue_color_number_text"
+                    android:layout_toEndOf="@id/activity_interface__main_color__blue_color_text"
+                    android:progressTint="@color/main_color"
+                    android:progressBackgroundTint="@color/almostAlmostAlmostBlack"
+                    android:thumbTint="@color/main_color" />
+                <TextView
+                    android:textSize="12.5sp"
+                    android:textColor="@color/white"
+                    android:gravity="start|center"
+                    android:id="@id/activity_interface__main_color__blue_color_number_text"
+                    android:padding="5.0dip"
+                    android:layout_width="70.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="0 / 255"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <View
+                android:id="@id/activity_interface__line0"
+                android:background="@color/almostAlmostAlmostBlack"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_margin="15.0dip"
+                android:layout_below="@id/activity_interface__main_color__blue_color_layout" />
+            <TextView
+                android:textSize="16.0sp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:id="@id/activity_interface__bind__title_text"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:text="Bind"
+                android:layout_below="@id/activity_interface__line0"
+                android:paddingStart="15.0dip" />
+            <TextView
+                android:textSize="12.5sp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:id="@id/activity_interface__bind__default_button"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="30.0dip"
+                android:text="default"
+                android:layout_below="@id/activity_interface__line0"
+                android:layout_alignParentEnd="true" />
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/activity_interface__bind__text_size_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:layout_below="@id/activity_interface__bind__title_text">
+                <TextView
+                    android:textSize="12.5sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:id="@id/activity_interface__bind__text_size_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Text size"
+                    android:paddingStart="15.0dip"
+                    android:layout_alignParentStart="true" />
+                <SeekBar
+                    android:id="@id/activity_interface__bind__text_size_slider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_toStartOf="@id/activity_interface__bind__text_size_number_text"
+                    android:layout_toEndOf="@id/activity_interface__bind__text_size_text"
+                    android:progressTint="@color/main_color"
+                    android:progressBackgroundTint="@color/almostAlmostAlmostBlack"
+                    android:thumbTint="@color/main_color" />
+                <TextView
+                    android:textSize="12.5sp"
+                    android:textColor="@color/white"
+                    android:gravity="start|center"
+                    android:id="@id/activity_interface__bind__text_size_number_text"
+                    android:padding="5.0dip"
+                    android:layout_width="60.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="9 / 15"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/activity_interface__bind__size_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:layout_below="@id/activity_interface__bind__text_size_layout">
+                <TextView
+                    android:textSize="12.5sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:id="@id/activity_interface__bind__size_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Size"
+                    android:paddingStart="15.0dip"
+                    android:layout_alignParentStart="true" />
+                <SeekBar
+                    android:id="@id/activity_interface__bind__size_slider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_toStartOf="@id/activity_interface__bind__size_number_text"
+                    android:layout_toEndOf="@id/activity_interface__bind__size_text"
+                    android:progressTint="@color/main_color"
+                    android:progressBackgroundTint="@color/almostAlmostAlmostBlack"
+                    android:thumbTint="@color/main_color" />
+                <TextView
+                    android:textSize="12.5sp"
+                    android:textColor="@color/white"
+                    android:gravity="start|center"
+                    android:id="@id/activity_interface__bind__size_number_text"
+                    android:padding="5.0dip"
+                    android:layout_width="60.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="0.65 / 1"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/activity_interface__bind__shape_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:layout_below="@id/activity_interface__bind__size_layout">
+                <TextView
+                    android:textSize="12.5sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Shape"
+                    android:paddingStart="15.0dip"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:textSize="12.5sp"
+                    android:textColor="@color/main_color"
+                    android:gravity="center"
+                    android:id="@id/activity_interface__bind__shape_value"
+                    android:padding="5.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Rounded ▸"
+                    android:onClick="onClick"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <View
+                android:id="@id/activity_interface__line1"
+                android:background="@color/almostAlmostAlmostBlack"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_margin="15.0dip"
+                android:layout_below="@id/activity_interface__bind__shape_layout" />
+            <TextView
+                android:textSize="16.0sp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:id="@id/activity_interface__menu_position__title_text"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:text="Menu position"
+                android:layout_below="@id/activity_interface__line1"
+                android:paddingStart="15.0dip" />
+            <TextView
+                android:textSize="12.5sp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:id="@id/activity_interface__menu_position__default_button"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="30.0dip"
+                android:text="default"
+                android:layout_below="@id/activity_interface__line1"
+                android:layout_alignParentEnd="true" />
+            <RadioGroup
+                android:id="@id/activity_interface__menu_position__group"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activity_interface__menu_position__title_text"
+                android:layout_marginStart="15.0dip">
+                <RadioButton
+                    android:textSize="12.5sp"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:id="@id/activity_interface__menu_position__right_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30.0dip"
+                    android:checked="true"
+                    android:text="Right"
+                    android:buttonTint="@color/main_color" />
+                <RadioButton
+                    android:textSize="12.5sp"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:id="@id/activity_interface__menu_position__center_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30.0dip"
+                    android:text="Center"
+                    android:buttonTint="@color/main_color" />
+                <RadioButton
+                    android:textSize="12.5sp"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:id="@id/activity_interface__menu_position__left_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30.0dip"
+                    android:text="Left"
+                    android:buttonTint="@color/main_color" />
+                <RadioButton
+                    android:textSize="12.5sp"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:id="@id/activity_interface__menu_position__top_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30.0dip"
+                    android:text="Top"
+                    android:buttonTint="@color/main_color" />
+            </RadioGroup>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

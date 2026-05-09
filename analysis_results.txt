@@ -1,0 +1,572 @@
+==============================================================================
+  HORRIBLE CLIENT — NATIVE LIBRARY ANALYSIS
+  Дата запуска: 2026-04-09 12:30:46
+==============================================================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  LAUNCHER APK: lib/armeabi-v7a/
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+==============================================================================
+  [LAUNCHER] libcallfunction.so
+  C:\Users\triggertrash\Desktop\horrible\lib\armeabi-v7a\libcallfunction.so
+==============================================================================
+  Size:            684 bytes (0.001 MB)
+  SHA256: 03eb90e95c459cc9735ecd1e7677b5d385dcc53929e03193376f92754d04d9ab
+  Arch:   32-bit ARM (armeabi-v7a)
+  Endian: Little
+
+  --- Sections (7) ---
+
+  --- Exported symbols (1) ---
+    Java_dev_virus_variable_launcher_api_NativeMemory_callFunction
+
+  --- Security Hardening ---
+    PIE/PIC:     YES
+    NX Stack:    YES
+    GNU RELRO:   NO (!)
+    BIND_NOW:    NO (Partial/No RELRO)
+
+  --- String Analysis ---
+    Total extracted strings: 8
+
+==============================================================================
+  [LAUNCHER] libfmod.so
+  C:\Users\triggertrash\Desktop\horrible\lib\armeabi-v7a\libfmod.so
+==============================================================================
+  Size:      1,186,316 bytes (1.131 MB)
+  SHA256: 933802dc2df17c384420fc2eeb50e782473d6067a665a5e27bbae5545fbee0fd
+  Arch:   32-bit ARM (armeabi-v7a)
+  Endian: Little
+
+  --- Sections (24) ---
+    .dynsym                   22,832 bytes
+    .dynstr                   40,686 bytes
+    .hash                      9,840 bytes
+    .rel.dyn                  13,848 bytes
+    .plt                       1,196 bytes
+    .text                    887,432 bytes
+    .rodata                  151,988 bytes
+    .data.rel.ro.local         4,492 bytes
+    .data.rel.ro               3,376 bytes
+    .got                       1,244 bytes
+    .data                     42,208 bytes
+    .bss                     236,072 bytes
+
+  --- Dependencies (DT_NEEDED) ---
+    liblog.so
+    libstdc++.so
+    libm.so
+    libc.so
+    libdl.so
+
+  --- Exported symbols (1313) ---
+    FMOD_Memory_Initialize
+    FMOD_Memory_GetStats
+    FMOD_System_Create
+    FMOD_System_Release
+    _ZN4FMOD6System7releaseEv
+    FMOD_System_SetOutput
+    _ZN4FMOD6System9setOutputE15FMOD_OUTPUTTYPE
+    FMOD_System_GetOutput
+    _ZN4FMOD6System9getOutputEP15FMOD_OUTPUTTYPE
+    FMOD_System_GetNumDrivers
+    _ZN4FMOD6System13getNumDriversEPi
+    FMOD_System_GetDriverInfo
+    _ZN4FMOD6System13getDriverInfoEiPciP9FMOD_GUIDPiP16FMOD_SPEAKERMODES4_
+    FMOD_System_SetDriver
+    _ZN4FMOD6System9setDriverEi
+    FMOD_System_GetDriver
+    _ZN4FMOD6System9getDriverEPi
+    FMOD_System_SetSoftwareChannels
+    _ZN4FMOD6System19setSoftwareChannelsEi
+    FMOD_System_GetSoftwareChannels
+    _ZN4FMOD6System19getSoftwareChannelsEPi
+    FMOD_System_SetSoftwareFormat
+    _ZN4FMOD6System17setSoftwareFormatEi16FMOD_SPEAKERMODEi
+    FMOD_System_GetSoftwareFormat
+    _ZN4FMOD6System17getSoftwareFormatEPiP16FMOD_SPEAKERMODES1_
+    FMOD_System_SetDSPBufferSize
+    _ZN4FMOD6System16setDSPBufferSizeEji
+    FMOD_System_GetDSPBufferSize
+    _ZN4FMOD6System16getDSPBufferSizeEPjPi
+    FMOD_System_SetFileSystem
+    ... +1283 more
+
+  --- UNSAFE IMPORTS ---
+    [!] sprintf: HIGH: format string without bounds → overflow
+    [!] strcpy: HIGH: unbounded string copy
+
+  --- Security Hardening ---
+    PIE/PIC:     YES
+    NX Stack:    YES
+    GNU RELRO:   YES
+    BIND_NOW:    YES (Full RELRO)
+
+  --- String Analysis ---
+    Total extracted strings: 3441
+    [LOGGING] (1 logging-related strings)
+      __android_log_write
+
+==============================================================================
+  [LAUNCHER] liblauncher.so
+  C:\Users\triggertrash\Desktop\horrible\lib\armeabi-v7a\liblauncher.so
+==============================================================================
+  Size:        460,728 bytes (0.439 MB)
+  SHA256: 91e988404104ef730170e15806594c73c419fd9a766ae4ae90c21655305054f1
+  Arch:   32-bit ARM (armeabi-v7a)
+  Endian: Little
+
+  --- Sections (29) ---
+    .dynsym                   11,696 bytes
+    .dynstr                   25,852 bytes
+    .hash                      5,016 bytes
+    .gnu.version               1,462 bytes
+    .rel.dyn                  16,384 bytes
+    .rel.plt                   2,816 bytes
+    .plt                       4,244 bytes
+    .text                    323,543 bytes
+    .ARM.extab                19,968 bytes
+    .ARM.exidx                13,832 bytes
+    .rodata                   16,592 bytes
+    .data.rel.ro.local         4,616 bytes
+    .data.rel.ro               5,596 bytes
+    .got                       2,540 bytes
+    .bss                      26,581 bytes
+
+  --- Dependencies (DT_NEEDED) ---
+    libdl.so
+    liblog.so
+    libandroid.so
+    libminecraftpe.so
+    libsubstrate.so
+    libEGL.so
+    libGLESv2.so
+    libstdc++.so
+    libm.so
+    libc.so
+
+  --- Exported symbols (485) ---
+    launcher_minecraft
+    launcher_clientInputCallbacks
+    launcher_moveInputHandler
+    launcher_gameMode
+    antiKnockBackEnabled
+    akbHorizontalMultiplier
+    akbVerticalMultiplier
+    aspectRatio
+    arHorizontal
+    arVertical
+    launcher_viewMatrix
+    blockSelection
+    bsRed
+    bsGreen
+    bsBlue
+    chams
+    handView
+    hvHand0
+    hvHand1
+    hvHandRX1
+    hvHandRY1
+    hvHandRZ1
+    hvHandRX
+    hvHandRY
+    hvHandRZ
+    launcher_projectionMatrix
+    launcher_ping
+    launcher_partialTicks
+    newPath
+    cGreen
+    ... +455 more
+
+  --- UNSAFE IMPORTS ---
+    [!] sprintf: HIGH: format string without bounds → overflow
+    [!] vsprintf: HIGH: va_list format without bounds
+
+  --- Security Hardening ---
+    PIE/PIC:     YES
+    NX Stack:    YES
+    GNU RELRO:   YES
+    BIND_NOW:    YES (Full RELRO)
+
+  --- String Analysis ---
+    Total extracted strings: 3834
+    [URL] (1 found):
+      http://gcc.gnu.org/bugs.html):
+    [LOGGING] (1 logging-related strings)
+      __android_log_print
+
+==============================================================================
+  [LAUNCHER] libminecraftpe.so
+  C:\Users\triggertrash\Desktop\horrible\lib\armeabi-v7a\libminecraftpe.so
+==============================================================================
+  Size:     37,980,728 bytes (36.221 MB)
+  SHA256: d3760d8aad0e9cd9ed5e51fa4711a2806b2cb9c96a4e45a692f7f30aee301cca
+  Arch:   32-bit ARM (armeabi-v7a)
+  Endian: Little
+
+  --- Sections (27) ---
+    .dynsym                1,015,648 bytes
+    .dynstr                4,878,663 bytes
+    .hash                    385,004 bytes
+    .gnu.version             126,956 bytes
+    .rel.dyn                 828,664 bytes
+    .rel.plt                 351,824 bytes
+    .plt                     527,756 bytes
+    .text                 24,465,112 bytes
+    .ARM.exidx               348,224 bytes
+    .ARM.extab             3,051,332 bytes
+    .rodata                1,089,448 bytes
+    .data.rel.ro.local        46,968 bytes
+    .data.rel.ro             607,480 bytes
+    .init_array                8,188 bytes
+    .got                     205,164 bytes
+    .data                     37,844 bytes
+    .bss                     866,348 bytes
+
+  --- Dependencies (DT_NEEDED) ---
+    libfmod.so
+    liblog.so
+    libandroid.so
+    libEGL.so
+    libOpenSLES.so
+    libm.so
+    libdl.so
+    libc.so
+
+  --- Exported symbols (41132) ---
+    _Z8getTimeSv
+    _ZN10ImageUtils19loadImageFromMemoryERN3mce11ImageBufferEPai
+    _ZN11AppPlatform11getDeviceIdEv
+    _ZN11AppPlatform12hideKeyboardEv
+    _ZN11AppPlatform12showKeyboardERKSsibbbRK4Vec2
+    _ZN11AppPlatform13SETTINGS_PATHE
+    _ZN11AppPlatform13setScreenSizeEii
+    _ZN11AppPlatform13setWindowSizeEii
+    _ZN11AppPlatform13setWindowTextERKSs
+    _ZN11AppPlatform14_fireAppPausedEv
+    _ZN11AppPlatform14_fireLowMemoryEv
+    _ZN11AppPlatform14hasIDEProfilerEv
+    _ZN11AppPlatform15_fireAppResumedEv
+    _ZN11AppPlatform15getPointerFocusEv
+    _ZN11AppPlatform15setPointerFocusEb
+    _ZN11AppPlatform15setSleepEnabledEb
+    _ZN11AppPlatform16getFileInterfaceE18ResourceFileSystem
+    _ZN11AppPlatform16getSecureStorageEv
+    _ZN11AppPlatform16hideMousePointerEv
+    _ZN11AppPlatform16setThreadsFrozenEb
+    _ZN11AppPlatform16showMousePointerEv
+    _ZN11AppPlatform17_fireAppFocusLostEv
+    _ZN11AppPlatform17_fireAppSuspendedEv
+    _ZN11AppPlatform17discardBackbufferEv
+    _ZN11AppPlatform17isKeyboardVisibleEv
+    _ZN11AppPlatform17setControllerTypeE14ControllerType
+    _ZN11AppPlatform17setFullscreenModeE14FullscreenMode
+    _ZN11AppPlatform18_fireAppTerminatedEv
+    _ZN11AppPlatform18isNetworkThrottledEv
+    _ZN11AppPlatform18notifyUriListenersERK13ActivationUri
+    ... +41102 more
+
+  --- UNSAFE IMPORTS ---
+    [!] vsprintf: HIGH: va_list format without bounds
+    [!] sprintf: HIGH: format string without bounds → overflow
+    [!] strcpy: HIGH: unbounded string copy
+    [!] strcat: HIGH: unbounded string concat
+
+  --- Security Hardening ---
+    PIE/PIC:     YES
+    NX Stack:    YES
+    GNU RELRO:   YES
+    BIND_NOW:    YES (Full RELRO)
+
+  --- String Analysis ---
+    Total extracted strings: 211214
+    [URL] (45 found):
+      http://192.168.1.21:8888
+      http://[fe80:
+      http://aka.ms/mcamazonstore
+      http://aka.ms/mcappstore
+      http://aka.ms/mcgoogleplay
+      http://aka.ms/mcotherappstore
+      http://aka.ms/meestore
+      http://aka.ms/minecraftedusupport
+      http://aka.ms/minecraftfb
+      http://aka.ms/minecraftfbbeta
+      http://aka.ms/minecraftrealmsfb
+      http://aka.ms/minecraftrealmsterms
+      http://auth.xboxlive.com
+      http://education.minecraft.net/eula
+      http://gcc.gnu.org/bugs.html):
+      ... +30 more
+    [IP] (5 found):
+      0.0.0.0
+      127.0.0.1
+      192.168.1.21
+      239.255.255.250
+      255.255.254.0
+    [CREDENTIAL] (2 found):
+      Token= finalBlock=true finalBlock=false Invalid
+      token=' '. parameter
+    [LOGGING] (3 logging-related strings)
+      __android_log_print
+      __android_log_write
+      __android_log_buf_write
+
+==============================================================================
+  [LAUNCHER] libsubstrate.so
+  C:\Users\triggertrash\Desktop\horrible\lib\armeabi-v7a\libsubstrate.so
+==============================================================================
+  Size:         17,528 bytes (0.017 MB)
+  SHA256: 64d463bf57579791029459af33c2660b5979208376f0f5099bfdc60aed75a6b9
+  Arch:   32-bit ARM (armeabi-v7a)
+  Endian: Little
+
+  --- Sections (21) ---
+    .text                     12,372 bytes
+
+  --- Dependencies (DT_NEEDED) ---
+    liblog.so
+    libstdc++.so
+    libm.so
+    libc.so
+    libdl.so
+
+  --- Exported symbols (5) ---
+    MSFindSymbol
+    MSGetImageByName
+    MSCloseFunction
+    MSDebug
+    MSHookFunction
+
+  --- UNSAFE IMPORTS ---
+    [!] sprintf: HIGH: format string without bounds → overflow
+
+  --- Security Hardening ---
+    PIE/PIC:     YES
+    NX Stack:    YES
+    GNU RELRO:   YES
+    BIND_NOW:    YES (Full RELRO)
+
+  --- String Analysis ---
+    Total extracted strings: 64
+    [LOGGING] (1 logging-related strings)
+      __android_log_vprint
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  MINECRAFT APK: Minecraft PE 1.1.5_src/lib/armeabi-v7a/
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+==============================================================================
+  [MINECRAFT] libfmod.so
+  C:\Users\triggertrash\Desktop\horrible\Minecraft PE 1.1.5_src\lib\armeabi-v7a\libfmod.so
+==============================================================================
+  Size:      1,186,316 bytes (1.131 MB)
+  SHA256: 982e994c46a7f797fbd6e10df31a98d544c2bf117fe33c2292f4d6cc454a6544
+  Arch:   32-bit ARM (armeabi-v7a)
+  Endian: Little
+
+  --- Sections (24) ---
+    .dynsym                   22,832 bytes
+    .dynstr                   40,686 bytes
+    .hash                      9,840 bytes
+    .rel.dyn                  13,848 bytes
+    .plt                       1,196 bytes
+    .text                    887,432 bytes
+    .rodata                  151,988 bytes
+    .data.rel.ro.local         4,492 bytes
+    .data.rel.ro               3,376 bytes
+    .got                       1,244 bytes
+    .data                     42,208 bytes
+    .bss                     236,072 bytes
+
+  --- Dependencies (DT_NEEDED) ---
+    liblog.so
+    libstdc++.so
+    libm.so
+    libc.so
+    libdl.so
+
+  --- Exported symbols (1313) ---
+    FMOD_Memory_Initialize
+    FMOD_Memory_GetStats
+    FMOD_System_Create
+    FMOD_System_Release
+    _ZN4FMOD6System7releaseEv
+    FMOD_System_SetOutput
+    _ZN4FMOD6System9setOutputE15FMOD_OUTPUTTYPE
+    FMOD_System_GetOutput
+    _ZN4FMOD6System9getOutputEP15FMOD_OUTPUTTYPE
+    FMOD_System_GetNumDrivers
+    _ZN4FMOD6System13getNumDriversEPi
+    FMOD_System_GetDriverInfo
+    _ZN4FMOD6System13getDriverInfoEiPciP9FMOD_GUIDPiP16FMOD_SPEAKERMODES4_
+    FMOD_System_SetDriver
+    _ZN4FMOD6System9setDriverEi
+    FMOD_System_GetDriver
+    _ZN4FMOD6System9getDriverEPi
+    FMOD_System_SetSoftwareChannels
+    _ZN4FMOD6System19setSoftwareChannelsEi
+    FMOD_System_GetSoftwareChannels
+    _ZN4FMOD6System19getSoftwareChannelsEPi
+    FMOD_System_SetSoftwareFormat
+    _ZN4FMOD6System17setSoftwareFormatEi16FMOD_SPEAKERMODEi
+    FMOD_System_GetSoftwareFormat
+    _ZN4FMOD6System17getSoftwareFormatEPiP16FMOD_SPEAKERMODES1_
+    FMOD_System_SetDSPBufferSize
+    _ZN4FMOD6System16setDSPBufferSizeEji
+    FMOD_System_GetDSPBufferSize
+    _ZN4FMOD6System16getDSPBufferSizeEPjPi
+    FMOD_System_SetFileSystem
+    ... +1283 more
+
+  --- UNSAFE IMPORTS ---
+    [!] sprintf: HIGH: format string without bounds → overflow
+    [!] strcpy: HIGH: unbounded string copy
+
+  --- Security Hardening ---
+    PIE/PIC:     YES
+    NX Stack:    YES
+    GNU RELRO:   YES
+    BIND_NOW:    YES (Full RELRO)
+
+  --- String Analysis ---
+    Total extracted strings: 3441
+    [LOGGING] (1 logging-related strings)
+      __android_log_write
+
+==============================================================================
+  [MINECRAFT] libminecraftpe.so
+  C:\Users\triggertrash\Desktop\horrible\Minecraft PE 1.1.5_src\lib\armeabi-v7a\libminecraftpe.so
+==============================================================================
+  Size:     37,980,728 bytes (36.221 MB)
+  SHA256: 93570e9124f6ae1921ed629855dfe23630956e06c08f333327bc523a2a1b70f8
+  Arch:   32-bit ARM (armeabi-v7a)
+  Endian: Little
+
+  --- Sections (27) ---
+    .dynsym                1,015,648 bytes
+    .dynstr                4,878,663 bytes
+    .hash                    385,004 bytes
+    .gnu.version             126,956 bytes
+    .rel.dyn                 828,664 bytes
+    .rel.plt                 351,824 bytes
+    .plt                     527,756 bytes
+    .text                 24,465,112 bytes
+    .ARM.exidx               348,224 bytes
+    .ARM.extab             3,051,332 bytes
+    .rodata                1,089,448 bytes
+    .data.rel.ro.local        46,968 bytes
+    .data.rel.ro             607,480 bytes
+    .init_array                8,188 bytes
+    .got                     205,164 bytes
+    .data                     37,844 bytes
+    .bss                     866,348 bytes
+
+  --- Dependencies (DT_NEEDED) ---
+    libfmod.so
+    liblog.so
+    libandroid.so
+    libEGL.so
+    libOpenSLES.so
+    libm.so
+    libdl.so
+    libc.so
+
+  --- Exported symbols (41132) ---
+    _Z8getTimeSv
+    _ZN10ImageUtils19loadImageFromMemoryERN3mce11ImageBufferEPai
+    _ZN11AppPlatform11getDeviceIdEv
+    _ZN11AppPlatform12hideKeyboardEv
+    _ZN11AppPlatform12showKeyboardERKSsibbbRK4Vec2
+    _ZN11AppPlatform13SETTINGS_PATHE
+    _ZN11AppPlatform13setScreenSizeEii
+    _ZN11AppPlatform13setWindowSizeEii
+    _ZN11AppPlatform13setWindowTextERKSs
+    _ZN11AppPlatform14_fireAppPausedEv
+    _ZN11AppPlatform14_fireLowMemoryEv
+    _ZN11AppPlatform14hasIDEProfilerEv
+    _ZN11AppPlatform15_fireAppResumedEv
+    _ZN11AppPlatform15getPointerFocusEv
+    _ZN11AppPlatform15setPointerFocusEb
+    _ZN11AppPlatform15setSleepEnabledEb
+    _ZN11AppPlatform16getFileInterfaceE18ResourceFileSystem
+    _ZN11AppPlatform16getSecureStorageEv
+    _ZN11AppPlatform16hideMousePointerEv
+    _ZN11AppPlatform16setThreadsFrozenEb
+    _ZN11AppPlatform16showMousePointerEv
+    _ZN11AppPlatform17_fireAppFocusLostEv
+    _ZN11AppPlatform17_fireAppSuspendedEv
+    _ZN11AppPlatform17discardBackbufferEv
+    _ZN11AppPlatform17isKeyboardVisibleEv
+    _ZN11AppPlatform17setControllerTypeE14ControllerType
+    _ZN11AppPlatform17setFullscreenModeE14FullscreenMode
+    _ZN11AppPlatform18_fireAppTerminatedEv
+    _ZN11AppPlatform18isNetworkThrottledEv
+    _ZN11AppPlatform18notifyUriListenersERK13ActivationUri
+    ... +41102 more
+
+  --- UNSAFE IMPORTS ---
+    [!] vsprintf: HIGH: va_list format without bounds
+    [!] sprintf: HIGH: format string without bounds → overflow
+    [!] strcpy: HIGH: unbounded string copy
+    [!] strcat: HIGH: unbounded string concat
+
+  --- Security Hardening ---
+    PIE/PIC:     YES
+    NX Stack:    YES
+    GNU RELRO:   YES
+    BIND_NOW:    YES (Full RELRO)
+
+  --- String Analysis ---
+    Total extracted strings: 211215
+    [URL] (45 found):
+      http://192.168.1.21:8888
+      http://[fe80:
+      http://aka.ms/mcamazonstore
+      http://aka.ms/mcappstore
+      http://aka.ms/mcgoogleplay
+      http://aka.ms/mcotherappstore
+      http://aka.ms/meestore
+      http://aka.ms/minecraftedusupport
+      http://aka.ms/minecraftfb
+      http://aka.ms/minecraftfbbeta
+      http://aka.ms/minecraftrealmsfb
+      http://aka.ms/minecraftrealmsterms
+      http://auth.xboxlive.com
+      http://education.minecraft.net/eula
+      http://gcc.gnu.org/bugs.html):
+      ... +30 more
+    [IP] (5 found):
+      0.0.0.0
+      127.0.0.1
+      192.168.1.21
+      239.255.255.250
+      255.255.254.0
+    [CREDENTIAL] (2 found):
+      Token= finalBlock=true finalBlock=false Invalid
+      token=' '. parameter
+    [LOGGING] (3 logging-related strings)
+      __android_log_print
+      __android_log_write
+      __android_log_buf_write
+
+==============================================================================
+  DUPLICATE FILE CHECK (same SHA256 = identical file)
+==============================================================================
+
+  Дубликатов нет — все файлы уникальны.
+
+==============================================================================
+  ИТОГОВАЯ СВОДКА
+==============================================================================
+
+  Файлов проанализировано: 7
+  Общий размер: 78,813,028 bytes (75.16 MB)
+
+  --- Безопасность ---
+    libcallfunction.so: NO RELRO, Partial RELRO
+
+  --- Рекомендации ---
+  2. НЕ удаляй libsubstrate.so — он нужен для хуков!
+  3. НЕ удаляй 'дубликаты' — они в разных APK (launcher vs minecraft)
+  4. Проверь hardcoded URLs выше — возможно утечка

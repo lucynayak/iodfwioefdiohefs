@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText
+        android:textSize="12.5sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/a50pWhite"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:id="@id/module_setting_textfield_window_layout__edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:maxLines="1"
+        android:textCursorDrawable="@drawable/edit_text_cursor"
+        android:backgroundTint="@color/main_color" />
+</LinearLayout>

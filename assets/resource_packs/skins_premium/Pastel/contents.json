@@ -1,0 +1,67 @@
+{
+   "content" : [
+      {
+         "path" : "PastelPack_BlueBoy1.png"
+      },
+      {
+         "path" : "PastelPack_BlueBoy2.png"
+      },
+      {
+         "path" : "PastelPack_BlueGirl1.png"
+      },
+      {
+         "path" : "PastelPack_BlueGirl2.png"
+      },
+      {
+         "path" : "PastelPack_GreenBoy1.png"
+      },
+      {
+         "path" : "PastelPack_GreenBoy2.png"
+      },
+      {
+         "path" : "PastelPack_GreenGirl1.png"
+      },
+      {
+         "path" : "PastelPack_GreenGirl2.png"
+      },
+      {
+         "path" : "PastelPack_PinkBoy1.png"
+      },
+      {
+         "path" : "PastelPack_PinkBoy2.png"
+      },
+      {
+         "path" : "PastelPack_PinkGirl1.png"
+      },
+      {
+         "path" : "PastelPack_PinkGirl2.png"
+      },
+      {
+         "path" : "PastelPack_PurpleBoy1.png"
+      },
+      {
+         "path" : "PastelPack_PurpleBoy2.png"
+      },
+      {
+         "path" : "PastelPack_PurpleGirl1.png"
+      },
+      {
+         "path" : "PastelPack_PurpleGirl2.png"
+      },
+      {
+         "path" : "PastelPack_YellowBoy1.png"
+      },
+      {
+         "path" : "PastelPack_YellowBoy2.png"
+      },
+      {
+         "path" : "PastelPack_YellowGirl1.png"
+      },
+      {
+         "path" : "PastelPack_YellowGirl2.png"
+      },
+      {
+         "path" : "skins.json"
+      }
+   ]
+}
