@@ -276,6 +276,31 @@
     return-void
 .end method
 
+# Update the fill colour of other-player dots. Each component is expected
+# to be 0..255; alpha is always 0xFF.
+.method public setOtherColor(III)V
+    .registers 6
+
+    # color = 0xFF000000 | (R << 16) | (G << 8) | B
+    shl-int/lit8 v0, p1, 0x10
+
+    shl-int/lit8 v1, p2, 0x8
+
+    or-int/2addr v0, v1
+
+    or-int/2addr v0, p3
+
+    const v1, -0x1000000
+
+    or-int/2addr v0, v1
+
+    iget-object v1, p0, Le2/RadarView;->mPaintOther:Landroid/graphics/Paint;
+
+    invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setColor(I)V
+
+    return-void
+.end method
+
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 30
 

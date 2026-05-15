@@ -8,6 +8,12 @@
 
 .field public final r:Li2/d;
 
+.field public final colorR:Li2/d;
+
+.field public final colorG:Li2/d;
+
+.field public final colorB:Li2/d;
+
 .field public oView:Le2/RadarView;
 
 .field public sampler:Ljava/lang/Thread;
@@ -61,6 +67,57 @@
 
     invoke-virtual {p0, v0}, Lc2/b;->addSetting(Li2/c;)V
 
+    # R slider: default=255, min=0, max=255, step=1 (matches the previous hard-coded magenta dot)
+    new-instance v0, Li2/d;
+
+    const/4 v1, 0x4
+
+    new-array v1, v1, [D
+
+    fill-array-data v1, :array_colorR
+
+    const-string v2, "R"
+
+    invoke-direct {v0, v2, v1}, Li2/d;-><init>(Ljava/lang/String;[D)V
+
+    iput-object v0, p0, Le2/rd;->colorR:Li2/d;
+
+    invoke-virtual {p0, v0}, Lc2/b;->addSetting(Li2/c;)V
+
+    # G slider: default=0, min=0, max=255, step=1
+    new-instance v0, Li2/d;
+
+    const/4 v1, 0x4
+
+    new-array v1, v1, [D
+
+    fill-array-data v1, :array_colorG
+
+    const-string v2, "G"
+
+    invoke-direct {v0, v2, v1}, Li2/d;-><init>(Ljava/lang/String;[D)V
+
+    iput-object v0, p0, Le2/rd;->colorG:Li2/d;
+
+    invoke-virtual {p0, v0}, Lc2/b;->addSetting(Li2/c;)V
+
+    # B slider: default=255, min=0, max=255, step=1
+    new-instance v0, Li2/d;
+
+    const/4 v1, 0x4
+
+    new-array v1, v1, [D
+
+    fill-array-data v1, :array_colorB
+
+    const-string v2, "B"
+
+    invoke-direct {v0, v2, v1}, Li2/d;-><init>(Ljava/lang/String;[D)V
+
+    iput-object v0, p0, Le2/rd;->colorB:Li2/d;
+
+    invoke-virtual {p0, v0}, Lc2/b;->addSetting(Li2/c;)V
+
     return-void
 
     :array_size
@@ -77,6 +134,30 @@
         0x4059000000000000L    # 100.0 ms
         0x4097700000000000L    # 1500.0 ms
         0x4049000000000000L    # 50.0 ms
+    .end array-data
+
+    :array_colorR
+    .array-data 8
+        0x406fe00000000000L    # 255.0 (current)
+        0x0L                   # 0.0 (min)
+        0x406fe00000000000L    # 255.0 (max)
+        0x3ff0000000000000L    # 1.0 (step)
+    .end array-data
+
+    :array_colorG
+    .array-data 8
+        0x0L                   # 0.0 (current)
+        0x0L                   # 0.0 (min)
+        0x406fe00000000000L    # 255.0 (max)
+        0x3ff0000000000000L    # 1.0 (step)
+    .end array-data
+
+    :array_colorB
+    .array-data 8
+        0x406fe00000000000L    # 255.0 (current)
+        0x0L                   # 0.0 (min)
+        0x406fe00000000000L    # 255.0 (max)
+        0x3ff0000000000000L    # 1.0 (step)
     .end array-data
 .end method
 
@@ -280,6 +361,34 @@
     move-result v3
 
     invoke-virtual {v0, v3}, Le2/RadarView;->setYaw(F)V
+
+    # ---- Push R/G/B slider values to RadarView.mPaintOther ----
+    # Sliders enforce 0..255, so we can pack directly without masking.
+    iget-object v1, p0, Le2/rd;->colorR:Li2/d;
+
+    invoke-virtual {v1}, Li2/d;->getCurrentValue()D
+
+    move-result-wide v1
+
+    double-to-int v1, v1
+
+    iget-object v2, p0, Le2/rd;->colorG:Li2/d;
+
+    invoke-virtual {v2}, Li2/d;->getCurrentValue()D
+
+    move-result-wide v2
+
+    double-to-int v2, v2
+
+    iget-object v3, p0, Le2/rd;->colorB:Li2/d;
+
+    invoke-virtual {v3}, Li2/d;->getCurrentValue()D
+
+    move-result-wide v3
+
+    double-to-int v3, v3
+
+    invoke-virtual {v0, v1, v2, v3}, Le2/RadarView;->setOtherColor(III)V
 
     invoke-virtual {v0}, Landroid/view/View;->postInvalidate()V
 
