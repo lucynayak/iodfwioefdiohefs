@@ -479,6 +479,9 @@
 
     invoke-interface {p1, v1, v0}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
+    # Sync menu_position into the static cache used by the floating menu popup at render time
+    sput v0, Ldev/virus/variable/app/MinecraftActivity;->k:I
+
     iget v0, p0, Ldev/virus/variable/app/InterfaceActivity;->T:I
 
     const-string v1, "bind_shape"
@@ -642,6 +645,9 @@
 
     invoke-static {}, Lz1/p;->refreshBindPopups()V
 
+    # Rebuild the floating menu PopupWindow so the new menu_position is honored live
+    invoke-static {}, Ldev/virus/variable/app/InterfaceActivity;->recreateFloatingMenu()V
+
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     invoke-static {p0}, Ldev/virus/variable/app/InterfaceActivity;->saveConfigToJson(Landroid/content/Context;)V
@@ -659,6 +665,58 @@
         :pswitch_1
         :pswitch_0
     .end packed-switch
+.end method
+
+.method public static recreateFloatingMenu()V
+    .registers 8
+
+    sget-object v0, Ldev/virus/variable/app/MinecraftActivity;->b:La2/d;
+
+    if-eqz v0, :cond_done
+
+    :try_start_0
+    iget-object v1, v0, La2/d;->e:Landroid/content/Context;
+
+    iget-object v2, v0, La2/d;->f:Landroid/view/View;
+
+    iget-object v3, v0, La2/d;->g:Landroid/view/LayoutInflater;
+
+    iget-object v4, v0, La2/d;->a:Lb2/c;
+
+    if-eqz v4, :cond_skip_inner
+
+    invoke-virtual {v4}, Landroid/widget/PopupWindow;->dismiss()V
+
+    :cond_skip_inner
+    const/4 v4, 0x0
+
+    iput-object v4, v0, La2/d;->a:Lb2/c;
+
+    invoke-virtual {v0}, Landroid/widget/PopupWindow;->dismiss()V
+
+    const/4 v0, 0x0
+
+    sput-object v0, Ldev/virus/variable/app/MinecraftActivity;->b:La2/d;
+
+    new-instance v0, La2/o;
+
+    invoke-direct {v0, v1, v2, v3}, La2/o;-><init>(Landroid/content/Context;Landroid/view/View;Landroid/view/LayoutInflater;)V
+
+    # Post with a small delay so the InterfaceActivity finish() + MinecraftActivity onResume()
+    # transition has time to complete before the new popup calls showAtLocation.
+    const-wide/16 v4, 0x1f4
+
+    invoke-virtual {v2, v0, v4, v5}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :cond_done
+
+    :catch_0
+    move-exception v0
+
+    :cond_done
+    return-void
 .end method
 
 .method public final onCreate(Landroid/os/Bundle;)V
