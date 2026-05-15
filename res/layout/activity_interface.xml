@@ -48,6 +48,7 @@
     <ScrollView
         android:background="@drawable/views_container_background"
         android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:fillViewport="true"
         android:layout_margin="8.0dip">
         <RelativeLayout
