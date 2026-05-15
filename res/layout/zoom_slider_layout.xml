@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@id/zoom_slider__container"
+    android:layout_width="60.0dip"
+    android:layout_height="280.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <SeekBar
+        android:id="@id/zoom_slider__seekbar"
+        android:layout_width="280.0dip"
+        android:layout_height="40.0dip"
+        android:layout_gravity="center"
+        android:rotation="270.0"
+        android:max="180"
+        android:progress="70"
+        android:progressDrawable="@drawable/seekbar_progress"
+        android:thumb="@drawable/seekbar_thumb"
+        android:splitTrack="false"
+        android:progressTint="@color/main_color"
+        android:progressBackgroundTint="@color/almostAlmostAlmostBlack"
+        android:thumbTint="@color/main_color" />
+    <TextView
+        android:id="@id/zoom_slider__fov_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20.0sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="#80000000"
+        android:padding="6.0dip"
+        android:visibility="gone" />
+</FrameLayout>

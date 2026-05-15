@@ -1,0 +1,27 @@
+﻿Loaded 37,980,728 bytes. Looking for PC-relative loads of cap-like literals...
+
+Total cap-like literal entries in pool: 81
+    3.0: 26 occurrences in pool
+    4.0: 5 occurrences in pool
+    5.0: 4 occurrences in pool
+    6.0: 4 occurrences in pool
+    7.0: 4 occurrences in pool
+    9.0: 0 occurrences in pool
+   16.0: 27 occurrences in pool
+   25.0: 0 occurrences in pool
+   36.0: 6 occurrences in pool
+   49.0: 5 occurrences in pool
+
+PC-relative loads referencing these caps: 8
+
+=== 36.0 (36.0) -- 7 loaders ===
+  0x00e783ce: vldr     s6, [pc, #0xc0]   -> lit @ 0x00e78490
+  0x00e78e0c: vldr     s6, [pc, #0xc0]   -> lit @ 0x00e78ed0
+  0x00ff3628: ldr      r2, [pc, #0x134]   -> lit @ 0x00ff3760
+  0x00ff36ac: vldr     s2, [pc, #0xb0]   -> lit @ 0x00ff3760
+  0x0148b408: vldr     s4, [pc, #0x34]   -> lit @ 0x0148b440
+  0x017fc9d8: vldr     s2, [pc, #0xe4]   -> lit @ 0x017fcac0
+  0x017fe0fe: vldr     s18, [pc, #0x138]   -> lit @ 0x017fe238
+
+=== 49.0 (49.0) -- 1 loaders ===
+  0x018d716a: vldr     s16, [pc, #0x2c]   -> lit @ 0x018d7198

@@ -1,0 +1,34 @@
+﻿
+=== lib/armeabi-v7a/libminecraftpe.so (37980728 bytes) ===
+  -- literal pool caps --
+  0x01176604:  1000000.0 -> 1000000.0  [already patched]  ray-cast distance^2 cap (sqrt=10) at 0x1176248
+  0x0117cbbc:  1000000.0 -> 1000000.0  [already patched]  LivingRoom distance^2 cap (sqrt=12) at 0x117CB4E
+  0x0117ffa4:  1000000.0 -> 1000000.0  [already patched]  PlayScreen distance^2 cap (sqrt=12) at 0x117FF6A
+  0x01597d6c:  1000000.0 -> 1000000.0  [already patched]  entity hit-test distance^2 cap (sqrt=8) at 0x1597BCC
+  0x015a88cc:  1000000.0 -> 1000000.0  [already patched]  entity hit-test distance^2 cap (sqrt=8) at 0x15A87BC
+  0x017fd434:  1000000.0 -> 1000000.0  [already patched]  entity is-in-range flag distance^2 cap (sqrt=8) at 0x17FD416
+  0x00ff3760:       36.0 -> 1000000.0  [PATCH]  entity-pick distance^2 cap (sqrt=6) at 0xFF3628/0xFF36AC
+  0x017fcac0:       36.0 -> 1000000.0  [PATCH]  entity range-check distance^2 cap (sqrt=6) at 0x17FC9D8
+  0x017fe238:       36.0 -> 1000000.0  [PATCH]  entity look-at distance^2 cap (sqrt=6) at 0x17FE0FE
+  -- branch instruction patches --
+  0x013d6b00: 08dd -> 08e0  [already patched]  kill 1st 12.0 attack-cap: ble -> b (skip clearTarget)
+  0x013d6db4: 5cdc -> 00bf  [already patched]  kill 2nd 12.0 attack-cap: bgt -> nop (never bail out)
+  wrote 37980728 bytes
+
+=== Minecraft PE 1.1.5_src/lib/armeabi-v7a/libminecraftpe.so (37980728 bytes) ===
+  -- literal pool caps --
+  0x01176604:  1000000.0 -> 1000000.0  [already patched]  ray-cast distance^2 cap (sqrt=10) at 0x1176248
+  0x0117cbbc:  1000000.0 -> 1000000.0  [already patched]  LivingRoom distance^2 cap (sqrt=12) at 0x117CB4E
+  0x0117ffa4:  1000000.0 -> 1000000.0  [already patched]  PlayScreen distance^2 cap (sqrt=12) at 0x117FF6A
+  0x01597d6c:  1000000.0 -> 1000000.0  [already patched]  entity hit-test distance^2 cap (sqrt=8) at 0x1597BCC
+  0x015a88cc:  1000000.0 -> 1000000.0  [already patched]  entity hit-test distance^2 cap (sqrt=8) at 0x15A87BC
+  0x017fd434:  1000000.0 -> 1000000.0  [already patched]  entity is-in-range flag distance^2 cap (sqrt=8) at 0x17FD416
+  0x00ff3760:       36.0 -> 1000000.0  [PATCH]  entity-pick distance^2 cap (sqrt=6) at 0xFF3628/0xFF36AC
+  0x017fcac0:       36.0 -> 1000000.0  [PATCH]  entity range-check distance^2 cap (sqrt=6) at 0x17FC9D8
+  0x017fe238:       36.0 -> 1000000.0  [PATCH]  entity look-at distance^2 cap (sqrt=6) at 0x17FE0FE
+  -- branch instruction patches --
+  0x013d6b00: 08dd -> 08e0  [already patched]  kill 1st 12.0 attack-cap: ble -> b (skip clearTarget)
+  0x013d6db4: 5cdc -> 00bf  [already patched]  kill 2nd 12.0 attack-cap: bgt -> nop (never bail out)
+  wrote 37980728 bytes
+
+Done.
