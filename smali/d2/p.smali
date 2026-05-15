@@ -24,6 +24,8 @@
 
 .field public y:[D
 
+.field public C:[D
+
 .field public z:D
 
 .field public A:Ljava/lang/String;
@@ -102,6 +104,23 @@
 
     :size_init_done
     iput-object v5, p0, Ld2/p;->y:[D
+
+    # Create per-button opacity cache (6 doubles, all 80.0)
+    new-array v5, v0, [D
+
+    const/4 v8, 0x0
+
+    :opa_init_loop
+    if-ge v8, v0, :opa_init_done
+
+    aput-wide v6, v5, v8
+
+    add-int/lit8 v8, v8, 0x1
+
+    goto :opa_init_loop
+
+    :opa_init_done
+    iput-object v5, p0, Ld2/p;->C:[D
 
     # Initialize last selected button index to -1
     const/4 v8, -0x1
@@ -230,7 +249,7 @@
     :size_arr
     .array-data 8
         0x4054000000000000L    # 80.0 (current)
-        0x402E000000000000L    # 15.0 (min)
+        0x4044000000000000L    # 40.0 (min)
         0x4069000000000000L    # 200.0 (max)
         0x4014000000000000L    # 5.0 (delta)
     .end array-data
@@ -532,23 +551,6 @@
 
     iget v2, v1, Landroid/util/DisplayMetrics;->density:F
 
-    # Get opacity
-    iget-object v3, p0, Ld2/p;->q:Li2/d;
-
-    const-string v4, "current"
-
-    invoke-virtual {v3, v4}, Li2/d;->A(Ljava/lang/String;)D
-
-    move-result-wide v5
-
-    iput-wide v5, p0, Ld2/p;->z:D
-
-    double-to-float v5, v5
-
-    const/high16 v6, 0x42c80000    # 100.0f
-
-    div-float/2addr v5, v6
-
     # Button labels: up/down/left/right arrows, jump up, sneak down
     const/4 v6, 0x6
 
@@ -626,7 +628,13 @@
 
     const/4 v11, 0x2
 
-    const/high16 v12, 0x41c00000    # 24.0f
+    int-to-float v12, v3
+
+    div-float/2addr v12, v2
+
+    const v13, 0x3e99999a    # 0.3f
+
+    mul-float/2addr v12, v13
 
     invoke-virtual {v10, v11, v12}, Landroid/widget/TextView;->setTextSize(IF)V
 
@@ -664,8 +672,18 @@
 
     invoke-virtual {v10, v11}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    # Set alpha
-    invoke-virtual {v10, v5}, Landroid/view/View;->setAlpha(F)V
+    # Set alpha per-button from C[v9]
+    iget-object v11, p0, Ld2/p;->C:[D
+
+    aget-wide v4, v11, v9
+
+    double-to-float v4, v4
+
+    const/high16 v5, 0x42c80000    # 100.0f
+
+    div-float/2addr v4, v5
+
+    invoke-virtual {v10, v4}, Landroid/view/View;->setAlpha(F)V
 
     # Create PopupWindow
     new-instance v11, Landroid/widget/PopupWindow;
@@ -740,10 +758,126 @@
     return-void
 .end method
 
+.method applyButton(I)V
+    .registers 11
+
+    # Apply per-button size + opacity changes in-place, no recreate
+    iget-object v0, p0, Ld2/p;->u:[Landroid/widget/PopupWindow;
+
+    if-eqz v0, :apply_done
+
+    const/4 v1, 0x0
+
+    if-lt p1, v1, :apply_done
+
+    const/4 v1, 0x6
+
+    if-ge p1, v1, :apply_done
+
+    aget-object v1, v0, p1
+
+    if-eqz v1, :apply_done
+
+    :try_start_a
+    invoke-virtual {v1}, Landroid/widget/PopupWindow;->isShowing()Z
+
+    move-result v2
+
+    if-eqz v2, :apply_done
+
+    # Density
+    iget-object v2, p0, Ld2/p;->s:Landroid/content/Context;
+
+    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    move-result-object v2
+
+    iget v2, v2, Landroid/util/DisplayMetrics;->density:F
+
+    # Size in px
+    iget-object v3, p0, Ld2/p;->y:[D
+
+    aget-wide v3, v3, p1
+
+    double-to-float v3, v3
+
+    mul-float/2addr v3, v2
+
+    float-to-int v3, v3
+
+    # Content view -> TextView
+    invoke-virtual {v1}, Landroid/widget/PopupWindow;->getContentView()Landroid/view/View;
+
+    move-result-object v4
+
+    instance-of v5, v4, Landroid/widget/TextView;
+
+    if-eqz v5, :skip_text
+
+    check-cast v4, Landroid/widget/TextView;
+
+    # Text size scaled from px size / density * 0.3
+    int-to-float v5, v3
+
+    div-float/2addr v5, v2
+
+    const v6, 0x3e99999a    # 0.3f
+
+    mul-float/2addr v5, v6
+
+    const/4 v6, 0x2
+
+    invoke-virtual {v4, v6, v5}, Landroid/widget/TextView;->setTextSize(IF)V
+
+    # Alpha from C[p1]
+    iget-object v5, p0, Ld2/p;->C:[D
+
+    aget-wide v5, v5, p1
+
+    double-to-float v5, v5
+
+    const/high16 v6, 0x42c80000    # 100.0f
+
+    div-float/2addr v5, v6
+
+    invoke-virtual {v4, v5}, Landroid/view/View;->setAlpha(F)V
+
+    :skip_text
+
+    # popup.update(x, y, size, size)
+    iget-object v5, p0, Ld2/p;->v:[[I
+
+    aget-object v5, v5, p1
+
+    const/4 v6, 0x0
+
+    aget v7, v5, v6
+
+    const/4 v6, 0x1
+
+    aget v8, v5, v6
+
+    invoke-virtual {v1, v7, v8, v3, v3}, Landroid/widget/PopupWindow;->update(IIII)V
+    :try_end_a
+    .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_a
+
+    :catch_a
+    :apply_done
+    return-void
+.end method
+
 .method dismissButtons()V
-    .registers 5
+    .registers 8
 
     iget-object v0, p0, Ld2/p;->u:[Landroid/widget/PopupWindow;
+
+    if-eqz v0, :dismiss_done
+
+    iget-object v4, p0, Ld2/p;->w:[I
 
     const/4 v1, 0x0
 
@@ -752,6 +886,19 @@
     :dismiss_loop
     if-ge v1, v2, :dismiss_done
 
+    if-eqz v4, :skip_release_d
+
+    aget v5, v4, v1
+
+    const/4 v6, 0x0
+
+    :try_start_rel_d
+    invoke-static {v5, v6}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->setMoveButtonStatus(IZ)V
+    :try_end_rel_d
+    .catch Ljava/lang/Exception; {:try_start_rel_d .. :try_end_rel_d} :catch_rel_d
+
+    :catch_rel_d
+    :skip_release_d
     aget-object v3, v0, v1
 
     if-eqz v3, :skip_dismiss
@@ -759,9 +906,9 @@
     :try_start_d
     invoke-virtual {v3}, Landroid/widget/PopupWindow;->isShowing()Z
 
-    move-result v4
+    move-result v6
 
-    if-eqz v4, :skip_dismiss
+    if-eqz v6, :skip_dismiss
 
     invoke-virtual {v3}, Landroid/widget/PopupWindow;->dismiss()V
     :try_end_d
@@ -769,6 +916,10 @@
 
     :catch_d
     :skip_dismiss
+    const/4 v3, 0x0
+
+    aput-object v3, v0, v1
+
     add-int/lit8 v1, v1, 0x1
 
     goto :dismiss_loop
@@ -952,6 +1103,48 @@
     goto :size_load_loop
 
     :skip_sizes
+
+    # Load per-button opacities
+    const-string v0, "btn_opacities"
+
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :skip_opa
+
+    const-string v0, "btn_opacities"
+
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    move-result-object v0
+
+    iget-object v1, p0, Ld2/p;->C:[D
+
+    const/4 v2, 0x0
+
+    :opa_load_loop
+    invoke-virtual {v0}, Lorg/json/JSONArray;->length()I
+
+    move-result v3
+
+    if-ge v2, v3, :skip_opa
+
+    const/4 v3, 0x6
+
+    if-ge v2, v3, :skip_opa
+
+    invoke-virtual {v0, v2}, Lorg/json/JSONArray;->getDouble(I)D
+
+    move-result-wide v3
+
+    aput-wide v3, v1, v2
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :opa_load_loop
+
+    :skip_opa
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1041,6 +1234,34 @@
 
     invoke-virtual {v0, v2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    # Save per-button opacities
+    new-instance v1, Lorg/json/JSONArray;
+
+    invoke-direct {v1}, Lorg/json/JSONArray;-><init>()V
+
+    iget-object v3, p0, Ld2/p;->C:[D
+
+    const/4 v4, 0x0
+
+    :save_opa_loop
+    const/4 v5, 0x6
+
+    if-ge v4, v5, :save_opa_done
+
+    aget-wide v5, v3, v4
+
+    invoke-virtual {v1, v5, v6}, Lorg/json/JSONArray;->put(D)Lorg/json/JSONArray;
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :save_opa_loop
+
+    :save_opa_done
+
+    const-string v2, "btn_opacities"
+
+    invoke-virtual {v0, v2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1127,9 +1348,10 @@
 
     if-eq v2, v9, :check_size
 
-    # Button changed - sync slider to the new button's cached size
+    # Button changed - sync both sliders to new button's cached size + opacity
     iput v2, p0, Ld2/p;->B:I
 
+    # Sync Size slider from y[v2]
     iget-object v6, p0, Ld2/p;->y:[D
 
     aget-wide v4, v6, v2
@@ -1142,7 +1364,20 @@
 
     aput-wide v4, v7, v8
 
-    goto :check_opacity
+    # Sync Opacity slider from C[v2]
+    iget-object v6, p0, Ld2/p;->C:[D
+
+    aget-wide v4, v6, v2
+
+    iput-wide v4, p0, Ld2/p;->z:D
+
+    iget-object v9, p0, Ld2/p;->q:Li2/d;
+
+    iget-object v7, v9, Li2/d;->e:[D
+
+    aput-wide v4, v7, v8
+
+    goto :done
 
     :check_size
     # Check if size slider changed for selected button
@@ -1160,28 +1395,92 @@
 
     if-eqz v9, :check_opacity
 
-    # Size changed - update only selected button
+    # Size changed for current button - update only it
     aput-wide v4, v6, v2
 
-    invoke-virtual {p0}, Ld2/p;->updateButtons()V
-
-    return-void
+    invoke-virtual {p0, v2}, Ld2/p;->applyButtonAsync(I)V
 
     :check_opacity
-    iget-object v0, p0, Ld2/p;->q:Li2/d;
+    # Check if opacity slider changed for current button
+    iget-object v9, p0, Ld2/p;->q:Li2/d;
 
-    invoke-virtual {v0}, Li2/d;->getCurrentValue()D
+    invoke-virtual {v9}, Li2/d;->getCurrentValue()D
 
-    move-result-wide v0
+    move-result-wide v4
 
-    iget-wide v2, p0, Ld2/p;->z:D
+    iget-object v6, p0, Ld2/p;->C:[D
 
-    cmpl-double v4, v0, v2
+    aget-wide v7, v6, v2
 
-    if-eqz v4, :done
+    cmpl-double v9, v4, v7
 
-    iput-wide v0, p0, Ld2/p;->z:D
+    if-eqz v9, :done
 
+    aput-wide v4, v6, v2
+
+    iput-wide v4, p0, Ld2/p;->z:D
+
+    invoke-virtual {p0, v2}, Ld2/p;->applyButtonAsync(I)V
+
+    :done
+    return-void
+.end method
+
+.method public applyButtonAsync(I)V
+    .registers 5
+
+    sget-object v0, Lcom/mojang/minecraftpe/MainActivity;->mInstance:Lcom/mojang/minecraftpe/MainActivity;
+
+    if-eqz v0, :skip
+
+    new-instance v1, Ld2/p$d;
+
+    invoke-direct {v1, p0, p1}, Ld2/p$d;-><init>(Ld2/p;I)V
+
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
+
+    :skip
+    return-void
+.end method
+
+.method public ensureButtonsVisible()V
+    .registers 8
+
+    invoke-virtual {p0}, Lc2/b;->isActive()Z
+
+    move-result v0
+
+    if-eqz v0, :done
+
+    iget-object v1, p0, Ld2/p;->u:[Landroid/widget/PopupWindow;
+
+    if-eqz v1, :refresh
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x6
+
+    :loop
+    if-ge v2, v3, :done
+
+    aget-object v4, v1, v2
+
+    if-eqz v4, :refresh
+
+    :try_start_0
+    invoke-virtual {v4}, Landroid/widget/PopupWindow;->isShowing()Z
+
+    move-result v5
+
+    if-eqz v5, :refresh
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :refresh
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :loop
+
+    :refresh
     invoke-virtual {p0}, Ld2/p;->updateButtons()V
 
     :done

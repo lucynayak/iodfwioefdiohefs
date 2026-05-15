@@ -875,81 +875,10 @@
 .end method
 
 .method public run()V
-    .registers 6
+    .registers 1
 
-    const-string v0, "AndroidCll-EventQueueWriter"
-
-    const/4 v1, -0x1
-
-    :try_start_0
-    sget-object v2, Lcom/microsoft/cll/android/EventQueueWriter;->s_threadCount:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    const/4 v3, 0x1
-
-    invoke-virtual {v2, v3}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndAdd(I)I
-
-    iget-object v2, p0, Lcom/microsoft/cll/android/EventQueueWriter;->logger:Lcom/microsoft/cll/android/ILogger;
-
-    const-string v4, "Starting upload"
-
-    invoke-interface {v2, v0, v4}, Lcom/microsoft/cll/android/ILogger;->info(Ljava/lang/String;Ljava/lang/String;)V
-
-    iget-object v2, p0, Lcom/microsoft/cll/android/EventQueueWriter;->storages:Ljava/util/List;
-
-    if-nez v2, :cond_0
-
-    iget-object v0, p0, Lcom/microsoft/cll/android/EventQueueWriter;->event:Lcom/microsoft/cll/android/SerializedEvent;
-
-    invoke-virtual {p0, v0}, Lcom/microsoft/cll/android/EventQueueWriter;->sendRealTimeEvent(Lcom/microsoft/cll/android/SerializedEvent;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    :goto_0
-    sget-object v0, Lcom/microsoft/cll/android/EventQueueWriter;->s_threadCount:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndAdd(I)I
-
+    # Telemetry disabled
     return-void
-
-    :cond_0
-    :try_start_1
-    sget-object v2, Lcom/microsoft/cll/android/EventQueueWriter;->running:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    const/4 v4, 0x0
-
-    invoke-virtual {v2, v4, v3}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
-
-    move-result v2
-
-    if-nez v2, :cond_1
-
-    iget-object v2, p0, Lcom/microsoft/cll/android/EventQueueWriter;->logger:Lcom/microsoft/cll/android/ILogger;
-
-    const-string v3, "Skipping send, event sending is already in progress on different thread."
-
-    invoke-interface {v2, v0, v3}, Lcom/microsoft/cll/android/ILogger;->info(Ljava/lang/String;Ljava/lang/String;)V
-
-    goto :goto_0
-
-    :cond_1
-    invoke-virtual {p0}, Lcom/microsoft/cll/android/EventQueueWriter;->send()V
-
-    sget-object v0, Lcom/microsoft/cll/android/EventQueueWriter;->running:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    invoke-virtual {v0, v4}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception v0
-
-    sget-object v2, Lcom/microsoft/cll/android/EventQueueWriter;->s_threadCount:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    invoke-virtual {v2, v1}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndAdd(I)I
-
-    throw v0
 .end method
 
 .method public send()V

@@ -1,4 +1,4 @@
-﻿version: 2.11.1
+version: 2.11.1
 apkFileName: Minecraft PE 1.1.5_src.apk
 isFrameworkApk: false
 usesFramework:
@@ -11,8 +11,8 @@ packageInfo:
   forcedPackageId: '127'
   renameManifestPackage: null
 versionInfo:
-  versionCode: '871010501'
-  versionName: 1.1.5.1
+  versionCode: '871010535'
+  versionName: 1.1.5
 compressionType: false
 sharedLibrary: false
 sparseResources: false

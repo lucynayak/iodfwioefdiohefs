@@ -1145,6 +1145,8 @@
     if-eqz v3, :cond_1
 
     :try_start_0
+    invoke-virtual {v2}, La2/b;->resize()V
+
     invoke-virtual {v2}, La2/b;->a()V
 
     invoke-virtual {v2}, Landroid/widget/PopupWindow;->isShowing()Z

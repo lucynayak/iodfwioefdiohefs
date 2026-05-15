@@ -46,16 +46,15 @@
     return-void
 .end method
 
-# Log a message — always goes to logcat, stored in list for on-screen if enabled
+# Log a message -> logcat + Android Toast (so it doesn't draw on game overlay)
 .method public static log(Ljava/lang/String;)V
     .locals 3
 
-    # Always log to logcat
     const-string v0, "VarDbg"
 
     invoke-static {v0, p0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    # Store in list for on-screen display
+    # Keep lines list for any legacy reader (but don't render it)
     sget-object v0, Le2/DebugLog;->lines:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -66,12 +65,32 @@
 
     const/16 v2, 0xc
 
-    if-le v1, v2, :done
+    if-le v1, v2, :trim_done
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
+    :trim_done
+    # Show as Toast via UI thread of MainActivity
+    sget-boolean v0, Le2/DebugLog;->enabled:Z
+
+    if-eqz v0, :done
+
+    sget-object v0, Lcom/mojang/minecraftpe/MainActivity;->mInstance:Lcom/mojang/minecraftpe/MainActivity;
+
+    if-eqz v0, :done
+
+    :try_start_t
+    new-instance v1, Le2/DebugLog$a;
+
+    invoke-direct {v1, v0, p0}, Le2/DebugLog$a;-><init>(Landroid/app/Activity;Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
+    :try_end_t
+    .catch Ljava/lang/Exception; {:try_start_t .. :try_end_t} :catch_t
+
+    :catch_t
     :done
     return-void
 .end method
@@ -105,65 +124,13 @@
     return-void
 .end method
 
-# Draw all stored lines on screen via Api.drawText
-# Call this from Api.onDraw() when enabled
+# No-op: legacy on-screen overlay disabled (moved to Android Toast)
 .method public static drawOverlay()V
-    .locals 11
+    .locals 0
 
-    sget-boolean v0, Le2/DebugLog;->enabled:Z
-
-    if-nez v0, :start
-
-    return-void
-
-    :start
-    sget-object v0, Le2/DebugLog;->lines:Ljava/util/ArrayList;
-
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    move-result v1
-
-    if-gtz v1, :has_lines
-
-    return-void
-
-    :has_lines
-    const/4 v2, 0x0
-
-    # drawText params: text(v3), R(v4), G(v5), B(v6), X(v7), Y(v8), fH(v9), fW(v10)
-    const v4, 0x3dcccccd    # 0.1f R
-    const/high16 v5, 0x3f800000    # 1.0f G (green)
-    const v6, 0x3dcccccd    # 0.1f B
-    const/high16 v7, 0x42c80000    # 100.0f X position
-    const/high16 v8, 0x42c80000    # 100.0f initial Y position
-    const/high16 v9, 0x3f800000    # 1.0f fontHeight
-    const/high16 v10, 0x3f800000   # 1.0f fontWidth
-
-    :loop
-    if-ge v2, v1, :end
-
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ljava/lang/String;
-
-    invoke-static/range {v3 .. v10}, Ldev/virus/variable/launcher/api/Api;->drawText(Ljava/lang/String;FFFFFFF)V
-
-    # Advance Y by 10.0 for next line
-    const/high16 v3, 0x41200000    # 10.0f
-
-    add-float/2addr v8, v3
-
-    add-int/lit8 v2, v2, 0x1
-
-    goto :loop
-
-    :end
     return-void
 .end method
 
-# Toggle overlay on/off
 .method public static toggle()V
     .locals 1
 
@@ -175,7 +142,7 @@
 
     sput-boolean v0, Le2/DebugLog;->enabled:Z
 
-    const-string v0, "Debug overlay ON"
+    const-string v0, "Debug log ON"
 
     invoke-static {v0}, Le2/DebugLog;->log(Ljava/lang/String;)V
 
@@ -189,7 +156,6 @@
     return-void
 .end method
 
-# Clear all messages
 .method public static clear()V
     .locals 1
 

@@ -161,7 +161,7 @@
 
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
-    .registers 10
+    .registers 11
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -322,7 +322,7 @@
 
     new-instance v5, Ljava/io/File;
 
-    const-string v6, "games/com.mojang"
+    const-string v6, "games/jopamojang"
 
     invoke-direct {v5, v4, v6}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
@@ -410,6 +410,32 @@
     move-result-object v5
 
     invoke-virtual {v5}, Landroid/widget/Toast;->show()V
+
+    # Sync config list if a .json config was imported
+    const-string v5, "Config"
+    invoke-virtual {v7, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result v6
+    if-eqz v6, :goto_1
+
+    new-instance v5, Lz1/a;
+    invoke-direct {v5, v4}, Lz1/a;-><init>(Ljava/io/File;)V
+
+    sget-object v6, Lz1/b;->b:Ljava/util/ArrayList;
+    if-eqz v6, :goto_1
+
+    invoke-virtual {v6, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    sget-object v6, Lg2/b;->sInstance:Lg2/b;
+    if-eqz v6, :goto_1
+
+    sget-object v8, Lg2/b;->sConfigsLayout:Landroid/widget/LinearLayout;
+    if-eqz v8, :goto_1
+
+    invoke-virtual {v6, v5}, Lg2/b;->T(Lz1/a;)Landroid/widget/TextView;
+    move-result-object v5
+    if-eqz v5, :goto_1
+
+    invoke-virtual {v8, v5}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     goto :goto_1
 

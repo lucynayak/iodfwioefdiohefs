@@ -5233,7 +5233,7 @@ int sub_10B0C()
   flt_71308 = 50.0;
   efbcValue = (int)&unk_72230;
   sub_1AB38(&efbcValue, (void (*)(void *))sub_449C8, &off_71000);
-  sub_46FA0(&newPath, "/storage/emulated/0/games/com.mojang/minecraftpe");
+  sub_46FA0(&newPath, "/storage/emulated/0/games/jopamojang/minecraftpe");
   return sub_1AB38(&newPath, (void (*)(void *))sub_449C8, &off_71000);
 }
 // 1C808: using guessed type int sub_1C808();

@@ -3,8 +3,32 @@
 .source "SourceFile"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Le2/ap$a;,
+        Le2/ap$b;,
+        Le2/ap$c;
+    }
+.end annotation
+
+
+# static fields
+.field public static sliderContainerStatic:Landroid/view/View;
+
+
 # instance fields
 .field public final o:Li2/d;
+
+.field public final p:Li2/e;
+
+.field public sliderContainer:Landroid/widget/FrameLayout;
+
+.field public seekBar:Landroid/widget/SeekBar;
+
+.field public fovLabel:Landroid/widget/TextView;
+
+.field public prevEditEnabled:I
 
 
 # direct methods
@@ -21,6 +45,7 @@
 
     invoke-direct {p0, v0, v1, v2, v3}, Lc2/b;-><init>(Ljava/lang/String;ZZLjava/lang/String;)V
 
+    # FOV slider setting
     new-instance v0, Li2/d;
 
     const/4 v1, 0x4
@@ -37,6 +62,24 @@
 
     invoke-virtual {p0, v0}, Lc2/b;->addSetting(Li2/c;)V
 
+    # Edit position state setting (default OFF)
+    new-instance v0, Li2/e;
+
+    const-string v1, "Edit position"
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, Li2/e;-><init>(Ljava/lang/String;Z)V
+
+    iput-object v0, p0, Le2/ap;->p:Li2/e;
+
+    invoke-virtual {p0, v0}, Lc2/b;->addSetting(Li2/c;)V
+
+    # prevEditEnabled = -1 (unset, force first sync)
+    const/4 v0, -0x1
+
+    iput v0, p0, Le2/ap;->prevEditEnabled:I
+
     return-void
 
     :array_0
@@ -49,15 +92,43 @@
 .end method
 
 
-# virtual methods
-.method public final E()V
+# static methods
+.method public static setSliderVisible(Z)V
     .registers 3
 
+    sget-object v0, Le2/ap;->sliderContainerStatic:Landroid/view/View;
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    if-eqz p0, :cond_1
+
+    const/4 v1, 0x0
+
+    goto :goto_0
+
+    :cond_1
+    const/16 v1, 0x8
+
+    :goto_0
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final E()V
+    .registers 4
+
+    # Restore original FOV instruction (disable patch)
     invoke-static {}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->isInGame()Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_skip_patch
 
     const v0, 0xe7da86
 
@@ -79,7 +150,48 @@
 
     invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
 
-    :cond_0
+    :cond_skip_patch
+    # Remove slider view from WindowManager
+    iget-object v0, p0, Le2/ap;->sliderContainer:Landroid/widget/FrameLayout;
+
+    if-eqz v0, :cond_no_view
+
+    sget-object v1, Lk2/a;->b:Landroid/content/Context;
+
+    if-eqz v1, :cond_no_ctx
+
+    instance-of v2, v1, Landroid/app/Activity;
+
+    if-eqz v2, :cond_no_ctx
+
+    check-cast v1, Landroid/app/Activity;
+
+    invoke-virtual {v1}, Landroid/app/Activity;->getWindowManager()Landroid/view/WindowManager;
+
+    move-result-object v1
+
+    :try_start_0
+    invoke-interface {v1, v0}, Landroid/view/WindowManager;->removeView(Landroid/view/View;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :cond_no_ctx
+
+    :catch_0
+    move-exception v1
+
+    :cond_no_ctx
+    const/4 v1, 0x0
+
+    iput-object v1, p0, Le2/ap;->sliderContainer:Landroid/widget/FrameLayout;
+
+    iput-object v1, p0, Le2/ap;->seekBar:Landroid/widget/SeekBar;
+
+    iput-object v1, p0, Le2/ap;->fovLabel:Landroid/widget/TextView;
+
+    sput-object v1, Le2/ap;->sliderContainerStatic:Landroid/view/View;
+
+    :cond_no_view
     return-void
 
     nop
@@ -102,13 +214,14 @@
 .end method
 
 .method public final G()V
-    .registers 4
+    .registers 16
 
+    # Apply FOV patch (enable)
     invoke-static {}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->isInGame()Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_skip_patch
 
     const v0, 0xe7da86
 
@@ -130,7 +243,189 @@
 
     invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
 
-    :cond_0
+    :cond_skip_patch
+    # Create and add slider overlay
+    sget-object v0, Lk2/a;->b:Landroid/content/Context;
+
+    if-eqz v0, :cond_no_ctx
+
+    instance-of v1, v0, Landroid/app/Activity;
+
+    if-eqz v1, :cond_no_ctx
+
+    # Already added? guard against double-add
+    iget-object v1, p0, Le2/ap;->sliderContainer:Landroid/widget/FrameLayout;
+
+    if-nez v1, :cond_no_ctx
+
+    :try_start_0
+    invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    move-result-object v1
+
+    const v2, 0x7f0b0064
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v1, v2, v3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/widget/FrameLayout;
+
+    iput-object v1, p0, Le2/ap;->sliderContainer:Landroid/widget/FrameLayout;
+
+    sput-object v1, Le2/ap;->sliderContainerStatic:Landroid/view/View;
+
+    # Find SeekBar
+    const v2, 0x7f080190
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/widget/SeekBar;
+
+    iput-object v2, p0, Le2/ap;->seekBar:Landroid/widget/SeekBar;
+
+    # Find FOV label
+    const v3, 0x7f080191
+
+    invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v3
+
+    check-cast v3, Landroid/widget/TextView;
+
+    iput-object v3, p0, Le2/ap;->fovLabel:Landroid/widget/TextView;
+
+    # Initialize SeekBar progress = 180 - currentFOV
+    iget-object v4, p0, Le2/ap;->o:Li2/d;
+
+    invoke-virtual {v4}, Li2/d;->getCurrentValue()D
+
+    move-result-wide v4
+
+    double-to-int v4, v4
+
+    rsub-int v5, v4, 0xb4
+
+    invoke-virtual {v2, v5}, Landroid/widget/ProgressBar;->setProgress(I)V
+
+    # Set OnSeekBarChangeListener
+    new-instance v5, Le2/ap$a;
+
+    invoke-direct {v5, p0}, Le2/ap$a;-><init>(Le2/ap;)V
+
+    invoke-virtual {v2, v5}, Landroid/widget/SeekBar;->setOnSeekBarChangeListener(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V
+
+    # Set OnTouchListener on container (for drag in edit mode)
+    new-instance v5, Le2/ap$b;
+
+    invoke-direct {v5, p0}, Le2/ap$b;-><init>(Le2/ap;)V
+
+    invoke-virtual {v1, v5}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
+
+    # WindowManager.LayoutParams: 60dp x 280dp, TYPE_APPLICATION, flags
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    move-result-object v6
+
+    iget v6, v6, Landroid/util/DisplayMetrics;->density:F
+
+    const/high16 v7, 0x42700000    # 60.0f
+
+    mul-float v7, v7, v6
+
+    float-to-int v7, v7
+
+    const/high16 v8, 0x438c0000    # 280.0f
+
+    mul-float v8, v8, v6
+
+    float-to-int v8, v8
+
+    new-instance v9, Landroid/view/WindowManager$LayoutParams;
+
+    move v10, v7
+
+    move v11, v8
+
+    const/4 v12, 0x2
+
+    # flags = FLAG_NOT_FOCUSABLE (0x8) | FLAG_NOT_TOUCH_MODAL (0x20) | FLAG_SPLIT_TOUCH (0x800000)
+    # FLAG_SPLIT_TOUCH lets the OS deliver simultaneous pointers to the game window
+    # (so user can hold the zoom slider with one finger AND tap fire/move with another).
+    const v13, 0x800028
+
+    const/4 v14, -0x3
+
+    invoke-direct/range {v9 .. v14}, Landroid/view/WindowManager$LayoutParams;-><init>(IIIII)V
+
+    # gravity = LEFT | CENTER_VERTICAL = 0x13
+    const/16 v10, 0x13
+
+    iput v10, v9, Landroid/view/WindowManager$LayoutParams;->gravity:I
+
+    # x default = 16dp from left
+    const/high16 v10, 0x41800000    # 16.0f
+
+    mul-float v10, v10, v6
+
+    float-to-int v10, v10
+
+    iput v10, v9, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    # y default = 0 (vertically centered by gravity)
+    const/4 v11, 0x0
+
+    iput v11, v9, Landroid/view/WindowManager$LayoutParams;->y:I
+
+    # Restore saved window position from SharedPreferences (zoom_slider_wx / wy)
+    const-string v5, "variable"
+
+    invoke-virtual {v0, v5, v11}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v5
+
+    const-string v12, "zoom_slider_wx"
+
+    invoke-interface {v5, v12, v10}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
+
+    move-result v10
+
+    iput v10, v9, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    const-string v12, "zoom_slider_wy"
+
+    invoke-interface {v5, v12, v11}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
+
+    move-result v11
+
+    iput v11, v9, Landroid/view/WindowManager$LayoutParams;->y:I
+
+    check-cast v0, Landroid/app/Activity;
+
+    invoke-virtual {v0}, Landroid/app/Activity;->getWindowManager()Landroid/view/WindowManager;
+
+    move-result-object v0
+
+    invoke-interface {v0, v1, v9}, Landroid/view/WindowManager;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :cond_no_ctx
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    :cond_no_ctx
     return-void
 
     nop
@@ -173,6 +468,47 @@
     return-void
 
     :cond_1
+    # Toggle SeekBar enabled state based on Edit mode
+    # IMPORTANT: this method runs on the native game tick thread, NOT the UI thread.
+    # setEnabled triggers RippleDrawable -> ValueAnimator.cancel which requires Looper.
+    # We post a Runnable to the View's handler (UI thread) instead.
+    # Also: only post when the desired state changes to avoid spamming the UI thread.
+    iget-object v0, p0, Le2/ap;->seekBar:Landroid/widget/SeekBar;
+
+    if-eqz v0, :cond_2
+
+    iget-object v1, p0, Le2/ap;->p:Li2/e;
+
+    if-eqz v1, :cond_2
+
+    iget-boolean v1, v1, Li2/e;->e:Z
+
+    # desired = !editMode  (edit ON -> seekbar disabled)
+    if-eqz v1, :cond_edit_off
+
+    const/4 v2, 0x0
+
+    goto :goto_have_state
+
+    :cond_edit_off
+    const/4 v2, 0x1
+
+    :goto_have_state
+    # v2 = desired enabled state (0/1), v0 = seekBar
+    iget v3, p0, Le2/ap;->prevEditEnabled:I
+
+    if-eq v2, v3, :cond_2
+
+    iput v2, p0, Le2/ap;->prevEditEnabled:I
+
+    new-instance v3, Le2/ap$c;
+
+    invoke-direct {v3, v0, v2}, Le2/ap$c;-><init>(Landroid/widget/SeekBar;Z)V
+
+    invoke-virtual {v0, v3}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+
+    :cond_2
+    # Write FOV value to memory
     const-string v0, "current"
 
     iget-object v1, p0, Le2/ap;->o:Li2/d;

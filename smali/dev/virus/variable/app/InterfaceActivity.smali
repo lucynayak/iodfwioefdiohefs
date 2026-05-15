@@ -48,6 +48,14 @@
 
 .field public U:Landroid/widget/TextView;
 
+.field public V:Landroid/widget/SeekBar;
+
+.field public W:Landroid/widget/TextView;
+
+.field public X:Landroid/widget/SeekBar;
+
+.field public Y:Landroid/widget/TextView;
+
 .field public n:Landroid/widget/TextView;
 
 .field public o:Landroid/view/View;
@@ -171,6 +179,26 @@
     move-result-object v3
     invoke-virtual {v1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
+    # window_width_scale (float)
+    const-string v2, "window_width_scale"
+    const v3, 0x3e99999a    # 0.3f
+    invoke-interface {v0, v2, v3}, Landroid/content/SharedPreferences;->getFloat(Ljava/lang/String;F)F
+    move-result v3
+    float-to-double v3, v3
+    invoke-static {v3, v4}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+    move-result-object v5
+    invoke-virtual {v1, v2, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    # window_height_scale (float)
+    const-string v2, "window_height_scale"
+    const v3, 0x3f4e147b    # 0.805f
+    invoke-interface {v0, v2, v3}, Landroid/content/SharedPreferences;->getFloat(Ljava/lang/String;F)F
+    move-result v3
+    float-to-double v3, v3
+    invoke-static {v3, v4}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+    move-result-object v5
+    invoke-virtual {v1, v2, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
     # Write to /sdcard/games/variable/horrible_config.json
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
     move-result-object v2
@@ -194,7 +222,9 @@
     new-instance v5, Ljava/io/FileWriter;
     invoke-direct {v5, v4}, Ljava/io/FileWriter;-><init>(Ljava/io/File;)V
 
-    invoke-virtual {v1}, Lorg/json/JSONObject;->toString(I)Ljava/lang/String;
+    const/4 v7, 0x4
+
+    invoke-virtual {v1, v7}, Lorg/json/JSONObject;->toString(I)Ljava/lang/String;
     move-result-object v6
 
     invoke-virtual {v5, v6}, Ljava/io/FileWriter;->write(Ljava/lang/String;)V
@@ -455,11 +485,156 @@
 
     invoke-interface {p1, v1, v0}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
+    # window_width_scale = (V.progress + 20) / 100.0
+    iget-object v0, p0, Ldev/virus/variable/app/InterfaceActivity;->V:Landroid/widget/SeekBar;
+
+    invoke-virtual {v0}, Landroid/widget/ProgressBar;->getProgress()I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, 0x14
+
+    int-to-float v0, v0
+
+    const/high16 v1, 0x42c80000    # 100.0f
+
+    div-float v0, v0, v1
+
+    const-string v1, "window_width_scale"
+
+    invoke-interface {p1, v1, v0}, Landroid/content/SharedPreferences$Editor;->putFloat(Ljava/lang/String;F)Landroid/content/SharedPreferences$Editor;
+
+    # window_height_scale = (X.progress + 50) / 100.0
+    iget-object v0, p0, Ldev/virus/variable/app/InterfaceActivity;->X:Landroid/widget/SeekBar;
+
+    invoke-virtual {v0}, Landroid/widget/ProgressBar;->getProgress()I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, 0x32
+
+    int-to-float v0, v0
+
+    const/high16 v1, 0x42c80000    # 100.0f
+
+    div-float v0, v0, v1
+
+    const-string v1, "window_height_scale"
+
+    invoke-interface {p1, v1, v0}, Landroid/content/SharedPreferences$Editor;->putFloat(Ljava/lang/String;F)Landroid/content/SharedPreferences$Editor;
+
     invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
     move-result p1
 
     if-eqz p1, :cond_5
+
+    # === Apply new window scales to cached PopupWindows (b2/a e/f/g/h/i) ===
+    # PopupWindow size is set in ctor and won't auto-refresh; we push setWidth/setHeight.
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    move-result-object v0
+
+    iget v1, v0, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    iget v0, v0, Landroid/util/DisplayMetrics;->heightPixels:I
+
+    const-string v2, "variable"
+
+    const/4 v3, 0x0
+
+    invoke-virtual {p0, v2, v3}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v2
+
+    # newW = widthPixels * window_width_scale
+    const-string v3, "window_width_scale"
+
+    const v4, 0x3e99999a    # 0.3f
+
+    invoke-interface {v2, v3, v4}, Landroid/content/SharedPreferences;->getFloat(Ljava/lang/String;F)F
+
+    move-result v3
+
+    int-to-float v4, v1
+
+    mul-float v3, v3, v4
+
+    float-to-int v3, v3
+
+    # newH = heightPixels * window_height_scale
+    const-string v4, "window_height_scale"
+
+    const v5, 0x3f4e147b    # 0.805f
+
+    invoke-interface {v2, v4, v5}, Landroid/content/SharedPreferences;->getFloat(Ljava/lang/String;F)F
+
+    move-result v4
+
+    int-to-float v5, v0
+
+    mul-float v4, v4, v5
+
+    float-to-int v4, v4
+
+    # Push to each cached PopupWindow (skip nulls)
+    sget-object v0, Lb2/a;->e:Lb2/a;
+
+    if-eqz v0, :skip_pop_e
+
+    invoke-virtual {v0, v3}, Landroid/widget/PopupWindow;->setWidth(I)V
+
+    invoke-virtual {v0, v4}, Landroid/widget/PopupWindow;->setHeight(I)V
+
+    :skip_pop_e
+    sget-object v0, Lb2/a;->f:Lb2/a;
+
+    if-eqz v0, :skip_pop_f
+
+    invoke-virtual {v0, v3}, Landroid/widget/PopupWindow;->setWidth(I)V
+
+    invoke-virtual {v0, v4}, Landroid/widget/PopupWindow;->setHeight(I)V
+
+    :skip_pop_f
+    sget-object v0, Lb2/a;->g:Lb2/a;
+
+    if-eqz v0, :skip_pop_g
+
+    invoke-virtual {v0, v3}, Landroid/widget/PopupWindow;->setWidth(I)V
+
+    invoke-virtual {v0, v4}, Landroid/widget/PopupWindow;->setHeight(I)V
+
+    :skip_pop_g
+    sget-object v0, Lb2/a;->h:Lb2/a;
+
+    if-eqz v0, :skip_pop_h
+
+    invoke-virtual {v0, v3}, Landroid/widget/PopupWindow;->setWidth(I)V
+
+    invoke-virtual {v0, v4}, Landroid/widget/PopupWindow;->setHeight(I)V
+
+    :skip_pop_h
+    sget-object v0, Lb2/a;->i:Lb2/a;
+
+    if-eqz v0, :skip_pop_i
+
+    invoke-virtual {v0, v3}, Landroid/widget/PopupWindow;->setWidth(I)V
+
+    invoke-virtual {v0, v4}, Landroid/widget/PopupWindow;->setHeight(I)V
+
+    :skip_pop_i
+    # === end window size apply ===
+
+    # === Apply new bind_shape live: sync the static field and refresh every bind popup ===
+    iget v0, p0, Ldev/virus/variable/app/InterfaceActivity;->T:I
+
+    sput v0, Ldev/virus/variable/app/MinecraftActivity;->bindShape:I
+
+    invoke-static {}, Lz1/p;->refreshBindPopups()V
 
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
@@ -725,6 +900,106 @@
     check-cast v0, Landroid/widget/TextView;
 
     iput-object v0, p0, Ldev/virus/variable/app/InterfaceActivity;->D:Landroid/widget/TextView;
+
+    # --- Window size section: find views ---
+    const v0, 0x7f080189
+
+    invoke-virtual {p0, v0}, Lh0/f;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/SeekBar;
+
+    iput-object v0, p0, Ldev/virus/variable/app/InterfaceActivity;->V:Landroid/widget/SeekBar;
+
+    const v0, 0x7f08018a
+
+    invoke-virtual {p0, v0}, Lh0/f;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Ldev/virus/variable/app/InterfaceActivity;->W:Landroid/widget/TextView;
+
+    const v0, 0x7f08018d
+
+    invoke-virtual {p0, v0}, Lh0/f;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/SeekBar;
+
+    iput-object v0, p0, Ldev/virus/variable/app/InterfaceActivity;->X:Landroid/widget/SeekBar;
+
+    const v0, 0x7f08018e
+
+    invoke-virtual {p0, v0}, Lh0/f;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    iput-object v0, p0, Ldev/virus/variable/app/InterfaceActivity;->Y:Landroid/widget/TextView;
+
+    # --- Load window_width_scale/window_height_scale from prefs and set up SeekBars ---
+    const-string v0, "variable"
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    # Width slider: max=40 (range 20-60%)
+    iget-object v1, p0, Ldev/virus/variable/app/InterfaceActivity;->V:Landroid/widget/SeekBar;
+
+    const/16 v2, 0x28
+
+    invoke-virtual {v1, v2}, Landroid/widget/ProgressBar;->setMax(I)V
+
+    const-string v2, "window_width_scale"
+
+    const v3, 0x3e99999a    # 0.3f
+
+    invoke-interface {v0, v2, v3}, Landroid/content/SharedPreferences;->getFloat(Ljava/lang/String;F)F
+
+    move-result v2
+
+    const/high16 v3, 0x42c80000    # 100.0f
+
+    mul-float v2, v2, v3
+
+    float-to-int v2, v2
+
+    add-int/lit8 v2, v2, -0x14
+
+    invoke-virtual {v1, v2}, Landroid/widget/ProgressBar;->setProgress(I)V
+
+    # Height slider: max=50 (range 50-100%)
+    iget-object v1, p0, Ldev/virus/variable/app/InterfaceActivity;->X:Landroid/widget/SeekBar;
+
+    const/16 v2, 0x32
+
+    invoke-virtual {v1, v2}, Landroid/widget/ProgressBar;->setMax(I)V
+
+    const-string v2, "window_height_scale"
+
+    const v3, 0x3f4e147b    # 0.805f default
+
+    invoke-interface {v0, v2, v3}, Landroid/content/SharedPreferences;->getFloat(Ljava/lang/String;F)F
+
+    move-result v2
+
+    const/high16 v3, 0x42c80000    # 100.0f
+
+    mul-float v2, v2, v3
+
+    float-to-int v2, v2
+
+    add-int/lit8 v2, v2, -0x32
+
+    invoke-virtual {v1, v2}, Landroid/widget/ProgressBar;->setProgress(I)V
 
     iget-object v0, p0, Ldev/virus/variable/app/InterfaceActivity;->p:Landroid/widget/SeekBar;
 
@@ -1245,6 +1520,82 @@
     invoke-direct {v0, p0, v1}, Lx1/e;-><init>(Ljava/lang/Object;I)V
 
     invoke-virtual {p1, v0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+
+    # === Inject "Show 'by triggertrash <3'" toggle Switch as a fixed bar between header and ScrollView ===
+    # android.R.id.content == 0x01020002 -> top-level FrameLayout; child(0) is our root vertical LinearLayout
+    const p1, 0x01020002
+
+    invoke-virtual {p0, p1}, Lh0/f;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/view/ViewGroup;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/LinearLayout;
+
+    new-instance v1, Landroid/widget/Switch;
+
+    invoke-direct {v1, p0}, Landroid/widget/Switch;-><init>(Landroid/content/Context;)V
+
+    const-string v2, "Show \"by triggertrash <3\""
+
+    invoke-virtual {v1, v2}, Landroid/widget/Switch;->setText(Ljava/lang/CharSequence;)V
+
+    const v2, -0x1
+
+    invoke-virtual {v1, v2}, Landroid/widget/Switch;->setTextColor(I)V
+
+    # Read current pref state
+    const-string v2, "variable"
+
+    const/4 v3, 0x0
+
+    invoke-virtual {p0, v2, v3}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v2
+
+    const-string v3, "show_credits"
+
+    const/4 v4, 0x1
+
+    invoke-interface {v2, v3, v4}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Landroid/widget/Switch;->setChecked(Z)V
+
+    # Wire up listener
+    new-instance v2, Ldev/virus/variable/app/InterfaceActivity$g;
+
+    invoke-direct {v2, p0}, Ldev/virus/variable/app/InterfaceActivity$g;-><init>(Ldev/virus/variable/app/InterfaceActivity;)V
+
+    invoke-virtual {v1, v2}, Landroid/widget/Switch;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    # LinearLayout.LayoutParams: match_parent x wrap_content
+    new-instance v2, Landroid/widget/LinearLayout$LayoutParams;
+
+    const/4 v3, -0x1
+
+    const/4 v4, -0x2
+
+    invoke-direct {v2, v3, v4}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    const/16 v2, 0x14
+
+    invoke-virtual {v1, v2, v2, v2, v2}, Landroid/widget/Switch;->setPadding(IIII)V
+
+    # Insert at index 1 (right after title bar, just above the ScrollView) so it's always visible
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v1, v2}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;I)V
 
     return-void
 .end method

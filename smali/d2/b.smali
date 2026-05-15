@@ -16,10 +16,16 @@
 
 .field public final t:Li2/e;
 
+.field public final u:Li2/e;
+
+.field public final v:Li2/d;
+
+.field public final w:Li2/d;
+
 
 # direct methods
 .method public constructor <init>()V
-    .registers 11
+    .registers 15
 
     const-string v0, "AimBot"
 
@@ -105,29 +111,83 @@
 
     iput-object v8, p0, Ld2/b;->t:Li2/e;
 
-    const/4 v9, 0x6
+    new-instance v9, Li2/e;
 
-    new-array v9, v9, [Li2/c;
+    const-string v10, "Camera jitter"
 
-    aput-object v0, v9, v6
+    invoke-direct {v9, v10, v6}, Li2/e;-><init>(Ljava/lang/String;Z)V
 
-    aput-object v3, v9, v1
+    new-instance v10, Ld2/a;
+
+    const/16 v11, 0xb
+
+    invoke-direct {v10, p0, v11}, Ld2/a;-><init>(Lc2/b;I)V
+
+    iput-object v10, v9, Li2/e;->f:Li2/e$a;
+
+    iput-object v9, p0, Ld2/b;->u:Li2/e;
+
+    new-instance v10, Li2/d;
+
+    new-array v11, v2, [D
+
+    fill-array-data v11, :array_4
+
+    const-string v12, "Jitter yaw"
+
+    invoke-direct {v10, v12, v11}, Li2/d;-><init>(Ljava/lang/String;[D)V
+
+    iput-object v10, p0, Ld2/b;->v:Li2/d;
+
+    new-instance v11, Li2/d;
+
+    new-array v12, v2, [D
+
+    fill-array-data v12, :array_5
+
+    const-string v13, "Jitter pitch"
+
+    invoke-direct {v11, v13, v12}, Li2/d;-><init>(Ljava/lang/String;[D)V
+
+    iput-object v11, p0, Ld2/b;->w:Li2/d;
+
+    const/16 v6, 0x9
+
+    new-array v6, v6, [Li2/c;
+
+    const/4 v12, 0x0
+
+    aput-object v0, v6, v12
+
+    aput-object v3, v6, v1
 
     const/4 v0, 0x2
 
-    aput-object v4, v9, v0
+    aput-object v4, v6, v0
 
     const/4 v0, 0x3
 
-    aput-object v5, v9, v0
+    aput-object v5, v6, v0
 
-    aput-object v7, v9, v2
+    aput-object v7, v6, v2
 
     const/4 v0, 0x5
 
-    aput-object v8, v9, v0
+    aput-object v8, v6, v0
 
-    invoke-virtual {p0, v9}, Lc2/b;->A([Li2/c;)V
+    const/4 v0, 0x6
+
+    aput-object v9, v6, v0
+
+    const/4 v0, 0x7
+
+    aput-object v10, v6, v0
+
+    const/16 v0, 0x8
+
+    aput-object v11, v6, v0
+
+    invoke-virtual {p0, v6}, Lc2/b;->A([Li2/c;)V
 
     return-void
 
@@ -164,6 +224,22 @@
         0x4056800000000000L    # 90.0
         0x3ff0000000000000L    # 1.0
     .end array-data
+
+    :array_4
+    .array-data 8
+        0x0
+        0x0
+        0x4014000000000000L    # 5.0
+        0x3fb999999999999aL    # 0.1
+    .end array-data
+
+    :array_5
+    .array-data 8
+        0x0
+        0x0
+        0x4008000000000000L    # 3.0
+        0x3fb999999999999aL    # 0.1
+    .end array-data
 .end method
 
 
@@ -178,6 +254,14 @@
     invoke-virtual {v0, v1}, Li2/d;->setVisibility(Z)V
 
     iget-object v0, p0, Ld2/b;->s:Li2/d;
+
+    invoke-virtual {v0, v1}, Li2/d;->setVisibility(Z)V
+
+    iget-object v0, p0, Ld2/b;->v:Li2/d;
+
+    invoke-virtual {v0, v1}, Li2/d;->setVisibility(Z)V
+
+    iget-object v0, p0, Ld2/b;->w:Li2/d;
 
     invoke-virtual {v0, v1}, Li2/d;->setVisibility(Z)V
 
@@ -426,6 +510,65 @@
 
     double-to-float v1, v1
 
+    iget-object v2, p0, Ld2/b;->u:Li2/e;
+
+    invoke-virtual {v2}, Li2/e;->isActive()Z
+
+    move-result v2
+
+    if-eqz v2, :set_rot
+
+    const-string v3, "current"
+
+    iget-object v2, p0, Ld2/b;->v:Li2/d;
+
+    invoke-virtual {v2, v3}, Li2/d;->A(Ljava/lang/String;)D
+
+    move-result-wide v4
+
+    invoke-static {}, Ljava/lang/Math;->random()D
+
+    move-result-wide v6
+
+    const-wide/high16 v8, 0x4000000000000000L    # 2.0
+
+    mul-double/2addr v6, v8
+
+    const-wide/high16 v8, 0x3ff0000000000000L    # 1.0
+
+    sub-double/2addr v6, v8
+
+    mul-double/2addr v6, v4
+
+    double-to-float v2, v6
+
+    add-float/2addr v0, v2
+
+    iget-object v2, p0, Ld2/b;->w:Li2/d;
+
+    invoke-virtual {v2, v3}, Li2/d;->A(Ljava/lang/String;)D
+
+    move-result-wide v4
+
+    invoke-static {}, Ljava/lang/Math;->random()D
+
+    move-result-wide v6
+
+    const-wide/high16 v8, 0x4000000000000000L    # 2.0
+
+    mul-double/2addr v6, v8
+
+    const-wide/high16 v8, 0x3ff0000000000000L    # 1.0
+
+    sub-double/2addr v6, v8
+
+    mul-double/2addr v6, v4
+
+    double-to-float v2, v6
+
+    add-float/2addr v1, v2
+
+    :set_rot
     .line 9
     invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->setRot(FF)V
 

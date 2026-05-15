@@ -61,6 +61,16 @@
 
     mul-double v0, v0, p2
 
+    iget-object p2, p0, La2/j$a;->a:Li2/d;
+
+    const-string p3, "min"
+
+    invoke-virtual {p2, p3}, Li2/d;->A(Ljava/lang/String;)D
+
+    move-result-wide p2
+
+    add-double/2addr v0, p2
+
     const-wide p2, 0x408f400000000000L    # 1000.0
 
     mul-double v0, v0, p2

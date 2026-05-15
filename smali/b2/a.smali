@@ -31,6 +31,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;Landroid/view/LayoutInflater;Ljava/lang/String;Landroid/widget/ImageButton;)V
     .registers 16
 
+    # Get DisplayMetrics -> v0
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -39,28 +40,37 @@
 
     move-result-object v0
 
-    iget v0, v0, Landroid/util/DisplayMetrics;->widthPixels:I
+    # Get SharedPreferences("variable") -> v5
+    const-string v5, "variable"
 
-    int-to-float v0, v0
+    const/4 v6, 0x0
 
-    const v1, 0x3e99999a    # 0.3f
+    invoke-virtual {p1, v5, v6}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
-    mul-float v0, v0, v1
+    move-result-object v5
 
-    float-to-int v0, v0
+    # widthScale = prefs.getFloat("window_width_scale", 0.3f) -> v6
+    const-string v6, "window_width_scale"
 
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    const v7, 0x3e99999a    # 0.3f
 
-    move-result-object v1
+    invoke-interface {v5, v6, v7}, Landroid/content/SharedPreferences;->getFloat(Ljava/lang/String;F)F
 
-    invoke-virtual {v1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+    move-result v6
 
-    move-result-object v1
+    # heightPixels before we overwrite v0 -> v7
+    iget v7, v0, Landroid/util/DisplayMetrics;->heightPixels:I
 
-    iget v1, v1, Landroid/util/DisplayMetrics;->heightPixels:I
+    # width = widthPixels * widthScale -> v0 (int)
+    iget v8, v0, Landroid/util/DisplayMetrics;->widthPixels:I
 
-    int-to-float v1, v1
+    int-to-float v8, v8
 
+    mul-float v6, v8, v6
+
+    float-to-int v0, v6
+
+    # Compute default height scale based on menu position (keep original logic)
     sget v2, Ldev/virus/variable/app/MinecraftActivity;->k:I
 
     const/16 v3, 0x11
@@ -80,9 +90,19 @@
     const v2, 0x3f7ae148    # 0.98f
 
     :goto_0
-    mul-float v1, v1, v2
+    # heightScale = prefs.getFloat("window_height_scale", default=v2) -> v2
+    const-string v6, "window_height_scale"
 
-    float-to-int v1, v1
+    invoke-interface {v5, v6, v2}, Landroid/content/SharedPreferences;->getFloat(Ljava/lang/String;F)F
+
+    move-result v2
+
+    # height = heightPixels * heightScale -> v1 (int)
+    int-to-float v7, v7
+
+    mul-float v2, v7, v2
+
+    float-to-int v1, v2
 
     invoke-direct {p0, v0, v1}, Landroid/widget/PopupWindow;-><init>(II)V
 
@@ -222,10 +242,28 @@
 
 
 # virtual methods
+.method public showAtLocation(Landroid/view/View;III)V
+    .registers 6
+
+    # Hide Zoom slider while menu is open
+    const/4 v0, 0x0
+
+    invoke-static {v0}, Le2/ap;->setSliderVisible(Z)V
+
+    invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/PopupWindow;->showAtLocation(Landroid/view/View;III)V
+
+    return-void
+.end method
+
 .method public final dismiss()V
     .registers 4
 
     invoke-static {}, Lz1/b;->c()V
+
+    # Show Zoom slider again
+    const/4 v0, 0x1
+
+    invoke-static {v0}, Le2/ap;->setSliderVisible(Z)V
 
     invoke-super {p0}, Landroid/widget/PopupWindow;->dismiss()V
 

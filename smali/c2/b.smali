@@ -49,6 +49,8 @@
 
 .field public bindOpacity:I
 
+.field public bindSize:I
+
 
 # direct methods
 .method public constructor <init>()V
@@ -71,6 +73,8 @@
     const/16 v0, 0x64
 
     iput v0, p0, Lc2/b;->bindOpacity:I
+
+    iput v0, p0, Lc2/b;->bindSize:I
 
     return-void
 .end method
@@ -105,6 +109,8 @@
     const/16 v0, 0x64
 
     iput v0, p0, Lc2/b;->bindOpacity:I
+
+    iput v0, p0, Lc2/b;->bindSize:I
 
     return-void
 .end method
@@ -364,6 +370,12 @@
     const-string v3, "bind_opacity"
 
     iget v4, p0, Lc2/b;->bindOpacity:I
+
+    invoke-virtual {v0, v3, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
+
+    const-string v3, "bind_size"
+
+    iget v4, p0, Lc2/b;->bindSize:I
 
     invoke-virtual {v0, v3, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 

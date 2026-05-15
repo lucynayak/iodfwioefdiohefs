@@ -482,8 +482,8 @@
   "version": "2.4.0-260312",
   "sharedLibrary": false,
   "VersionInfo": {
-    "versionName": "1.1.5.1",
-    "versionCode": "871010501"
+    "versionName": "1.1.5",
+    "versionCode": "871010535"
   },
   "UsesFramework": {
     "ids": [1],

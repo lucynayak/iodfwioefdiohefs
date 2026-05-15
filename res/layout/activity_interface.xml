@@ -38,7 +38,7 @@
             android:gravity="center_vertical"
             android:id="@id/activity_interface__apply_button"
             android:padding="10.0dip"
-            android:visibility="gone"
+            android:visibility="visible"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:text="Apply (exit)"
@@ -48,12 +48,12 @@
     <ScrollView
         android:background="@drawable/views_container_background"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:fillViewport="true"
         android:layout_margin="8.0dip">
         <RelativeLayout
             android:padding="4.0dip"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="wrap_content">
             <TextView
                 android:textSize="16.0sp"
                 android:textColor="@color/white"
@@ -272,6 +272,7 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 android:id="@id/activity_interface__bind__size_layout"
+                android:visibility="gone"
                 android:layout_width="fill_parent"
                 android:layout_height="30.0dip"
                 android:layout_below="@id/activity_interface__bind__text_size_layout">
@@ -406,6 +407,109 @@
                     android:text="Top"
                     android:buttonTint="@color/main_color" />
             </RadioGroup>
+            <View
+                android:id="@id/activity_interface__line2"
+                android:background="@color/almostAlmostAlmostBlack"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_margin="15.0dip"
+                android:layout_below="@id/activity_interface__menu_position__group" />
+            <TextView
+                android:textSize="16.0sp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:id="@id/activity_interface__window__title_text"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:text="Window size"
+                android:layout_below="@id/activity_interface__line2"
+                android:paddingStart="15.0dip" />
+            <TextView
+                android:textSize="12.5sp"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:id="@id/activity_interface__window__default_button"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="30.0dip"
+                android:text="default"
+                android:layout_below="@id/activity_interface__line2"
+                android:layout_alignParentEnd="true" />
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/activity_interface__window__width_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:layout_below="@id/activity_interface__window__title_text">
+                <TextView
+                    android:textSize="12.5sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:id="@id/activity_interface__window__width_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Width"
+                    android:paddingStart="15.0dip"
+                    android:layout_alignParentStart="true" />
+                <SeekBar
+                    android:id="@id/activity_interface__window__width_slider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_toStartOf="@id/activity_interface__window__width_number_text"
+                    android:layout_toEndOf="@id/activity_interface__window__width_text"
+                    android:progressTint="@color/main_color"
+                    android:progressBackgroundTint="@color/almostAlmostAlmostBlack"
+                    android:thumbTint="@color/main_color" />
+                <TextView
+                    android:textSize="12.5sp"
+                    android:textColor="@color/white"
+                    android:gravity="start|center"
+                    android:id="@id/activity_interface__window__width_number_text"
+                    android:padding="5.0dip"
+                    android:layout_width="70.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="30 / 60%"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@id/activity_interface__window__height_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:layout_below="@id/activity_interface__window__width_layout">
+                <TextView
+                    android:textSize="12.5sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:id="@id/activity_interface__window__height_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="Height"
+                    android:paddingStart="15.0dip"
+                    android:layout_alignParentStart="true" />
+                <SeekBar
+                    android:id="@id/activity_interface__window__height_slider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_toStartOf="@id/activity_interface__window__height_number_text"
+                    android:layout_toEndOf="@id/activity_interface__window__height_text"
+                    android:progressTint="@color/main_color"
+                    android:progressBackgroundTint="@color/almostAlmostAlmostBlack"
+                    android:thumbTint="@color/main_color" />
+                <TextView
+                    android:textSize="12.5sp"
+                    android:textColor="@color/white"
+                    android:gravity="start|center"
+                    android:id="@id/activity_interface__window__height_number_text"
+                    android:padding="5.0dip"
+                    android:layout_width="70.0dip"
+                    android:layout_height="fill_parent"
+                    android:text="80 / 100%"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
         </RelativeLayout>
     </ScrollView>
 </LinearLayout>

@@ -18,10 +18,12 @@
 
 .field public u:Li2/d;
 
+.field public v:Li2/b;
+
 
 # direct methods
 .method public constructor <init>(I)V
-    .registers 11
+    .registers 14
 
     iput p1, p0, Lh2/c;->o:I
 
@@ -106,27 +108,51 @@
 
     iput-object v6, p0, Lh2/c;->r:Li2/c;
 
-    const/4 v7, 0x5
+    new-instance v7, Li2/b;
 
-    new-array v7, v7, [Li2/c;
+    const-string v8, "Normal"
 
-    aput-object p1, v7, v0
+    const-string v9, "Jitter"
 
-    aput-object v2, v7, v4
+    const-string v10, "Burst"
+
+    const-string v11, "Drag"
+
+    filled-new-array {v8, v9, v10, v11}, [Ljava/lang/String;
+
+    move-result-object v8
+
+    const-string v9, "Mode"
+
+    invoke-direct {v7, v9, v8}, Li2/b;-><init>(Ljava/lang/String;[Ljava/lang/String;)V
+
+    iput-object v7, p0, Lh2/c;->v:Li2/b;
+
+    const/4 v10, 0x6
+
+    new-array v10, v10, [Li2/c;
+
+    aput-object p1, v10, v0
+
+    aput-object v2, v10, v4
 
     const/4 v8, 0x2
 
-    aput-object v3, v7, v8
+    aput-object v3, v10, v8
 
     const/4 v8, 0x3
 
-    aput-object v5, v7, v8
+    aput-object v5, v10, v8
 
     const/4 v8, 0x4
 
-    aput-object v6, v7, v8
+    aput-object v7, v10, v8
 
-    invoke-virtual {p0, v7}, Lc2/b;->A([Li2/c;)V
+    const/4 v8, 0x5
+
+    aput-object v6, v10, v8
+
+    invoke-virtual {p0, v10}, Lc2/b;->A([Li2/c;)V
 
     return-void
 
@@ -343,7 +369,42 @@
 
     move-result v3
 
-    const/16 v6, 0x14
+    iget-object v4, p0, Lh2/c;->v:Li2/b;
+
+    invoke-virtual {v4}, Li2/b;->getCurrentMode()Ljava/lang/String;
+
+    move-result-object v4
+
+    # === Drag: spam click every 2nd tick (~10 CPS), ignore CPS/threshold ===
+    const-string v5, "Drag"
+
+    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :not_drag
+
+    iget v5, p0, Lh2/c;->q:I
+
+    rem-int/lit8 v5, v5, 0x2
+
+    if-nez v5, :cond_2
+
+    invoke-static {v3}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->click(Z)V
+
+    goto :cond_2
+
+    :not_drag
+    # === Burst: slow trigger every 60 ticks, then 5 fast clicks ===
+    const-string v5, "Burst"
+
+    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :not_burst
+
+    const/16 v6, 0x3c
 
     iget v0, p0, Lh2/c;->q:I
 
@@ -351,7 +412,71 @@
 
     invoke-static {v3}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->click(Z)V
 
+    invoke-static {v3}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->click(Z)V
+
+    invoke-static {v3}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->click(Z)V
+
+    invoke-static {v3}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->click(Z)V
+
+    invoke-static {v3}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->click(Z)V
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Lh2/c;->q:I
+
+    goto :cond_2
+
+    :not_burst
+    # === Jitter: random threshold each iteration (15..25), click+subtract while q >= threshold ===
+    const-string v5, "Jitter"
+
+    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :normal_click_mode
+
+    iget v0, p0, Lh2/c;->q:I
+
+    :jitter_loop
+    invoke-static {}, Ljava/lang/Math;->random()D
+
+    move-result-wide v5
+
+    const-wide/high16 v7, 0x4024000000000000L    # 10.0
+
+    mul-double/2addr v5, v7
+
+    double-to-int v5, v5
+
+    const/16 v6, 0xf
+
+    add-int/2addr v6, v5
+
+    if-lt v0, v6, :jitter_done
+
+    invoke-static {v3}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->click(Z)V
+
+    sub-int/2addr v0, v6
+
+    goto :jitter_loop
+
+    :jitter_done
+    iput v0, p0, Lh2/c;->q:I
+
+    goto :cond_2
+
+    :normal_click_mode
+    # === Normal: q accumulates `cps` per tick; click each time we subtract 20 ===
+    const/16 v6, 0x14
+
+    iget v0, p0, Lh2/c;->q:I
+
+    if-lt v0, v6, :cond_2
+
     :cond_1
+    invoke-static {v3}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->click(Z)V
+
     sub-int/2addr v0, v6
 
     if-ge v0, v6, :cond_1

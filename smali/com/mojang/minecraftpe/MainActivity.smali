@@ -1669,22 +1669,17 @@
 .method public getExternalStoragePath()Ljava/lang/String;
     .registers 3
 
-    # Return cached path if available
-    sget-object v0, Lcom/mojang/minecraftpe/MainActivity;->sCachedStoragePath:Ljava/lang/String;
-    if-nez v0, :return_cached
-
-    # On API 30+ without all-files access, use app-private dir
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1e
 
-    if-lt v0, v1, :use_external
+    if-lt v0, v1, :use_cached_external
 
     invoke-static {}, Landroid/os/Environment;->isExternalStorageManager()Z
 
     move-result v0
 
-    if-nez v0, :use_external
+    if-nez v0, :use_cached_external
 
     invoke-virtual {p0}, Lcom/mojang/minecraftpe/MainActivity;->getFilesDir()Ljava/io/File;
 
@@ -1694,11 +1689,13 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/mojang/minecraftpe/MainActivity;->sCachedStoragePath:Ljava/lang/String;
-
     return-object v0
 
-    :use_external
+    :use_cached_external
+    sget-object v0, Lcom/mojang/minecraftpe/MainActivity;->sCachedStoragePath:Ljava/lang/String;
+
+    if-nez v0, :return_cached
+
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
     move-result-object v0
@@ -2671,21 +2668,19 @@
 .method public hasWriteExternalStoragePermission()Z
     .registers 3
 
-    # Return cached result if available (0=uncached, 1=false, 2=true)
     sget v0, Lcom/mojang/minecraftpe/MainActivity;->sCachedHasStorage:I
-    if-eqz v0, :compute
+
     const/4 v1, 0x2
-    if-ne v0, v1, :ret_false
+
+    if-ne v0, v1, :compute
+
     const/4 v0, 0x1
+
     sput-boolean v0, Lcom/mojang/minecraftpe/MainActivity;->mHasStoragePermission:Z
-    return v0
-    :ret_false
-    const/4 v0, 0x0
-    sput-boolean v0, Lcom/mojang/minecraftpe/MainActivity;->mHasStoragePermission:Z
+
     return v0
 
     :compute
-    # On API 30+ use isExternalStorageManager instead of deprecated permission
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1e
@@ -2704,10 +2699,8 @@
     sput v1, Lcom/mojang/minecraftpe/MainActivity;->sCachedHasStorage:I
     return v0
     :cache_false
-    const/4 v1, 0x1
+    const/4 v1, 0x0
     sput v1, Lcom/mojang/minecraftpe/MainActivity;->sCachedHasStorage:I
-    return v0
-
     return v0
 
     :check_old_perm
@@ -3545,6 +3538,18 @@
 
     invoke-super {p0}, Landroid/app/NativeActivity;->onResume()V
 
+    const/4 v0, 0x0
+
+    sput v0, Lcom/mojang/minecraftpe/MainActivity;->sCachedHasStorage:I
+
+    invoke-virtual {p0}, Lcom/mojang/minecraftpe/MainActivity;->hasWriteExternalStoragePermission()Z
+
+    move-result v0
+
+    iget v1, p0, Lcom/mojang/minecraftpe/MainActivity;->mLastPermissionRequestReason:I
+
+    invoke-virtual {p0, v0, v1}, Lcom/mojang/minecraftpe/MainActivity;->nativeStoragePermissionRequestResult(ZI)V
+
     new-instance v0, Landroid/content/IntentFilter;
 
     const-string v1, "android.intent.action.HEADSET_PLUG"
@@ -3738,15 +3743,50 @@
 .end method
 
 .method public requestStoragePermission(I)V
-    .registers 3
+    .registers 6
 
+    iput p1, p0, Lcom/mojang/minecraftpe/MainActivity;->mLastPermissionRequestReason:I
+
+    const/4 v0, 0x0
+
+    sput v0, Lcom/mojang/minecraftpe/MainActivity;->sCachedHasStorage:I
+
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x1e
+
+    if-lt v0, v1, :old_storage_permission
+
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v1, "android.settings.MANAGE_APP_ALL_FILES_ACCESS_PERMISSION"
+
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string v1, "package"
+
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v2
+
+    const/4 v3, 0x0
+
+    invoke-static {v1, v2, v3}, Landroid/net/Uri;->fromParts(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+
+    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+
+    return-void
+
+    :old_storage_permission
     const-string v0, "android.permission.WRITE_EXTERNAL_STORAGE"
 
     filled-new-array {v0}, [Ljava/lang/String;
 
     move-result-object v0
-
-    iput p1, p0, Lcom/mojang/minecraftpe/MainActivity;->mLastPermissionRequestReason:I
 
     invoke-static {p0, v0}, Landroid/support/v4/app/b;->c(Landroid/app/Activity;[Ljava/lang/String;)V
 

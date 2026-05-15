@@ -566,6 +566,59 @@
 
     invoke-virtual {v11, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
+    # Bind size setting
+    new-instance v0, Landroid/widget/TextView;
+
+    move-object/from16 v1, p1
+
+    invoke-direct {v0, v1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
+
+    iget v1, v7, Lc2/b;->bindSize:I
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Size: "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v3, "%"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    const/high16 v1, 0x41600000    # 14.0f
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextSize(F)V
+
+    const/4 v1, -0x1
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
+
+    const/16 v1, 0xa
+
+    invoke-virtual {v0, v1, v1, v1, v1}, Landroid/view/View;->setPadding(IIII)V
+
+    const v1, 0x7f07005c
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundResource(I)V
+
+    new-instance v1, La2/r;
+
+    invoke-direct {v1, v0, v7}, La2/r;-><init>(Landroid/widget/TextView;Lc2/b;)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    invoke-virtual {v11, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+
     goto :goto_5
 
     :cond_9
@@ -1287,13 +1340,7 @@
 
     if-lt v12, v13, :cond_16
 
-    const-string v12, "min"
-
-    invoke-virtual {v10, v12}, Li2/d;->A(Ljava/lang/String;)D
-
-    move-result-wide v12
-
-    double-to-int v12, v12
+    const/4 v12, 0x0
 
     invoke-virtual {v9, v12}, Landroid/widget/SeekBar;->setMin(I)V
 
@@ -1303,6 +1350,14 @@
     invoke-virtual {v10, v12}, Li2/d;->A(Ljava/lang/String;)D
 
     move-result-wide v12
+
+    const-string v14, "min"
+
+    invoke-virtual {v10, v14}, Li2/d;->A(Ljava/lang/String;)D
+
+    move-result-wide v14
+
+    sub-double/2addr v12, v14
 
     const-string v14, "delta"
 
@@ -1319,6 +1374,16 @@
     invoke-virtual {v10, v1}, Li2/d;->A(Ljava/lang/String;)D
 
     move-result-wide v12
+
+    const-string v14, "min"
+
+    invoke-virtual {v10, v14}, Li2/d;->A(Ljava/lang/String;)D
+
+    move-result-wide v14
+
+    sub-double/2addr v12, v14
+
+    const-string v14, "delta"
 
     invoke-virtual {v10, v14}, Li2/d;->A(Ljava/lang/String;)D
 

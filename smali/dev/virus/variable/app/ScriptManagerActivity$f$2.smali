@@ -96,16 +96,6 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    const-string v3, "From URL"
-
-    iget-object v4, p0, Ldev/virus/variable/app/ScriptManagerActivity$f$2;->a:Ldev/virus/variable/app/ScriptManagerActivity$f;
-
-    new-instance v5, Ldev/virus/variable/app/ScriptManagerActivity$f$3;
-
-    invoke-direct {v5, v4, v2}, Ldev/virus/variable/app/ScriptManagerActivity$f$3;-><init>(Ldev/virus/variable/app/ScriptManagerActivity$f;Landroid/widget/EditText;)V
-
-    invoke-virtual {v1, v3, v5}, Landroid/app/AlertDialog$Builder;->setNeutralButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
     invoke-virtual {v1}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
     return-void

@@ -347,6 +347,29 @@
 
     return-void
 
+    :pswitch_b
+    iget-object v0, p0, Ld2/a;->b:Lc2/b;
+
+    check-cast v0, Ld2/b;
+
+    const-string v1, "Jitter yaw"
+
+    invoke-virtual {v0, v1}, Lc2/b;->getSetting(Ljava/lang/String;)Li2/c;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p1}, Li2/c;->setVisibility(Z)V
+
+    const-string v1, "Jitter pitch"
+
+    invoke-virtual {v0, v1}, Lc2/b;->getSetting(Ljava/lang/String;)Li2/c;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Li2/c;->setVisibility(Z)V
+
+    return-void
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_9
@@ -360,6 +383,7 @@
         :pswitch_1
         :pswitch_0
         :pswitch_a
+        :pswitch_b
     .end packed-switch
 
     :array_0

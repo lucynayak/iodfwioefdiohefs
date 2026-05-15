@@ -25,9 +25,9 @@
 
     const-string v1, "Player Name"
 
-    const-string v2, ""
+    const-string v2, "name1,name2,..."
 
-    const-string v3, "Enter name"
+    const-string v3, ""
 
     invoke-direct {v0, v1, v2, v3}, Li2/f;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -49,13 +49,15 @@
 
 # virtual methods
 .method public final L(Ljava/lang/String;)V
-    .registers 4
+    .registers 7
 
     invoke-virtual {p0}, Lc2/b;->isActive()Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_done
+
+    if-eqz p1, :cond_done
 
     iget-object v0, p0, Le2/pm;->o:Li2/f;
 
@@ -63,20 +65,55 @@
 
     move-result-object v0
 
+    if-eqz v0, :cond_done
+
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
 
-    if-lez v1, :cond_0
+    if-lez v1, :cond_done
 
-    invoke-virtual {p1, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    # Split saved names by comma -> support multiple players
+    const-string v1, ","
 
-    move-result v1
+    invoke-virtual {v0, v1}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
-    if-eqz v1, :cond_0
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    array-length v2, v0
+
+    :goto_loop
+    if-ge v1, v2, :cond_done
+
+    aget-object v3, v0, v1
+
+    invoke-virtual {v3}, Ljava/lang/String;->trim()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/String;->length()I
+
+    move-result v4
+
+    if-lez v4, :cond_skip
+
+    invoke-virtual {p1, v3}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_skip
 
     invoke-static {}, Ldev/virus/variable/launcher/api/Api;->preventDefault()V
 
-    :cond_0
+    return-void
+
+    :cond_skip
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_loop
+
+    :cond_done
     return-void
 .end method

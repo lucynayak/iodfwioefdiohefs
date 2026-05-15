@@ -6,6 +6,10 @@
 # static fields
 .field public static final synthetic s:I
 
+.field public static sInstance:Lg2/b;
+
+.field public static sConfigsLayout:Landroid/widget/LinearLayout;
+
 
 # instance fields
 .field public final o:Li2/e;
@@ -174,6 +178,10 @@
     invoke-direct/range {v3 .. v8}, Lb2/d;-><init>(Landroid/content/Context;Landroid/view/View;Landroid/view/LayoutInflater;Ljava/lang/String;Landroid/view/View;)V
 
     iput-object v0, p0, Lg2/b;->q:Lb2/d;
+
+    sput-object p0, Lg2/b;->sInstance:Lg2/b;
+
+    sput-object v1, Lg2/b;->sConfigsLayout:Landroid/widget/LinearLayout;
 
     return-void
 .end method

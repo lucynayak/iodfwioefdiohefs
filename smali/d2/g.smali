@@ -166,6 +166,40 @@
 
     return-void
 
+    :pswitch_8
+    const-string p1, "BlockReach"
+
+    const-string v0, "Player"
+
+    .line 11
+    invoke-direct {p0, p1, v4, v4, v0}, Lc2/b;-><init>(Ljava/lang/String;ZZLjava/lang/String;)V
+
+    new-instance v0, Li2/d;
+
+    const/4 v1, 0x4
+
+    new-array v1, v1, [D
+
+    fill-array-data v1, :array_2
+
+    const-string v2, "Distance"
+
+    invoke-direct {v0, v2, v1}, Li2/d;-><init>(Ljava/lang/String;[D)V
+
+    iput-object v0, p0, Ld2/g;->o2:Li2/d;
+
+    const/4 v1, 0x1
+
+    new-array v1, v1, [Li2/c;
+
+    const/4 v2, 0x0
+
+    aput-object v0, v1, v2
+
+    invoke-virtual {p0, v1}, Lc2/b;->A([Li2/c;)V
+
+    return-void
+
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_6
@@ -176,14 +210,15 @@
         :pswitch_1
         :pswitch_0
         :pswitch_7
+        :pswitch_8
     .end packed-switch
 
     :array_0
     .array-data 8
-        0x4018000000000000L    # 6.0
-        0x4008000000000000L    # 3.0
-        0x4059000000000000L    # 100.0
-        0x3fe0000000000000L    # 0.5
+        0x4018000000000000L    # 6.0 (default)
+        0x4008000000000000L    # 3.0 (min)
+        0x4020000000000000L    # 8.0 (max)
+        0x3fe0000000000000L    # 0.5 (step)
     .end array-data
 
     :array_1
@@ -191,6 +226,14 @@
         0x403f000000000000L    # 31.0
         -0x3fb1000000000000L    # -62.0
         0x403f000000000000L    # 31.0
+        0x3fe0000000000000L    # 0.5
+    .end array-data
+
+    :array_2
+    .array-data 8
+        0x4018000000000000L    # 6.0
+        0x4008000000000000L    # 3.0
+        0x4059000000000000L    # 100.0
         0x3fe0000000000000L    # 0.5
     .end array-data
 .end method
@@ -367,17 +410,17 @@
 
     const/4 v1, 0x1
 
-    if-ne v0, v1, :cond_0
+    if-ne v0, v1, :pswitch_0
 
     invoke-virtual {p0}, Lc2/b;->isActive()Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :goto_0
 
     iget-object v0, p0, Ld2/g;->o2:Li2/d;
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :goto_0
 
     const-string v1, "current"
 
@@ -435,7 +478,86 @@
 
     invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
 
-    const v0, 0x22c8da0
+    goto :goto_0
+
+    :pswitch_0
+    iget v0, p0, Ld2/g;->o:I
+
+    const/16 v1, 0x9
+
+    if-ne v0, v1, :goto_0
+
+    invoke-virtual {p0}, Lc2/b;->isActive()Z
+
+    move-result v0
+
+    if-eqz v0, :goto_0
+
+    iget-object v0, p0, Ld2/g;->o2:Li2/d;
+
+    if-eqz v0, :goto_0
+
+    const-string v1, "current"
+
+    invoke-virtual {v0, v1}, Li2/d;->A(Ljava/lang/String;)D
+
+    move-result-wide v0
+
+    double-to-float v0, v0
+
+    invoke-static {v0}, Ljava/lang/Float;->floatToRawIntBits(F)I
+
+    move-result v0
+
+    const/4 v1, 0x4
+
+    new-array v1, v1, [C
+
+    const/4 v2, 0x0
+
+    and-int/lit16 v3, v0, 0xff
+
+    aput-char v3, v1, v2
+
+    const/4 v2, 0x1
+
+    ushr-int/lit8 v3, v0, 0x8
+
+    and-int/lit16 v3, v3, 0xff
+
+    aput-char v3, v1, v2
+
+    const/4 v2, 0x2
+
+    ushr-int/lit8 v3, v0, 0x10
+
+    and-int/lit16 v3, v3, 0xff
+
+    aput-char v3, v1, v2
+
+    const/4 v2, 0x3
+
+    ushr-int/lit8 v0, v0, 0x18
+
+    aput-char v0, v1, v2
+
+    const v0, 0x15dd32c
+
+    invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
+
+    const v0, 0x15dd324
+
+    invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
+
+    const v0, 0x15dd328
+
+    invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
+
+    const v0, 0x22c8d8c
+
+    invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
+
+    const v0, 0x22c8d90
 
     invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
 
@@ -447,13 +569,25 @@
 
     invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
 
+    const v0, 0x22c8d9c
+
+    invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
+
+    const v0, 0x22c8da0
+
+    invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
+
     const v0, 0x22c8da4
+
+    invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
+
+    const v0, 0xfa8c40
 
     invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
 
     return-void
 
-    :cond_0
+    :goto_0
     iget v0, p0, Ld2/g;->o:I
 
     packed-switch v0, :pswitch_data_0
@@ -461,7 +595,7 @@
     return-void
 
     .line 1
-    :pswitch_0
+    :pswitch_2
     sget-object v0, Lc2/c;->b:Ljava/util/concurrent/CopyOnWriteArrayList;
 
     .line 2
@@ -470,7 +604,7 @@
     move-result-object v0
 
     :cond_1
-    :goto_0
+    :goto_1
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
@@ -515,7 +649,7 @@
     .line 4
     invoke-virtual {v1}, Landroid/view/View;->performClick()Z
 
-    goto :goto_0
+    goto :goto_1
 
     :cond_2
     sget-object v0, Lc2/c;->b:Ljava/util/concurrent/CopyOnWriteArrayList;
@@ -524,7 +658,7 @@
 
     move-result-object v0
 
-    :goto_1
+    :goto_2
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
@@ -554,13 +688,13 @@
     invoke-virtual {v2}, Landroid/widget/PopupWindow;->dismiss()V
 
     :cond_3
-    goto :goto_1
+    goto :goto_2
 
     :cond_4
     return-void
 
     .line 10
-    :pswitch_1
+    :pswitch_3
     invoke-virtual {p0}, Lc2/b;->isActive()Z
 
     move-result v0
@@ -648,8 +782,8 @@
 
     :pswitch_data_0
     .packed-switch 0x6
-        :pswitch_0
-        :pswitch_1
+        :pswitch_2
+        :pswitch_3
     .end packed-switch
 .end method
 
@@ -660,7 +794,7 @@
 
     const/4 v1, 0x0
 
-    packed-switch v0, :pswitch_data_0
+    sparse-switch v0, :sswitch_data_1
 
     :pswitch_0
     return-void
@@ -754,10 +888,6 @@
 
     invoke-static {v1, v0}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
 
-    const v1, 0x22c8da0
-
-    invoke-static {v1, v0}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
-
     const/4 v0, 0x4
 
     new-array v0, v0, [C
@@ -765,10 +895,6 @@
     fill-array-data v0, :array_b
 
     const v1, 0x15dd324
-
-    invoke-static {v1, v0}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
-
-    const v1, 0x22c8d94
 
     invoke-static {v1, v0}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
 
@@ -781,6 +907,45 @@
     const v1, 0x15dd328
 
     invoke-static {v1, v0}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
+
+    const/4 v0, 0x2
+
+    new-array v0, v0, [C
+
+    fill-array-data v0, :array_10
+
+    const v1, 0x13d6b00
+
+    invoke-static {v1, v0}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
+
+    return-void
+
+    :pswitch_9
+    const/4 v0, 0x4
+
+    new-array v0, v0, [C
+
+    fill-array-data v0, :array_a
+
+    const v1, 0x22c8da0
+
+    invoke-static {v1, v0}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
+
+    const/4 v0, 0x4
+
+    new-array v0, v0, [C
+
+    fill-array-data v0, :array_b
+
+    const v1, 0x22c8d94
+
+    invoke-static {v1, v0}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
+
+    const/4 v0, 0x4
+
+    new-array v0, v0, [C
+
+    fill-array-data v0, :array_c
 
     const v1, 0x22c8d98
 
@@ -796,13 +961,43 @@
 
     invoke-static {v1, v0}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
 
-    const/4 v0, 0x2
+    const/4 v0, 0x4
 
     new-array v0, v0, [C
 
-    fill-array-data v0, :array_10
+    fill-array-data v0, :array_11
 
-    const v1, 0x13d6b00
+    const v1, 0x22c8d8c
+
+    invoke-static {v1, v0}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
+
+    const/4 v0, 0x4
+
+    new-array v0, v0, [C
+
+    fill-array-data v0, :array_12
+
+    const v1, 0x22c8d90
+
+    invoke-static {v1, v0}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
+
+    const/4 v0, 0x4
+
+    new-array v0, v0, [C
+
+    fill-array-data v0, :array_13
+
+    const v1, 0x22c8d9c
+
+    invoke-static {v1, v0}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
+
+    const/4 v0, 0x4
+
+    new-array v0, v0, [C
+
+    fill-array-data v0, :array_14
+
+    const v1, 0xfa8c40
 
     invoke-static {v1, v0}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
 
@@ -899,6 +1094,19 @@
         :pswitch_5
     .end packed-switch
 
+    :sswitch_data_1
+    .sparse-switch
+        0x1 -> :pswitch_4
+        0x2 -> :pswitch_3
+        0x3 -> :pswitch_0
+        0x4 -> :pswitch_0
+        0x5 -> :pswitch_2
+        0x6 -> :pswitch_0
+        0x7 -> :pswitch_1
+        0x8 -> :pswitch_5
+        0x9 -> :pswitch_9
+    .end sparse-switch
+
     :array_0
     .array-data 2
         0x2ds
@@ -955,19 +1163,23 @@
         0x2as
     .end array-data
 
+    # was: vmov.f32 s2, #12.0 (b2 ee 08 1a) -- creative reach hardcode
+    # now: vldr s2, [pc, #0x20] -> reads from 0x15dd324 (slider data slot)
     :array_8
     .array-data 2
-        0xb2s
-        0xees
+        0x9fs
+        0xeds
         0x8s
         0x1as
     .end array-data
 
+    # was: vmov.f32 s0, #12.0 (b2 ee 08 0a) -- fallback hardcode
+    # now: vldr s0, [pc, #0xc] -> reads from 0x15dd324 (slider data slot)
     :array_9
     .array-data 2
-        0xb2s
-        0xees
-        0x8s
+        0x9fs
+        0xeds
+        0x3s
         0xas
     .end array-data
 
@@ -1003,11 +1215,13 @@
         0xbfs
     .end array-data
 
+    # was: vmov.f32 s0, #7.0 (b1 ee 0c 0a) -- survival reach hardcode (THE 7-8 cap)
+    # now: vldr s0, [pc, #0x54] -> reads from 0x15dd324 (slider data slot)
     :array_e
     .array-data 2
-        0xb1s
-        0xees
-        0xcs
+        0x9fs
+        0xeds
+        0x15s
         0xas
     .end array-data
 
@@ -1019,10 +1233,44 @@
         0x41s
     .end array-data
 
+    # was: ble #0x13d6b14 (08 dd) -- conditional, lets clearAttackTarget run if dist > 12.0
+    # now: b   #0x13d6b14 (08 e0) -- unconditional, always skip clearAttackTarget
     :array_10
     .array-data 2
         0x8s
-        0xdds
+        0xe0s
+    .end array-data
+
+    :array_11
+    .array-data 2
+        0x66s
+        0x66s
+        0xb6s
+        0x40s
+    .end array-data
+
+    :array_12
+    .array-data 2
+        0x33s
+        0x33s
+        0xb3s
+        0x40s
+    .end array-data
+
+    :array_13
+    .array-data 2
+        0x0s
+        0x0s
+        0x90s
+        0x40s
+    .end array-data
+
+    :array_14
+    .array-data 2
+        0x0s
+        0x0s
+        0x20s
+        0x41s
     .end array-data
 .end method
 
@@ -1396,8 +1644,13 @@
 
     const/4 v1, 0x1
 
+    if-eq v0, v1, :reach_block_start
+
+    const/16 v1, 0x9
+
     if-ne v0, v1, :cond_0
 
+    :reach_block_start
     invoke-virtual {p0}, Lc2/b;->isActive()Z
 
     move-result v0
@@ -1517,6 +1770,22 @@
     invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
 
     const v0, 0x22c8da4
+
+    invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
+
+    const v0, 0x22c8d8c
+
+    invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
+
+    const v0, 0x22c8d90
+
+    invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
+
+    const v0, 0x22c8d9c
+
+    invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
+
+    const v0, 0xfa8c40
 
     invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeMemory;->write(I[C)I
 

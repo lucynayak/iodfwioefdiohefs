@@ -1624,6 +1624,20 @@
     <public type="id" name="activity_interface__bind__shape_layout" id="0x7f080180" />
     <public type="id" name="activity_interface__bind__shape_value" id="0x7f080182" />
     <public type="id" name="activity_interface__menu_position__top_button" id="0x7f080183" />
+    <public type="id" name="activity_interface__line2" id="0x7f080184" />
+    <public type="id" name="activity_interface__window__title_text" id="0x7f080185" />
+    <public type="id" name="activity_interface__window__default_button" id="0x7f080186" />
+    <public type="id" name="activity_interface__window__width_layout" id="0x7f080187" />
+    <public type="id" name="activity_interface__window__width_text" id="0x7f080188" />
+    <public type="id" name="activity_interface__window__width_slider" id="0x7f080189" />
+    <public type="id" name="activity_interface__window__width_number_text" id="0x7f08018a" />
+    <public type="id" name="activity_interface__window__height_layout" id="0x7f08018b" />
+    <public type="id" name="activity_interface__window__height_text" id="0x7f08018c" />
+    <public type="id" name="activity_interface__window__height_slider" id="0x7f08018d" />
+    <public type="id" name="activity_interface__window__height_number_text" id="0x7f08018e" />
+    <public type="id" name="zoom_slider__container" id="0x7f08018f" />
+    <public type="id" name="zoom_slider__seekbar" id="0x7f080190" />
+    <public type="id" name="zoom_slider__fov_label" id="0x7f080191" />
     <public type="id" name="APKTOOL_DUMMY_7f080181" id="0x7f080181" />
     <public type="integer" name="abc_config_activityDefaultDur" id="0x7f090000" />
     <public type="integer" name="abc_config_activityShortDur" id="0x7f090001" />
@@ -1747,6 +1761,7 @@
     <public type="layout" name="setting_mode_spinner_item" id="0x7f0b0061" />
     <public type="layout" name="support_simple_spinner_dropdown_item" id="0x7f0b0062" />
     <public type="layout" name="window_layout" id="0x7f0b0063" />
+    <public type="layout" name="zoom_slider_layout" id="0x7f0b0064" />
     <public type="raw" name="_0" id="0x7f0c0000" />
     <public type="raw" name="xbox_live_notification" id="0x7f0c0001" />
     <public type="raw" name="xboxservices" id="0x7f0c0002" />

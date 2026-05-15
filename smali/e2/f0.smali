@@ -307,6 +307,10 @@
 
     invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/Api;->sendEnabledStatus(IZ)V
 
+    const/16 v0, 0x15
+
+    invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/Api;->sendEnabledStatus(IZ)V
+
     return-void
 .end method
 
@@ -318,6 +322,23 @@
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/Api;->sendEnabledStatus(IZ)V
+
+    const-string v0, "Fill"
+
+    invoke-virtual {p0, v0}, Lc2/b;->getSetting(Ljava/lang/String;)Li2/c;
+
+    move-result-object v0
+
+    check-cast v0, Li2/e;
+
+    invoke-virtual {v0}, Li2/e;->isActive()Z
+
+    move-result v0
+
+    const/16 v1, 0x15
+
+    invoke-static {v1, v0}, Ldev/virus/variable/launcher/api/Api;->sendEnabledStatus(IZ)V
+
 
     const-string v0, "current"
 

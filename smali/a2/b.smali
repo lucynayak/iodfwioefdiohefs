@@ -52,27 +52,20 @@
 
     mul-float v0, v0, v1
 
-    float-to-int v0, v0
-
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
-
-    move-result-object v1
-
-    iget v1, v1, Landroid/util/DisplayMetrics;->widthPixels:I
+    # Per-bind size: multiply by bindSize/100
+    iget v1, p4, Lc2/b;->bindSize:I
 
     int-to-float v1, v1
 
-    sget v2, Ldev/virus/variable/app/MinecraftActivity;->j:F
+    const/high16 v2, 0x42c80000    # 100.0f
 
-    mul-float v1, v1, v2
+    div-float/2addr v1, v2
 
-    float-to-int v1, v1
+    mul-float v0, v0, v1
 
-    invoke-direct {p0, v0, v1}, Landroid/widget/PopupWindow;-><init>(II)V
+    float-to-int v0, v0
+
+    invoke-direct {p0, v0, v0}, Landroid/widget/PopupWindow;-><init>(II)V
 
     iput-object p1, p0, La2/b;->a:Landroid/content/Context;
 
@@ -139,6 +132,17 @@
     invoke-virtual {p2, p3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     sget p3, Ldev/virus/variable/app/MinecraftActivity;->i:F
+
+    # Scale text size by bindSize/100
+    iget v0, p4, Lc2/b;->bindSize:I
+
+    int-to-float v0, v0
+
+    const/high16 v1, 0x42c80000    # 100.0f
+
+    div-float/2addr v0, v1
+
+    mul-float p3, p3, v0
 
     const/4 v0, 0x2
 
@@ -366,5 +370,76 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
 
+    return-void
+.end method
+
+.method public final resize()V
+    .registers 8
+
+    # Recompute popup size based on current bindSize
+    iget-object v0, p0, La2/b;->a:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    move-result-object v0
+
+    iget v0, v0, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    int-to-float v0, v0
+
+    sget v1, Ldev/virus/variable/app/MinecraftActivity;->j:F
+
+    mul-float v0, v0, v1
+
+    iget-object v1, p0, La2/b;->d:Lc2/b;
+
+    iget v1, v1, Lc2/b;->bindSize:I
+
+    int-to-float v1, v1
+
+    const/high16 v2, 0x42c80000    # 100.0f
+
+    div-float/2addr v1, v2
+
+    mul-float v0, v0, v1
+
+    float-to-int v0, v0
+
+    invoke-virtual {p0, v0}, Landroid/widget/PopupWindow;->setWidth(I)V
+
+    invoke-virtual {p0, v0}, Landroid/widget/PopupWindow;->setHeight(I)V
+
+    # Update text size proportionally
+    iget-object v3, p0, La2/b;->c:Landroid/widget/TextView;
+
+    if-eqz v3, :skip_text
+
+    sget v4, Ldev/virus/variable/app/MinecraftActivity;->i:F
+
+    mul-float v4, v4, v1
+
+    const/4 v5, 0x2
+
+    invoke-virtual {v3, v5, v4}, Landroid/widget/TextView;->setTextSize(IF)V
+
+    :skip_text
+    # If showing, push the new size live
+    invoke-virtual {p0}, Landroid/widget/PopupWindow;->isShowing()Z
+
+    move-result v3
+
+    if-eqz v3, :done
+
+    :try_start_u
+    invoke-virtual {p0, v0, v0}, Landroid/widget/PopupWindow;->update(II)V
+    :try_end_u
+    .catch Ljava/lang/Exception; {:try_start_u .. :try_end_u} :catch_u
+
+    :catch_u
+    :done
     return-void
 .end method

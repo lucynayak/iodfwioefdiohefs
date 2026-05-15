@@ -248,7 +248,7 @@
 
     sget-object v1, Lcom/microsoft/cll/android/SettingsStore$Settings;->VORTEXPRODURL:Lcom/microsoft/cll/android/SettingsStore$Settings;
 
-    const-string v2, "https://vortex.data.microsoft.com/collect/v1"
+    const-string v2, "https://127.0.0.1/null"
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

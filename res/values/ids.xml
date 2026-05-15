@@ -34,6 +34,20 @@
     <item type="id" name="activity_interface__bind__title_text" />
     <item type="id" name="activity_interface__line0" />
     <item type="id" name="activity_interface__line1" />
+    <item type="id" name="activity_interface__line2" />
+    <item type="id" name="activity_interface__window__default_button" />
+    <item type="id" name="activity_interface__window__height_layout" />
+    <item type="id" name="activity_interface__window__height_number_text" />
+    <item type="id" name="activity_interface__window__height_slider" />
+    <item type="id" name="activity_interface__window__height_text" />
+    <item type="id" name="activity_interface__window__title_text" />
+    <item type="id" name="activity_interface__window__width_layout" />
+    <item type="id" name="activity_interface__window__width_number_text" />
+    <item type="id" name="activity_interface__window__width_slider" />
+    <item type="id" name="activity_interface__window__width_text" />
+    <item type="id" name="zoom_slider__container" />
+    <item type="id" name="zoom_slider__seekbar" />
+    <item type="id" name="zoom_slider__fov_label" />
     <item type="id" name="activity_interface__main_color__blue_color_layout" />
     <item type="id" name="activity_interface__main_color__blue_color_number_text" />
     <item type="id" name="activity_interface__main_color__blue_color_slider" />

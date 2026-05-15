@@ -28,6 +28,8 @@
 
 .field public z:Li2/d;
 
+.field public A:Li2/b;
+
 
 # direct methods
 .method public constructor <init>()V
@@ -183,7 +185,7 @@
 
     iput-object v13, p0, Ld2/l;->z:Li2/d;
 
-    const/16 v9, 0xa
+    const/16 v9, 0xb
 
     new-array v9, v9, [Li2/c;
 
@@ -224,6 +226,30 @@
     const/16 v3, 0x9
 
     aput-object v13, v9, v3
+
+    new-instance v3, Li2/b;
+
+    const-string v0, "Normal"
+
+    const-string v1, "Jitter"
+
+    const-string v2, "Burst"
+
+    const-string v4, "Drag"
+
+    filled-new-array {v0, v1, v2, v4}, [Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "Click Mode"
+
+    invoke-direct {v3, v1, v0}, Li2/b;-><init>(Ljava/lang/String;[Ljava/lang/String;)V
+
+    iput-object v3, p0, Ld2/l;->A:Li2/b;
+
+    const/16 v0, 0xa
+
+    aput-object v3, v9, v0
 
     invoke-virtual {p0, v9}, Lc2/b;->A([Li2/c;)V
 
@@ -444,6 +470,66 @@
     :goto_0
     div-double/2addr v4, v7
 
+    iget-object v0, p0, Ld2/l;->A:Li2/b;
+
+    if-eqz v0, :click_compare
+
+    invoke-virtual {v0}, Li2/b;->getCurrentMode()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v9, "Drag"
+
+    invoke-virtual {v9, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v9
+
+    if-eqz v9, :click_not_drag
+
+    const-wide/high16 v4, 0x4000000000000000L    # 2.0
+
+    goto :click_compare
+
+    :click_not_drag
+    const-string v9, "Burst"
+
+    invoke-virtual {v9, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v9
+
+    if-eqz v9, :click_not_burst
+
+    const-wide/high16 v4, 0x404e000000000000L    # 60.0
+
+    div-double/2addr v4, v7
+
+    goto :click_compare
+
+    :click_not_burst
+    const-string v9, "Jitter"
+
+    invoke-virtual {v9, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :click_compare
+
+    invoke-static {}, Ljava/lang/Math;->random()D
+
+    move-result-wide v9
+
+    const-wide/high16 v11, 0x4024000000000000L    # 10.0
+
+    mul-double/2addr v9, v11
+
+    const-wide/high16 v11, 0x402e000000000000L    # 15.0
+
+    add-double/2addr v9, v11
+
+    div-double v4, v9, v7
+
+    :click_compare
+
     cmpl-double v0, v2, v4
 
     if-ltz v0, :cond_11
@@ -648,9 +734,7 @@
 
     .line 7
     :cond_9
-    invoke-static {v3, v4}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->attack(J)V
-
-    iput v5, p0, Ld2/l;->u:I
+    invoke-virtual {p0, v3, v4}, Ld2/l;->attackByClickMode(J)V
 
     :cond_a
     :goto_5
@@ -847,12 +931,107 @@
     .line 15
     :cond_10
     :goto_8
-    invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->attack(J)V
-
-    iput v5, p0, Ld2/l;->u:I
+    invoke-virtual {p0, v0, v1}, Ld2/l;->attackByClickMode(J)V
 
     .line 16
     :cond_11
     :goto_9
+    return-void
+.end method
+
+.method public final attackByClickMode(J)V
+    .locals 7
+
+    # Default: 1 click per fire
+    const/4 v6, 0x1
+
+    iget-object v0, p0, Ld2/l;->A:Li2/b;
+
+    if-eqz v0, :do_loop
+
+    invoke-virtual {v0}, Li2/b;->getCurrentMode()Ljava/lang/String;
+
+    move-result-object v0
+
+    # Burst: 5 clicks per fire (existing behavior)
+    const-string v1, "Burst"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :check_drag
+
+    const/4 v6, 0x5
+
+    goto :do_loop
+
+    :check_drag
+    # Drag: 1 click per fire (slow drag-click sim, ~10 CPS)
+    const-string v1, "Drag"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :do_loop
+
+    # Normal/Jitter: multiplier = max(1, round(cps / 20)) so clicks/sec actually matches slider
+    iget-object v0, p0, Ld2/l;->x:Li2/e;
+
+    invoke-virtual {v0}, Li2/e;->isActive()Z
+
+    move-result v0
+
+    const-string v1, "current"
+
+    if-eqz v0, :main_cps
+
+    iget-object v0, p0, Ld2/l;->z:Li2/d;
+
+    invoke-virtual {v0, v1}, Li2/d;->A(Ljava/lang/String;)D
+
+    move-result-wide v2
+
+    goto :got_cps
+
+    :main_cps
+    iget-object v0, p0, Ld2/l;->p:Li2/d;
+
+    invoke-virtual {v0, v1}, Li2/d;->A(Ljava/lang/String;)D
+
+    move-result-wide v2
+
+    :got_cps
+    const-wide/high16 v4, 0x4034000000000000L    # 20.0
+
+    div-double/2addr v2, v4
+
+    const-wide/high16 v4, 0x3fe0000000000000L    # 0.5
+
+    add-double/2addr v2, v4
+
+    double-to-int v6, v2
+
+    const/4 v0, 0x1
+
+    if-ge v6, v0, :do_loop
+
+    const/4 v6, 0x1
+
+    :do_loop
+    if-lez v6, :attack_done
+
+    invoke-static {p1, p2}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->attack(J)V
+
+    add-int/lit8 v6, v6, -0x1
+
+    goto :do_loop
+
+    :attack_done
+    const/4 v0, 0x0
+
+    iput v0, p0, Ld2/l;->u:I
+
     return-void
 .end method

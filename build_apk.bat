@@ -6,11 +6,12 @@ setlocal enabledelayedexpansion
 :: Usage: just double-click or run in terminal
 :: ============================================
 
-set PROJECT=C:\Users\triggertrash\Desktop\horrible
-set APKTOOL=%PROJECT%\apktool.jar
-set SIGNER=%PROJECT%\uber-apk-signer.jar
-set OUTPUT_DIR=C:\Users\triggertrash\Desktop\horrible build
-set FRAME_DIR=%PROJECT%\build\apktool-framework
+set "PROJECT=%~dp0"
+if "%PROJECT:~-1%"=="\" set "PROJECT=%PROJECT:~0,-1%"
+set "APKTOOL=%PROJECT%\apktool.jar"
+set "SIGNER=%PROJECT%\uber-apk-signer.jar"
+set "OUTPUT_DIR=%USERPROFILE%\Desktop\horrible build"
+set "FRAME_DIR=%PROJECT%\build\apktool-framework"
 if not exist "%OUTPUT_DIR%" mkdir "%OUTPUT_DIR%"
 
 :: Check tools exist
@@ -39,12 +40,26 @@ if not defined VER (
 set /a VER=VER+1
 > "%VERSION_FILE%" echo %VER%
 
-set APK_NAME=horrible_%VER%
+for /f %%A in ('powershell -NoProfile -Command "Get-Date -Format yyyyMMdd_HHmmss"') do set "STAMP=%%A"
+set /a VERSION_CODE=1400000+VER
+set "VERSION_NAME=1.4.0"
+set APK_NAME=horrible_v%VER%_%STAMP%
 set APK_PATH=%OUTPUT_DIR%\%APK_NAME%.apk
+
+echo [0/3] Updating APK version metadata...
+powershell -NoProfile -ExecutionPolicy Bypass -Command "$ErrorActionPreference='Stop'; $project=$env:PROJECT; $vc=$env:VERSION_CODE; $vn=$env:VERSION_NAME; $y=Join-Path $project 'apktool.yml'; $j=Join-Path $project 'apktool.json'; $s=[IO.File]::ReadAllText($y); $s=$s -replace 'versionCode: ''\d+''', ('versionCode: '''+$vc+''''); $s=$s -replace 'versionName: [^\r\n]+', ('versionName: '+$vn); [IO.File]::WriteAllText($y,$s); $dq=[char]34; $s=[IO.File]::ReadAllText($j); $s=$s -replace ($dq+'versionName'+$dq+': '+$dq+'[^'+$dq+']+'+$dq), ($dq+'versionName'+$dq+': '+$dq+$vn+$dq); $s=$s -replace ($dq+'versionCode'+$dq+': '+$dq+'\d+'+$dq), ($dq+'versionCode'+$dq+': '+$dq+$vc+$dq); [IO.File]::WriteAllText($j,$s)"
+if %ERRORLEVEL% neq 0 (
+    echo.
+    echo [ERROR] Failed to update APK version metadata!
+    pause
+    exit /b 1
+)
 
 echo.
 echo ========================================
 echo   HORRIBLE LAUNCHER - Build #%VER%
+echo   Version: %VERSION_NAME% ^(%VERSION_CODE%^)
+echo   Output: %APK_NAME%-aligned-debugSigned.apk
 echo   Target: Android 15/16 (SDK 35)
 echo   Mode: DEBUG
 echo ========================================

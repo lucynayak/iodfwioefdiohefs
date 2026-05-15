@@ -336,7 +336,7 @@
     goto :goto_0
 
     :cond_2
-    const/16 p1, 0x69
+    const/16 p1, 0x6a
 
     new-array p1, p1, [Lc2/b;
 
@@ -1313,9 +1313,19 @@
 
     const/16 v1, 0x68
 
-    new-instance v2, Le2/DebugOverlayModule;
+    new-instance v2, Le2/rd;
 
-    invoke-direct {v2}, Le2/DebugOverlayModule;-><init>()V
+    invoke-direct {v2}, Le2/rd;-><init>()V
+
+    aput-object v2, p1, v1
+
+    const/16 v1, 0x69
+
+    new-instance v2, Ld2/g;
+
+    const/16 v3, 0x9
+
+    invoke-direct {v2, v3}, Ld2/g;-><init>(I)V
 
     aput-object v2, p1, v1
 
@@ -1513,10 +1523,30 @@
 
     sput-object v0, Ldev/virus/variable/app/MinecraftActivity;->splashView:Landroid/view/View;
 
-    const-string v1, "Horrible loaded \u2714"
+    # Respect "show_credits" preference (toggleable in Interface settings)
+    const-string v1, "variable"
+
+    const/4 v2, 0x0
+
+    invoke-virtual {p0, v1, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v1
+
+    const-string v2, "show_credits"
+
+    const/4 v3, 0x1
+
+    invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v1
+
+    if-eqz v1, :credits_disabled
+
+    const-string v1, "by triggertrash <3"
 
     invoke-static {v1}, Ll2/k;->showToast(Ljava/lang/String;)V
 
+    :credits_disabled
     return-void
 
     :array_0

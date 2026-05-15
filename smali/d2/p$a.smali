@@ -48,7 +48,7 @@
 .method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .registers 12
 
-    invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v0
 
@@ -136,6 +136,67 @@
 
     add-int/2addr v4, v5
 
+    iget-object v5, v1, Ld2/p;->s:Landroid/content/Context;
+
+    invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    move-result-object v5
+
+    iget v6, v5, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
+
+    move-result v7
+
+    sub-int/2addr v6, v7
+
+    if-gez v6, :x_max_ready
+
+    const/4 v6, 0x0
+
+    :x_max_ready
+    if-gez v3, :x_nonneg
+
+    const/4 v3, 0x0
+
+    goto :x_clamped
+
+    :x_nonneg
+    if-le v3, v6, :x_clamped
+
+    move v3, v6
+
+    :x_clamped
+    iget v6, v5, Landroid/util/DisplayMetrics;->heightPixels:I
+
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
+
+    move-result v7
+
+    sub-int/2addr v6, v7
+
+    if-gez v6, :y_max_ready
+
+    const/4 v6, 0x0
+
+    :y_max_ready
+    if-gez v4, :y_nonneg
+
+    const/4 v4, 0x0
+
+    goto :y_clamped
+
+    :y_nonneg
+    if-le v4, v6, :y_clamped
+
+    move v4, v6
+
+    :y_clamped
+
     # Update stored position
     iget-object v5, v1, Ld2/p;->v:[[I
 
@@ -188,9 +249,18 @@
     :check_up_edit
     const/4 v3, 0x1
 
+    if-eq v0, v3, :save_edit
+
+    const/4 v3, 0x3
+
+    if-eq v0, v3, :save_edit
+
+    const/4 v3, 0x6
+
     if-ne v0, v3, :ret_true2
 
-    # ACTION_UP in edit mode -> save positions
+    :save_edit
+    # ACTION_UP/ACTION_CANCEL/ACTION_POINTER_UP in edit mode -> save positions
     invoke-virtual {v1}, Ld2/p;->savePositions()V
 
     :ret_true2
@@ -260,9 +330,13 @@
 
     const/4 v3, 0x3
 
+    if-eq v0, v3, :gm_release
+
+    const/4 v3, 0x6
+
     if-ne v0, v3, :gm_other
 
-    # ACTION_UP or ACTION_CANCEL - release button
+    # ACTION_UP/ACTION_CANCEL/ACTION_POINTER_UP - release button
     :gm_release
     iget v3, p0, Ld2/p$a;->c:I
 

@@ -367,17 +367,63 @@
 
     invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/Api;->sendEnabledStatus(IZ)V
 
+    const/16 v0, 0xb
+
+    invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/Api;->sendEnabledStatus(IZ)V
+
+    const/16 v0, 0x23
+
+    int-to-float v1, v1
+
+    invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/Api;->sendFloatValue(IF)V
+
     return-void
 .end method
 
 .method public final G()V
-    .registers 3
+    .registers 4
 
     const/4 v0, 0x2
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/Api;->sendEnabledStatus(IZ)V
+
+    const-string v0, "Render through walls"
+
+    invoke-virtual {p0, v0}, Lc2/b;->getSetting(Ljava/lang/String;)Li2/c;
+
+    move-result-object v0
+
+    check-cast v0, Li2/e;
+
+    invoke-virtual {v0}, Li2/e;->isActive()Z
+
+    move-result v0
+
+    const/16 v1, 0xb
+
+    invoke-static {v1, v0}, Ldev/virus/variable/launcher/api/Api;->sendEnabledStatus(IZ)V
+
+    iget-object v0, p0, Le2/j;->v:Li2/b;
+
+    invoke-virtual {v0}, Li2/b;->getCurrentMode()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "Overdraw"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    xor-int/lit8 v0, v0, 0x1
+
+    int-to-float v0, v0
+
+    const/16 v1, 0x23
+
+    invoke-static {v1, v0}, Ldev/virus/variable/launcher/api/Api;->sendFloatValue(IF)V
 
     return-void
 .end method

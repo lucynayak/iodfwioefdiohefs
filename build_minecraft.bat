@@ -6,12 +6,13 @@ setlocal enabledelayedexpansion
 :: Usage: just double-click or run in terminal
 :: ============================================
 
-set HORRIBLE=C:\Users\triggertrash\Desktop\horrible
-set PROJECT=%HORRIBLE%\Minecraft PE 1.1.5_src
-set APKTOOL=%HORRIBLE%\apktool.jar
-set SIGNER=%HORRIBLE%\uber-apk-signer.jar
-set OUTPUT_DIR=C:\Users\triggertrash\Desktop\horrible build
-set FRAME_DIR=%HORRIBLE%\build\apktool-framework
+set "HORRIBLE=%~dp0"
+if "%HORRIBLE:~-1%"=="\" set "HORRIBLE=%HORRIBLE:~0,-1%"
+set "PROJECT=%HORRIBLE%\Minecraft PE 1.1.5_src"
+set "APKTOOL=%HORRIBLE%\apktool.jar"
+set "SIGNER=%HORRIBLE%\uber-apk-signer.jar"
+set "OUTPUT_DIR=%USERPROFILE%\Desktop\horrible build"
+set "FRAME_DIR=%HORRIBLE%\build\apktool-framework"
 if not exist "%OUTPUT_DIR%" mkdir "%OUTPUT_DIR%"
 
 :: Check tools exist
@@ -40,12 +41,26 @@ if not defined VER (
 set /a VER=VER+1
 > "%VERSION_FILE%" echo %VER%
 
-set APK_NAME=minecraft_1.1.5_%VER%
+for /f %%A in ('powershell -NoProfile -Command "Get-Date -Format yyyyMMdd_HHmmss"') do set "STAMP=%%A"
+set /a VERSION_CODE=871010500+VER
+set "VERSION_NAME=1.1.5"
+set APK_NAME=minecraft_1.1.5_v%VER%_%STAMP%
 set APK_PATH=%OUTPUT_DIR%\%APK_NAME%.apk
+
+echo [0/3] Updating APK version metadata...
+powershell -NoProfile -ExecutionPolicy Bypass -Command "$ErrorActionPreference='Stop'; $project=$env:PROJECT; $vc=$env:VERSION_CODE; $vn=$env:VERSION_NAME; $y=Join-Path $project 'apktool.yml'; $j=Join-Path $project 'apktool.json'; $s=[IO.File]::ReadAllText($y); $s=$s -replace 'versionCode: ''\d+''', ('versionCode: '''+$vc+''''); $s=$s -replace 'versionName: [^\r\n]+', ('versionName: '+$vn); [IO.File]::WriteAllText($y,$s); $dq=[char]34; $s=[IO.File]::ReadAllText($j); $s=$s -replace ($dq+'versionName'+$dq+': '+$dq+'[^'+$dq+']+'+$dq), ($dq+'versionName'+$dq+': '+$dq+$vn+$dq); $s=$s -replace ($dq+'versionCode'+$dq+': '+$dq+'\d+'+$dq), ($dq+'versionCode'+$dq+': '+$dq+$vc+$dq); [IO.File]::WriteAllText($j,$s)"
+if %ERRORLEVEL% neq 0 (
+    echo.
+    echo [ERROR] Failed to update APK version metadata!
+    pause
+    exit /b 1
+)
 
 echo.
 echo ========================================
 echo   MINECRAFT PE 1.1.5 - Build #%VER%
+echo   Version: %VERSION_NAME% ^(%VERSION_CODE%^)
+echo   Output: %APK_NAME%-aligned-debugSigned.apk
 echo   Target: Android 15/16 (SDK 35)
 echo   Mode: DEBUG
 echo ========================================
@@ -56,6 +71,12 @@ echo [1/3] Building APK with apktool...
 if exist "%PROJECT%\build" rd /s /q "%PROJECT%\build"
 if not exist "%FRAME_DIR%" mkdir "%FRAME_DIR%"
 java -jar "%APKTOOL%" b "%PROJECT%" -o "%APK_PATH%" --use-aapt1 --frame-path "%FRAME_DIR%"
+if %ERRORLEVEL% neq 0 (
+    echo.
+    echo [ERROR] Build failed!
+    pause
+    exit /b 1
+)
 echo       OK
 
 :: Step 2: Sign (debug)

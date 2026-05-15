@@ -28,6 +28,8 @@
 
 .field public w:J
 
+.field public x0:Li2/b;
+
 
 # direct methods
 .method public constructor <init>()V
@@ -129,7 +131,7 @@
 
     iput-object v10, p0, Ld2/o;->v0:Li2/d;
 
-    const/4 v2, 0x7
+    const/16 v2, 0x8
 
     new-array v2, v2, [Li2/c;
 
@@ -143,7 +145,9 @@
 
     aput-object v4, v2, v0
 
-    aput-object v7, v2, v6
+    const/4 v0, 0x3
+
+    aput-object v7, v2, v0
 
     const/4 v0, 0x4
 
@@ -156,6 +160,30 @@
     const/4 v0, 0x6
 
     aput-object v10, v2, v0
+
+    new-instance v0, Li2/b;
+
+    const-string v3, "Normal"
+
+    const-string v4, "Jitter"
+
+    const-string v5, "Burst"
+
+    const-string v6, "Drag"
+
+    filled-new-array {v3, v4, v5, v6}, [Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v4, "Click Mode"
+
+    invoke-direct {v0, v4, v3}, Li2/b;-><init>(Ljava/lang/String;[Ljava/lang/String;)V
+
+    iput-object v0, p0, Ld2/o;->x0:Li2/b;
+
+    const/4 v3, 0x7
+
+    aput-object v0, v2, v3
 
     invoke-virtual {p0, v2}, Lc2/b;->A([Li2/c;)V
 
@@ -428,52 +456,171 @@
 
     add-long v4, v4, v6
 
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v2
-
-    iget-wide v8, p0, Ld2/o;->w:J
-
-    const-wide/16 v10, 0x0
-
-    cmp-long v13, v8, v10
-
-    if-nez v13, :cond_4
-
-    invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->attack(J)V
-
-    iput-wide v2, p0, Ld2/o;->w:J
-
-    goto :goto_4
-
-    :cond_4
-    sub-long v10, v2, v8
-
-    const-wide/16 v12, 0x3e8
-
-    cmp-long v6, v10, v12
-
-    if-ltz v6, :cond_5
-
-    sub-long v8, v2, v4
-
-    :cond_5
-    :goto_3
-    sub-long v10, v2, v8
-
-    cmp-long v6, v10, v4
-
-    if-ltz v6, :cond_6
-
-    invoke-static {v0, v1}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->attack(J)V
-
-    add-long v8, v8, v4
-
-    iput-wide v8, p0, Ld2/o;->w:J
-
-    goto :goto_3
+    invoke-virtual {p0, v0, v1, v4, v5}, Ld2/o;->attackByClickMode(JJ)V
 
     :cond_6
     :goto_4
+    return-void
+.end method
+
+.method public final attackByClickMode(JJ)V
+    .locals 10
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v0
+
+    iget-wide v2, p0, Ld2/o;->w:J
+
+    iget-object v4, p0, Ld2/o;->x0:Li2/b;
+
+    if-eqz v4, :normal_mode
+
+    invoke-virtual {v4}, Li2/b;->getCurrentMode()Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v5, "Drag"
+
+    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :check_burst
+
+    const-wide/16 p3, 0x64
+
+    iget-object v5, p0, Ld2/o;->v0:Li2/d;
+
+    const-string v6, "current"
+
+    invoke-virtual {v5, v6}, Li2/d;->A(Ljava/lang/String;)D
+
+    move-result-wide v6
+
+    double-to-long v6, v6
+
+    add-long/2addr p3, v6
+
+    goto :do_one_check
+
+    :check_burst
+    const-string v5, "Burst"
+
+    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :check_jitter
+
+    const-wide/16 v5, 0x3
+
+    mul-long p3, p3, v5
+
+    const-wide/16 v5, 0x0
+
+    cmp-long v7, v2, v5
+
+    if-nez v7, :burst_has_last
+
+    goto :do_burst
+
+    :burst_has_last
+    sub-long v5, v0, v2
+
+    cmp-long v7, v5, p3
+
+    if-ltz v7, :done
+
+    :do_burst
+    invoke-static {p1, p2}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->attack(J)V
+
+    invoke-static {p1, p2}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->attack(J)V
+
+    invoke-static {p1, p2}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->attack(J)V
+
+    invoke-static {p1, p2}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->attack(J)V
+
+    invoke-static {p1, p2}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->attack(J)V
+
+    iput-wide v0, p0, Ld2/o;->w:J
+
+    return-void
+
+    :check_jitter
+    const-string v5, "Jitter"
+
+    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :normal_mode
+
+    long-to-double v5, p3
+
+    invoke-static {}, Ljava/lang/Math;->random()D
+
+    move-result-wide v7
+
+    const-wide/high16 p3, 0x3fe0000000000000L    # 0.5
+
+    mul-double/2addr v7, p3
+
+    const-wide/high16 p3, 0x3fe8000000000000L    # 0.75
+
+    add-double/2addr v7, p3
+
+    mul-double/2addr v5, v7
+
+    double-to-long p3, v5
+
+    goto :do_one_check
+
+    :normal_mode
+    :do_one_check
+    const-wide/16 v5, 0x0
+
+    cmp-long v7, v2, v5
+
+    if-nez v7, :has_last
+
+    # First-ever click — fire one and record time
+    invoke-static {p1, p2}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->attack(J)V
+
+    iput-wide v0, p0, Ld2/o;->w:J
+
+    goto :done
+
+    :has_last
+    sub-long v5, v0, v2
+
+    cmp-long v7, v5, p3
+
+    if-ltz v7, :done
+
+    # elapsed >= interval: fire floor(elapsed / interval) clicks so 120 cps actually means 120
+    div-long v5, v5, p3
+
+    long-to-int v7, v5
+
+    const/4 v8, 0x1
+
+    if-ge v7, v8, :click_loop
+
+    const/4 v7, 0x1
+
+    :click_loop
+    if-lez v7, :click_done
+
+    invoke-static {p1, p2}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->attack(J)V
+
+    add-int/lit8 v7, v7, -0x1
+
+    goto :click_loop
+
+    :click_done
+    iput-wide v0, p0, Ld2/o;->w:J
+
+    :done
     return-void
 .end method

@@ -1333,6 +1333,24 @@
     iput v8, v0, Lc2/b;->bindOpacity:I
 
     :cond_bind_op
+    # Load per-module bind_size if present
+    const-string v8, "bind_size"
+
+    invoke-virtual {v1, v8}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_bind_sz
+
+    const-string v8, "bind_size"
+
+    invoke-virtual {v1, v8}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
+
+    move-result v8
+
+    iput v8, v0, Lc2/b;->bindSize:I
+
+    :cond_bind_sz
     .line 27
     invoke-virtual {v0}, Lc2/b;->isBindActive()Z
 

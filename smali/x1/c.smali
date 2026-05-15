@@ -185,10 +185,6 @@
 
     iget v1, p1, Ldev/virus/variable/app/InterfaceActivity;->J:I
 
-    invoke-static {p2}, Ljava/lang/Math;->abs(I)I
-
-    move-result p2
-
     const/4 v3, -0x1
 
     invoke-virtual {v0, v1, p2, v3, v3}, Landroid/widget/PopupWindow;->update(IIII)V

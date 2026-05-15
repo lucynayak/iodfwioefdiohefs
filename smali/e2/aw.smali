@@ -69,17 +69,17 @@
 
     :array_0
     .array-data 8
-        0x4008000000000000L    # 3.0
+        0x4014000000000000L    # 5.0  (default Water multiplier)
         0x3fe0000000000000L    # 0.5
-        0x4020000000000000L    # 8.0
+        0x4028000000000000L    # 12.0 (max)
         0x3fb999999999999aL    # 0.1
     .end array-data
 
     :array_1
     .array-data 8
-        0x4000000000000000L    # 2.0
+        0x4010000000000000L    # 4.0  (default Lava multiplier)
         0x3fe0000000000000L    # 0.5
-        0x4018000000000000L    # 6.0
+        0x4024000000000000L    # 10.0 (max)
         0x3fb999999999999aL    # 0.1
     .end array-data
 .end method
@@ -147,7 +147,7 @@
     :goto_0
     double-to-float v4, v2
 
-    const v8, 0x3d8f5c29    # 0.07f
+    const v8, 0x3e19999a    # 0.15f (raised from 0.07f for higher speed cap)
 
     mul-float v8, v4, v8
 

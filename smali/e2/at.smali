@@ -10,16 +10,6 @@
 
 .field public cachedR:F
 
-.field public guiH:F
-
-.field public guiW:F
-
-.field public halfGuiW:F
-
-.field public localUidHi:I
-
-.field public localUidLo:I
-
 .field public o:Landroid/view/View;
 
 .field public p:Li2/d;
@@ -31,6 +21,10 @@
 .field public screenH:F
 
 .field public screenW:F
+
+.field public tracerView:Le2/at$a;
+
+.field public overlay:Landroid/widget/PopupWindow;
 
 
 # direct methods
@@ -49,9 +43,7 @@
 
     iput-object p1, p0, Le2/at;->o:Landroid/view/View;
 
-    iget-object v0, p0, Le2/at;->o:Landroid/view/View;
-
-    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -127,7 +119,7 @@
 
     :array_0
     .array-data 8
-        0x0
+        0x406fe00000000000L    # 255.0
         0x0
         0x406fe00000000000L    # 255.0
         0x3ff0000000000000L    # 1.0
@@ -135,7 +127,7 @@
 
     :array_1
     .array-data 8
-        0x406fe00000000000L    # 255.0
+        0x0
         0x0
         0x406fe00000000000L    # 255.0
         0x3ff0000000000000L    # 1.0
@@ -165,8 +157,22 @@
 .end method
 
 .method public final E()V
-    .registers 1
+    .registers 5
 
+    # onDisable - remove overlay on UI thread
+    sget-object v0, Lcom/mojang/minecraftpe/MainActivity;->mInstance:Lcom/mojang/minecraftpe/MainActivity;
+
+    if-eqz v0, :skip
+
+    new-instance v1, Le2/at$b;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v1, p0, v2}, Le2/at$b;-><init>(Le2/at;Z)V
+
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
+
+    :skip
     return-void
 .end method
 
@@ -177,236 +183,219 @@
 
     move-result v0
 
-    if-eqz v0, :cond_3
+    if-nez v0, :active
 
-    iget-object v0, p0, Le2/at;->o:Landroid/view/View;
+    return-void
 
-    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    :active
+    iget-object v0, p0, Le2/at;->tracerView:Le2/at$a;
 
-    move-result-object v0
+    if-nez v0, :have_view
 
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    return-void
 
-    move-result-object v0
+    :have_view
+    iget-object v1, p0, Le2/at;->o:Landroid/view/View;
 
-    invoke-virtual {v0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+    invoke-virtual {v1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
-    move-result-object v0
+    move-result-object v1
 
-    iget v1, v0, Landroid/util/DisplayMetrics;->widthPixels:I
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    int-to-float v1, v1
+    move-result-object v1
 
-    iput v1, p0, Le2/at;->screenW:F
+    invoke-virtual {v1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
-    iget v1, v0, Landroid/util/DisplayMetrics;->heightPixels:I
+    move-result-object v1
+
+    iget v2, v1, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    int-to-float v2, v2
+
+    iput v2, p0, Le2/at;->screenW:F
+
+    iget v1, v1, Landroid/util/DisplayMetrics;->heightPixels:I
 
     int-to-float v1, v1
 
     iput v1, p0, Le2/at;->screenH:F
 
-    invoke-static {}, Ldev/virus/variable/launcher/api/Api;->getGuiScale()I
+    # Color: slider 0..255 -> 0..1 cached
+    iget-object v3, p0, Le2/at;->p:Li2/d;
 
-    move-result v0
+    iget-object v3, v3, Li2/d;->e:[D
 
-    if-gtz v0, :cond_0
+    const/4 v4, 0x0
 
-    const/4 v0, 0x1
+    aget-wide v5, v3, v4
 
-    :cond_0
-    int-to-float v0, v0
+    double-to-float v3, v5
 
-    iget v5, p0, Le2/at;->screenW:F
+    const/high16 v5, 0x437f0000    # 255.0f
 
-    div-float/2addr v5, v0
+    div-float/2addr v3, v5
 
-    iput v5, p0, Le2/at;->guiW:F
+    iput v3, p0, Le2/at;->cachedR:F
 
-    iget v6, p0, Le2/at;->screenH:F
+    iget-object v3, p0, Le2/at;->q:Li2/d;
 
-    div-float/2addr v6, v0
+    iget-object v3, v3, Li2/d;->e:[D
 
-    iput v6, p0, Le2/at;->guiH:F
+    aget-wide v6, v3, v4
 
-    const/high16 v0, 0x40000000    # 2.0f
+    double-to-float v3, v6
 
-    div-float v0, v5, v0
+    div-float/2addr v3, v5
 
-    iput v0, p0, Le2/at;->halfGuiW:F
+    iput v3, p0, Le2/at;->cachedG:F
 
-    iget-object v0, p0, Le2/at;->p:Li2/d;
+    iget-object v3, p0, Le2/at;->r:Li2/d;
 
-    iget-object v0, v0, Li2/d;->e:[D
+    iget-object v3, v3, Li2/d;->e:[D
 
-    const/4 v1, 0x0
+    aget-wide v6, v3, v4
 
-    aget-wide v2, v0, v1
+    double-to-float v3, v6
 
-    double-to-float v0, v2
+    div-float/2addr v3, v5
 
-    const/high16 v1, 0x437f0000    # 255.0f
-
-    div-float/2addr v0, v1
-
-    iput v0, p0, Le2/at;->cachedR:F
-
-    iget-object v0, p0, Le2/at;->q:Li2/d;
-
-    iget-object v0, v0, Li2/d;->e:[D
-
-    const/4 v2, 0x0
-
-    aget-wide v2, v0, v2
-
-    double-to-float v0, v2
-
-    div-float/2addr v0, v1
-
-    iput v0, p0, Le2/at;->cachedG:F
-
-    iget-object v0, p0, Le2/at;->r:Li2/d;
-
-    iget-object v0, v0, Li2/d;->e:[D
-
-    const/4 v2, 0x0
-
-    aget-wide v2, v0, v2
-
-    double-to-float v0, v2
-
-    div-float/2addr v0, v1
-
-    iput v0, p0, Le2/at;->cachedB:F
+    iput v3, p0, Le2/at;->cachedB:F
 
     invoke-static {}, Ldev/virus/variable/launcher/api/NativeLevel;->getAllPlayers()[J
 
-    move-result-object v0
+    move-result-object v3
 
-    if-eqz v0, :cond_3
+    if-nez v3, :got_players
 
-    array-length v1, v0
+    const/4 v4, 0x0
 
-    const/4 v2, 0x0
+    iput-object v4, v0, Le2/at$a;->b:[F
+
+    invoke-virtual {v0}, Landroid/view/View;->postInvalidate()V
+
+    return-void
+
+    :got_players
+    array-length v4, v3
+
+    # Pre-alloc points buffer [x,y]*n pairs; count valid in v15
+    mul-int/lit8 v5, v4, 0x2
+
+    new-array v5, v5, [F
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
 
     invoke-static {}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->getUniqueID()J
 
-    move-result-wide v3
+    move-result-wide v8
 
-    :goto_0
-    if-ge v2, v1, :cond_3
+    iget v10, p0, Le2/at;->screenW:F
 
-    aget-wide v7, v0, v2
+    iget v11, p0, Le2/at;->screenH:F
 
-    cmp-long v9, v7, v3
+    :p_loop
+    if-ge v7, v4, :p_done
 
-    if-eqz v9, :cond_2
+    aget-wide v12, v3, v7
 
-    invoke-static {v7, v8}, Ldev/virus/variable/launcher/api/NativePlayer;->isAlive(J)Z
+    cmp-long v14, v12, v8
 
-    move-result v9
+    if-eqz v14, :p_next
 
-    if-eqz v9, :cond_2
+    invoke-static {v12, v13}, Ldev/virus/variable/launcher/api/NativePlayer;->isAlive(J)Z
 
-    invoke-static {v7, v8}, Ldev/virus/variable/launcher/api/NativePlayer;->getPositionX(J)F
+    move-result v14
 
-    move-result v9
+    if-eqz v14, :p_next
 
-    invoke-static {v7, v8}, Ldev/virus/variable/launcher/api/NativePlayer;->getPositionY(J)F
+    invoke-static {v12, v13}, Ldev/virus/variable/launcher/api/NativePlayer;->getPositionX(J)F
 
-    move-result v10
+    move-result v14
 
-    const v11, 0x3f666666    # 0.9f
+    invoke-static {v12, v13}, Ldev/virus/variable/launcher/api/NativePlayer;->getPositionY(J)F
 
-    add-float/2addr v10, v11
+    move-result v15
 
-    invoke-static {v7, v8}, Ldev/virus/variable/launcher/api/NativePlayer;->getPositionZ(J)F
+    const v1, 0x3f666666    # 0.9f
 
-    move-result v11
+    add-float/2addr v15, v1
 
-    invoke-static {v9, v10, v11, v5, v6}, Ldev/virus/variable/launcher/api/ScreenUtils;->worldToScreen(FFFFF)[F
+    invoke-static {v12, v13}, Ldev/virus/variable/launcher/api/NativePlayer;->getPositionZ(J)F
 
-    move-result-object v12
+    move-result v1
 
-    if-eqz v12, :cond_2
+    invoke-static {v14, v15, v1, v10, v11}, Ldev/virus/variable/launcher/api/ScreenUtils;->worldToScreen(FFFFF)[F
 
-    const/4 v9, 0x0
+    move-result-object v1
 
-    aget v13, v12, v9
-
-    const/4 v9, 0x1
-
-    aget v14, v12, v9
-
-    iget v9, p0, Le2/at;->halfGuiW:F
-
-    sub-float v5, v13, v9
-
-    sub-float v6, v14, v6
-
-    const/4 v3, 0x0
-
-    const/16 v4, 0xf
-
-    :goto_1
-    if-ge v3, v4, :cond_1
-
-    int-to-float v7, v3
-
-    int-to-float v8, v4
-
-    div-float v7, v7, v8
-
-    mul-float v8, v5, v7
-
-    iget v9, p0, Le2/at;->halfGuiW:F
-
-    add-float v11, v9, v8
-
-    mul-float v8, v6, v7
-
-    iget v9, p0, Le2/at;->guiH:F
-
-    add-float v12, v9, v8
-
-    const-string v7, "."
-
-    iget v8, p0, Le2/at;->cachedR:F
-
-    iget v9, p0, Le2/at;->cachedG:F
-
-    iget v10, p0, Le2/at;->cachedB:F
-
-    const v13, 0x40400000    # 3.0f
+    if-eqz v1, :p_next
 
     const/4 v14, 0x0
 
-    invoke-static/range {v7 .. v14}, Ldev/virus/variable/launcher/api/Api;->drawText(Ljava/lang/String;FFFFFFF)V
+    aget v14, v1, v14
 
-    add-int/lit8 v3, v3, 0x1
+    aput v14, v5, v6
 
-    goto :goto_1
+    add-int/lit8 v14, v6, 0x1
 
-    :cond_1
-    invoke-static {}, Ldev/virus/variable/launcher/api/NativeLocalPlayer;->getUniqueID()J
+    const/4 v15, 0x1
 
-    move-result-wide v3
+    aget v15, v1, v15
 
-    iget v5, p0, Le2/at;->guiW:F
+    aput v15, v5, v14
 
-    iget v6, p0, Le2/at;->guiH:F
+    add-int/lit8 v6, v6, 0x2
 
-    :cond_2
-    add-int/lit8 v2, v2, 0x1
+    :p_next
+    add-int/lit8 v7, v7, 0x1
 
-    goto :goto_0
+    goto :p_loop
 
-    :cond_3
+    :p_done
+    # Trim buffer to actual size if needed
+    array-length v7, v5
+
+    if-eq v6, v7, :no_trim
+
+    new-array v7, v6, [F
+
+    const/4 v8, 0x0
+
+    invoke-static {v5, v8, v7, v8, v6}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    iput-object v7, v0, Le2/at$a;->b:[F
+
+    goto :invalidate
+
+    :no_trim
+    iput-object v5, v0, Le2/at$a;->b:[F
+
+    :invalidate
+    invoke-virtual {v0}, Landroid/view/View;->postInvalidate()V
+
     return-void
 .end method
 
 .method public final G()V
-    .registers 1
+    .registers 5
 
+    # onEnable - create overlay on UI thread
+    sget-object v0, Lcom/mojang/minecraftpe/MainActivity;->mInstance:Lcom/mojang/minecraftpe/MainActivity;
+
+    if-eqz v0, :skip
+
+    new-instance v1, Le2/at$b;
+
+    const/4 v2, 0x1
+
+    invoke-direct {v1, p0, v2}, Le2/at$b;-><init>(Le2/at;Z)V
+
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
+
+    :skip
     return-void
 .end method
 
