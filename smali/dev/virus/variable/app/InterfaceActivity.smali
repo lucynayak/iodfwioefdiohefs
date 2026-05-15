@@ -377,6 +377,9 @@
 
     invoke-interface {p1, v1, v0}, Landroid/content/SharedPreferences$Editor;->putFloat(Ljava/lang/String;F)Landroid/content/SharedPreferences$Editor;
 
+    # Sync new bind_text_size into the static cache used by every bind popup at render time
+    sput v0, Ldev/virus/variable/app/MinecraftActivity;->i:F
+
     iget-object v0, p0, Ldev/virus/variable/app/InterfaceActivity;->y:Landroid/widget/SeekBar;
 
     invoke-virtual {v0}, Landroid/widget/ProgressBar;->getProgress()I
@@ -406,6 +409,9 @@
     const-string v1, "bind_size"
 
     invoke-interface {p1, v1, v0}, Landroid/content/SharedPreferences$Editor;->putFloat(Ljava/lang/String;F)Landroid/content/SharedPreferences$Editor;
+
+    # Sync new bind_size into the static cache used by every bind popup at render time
+    sput v0, Ldev/virus/variable/app/MinecraftActivity;->j:F
 
     iget-object v0, p0, Ldev/virus/variable/app/InterfaceActivity;->B:Landroid/widget/RadioGroup;
 
