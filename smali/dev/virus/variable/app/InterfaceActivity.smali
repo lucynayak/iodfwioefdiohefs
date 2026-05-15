@@ -377,6 +377,9 @@
 
     invoke-interface {p1, v1, v0}, Landroid/content/SharedPreferences$Editor;->putFloat(Ljava/lang/String;F)Landroid/content/SharedPreferences$Editor;
 
+    # Sync new bind_text_size into the static cache used by every bind popup at render time
+    sput v0, Ldev/virus/variable/app/MinecraftActivity;->i:F
+
     iget-object v0, p0, Ldev/virus/variable/app/InterfaceActivity;->y:Landroid/widget/SeekBar;
 
     invoke-virtual {v0}, Landroid/widget/ProgressBar;->getProgress()I
@@ -406,6 +409,9 @@
     const-string v1, "bind_size"
 
     invoke-interface {p1, v1, v0}, Landroid/content/SharedPreferences$Editor;->putFloat(Ljava/lang/String;F)Landroid/content/SharedPreferences$Editor;
+
+    # Sync new bind_size into the static cache used by every bind popup at render time
+    sput v0, Ldev/virus/variable/app/MinecraftActivity;->j:F
 
     iget-object v0, p0, Ldev/virus/variable/app/InterfaceActivity;->B:Landroid/widget/RadioGroup;
 
@@ -1000,6 +1006,56 @@
     add-int/lit8 v2, v2, -0x32
 
     invoke-virtual {v1, v2}, Landroid/widget/ProgressBar;->setProgress(I)V
+
+    # --- Window size: wire OnSeekBarChangeListener for V/X and initial text on W/Y ---
+    iget-object v0, p0, Ldev/virus/variable/app/InterfaceActivity;->V:Landroid/widget/SeekBar;
+
+    new-instance v1, Ldev/virus/variable/app/InterfaceActivity$h;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v1, p0, v2}, Ldev/virus/variable/app/InterfaceActivity$h;-><init>(Ldev/virus/variable/app/InterfaceActivity;I)V
+
+    invoke-virtual {v0, v1}, Landroid/widget/SeekBar;->setOnSeekBarChangeListener(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V
+
+    invoke-virtual {v0}, Landroid/widget/ProgressBar;->getProgress()I
+
+    move-result v2
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v1, v0, v2, v3}, Ldev/virus/variable/app/InterfaceActivity$h;->onProgressChanged(Landroid/widget/SeekBar;IZ)V
+
+    iget-object v0, p0, Ldev/virus/variable/app/InterfaceActivity;->X:Landroid/widget/SeekBar;
+
+    new-instance v1, Ldev/virus/variable/app/InterfaceActivity$h;
+
+    const/4 v2, 0x1
+
+    invoke-direct {v1, p0, v2}, Ldev/virus/variable/app/InterfaceActivity$h;-><init>(Ldev/virus/variable/app/InterfaceActivity;I)V
+
+    invoke-virtual {v0, v1}, Landroid/widget/SeekBar;->setOnSeekBarChangeListener(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V
+
+    invoke-virtual {v0}, Landroid/widget/ProgressBar;->getProgress()I
+
+    move-result v2
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v1, v0, v2, v3}, Ldev/virus/variable/app/InterfaceActivity$h;->onProgressChanged(Landroid/widget/SeekBar;IZ)V
+
+    # --- Window size: "default" button OnClickListener ---
+    const v0, 0x7f080186
+
+    invoke-virtual {p0, v0}, Lh0/f;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    new-instance v1, Ldev/virus/variable/app/InterfaceActivity$i;
+
+    invoke-direct {v1, p0}, Ldev/virus/variable/app/InterfaceActivity$i;-><init>(Ldev/virus/variable/app/InterfaceActivity;)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v0, p0, Ldev/virus/variable/app/InterfaceActivity;->p:Landroid/widget/SeekBar;
 
