@@ -14,13 +14,22 @@ their `/sdcard/games/horrible/scripts/` directory.
   - validates `parseFloat` input, clamps ranges, and never crashes the tick
     loop.
 
-- **EnchantMaster.js** – streamlined and hardened version of v2.11:
-  - everything wrapped in a closure (no globals leaked).
-  - text fields validated (`safeParseInt`, name sanitised against `§`
-    sequences, length-clamped to 64 chars).
-  - heavy `Data.saveNumber/saveString` stats persistence removed (the old
-    version wrote to disk on every action and could corrupt itself if the
-    script reloaded mid-write).
+- **enchantmaster.js** – the original v2.11 script with **functionality
+  unchanged**; only the security / robustness bugs are patched. Full list of
+  fixes is documented in the file header. Notable items:
+  - `updateStats` stored everything under the key `"undefined"` because
+    `Enchantment.*` are integers, not "Enchantment.NAME" strings — the
+    stats counter never actually accumulated. Now uses `String(id)`.
+  - `JSON.parse(Data.getString(...))` calls are guarded against corrupted
+    saves written by other scripts.
+  - `nameSetting.getText().trim()` and friends went through `safeText()` so
+    a null/undefined from the host UI no longer throws.
+  - `Item.setName` values are stripped of `§` format codes and length-
+    clamped to 64 chars (defends against colour-code injection into chat).
+  - `ThreadLocalRandom` falls back to `Math.random()` if the java bridge
+    is unavailable.
+  - Module registration moved into `onScriptEnabled` and mirrored by
+    `onScriptDisabled` (no leaks on reload).
 
 If you only need the built-in menu version, you can ignore these scripts –
 they are already registered as native modules.
