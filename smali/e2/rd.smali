@@ -12,6 +12,8 @@
 
 .field public final r:Li2/d;
 
+.field public final s:Li2/b;
+
 .field public sampler:Ljava/lang/Thread;
 
 
@@ -70,6 +72,38 @@
     invoke-direct {v0, v1, v2}, Li2/e;-><init>(Ljava/lang/String;Z)V
 
     iput-object v0, p0, Le2/rd;->p:Li2/e;
+
+    invoke-virtual {p0, v0}, Lc2/b;->addSetting(Li2/c;)V
+
+    new-instance v0, Li2/b;
+
+    const/4 v1, 0x3
+
+    new-array v1, v1, [Ljava/lang/String;
+
+    const/4 v2, 0x0
+
+    const-string v3, "Круг"
+
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x1
+
+    const-string v3, "Квадрат"
+
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x2
+
+    const-string v3, "Треугольник"
+
+    aput-object v3, v1, v2
+
+    const-string v2, "Форма"
+
+    invoke-direct {v0, v2, v1}, Li2/b;-><init>(Ljava/lang/String;[Ljava/lang/String;)V
+
+    iput-object v0, p0, Le2/rd;->s:Li2/b;
 
     invoke-virtual {p0, v0}, Lc2/b;->addSetting(Li2/c;)V
 
@@ -398,6 +432,48 @@
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setScaleY(F)V
 
+    iget-object v1, p0, Le2/rd;->s:Li2/b;
+
+    if-eqz v1, :cond_3
+
+    invoke-virtual {v1}, Li2/b;->getCurrentMode()Ljava/lang/String;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_3
+
+    const-string v2, "Квадрат"
+
+    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    const/4 v2, 0x1
+
+    goto :goto_2
+
+    :cond_1
+    const-string v2, "Треугольник"
+
+    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    const/4 v2, 0x2
+
+    goto :goto_2
+
+    :cond_2
+    const/4 v2, 0x0
+
+    :goto_2
+    invoke-virtual {v0, v2}, Le2/RadarView;->setShape(I)V
+
+    :cond_3
     invoke-virtual {v0}, Landroid/view/View;->postInvalidate()V
 
     :cond_0

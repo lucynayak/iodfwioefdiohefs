@@ -342,7 +342,7 @@
     goto :goto_0
 
     :cond_2
-    const/16 p1, 0x6a
+    const/16 p1, 0x6d
 
     new-array p1, p1, [Lc2/b;
 
@@ -1332,6 +1332,30 @@
     const/16 v3, 0x9
 
     invoke-direct {v2, v3}, Ld2/g;-><init>(I)V
+
+    aput-object v2, p1, v1
+
+    const/16 v1, 0x6a
+
+    new-instance v2, Le2/Xray;
+
+    invoke-direct {v2}, Le2/Xray;-><init>()V
+
+    aput-object v2, p1, v1
+
+    const/16 v1, 0x6b
+
+    new-instance v2, Le2/EnchantMaster;
+
+    invoke-direct {v2}, Le2/EnchantMaster;-><init>()V
+
+    aput-object v2, p1, v1
+
+    const/16 v1, 0x6c
+
+    new-instance v2, Le2/Gravity;
+
+    invoke-direct {v2}, Le2/Gravity;-><init>()V
 
     aput-object v2, p1, v1
 

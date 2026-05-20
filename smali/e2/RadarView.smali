@@ -32,6 +32,8 @@
 
 .field public volatile mRange:I
 
+.field public volatile mShape:I
+
 .field private mSrcRect:Landroid/graphics/Rect;
 
 .field public volatile mYaw:F
@@ -297,15 +299,64 @@
 
     sget-object v11, Landroid/graphics/Path$Direction;->CW:Landroid/graphics/Path$Direction;
 
+    iget v0, v15, Le2/RadarView;->mShape:I
+
+    const/4 v1, 0x1
+
+    if-eq v0, v1, :shape_square
+
+    const/4 v1, 0x2
+
+    if-eq v0, v1, :shape_triangle
+
     invoke-virtual {v9, v10, v10, v7, v11}, Landroid/graphics/Path;->addCircle(FFFLandroid/graphics/Path$Direction;)V
 
+    goto :shape_done
+
+    :shape_square
+    neg-float v1, v7
+
+    invoke-virtual {v9, v1, v1}, Landroid/graphics/Path;->moveTo(FF)V
+
+    invoke-virtual {v9, v7, v1}, Landroid/graphics/Path;->lineTo(FF)V
+
+    invoke-virtual {v9, v7, v7}, Landroid/graphics/Path;->lineTo(FF)V
+
+    invoke-virtual {v9, v1, v7}, Landroid/graphics/Path;->lineTo(FF)V
+
+    invoke-virtual {v9}, Landroid/graphics/Path;->close()V
+
+    goto :shape_done
+
+    :shape_triangle
+    neg-float v1, v7
+
+    invoke-virtual {v9, v10, v1}, Landroid/graphics/Path;->moveTo(FF)V
+
+    const v1, 0x3f5db3d7
+
+    mul-float v1, v7, v1
+
+    const/high16 v2, 0x3f000000
+
+    mul-float v2, v7, v2
+
+    invoke-virtual {v9, v1, v2}, Landroid/graphics/Path;->lineTo(FF)V
+
+    neg-float v1, v1
+
+    invoke-virtual {v9, v1, v2}, Landroid/graphics/Path;->lineTo(FF)V
+
+    invoke-virtual {v9}, Landroid/graphics/Path;->close()V
+
+    :shape_done
     invoke-virtual {v8}, Landroid/graphics/Canvas;->save()I
 
     invoke-virtual {v8, v9}, Landroid/graphics/Canvas;->clipPath(Landroid/graphics/Path;)Z
 
-    iget-object v9, v15, Le2/RadarView;->mPaintBg:Landroid/graphics/Paint;
+    iget-object v0, v15, Le2/RadarView;->mPaintBg:Landroid/graphics/Paint;
 
-    invoke-virtual {v8, v10, v10, v7, v9}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
+    invoke-virtual {v8, v9, v0}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
 
     iget v11, v15, Le2/RadarView;->mYaw:F
 
@@ -433,13 +484,11 @@
     :cond_3
     invoke-virtual {v8}, Landroid/graphics/Canvas;->restore()V
 
-    const/4 v9, 0x0
-
-    int-to-float v9, v9
-
     iget-object v10, v15, Le2/RadarView;->mPaintBorder:Landroid/graphics/Paint;
 
-    invoke-virtual {v8, v9, v9, v7, v10}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
+    iget-object v9, v15, Le2/RadarView;->mClipPath:Landroid/graphics/Path;
+
+    invoke-virtual {v8, v9, v10}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
 
     iget-object v10, v15, Le2/RadarView;->mPaintLocal:Landroid/graphics/Paint;
 
@@ -504,6 +553,14 @@
     .registers 2
 
     iput p1, p0, Le2/RadarView;->mYaw:F
+
+    return-void
+.end method
+
+.method public setShape(I)V
+    .registers 2
+
+    iput p1, p0, Le2/RadarView;->mShape:I
 
     return-void
 .end method
