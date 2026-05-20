@@ -1,0 +1,32 @@
+{
+  "apkFileName": "horrible 1.4.2_src.apk",
+  "PackageInfo": {
+    "forcedPackageId": "127",
+    "renameManifestPackage": null
+  },
+  "doNotCompress": [
+    "resources.arsc",
+    "png",
+    "mp3"
+  ],
+  "compressionType": false,
+  "sparseResources": false,
+  "version": "2.4.0-260501",
+  "sharedLibrary": false,
+  "VersionInfo": {
+    "versionName": "1.4.2",
+    "versionCode": "1420165"
+  },
+  "UsesFramework": {
+    "ids": [1],
+    "tag": null
+  },
+  "unknownFiles": {},
+  "apkFilePath": "/storage/emulated/0/Download/Telegram/horrible 1.4.2.apk",
+  "compactEntries": false,
+  "isFrameworkApk": false,
+  "sdkInfo": {
+    "minSdkVersion": "21",
+    "targetSdkVersion": "35"
+  }
+}

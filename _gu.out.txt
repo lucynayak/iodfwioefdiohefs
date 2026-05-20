@@ -1,0 +1,19 @@
+﻿=== NativeLocalPlayer.getUniqueID thunk @ 0x1466c (size 0x30) ===
+  0x0001466c: 10b5       push     {r4, lr}
+  0x0001466e: 0a4c       ldr      r4, [pc, #0x28]
+  0x00014670: 7c44       add      r4, pc
+  0x00014672: 2468       ldr      r4, [r4]
+  0x00014674: 2068       ldr      r0, [r4]
+  0x00014676: 50b1       cbz      r0, #0x1468e
+  0x00014678: fbf7d0e9   blx      #0xfa1c
+  0x0001467c: 38b1       cbz      r0, #0x1468e
+  0x0001467e: 2068       ldr      r0, [r4]
+  0x00014680: fbf7a2e9   blx      #0xf9c8
+  0x00014684: fbf7b8e9   blx      #0xf9f8
+  0x00014688: d0e90001   ldrd     r0, r1, [r0]
+  0x0001468c: 10bd       pop      {r4, pc}
+  0x0001468e: 4ff0ff30   mov.w    r0, #-1
+  0x00014692: 4ff0ff31   mov.w    r1, #-1
+  0x00014696: 10bd       pop      {r4, pc}
+  0x00014698: a0bf       hint     #0xa
+  0x0001469a: 0500       movs     r5, r0

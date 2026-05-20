@@ -1,0 +1,16 @@
+﻿=== JNI thunks for player position / fetchEntity callers ===
+  Java_dev_virus_variable_launcher_api_NativeLocalPlayer_getUniqueID  @ vaddr=0x1466c  size=0x30  thumb=True
+  Java_dev_virus_variable_launcher_api_NativeLocalPlayer_isInGame  @ vaddr=0x152f4  size=0x10  thumb=True
+  Java_dev_virus_variable_launcher_api_NativePlayer_getNameTag  @ vaddr=0x1538c  size=0x48  thumb=True
+  Java_dev_virus_variable_launcher_api_NativePlayer_getYaw  @ vaddr=0x15494  size=0x34  thumb=True
+  Java_dev_virus_variable_launcher_api_NativePlayer_getPitch  @ vaddr=0x154c8  size=0x34  thumb=True
+  Java_dev_virus_variable_launcher_api_NativePlayer_getPositionX  @ vaddr=0x154fc  size=0x34  thumb=True
+  Java_dev_virus_variable_launcher_api_NativePlayer_getPositionY  @ vaddr=0x15530  size=0x34  thumb=True
+  Java_dev_virus_variable_launcher_api_NativePlayer_getPositionZ  @ vaddr=0x15564  size=0x34  thumb=True
+  Java_dev_virus_variable_launcher_api_NativePlayer_getCollisionSize  @ vaddr=0x15634  size=0x98  thumb=True
+  Java_dev_virus_variable_launcher_api_NativePlayer_isInvisible  @ vaddr=0x15830  size=0x38  thumb=True
+  Java_dev_virus_variable_launcher_api_NativePlayer_isAlive  @ vaddr=0x15a60  size=0x38  thumb=True
+  Java_dev_virus_variable_launcher_api_NativePlayer_canShowNameTag  @ vaddr=0x15b60  size=0x38  thumb=True
+  Java_dev_virus_variable_launcher_api_NativeBlock_getID  @ vaddr=0x166d4  size=0x60  thumb=True
+  Java_dev_virus_variable_launcher_api_NativeBlock_isSolid  @ vaddr=0x167bc  size=0x3c  thumb=True
+  Java_dev_virus_variable_launcher_api_NativeLevel_getAllPlayers  @ vaddr=0x168d4  size=0xb4  thumb=True

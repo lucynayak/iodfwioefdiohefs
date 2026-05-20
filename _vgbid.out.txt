@@ -1,0 +1,27 @@
+﻿=== Wrapper @ 0x1701c14 (after patch) ===
+  0x01701c14: b0f4889a   b.w      #0xbb2128
+  0x01701c18: 0df1040e   add.w    lr, sp, #4
+  0x01701c1c: ddf818c0   ldr.w    ip, [sp, #0x18]
+  0x01701c20: 8ee80c10   stm.w    lr, {r2, r3, ip}
+  0x01701c24: 01aa       add      r2, sp, #4
+  0x01701c26: 43f45cc1   blx      #0x744ee0
+  0x01701c2a: 04b0       add      sp, #0x10
+  0x01701c2c: 80bd       pop      {r7, pc}
+  0x01701c2e: 2de9f04f   push.w   {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+  0x01701c32: 83b0       sub      sp, #0xc
+
+=== Thunk @ 0xbb2128 ===
+  0x00bb2128: 61b1       cbz      r1, #0xbb2144
+  0x00bb212a: 80b5       push     {r7, lr}
+  0x00bb212c: 84b0       sub      sp, #0x10
+  0x00bb212e: 0df1040e   add.w    lr, sp, #4
+  0x00bb2132: ddf818c0   ldr.w    ip, [sp, #0x18]
+  0x00bb2136: 8ee80c10   stm.w    lr, {r2, r3, ip}
+  0x00bb213a: 01aa       add      r2, sp, #4
+  0x00bb213c: 92f7d0e6   blx      #0x744ee0
+  0x00bb2140: 04b0       add      sp, #0x10
+  0x00bb2142: 80bd       pop      {r7, pc}
+  0x00bb2144: 0021       movs     r1, #0
+  0x00bb2146: 0170       strb     r1, [r0]
+  0x00bb2148: 7047       bx       lr
+  0x00bb214a: 0000       movs     r0, r0

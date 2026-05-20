@@ -1,0 +1,52 @@
+{
+   "content" : [
+      {
+         "path" : "baseball.png"
+      },
+      {
+         "path" : "basketball.png"
+      },
+      {
+         "path" : "boxing.png"
+      },
+      {
+         "path" : "fencing.png"
+      },
+      {
+         "path" : "football.png"
+      },
+      {
+         "path" : "gymnastics.png"
+      },
+      {
+         "path" : "hockey.png"
+      },
+      {
+         "path" : "jockey.png"
+      },
+      {
+         "path" : "marathon.png"
+      },
+      {
+         "path" : "martial_art.png"
+      },
+      {
+         "path" : "skating.png"
+      },
+      {
+         "path" : "skins.json"
+      },
+      {
+         "path" : "soccer.png"
+      },
+      {
+         "path" : "swimming.png"
+      },
+      {
+         "path" : "tennis.png"
+      },
+      {
+         "path" : "volleyball.png"
+      }
+   ]
+}

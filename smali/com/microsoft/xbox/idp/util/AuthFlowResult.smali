@@ -1,0 +1,211 @@
+.class public final Lcom/microsoft/xbox/idp/util/AuthFlowResult;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/os/Parcelable;
+
+
+# static fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator<",
+            "Lcom/microsoft/xbox/idp/util/AuthFlowResult;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# instance fields
+.field private final deleteOnFinalize:Z
+
+.field private final id:J
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .registers 1
+
+    new-instance v0, Lcom/microsoft/xbox/idp/util/AuthFlowResult$1;
+
+    invoke-direct {v0}, Lcom/microsoft/xbox/idp/util/AuthFlowResult$1;-><init>()V
+
+    sput-object v0, Lcom/microsoft/xbox/idp/util/AuthFlowResult;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    return-void
+.end method
+
+.method public constructor <init>(J)V
+    .registers 4
+
+    const/4 v0, 0x0
+
+    invoke-direct {p0, p1, p2, v0}, Lcom/microsoft/xbox/idp/util/AuthFlowResult;-><init>(JZ)V
+
+    return-void
+.end method
+
+.method public constructor <init>(JZ)V
+    .registers 4
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-wide p1, p0, Lcom/microsoft/xbox/idp/util/AuthFlowResult;->id:J
+
+    iput-boolean p3, p0, Lcom/microsoft/xbox/idp/util/AuthFlowResult;->deleteOnFinalize:Z
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/os/Parcel;)V
+    .registers 4
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
+
+    move-result-wide v0
+
+    iput-wide v0, p0, Lcom/microsoft/xbox/idp/util/AuthFlowResult;->id:J
+
+    invoke-virtual {p1}, Landroid/os/Parcel;->readByte()B
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    :goto_0
+    iput-boolean p1, p0, Lcom/microsoft/xbox/idp/util/AuthFlowResult;->deleteOnFinalize:Z
+
+    return-void
+.end method
+
+.method private static native delete(J)V
+.end method
+
+.method private static native getAgeGroup(J)Ljava/lang/String;
+.end method
+
+.method private static native getGamerTag(J)Ljava/lang/String;
+.end method
+
+.method private static native getPrivileges(J)Ljava/lang/String;
+.end method
+
+.method private static native getRpsTicket(J)Ljava/lang/String;
+.end method
+
+.method private static native getUserId(J)Ljava/lang/String;
+.end method
+
+
+# virtual methods
+.method public describeContents()I
+    .registers 2
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public finalize()V
+    .registers 3
+
+    iget-boolean v0, p0, Lcom/microsoft/xbox/idp/util/AuthFlowResult;->deleteOnFinalize:Z
+
+    if-eqz v0, :cond_0
+
+    iget-wide v0, p0, Lcom/microsoft/xbox/idp/util/AuthFlowResult;->id:J
+
+    invoke-static {v0, v1}, Lcom/microsoft/xbox/idp/util/AuthFlowResult;->delete(J)V
+
+    :cond_0
+    invoke-super {p0}, Ljava/lang/Object;->finalize()V
+
+    return-void
+.end method
+
+.method public getAgeGroup()Ljava/lang/String;
+    .registers 3
+
+    iget-wide v0, p0, Lcom/microsoft/xbox/idp/util/AuthFlowResult;->id:J
+
+    invoke-static {v0, v1}, Lcom/microsoft/xbox/idp/util/AuthFlowResult;->getAgeGroup(J)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getGamerTag()Ljava/lang/String;
+    .registers 3
+
+    iget-wide v0, p0, Lcom/microsoft/xbox/idp/util/AuthFlowResult;->id:J
+
+    invoke-static {v0, v1}, Lcom/microsoft/xbox/idp/util/AuthFlowResult;->getGamerTag(J)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getPrivileges()Ljava/lang/String;
+    .registers 3
+
+    iget-wide v0, p0, Lcom/microsoft/xbox/idp/util/AuthFlowResult;->id:J
+
+    invoke-static {v0, v1}, Lcom/microsoft/xbox/idp/util/AuthFlowResult;->getPrivileges(J)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getRpsTicket()Ljava/lang/String;
+    .registers 3
+
+    iget-wide v0, p0, Lcom/microsoft/xbox/idp/util/AuthFlowResult;->id:J
+
+    invoke-static {v0, v1}, Lcom/microsoft/xbox/idp/util/AuthFlowResult;->getRpsTicket(J)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public getUserId()Ljava/lang/String;
+    .registers 3
+
+    iget-wide v0, p0, Lcom/microsoft/xbox/idp/util/AuthFlowResult;->id:J
+
+    invoke-static {v0, v1}, Lcom/microsoft/xbox/idp/util/AuthFlowResult;->getUserId(J)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public writeToParcel(Landroid/os/Parcel;I)V
+    .registers 5
+
+    iget-wide v0, p0, Lcom/microsoft/xbox/idp/util/AuthFlowResult;->id:J
+
+    invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
+
+    iget-boolean p2, p0, Lcom/microsoft/xbox/idp/util/AuthFlowResult;->deleteOnFinalize:Z
+
+    int-to-byte p2, p2
+
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeByte(B)V
+
+    return-void
+.end method

@@ -1,0 +1,23 @@
+{
+  "header": {
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "name": "PetPack",
+    "uuid": "ed7234b2-4f29-46cd-a45f-2f2e04d76f32"
+  },
+  "modules": [
+    {
+      "version": [
+        1,
+        0,
+        0
+      ],
+      "type": "skin_pack",
+      "uuid": "19184450-6476-4984-a5b6-7096cd49c1cd"
+    }
+  ],
+  "format_version": 1
+}

@@ -1,0 +1,23 @@
+{
+  "header": {
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "name": "AdventurersDream",
+    "uuid": "ca3bca92-6c18-4a09-8d39-1c911d766e74"
+  },
+  "modules": [
+    {
+      "version": [
+        1,
+        0,
+        0
+      ],
+      "type": "skin_pack",
+      "uuid": "f2744444-23db-4d49-8981-087f348bea09"
+    }
+  ],
+  "format_version": 1
+}

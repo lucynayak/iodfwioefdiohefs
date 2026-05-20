@@ -1,0 +1,22 @@
+{
+   "content" : [
+      {
+         "path" : "Barbarian.png"
+      },
+      {
+         "path" : "Knight.png"
+      },
+      {
+         "path" : "Ranger.png"
+      },
+      {
+         "path" : "Shepherd.png"
+      },
+      {
+         "path" : "skins.json"
+      },
+      {
+         "path" : "Sorceress.png"
+      }
+   ]
+}

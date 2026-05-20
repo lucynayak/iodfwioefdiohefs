@@ -1,0 +1,23 @@
+version: 2.11.1
+apkFileName: horrible_62-aligned-debugSigned_src.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+    - 1
+sdkInfo:
+  minSdkVersion: '21'
+  targetSdkVersion: '35'
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+versionInfo:
+  versionCode: '1420165'
+  versionName: 1.4.2
+compressionType: false
+doNotCompress:
+  - resources.arsc
+  - png
+  - mp3
+sharedLibrary: false
+sparseResources: false
+unknownFiles: {}

@@ -1,0 +1,30 @@
+﻿=== PLT header (first 0x14) ===
+  0x0000f99c: 04e02de5   str      lr, [sp, #-4]!
+  0x0000f9a0: 04e09fe5   ldr      lr, [pc, #4]
+  0x0000f9a4: 0ee08fe0   add      lr, pc, lr
+  0x0000f9a8: 08f0bee5   ldr      pc, [lr, #8]!
+  0x0000f9ac: c8100600   andeq    r1, r6, r8, asr #1
+
+=== first 4 PLT entries (each 0x0c) ===
+-- entry #0 @ 0xf9b0 --
+  0x0000f9b0: 00c68fe2   add      ip, pc, #0, #12
+  0x0000f9b4: 61ca8ce2   add      ip, ip, #0x61000
+  0x0000f9b8: c8f0bce5   ldr      pc, [ip, #0xc8]!
+-- entry #1 @ 0xf9bc --
+  0x0000f9bc: 00c68fe2   add      ip, pc, #0, #12
+  0x0000f9c0: 61ca8ce2   add      ip, ip, #0x61000
+  0x0000f9c4: c0f0bce5   ldr      pc, [ip, #0xc0]!
+-- entry #2 @ 0xf9c8 --
+  0x0000f9c8: 00c68fe2   add      ip, pc, #0, #12
+  0x0000f9cc: 61ca8ce2   add      ip, ip, #0x61000
+  0x0000f9d0: b8f0bce5   ldr      pc, [ip, #0xb8]!
+-- entry #3 @ 0xf9d4 --
+  0x0000f9d4: 00c68fe2   add      ip, pc, #0, #12
+  0x0000f9d8: 61ca8ce2   add      ip, ip, #0x61000
+  0x0000f9dc: b0f0bce5   ldr      pc, [ip, #0xb0]!
+
+=== scan all PLT entries for GOT slot 0x70ae0 ===
+  PLT entry @ 0xfaac -> GOT 0x70ae0  (h=c m=61000 l=20)
+     add ip, pc, #0, #12
+     add ip, ip, #0x61000
+     ldr pc, [ip, #0x20]!

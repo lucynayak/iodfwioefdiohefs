@@ -1,0 +1,32 @@
+﻿=== Cave reachability ===
+  cave 0xbb2128 (len=64): from-wrapper=-0xb4faec OK, to-PLT=-0x46d248 OK
+  cave 0x13991f6 (len=50): from-wrapper=-0x368a1e OK, to-PLT=-0xc54316 OK
+  cave 0x17906b0 (len=64): from-wrapper=+0x8ea9c OK, to-PLT=-0x104b7d0 OUT
+  cave 0x1b95d04 (len=232): from-wrapper=+0x4940f0 OK, to-PLT=-0x1450e24 OUT
+  cave 0x1e53ba0 (len=32): from-wrapper=+0x751f8c OK, to-PLT=-0x170ecc0 OUT
+
+=== Verify cave 0xbb2128 contents (64 zero bytes) ===
+  0x00bb2120: 1cff2fe1e52631010000000000000000
+  0x00bb2128: 00000000000000000000000000000000
+  0x00bb2168: 2de9f04186b00546d5e90a848cb17448
+
+=== Disasm around cave 0xbb2128 (preceding/trailing functions) ===
+  PRE  0x00bb2110: 1cff2fe1   vrhadd.u16 d14, d12, d31
+  PRE  0x00bb2114: 6d81       strh     r5, [r5, #0xa]
+  PRE  0x00bb2116: 3401       lsls     r4, r6, #4
+  PRE  0x00bb2118: 04c0       stm      r0!, {r2}
+  PRE  0x00bb211a: 9fe5       b        #0xbb1c5c
+  PRE  0x00bb211c: 0cc0       stm      r0!, {r2, r3}
+  PRE  0x00bb211e: 8fe0       b        #0xbb2240
+  PRE  0x00bb2120: 1cff2fe1   vrhadd.u16 d14, d12, d31
+  PRE  0x00bb2124: e526       movs     r6, #0xe5
+  PRE  0x00bb2126: 3101       lsls     r1, r6, #4
+  POST 0x00bb2168: 2de9f041   push.w   {r4, r5, r6, r7, r8, lr}
+  POST 0x00bb216c: 86b0       sub      sp, #0x18
+  POST 0x00bb216e: 0546       mov      r5, r0
+  POST 0x00bb2170: d5e90a84   ldrd     r8, r4, [r5, #0x28]
+  POST 0x00bb2174: 8cb1       cbz      r4, #0xbb219a
+  POST 0x00bb2176: 7448       ldr      r0, [pc, #0x1d0]
+  POST 0x00bb2178: 7844       add      r0, pc
+  POST 0x00bb217a: 0168       ldr      r1, [r0]
+  POST 0x00bb217c: 04f10800   add.w    r0, r4, #8

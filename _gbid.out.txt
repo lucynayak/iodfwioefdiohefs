@@ -1,0 +1,75 @@
+﻿=== BlockSource::getBlockID(BlockPos const&) starting around 0x1700570 ===
+  0x01700570: f0b5       push     {r4, r5, r6, r7, lr}
+  0x01700572: 83b0       sub      sp, #0xc
+  0x01700574: 1546       mov      r5, r2
+  0x01700576: 0446       mov      r4, r0
+  0x01700578: 6868       ldr      r0, [r5, #4]
+  0x0170057a: 0e46       mov      r6, r1
+  0x0170057c: 0028       cmp      r0, #0
+  0x0170057e: 16db       blt      #0x17005ae
+  0x01700580: b6f91810   ldrsh.w  r1, [r6, #0x18]
+  0x01700584: 8842       cmp      r0, r1
+  0x01700586: 12da       bge      #0x17005ae
+  0x01700588: 01a8       add      r0, sp, #4
+  0x0170058a: 2946       mov      r1, r5
+  0x0170058c: 55f498c1   blx      #0x7558c0
+  0x01700590: 706b       ldr      r0, [r6, #0x34]
+  0x01700592: 98b1       cbz      r0, #0x17005bc
+  0x01700594: 70f4b6c6   blx      #0x771304
+  0x01700598: 0168       ldr      r1, [r0]
+  0x0170059a: 019a       ldr      r2, [sp, #4]
+  0x0170059c: 9142       cmp      r1, r2
+  0x0170059e: 0dd1       bne      #0x17005bc
+  0x017005a0: 0299       ldr      r1, [sp, #8]
+  0x017005a2: 4068       ldr      r0, [r0, #4]
+  0x017005a4: 8842       cmp      r0, r1
+  0x017005a6: 09d1       bne      #0x17005bc
+  0x017005a8: 776b       ldr      r7, [r6, #0x34]
+  0x017005aa: a7b9       cbnz     r7, #0x17005d6
+  0x017005ac: 35e0       b        #0x170061a
+  0x017005ae: 1f48       ldr      r0, [pc, #0x7c]
+  0x017005b0: 7844       add      r0, pc
+  0x017005b2: 0068       ldr      r0, [r0]
+  0x017005b4: 0078       ldrb     r0, [r0]
+  0x017005b6: 2070       strb     r0, [r4]
+  0x017005b8: 03b0       add      sp, #0xc
+  0x017005ba: f0bd       pop      {r4, r5, r6, r7, pc}
+  0x017005bc: 3069       ldr      r0, [r6, #0x10]
+  0x017005be: 317a       ldrb     r1, [r6, #8]
+  0x017005c0: 19b1       cbz      r1, #0x17005ca
+  0x017005c2: 01a9       add      r1, sp, #4
+  0x017005c4: 90f4a6c3   blx      #0x790d14
+  0x017005c8: 02e0       b        #0x17005d0
+  0x017005ca: 01a9       add      r1, sp, #4
+  0x017005cc: 77f4a6c4   blx      #0x777f1c
+
+=== BlockSource::getBlockID(int,int,int) тАФ find by working backward from 0x1701c29 ===
+  0x01701bf0: 3946       mov      r1, r7
+  0x01701bf2: cde900a8   strd     sl, r8, [sp]
+  0x01701bf6: cdf80890   str.w    sb, [sp, #8]
+  0x01701bfa: a847       blx      r5
+  0x01701bfc: d7e90a01   ldrd     r0, r1, [r7, #0x28]
+  0x01701c00: 0134       adds     r4, #1
+  0x01701c02: 091a       subs     r1, r1, r0
+  0x01701c04: b4eba10f   cmp.w    r4, r1, asr #2
+  0x01701c08: ecd3       blo      #0x1701be4
+  0x01701c0a: 0bb0       add      sp, #0x2c
+  0x01701c0c: bde8f08f   pop.w    {r4, r5, r6, r7, r8, sb, sl, fp, pc}
+  0x01701c10: c0cb       ldm      r3!, {r6, r7}
+  0x01701c12: cf00       lsls     r7, r1, #3
+  0x01701c14: 80b5       push     {r7, lr}
+  0x01701c16: 84b0       sub      sp, #0x10
+  0x01701c18: 0df1040e   add.w    lr, sp, #4
+  0x01701c1c: ddf818c0   ldr.w    ip, [sp, #0x18]
+  0x01701c20: 8ee80c10   stm.w    lr, {r2, r3, ip}
+  0x01701c24: 01aa       add      r2, sp, #4
+  0x01701c26: 43f45cc1   blx      #0x744ee0
+  0x01701c2a: 04b0       add      sp, #0x10
+  0x01701c2c: 80bd       pop      {r7, pc}
+  0x01701c2e: 2de9f04f   push.w   {r4, r5, r6, r7, r8, sb, sl, fp, lr}
+  0x01701c32: 83b0       sub      sp, #0xc
+  0x01701c34: 0746       mov      r7, r0
+  0x01701c36: 0e46       mov      r6, r1
+  0x01701c38: d7e90a01   ldrd     r0, r1, [r7, #0x28]
+  0x01701c3c: 9a46       mov      sl, r3
+  0x01701c3e: 9346       mov      fp, r2

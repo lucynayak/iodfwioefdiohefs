@@ -1,0 +1,225 @@
+﻿
+========== Block_getID @ 0x166d4 ==========
+  0x000166d4: f0b5       push     {r4, r5, r6, r7, lr}
+  0x000166d6: 1e46       mov      r6, r3
+  0x000166d8: 144c       ldr      r4, [pc, #0x50]
+  0x000166da: 85b0       sub      sp, #0x14
+  0x000166dc: 144d       ldr      r5, [pc, #0x50]
+  0x000166de: 7c44       add      r4, pc
+  0x000166e0: 2468       ldr      r4, [r4]
+  0x000166e2: 7d44       add      r5, pc
+  0x000166e4: 2d68       ldr      r5, [r5]
+  0x000166e6: 2368       ldr      r3, [r4]
+  0x000166e8: 2868       ldr      r0, [r5]
+  0x000166ea: 0393       str      r3, [sp, #0xc]
+  0x000166ec: c0b1       cbz      r0, #0x16720
+  0x000166ee: 1746       mov      r7, r2
+  0x000166f0: f9f794e9   blx      #0xfa1c
+  0x000166f4: a0b1       cbz      r0, #0x16720
+  0x000166f6: 2868       ldr      r0, [r5]
+  0x000166f8: f9f766e9   blx      #0xf9c8
+  0x000166fc: 49f076f9   bl       #0x5f9ec
+  0x00016700: 0a9b       ldr      r3, [sp, #0x28]
+  0x00016702: 3a46       mov      r2, r7
+  0x00016704: 0093       str      r3, [sp]
+  0x00016706: 3346       mov      r3, r6
+  0x00016708: 0146       mov      r1, r0
+  0x0001670a: 02a8       add      r0, sp, #8
+  0x0001670c: f9f7e6e9   blx      #0xfadc
+  0x00016710: 9df80800   ldrb.w   r0, [sp, #8]
+  0x00016714: 039a       ldr      r2, [sp, #0xc]
+  0x00016716: 2368       ldr      r3, [r4]
+  0x00016718: 9a42       cmp      r2, r3
+  0x0001671a: 04d1       bne      #0x16726
+  0x0001671c: 05b0       add      sp, #0x14
+  0x0001671e: f0bd       pop      {r4, r5, r6, r7, pc}
+  0x00016720: 4ff0ff30   mov.w    r0, #-1
+  0x00016724: f6e7       b        #0x16714
+  0x00016726: f9f756e9   blx      #0xf9d4
+  0x0001672a: 00bf       nop      
+  0x0001672c: a69f       ldr      r7, [sp, #0x298]
+  0x0001672e: 0500       movs     r5, r0
+  0x00016730: 2e9f       ldr      r7, [sp, #0xb8]
+  0x00016732: 0500       movs     r5, r0
+  0x00016734: 70b5       push     {r4, r5, r6, lr}
+  0x00016736: 82b0       sub      sp, #8
+  0x00016738: 0e4c       ldr      r4, [pc, #0x38]
+  0x0001673a: 7c44       add      r4, pc
+
+========== Level_getAllPlayers @ 0x168d4 ==========
+  0x000168d4: 2de9f043   push.w   {r4, r5, r6, r7, r8, sb, lr}
+  0x000168d8: 83b0       sub      sp, #0xc
+  0x000168da: 2a4c       ldr      r4, [pc, #0xa8]
+  0x000168dc: 0546       mov      r5, r0
+  0x000168de: 02af       add      r7, sp, #8
+  0x000168e0: 7c44       add      r4, pc
+  0x000168e2: 2468       ldr      r4, [r4]
+  0x000168e4: 2068       ldr      r0, [r4]
+  0x000168e6: 0028       cmp      r0, #0
+  0x000168e8: 40d0       beq      #0x1696c
+  0x000168ea: f9f798e8   blx      #0xfa1c
+  0x000168ee: 0028       cmp      r0, #0
+  0x000168f0: 3cd0       beq      #0x1696c
+  0x000168f2: 2068       ldr      r0, [r4]
+  0x000168f4: f9f792e8   blx      #0xfa1c
+  0x000168f8: d0f818e0   ldr.w    lr, [r0, #0x18]
+  0x000168fc: 0646       mov      r6, r0
+  0x000168fe: c169       ldr      r1, [r0, #0x1c]
+  0x00016900: ceeb0101   rsb      r1, lr, r1
+  0x00016904: 8910       asrs     r1, r1, #2
+  0x00016906: cb00       lsls     r3, r1, #3
+  0x00016908: 0833       adds     r3, #8
+  0x0001690a: adeb030d   sub.w    sp, sp, r3
+  0x0001690e: 0df10808   add.w    r8, sp, #8
+  0x00016912: 99b1       cbz      r1, #0x1693c
+  0x00016914: a8f10809   sub.w    sb, r8, #8
+  0x00016918: 0024       movs     r4, #0
+  0x0001691a: 5ef82400   ldr.w    r0, [lr, r4, lsl #2]
+  0x0001691e: 0134       adds     r4, #1
+  0x00016920: f9f76ae8   blx      #0xf9f8
+  0x00016924: d6f818e0   ldr.w    lr, [r6, #0x18]
+  0x00016928: f169       ldr      r1, [r6, #0x1c]
+  0x0001692a: ceeb0101   rsb      r1, lr, r1
+  0x0001692e: 8910       asrs     r1, r1, #2
+  0x00016930: 8c42       cmp      r4, r1
+  0x00016932: d0e90023   ldrd     r2, r3, [r0]
+  0x00016936: e9e90223   strd     r2, r3, [sb, #8]!
+  0x0001693a: eed3       blo      #0x1691a
+  0x0001693c: 2b68       ldr      r3, [r5]
+  0x0001693e: 2846       mov      r0, r5
+  0x00016940: d3f8d032   ldr.w    r3, [r3, #0x2d0]
+  0x00016944: 9847       blx      r3
+  0x00016946: f369       ldr      r3, [r6, #0x1c]
+  0x00016948: b669       ldr      r6, [r6, #0x18]
+  0x0001694a: 0022       movs     r2, #0
+  0x0001694c: 9b1b       subs     r3, r3, r6
+  0x0001694e: 9b10       asrs     r3, r3, #2
+  0x00016950: 0446       mov      r4, r0
+  0x00016952: 2846       mov      r0, r5
+  0x00016954: 2d68       ldr      r5, [r5]
+  0x00016956: 2146       mov      r1, r4
+  0x00016958: cdf80080   str.w    r8, [sp]
+  0x0001695c: d5f85053   ldr.w    r5, [r5, #0x350]
+  0x00016960: a847       blx      r5
+  0x00016962: 2046       mov      r0, r4
+  0x00016964: 0437       adds     r7, #4
+  0x00016966: bd46       mov      sp, r7
+  0x00016968: bde8f083   pop.w    {r4, r5, r6, r7, r8, sb, pc}
+  0x0001696c: 2b68       ldr      r3, [r5]
+  0x0001696e: 2846       mov      r0, r5
+  0x00016970: 0021       movs     r1, #0
+  0x00016972: d3f8d032   ldr.w    r3, [r3, #0x2d0]
+  0x00016976: 9847       blx      r3
+  0x00016978: 0437       adds     r7, #4
+  0x0001697a: 0446       mov      r4, r0
+  0x0001697c: 2046       mov      r0, r4
+  0x0001697e: bd46       mov      sp, r7
+  0x00016980: bde8f083   pop.w    {r4, r5, r6, r7, r8, sb, pc}
+  0x00016984: 309d       ldr      r5, [sp, #0xc0]
+  0x00016986: 0500       movs     r5, r0
+  0x00016988: 10b5       push     {r4, lr}
+  0x0001698a: 094c       ldr      r4, [pc, #0x24]
+  0x0001698c: 7c44       add      r4, pc
+  0x0001698e: 2468       ldr      r4, [r4]
+
+========== Player_getCollisionSize @ 0x15634 ==========
+  0x00015634: 2de9f043   push.w   {r4, r5, r6, r7, r8, sb, lr}
+  0x00015638: 0646       mov      r6, r0
+  0x0001563a: 224c       ldr      r4, [pc, #0x88]
+  0x0001563c: 9946       mov      sb, r3
+  0x0001563e: 224d       ldr      r5, [pc, #0x88]
+  0x00015640: 87b0       sub      sp, #0x1c
+  0x00015642: 7c44       add      r4, pc
+  0x00015644: 2468       ldr      r4, [r4]
+  0x00015646: 7d44       add      r5, pc
+  0x00015648: 2d68       ldr      r5, [r5]
+  0x0001564a: 2368       ldr      r3, [r4]
+  0x0001564c: 2868       ldr      r0, [r5]
+  0x0001564e: 0593       str      r3, [sp, #0x14]
+  0x00015650: 70b3       cbz      r0, #0x156b0
+  0x00015652: 9046       mov      r8, r2
+  0x00015654: faf7e2e9   blx      #0xfa1c
+  0x00015658: 50b3       cbz      r0, #0x156b0
+  0x0001565a: 2868       ldr      r0, [r5]
+  0x0001565c: 0027       movs     r7, #0
+  0x0001565e: faf7dee9   blx      #0xfa1c
+  0x00015662: 4b46       mov      r3, sb
+  0x00015664: 4246       mov      r2, r8
+  0x00015666: 0097       str      r7, [sp]
+  0x00015668: faf7e2eb   blx      #0xfe30
+  0x0001566c: 0346       mov      r3, r0
+  0x0001566e: f8b1       cbz      r0, #0x156b0
+  0x00015670: d3f82c21   ldr.w    r2, [r3, #0x12c]
+  0x00015674: 3046       mov      r0, r6
+  0x00015676: 3568       ldr      r5, [r6]
+  0x00015678: 0221       movs     r1, #2
+  0x0001567a: 0392       str      r2, [sp, #0xc]
+  0x0001567c: d3f83021   ldr.w    r2, [r3, #0x130]
+  0x00015680: d5f8d432   ldr.w    r3, [r5, #0x2d4]
+  0x00015684: 0492       str      r2, [sp, #0x10]
+  0x00015686: 9847       blx      r3
+  0x00015688: d6f800e0   ldr.w    lr, [r6]
+  0x0001568c: 03ab       add      r3, sp, #0xc
+  0x0001568e: 3a46       mov      r2, r7
+  0x00015690: 0093       str      r3, [sp]
+  0x00015692: 0223       movs     r3, #2
+  0x00015694: 0546       mov      r5, r0
+  0x00015696: 3046       mov      r0, r6
+  0x00015698: 2946       mov      r1, r5
+  0x0001569a: def85463   ldr.w    r6, [lr, #0x354]
+  0x0001569e: b047       blx      r6
+  0x000156a0: 059a       ldr      r2, [sp, #0x14]
+  0x000156a2: 2846       mov      r0, r5
+  0x000156a4: 2368       ldr      r3, [r4]
+  0x000156a6: 9a42       cmp      r2, r3
+  0x000156a8: 0ad1       bne      #0x156c0
+  0x000156aa: 07b0       add      sp, #0x1c
+  0x000156ac: bde8f083   pop.w    {r4, r5, r6, r7, r8, sb, pc}
+  0x000156b0: 3368       ldr      r3, [r6]
+  0x000156b2: 3046       mov      r0, r6
+  0x000156b4: 0221       movs     r1, #2
+  0x000156b6: d3f8d432   ldr.w    r3, [r3, #0x2d4]
+  0x000156ba: 9847       blx      r3
+  0x000156bc: 0546       mov      r5, r0
+  0x000156be: efe7       b        #0x156a0
+  0x000156c0: faf788e9   blx      #0xf9d4
+  0x000156c4: 42b0       add      sp, #0x108
+  0x000156c6: 0500       movs     r5, r0
+  0x000156c8: caaf       add      r7, sp, #0x328
+  0x000156ca: 0500       movs     r5, r0
+  0x000156cc: 2de9f041   push.w   {r4, r5, r6, r7, r8, lr}
+  0x000156d0: 0f4c       ldr      r4, [pc, #0x3c]
+  0x000156d2: 069d       ldr      r5, [sp, #0x18]
+
+========== Player_getNameTag @ 0x1538c ==========
+  0x0001538c: 2de9f041   push.w   {r4, r5, r6, r7, r8, lr}
+  0x00015390: 0546       mov      r5, r0
+  0x00015392: 0f4c       ldr      r4, [pc, #0x3c]
+  0x00015394: 7c44       add      r4, pc
+  0x00015396: 2468       ldr      r4, [r4]
+  0x00015398: 2068       ldr      r0, [r4]
+  0x0001539a: b0b1       cbz      r0, #0x153ca
+  0x0001539c: 1646       mov      r6, r2
+  0x0001539e: 1f46       mov      r7, r3
+  0x000153a0: faf73ceb   blx      #0xfa1c
+  0x000153a4: 88b1       cbz      r0, #0x153ca
+  0x000153a6: 2068       ldr      r0, [r4]
+  0x000153a8: faf738eb   blx      #0xfa1c
+  0x000153ac: 3246       mov      r2, r6
+  0x000153ae: 3b46       mov      r3, r7
+  0x000153b0: faf7a2ec   blx      #0xfcf8
+  0x000153b4: 48b1       cbz      r0, #0x153ca
+  0x000153b6: faf762eb   blx      #0xfa7c
+  0x000153ba: 2b68       ldr      r3, [r5]
+  0x000153bc: 0168       ldr      r1, [r0]
+  0x000153be: 2846       mov      r0, r5
+  0x000153c0: 56f08efd   bl       #0x6bee0
+  0x000153c4: bde8f081   pop.w    {r4, r5, r6, r7, r8, pc}
+  0x000153c8: 00bf       nop      
+  0x000153ca: 0020       movs     r0, #0
+  0x000153cc: bde8f081   pop.w    {r4, r5, r6, r7, r8, pc}
+  0x000153d0: 7cb2       sxtb     r4, r7
+  0x000153d2: 0500       movs     r5, r0
+  0x000153d4: 2de9f043   push.w   {r4, r5, r6, r7, r8, sb, lr}
+  0x000153d8: 8046       mov      r8, r0
+  0x000153da: 2a4c       ldr      r4, [pc, #0xa8]

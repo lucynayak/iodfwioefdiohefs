@@ -1,0 +1,23 @@
+{
+  "header": {
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "name": "CyberSpaceSkinPack",
+    "uuid": "b4f0298e-0dc0-45e4-9569-9acd62792082"
+  },
+  "modules": [
+    {
+      "version": [
+        1,
+        0,
+        0
+      ],
+      "type": "skin_pack",
+      "uuid": "2878972c-5715-4f48-a1c9-1ad7559185c4"
+    }
+  ],
+  "format_version": 1
+}

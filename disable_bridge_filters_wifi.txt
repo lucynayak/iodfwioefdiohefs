@@ -1,0 +1,53 @@
+﻿Timestamp: 2026-05-17 18:08:31
+ScriptVersion: vmware-netcfg-fallback-2
+Admin: True
+
+Adapter: Беспроводная сеть
+Before:
+
+DisplayName                  ComponentID   Enabled
+-----------                  -----------   -------
+VMware Bridge Protocol       vmware_bridge    True
+Драйвер моста                ms_l2bridge      True
+Вложенная виртуализация сети ms_l1vhlwf       True
+
+
+
+Failed: vmware_bridge :: Не найден указанный модуль. 
+Fallback: stopping VMnetBridge driver
+[SC] OpenService: ошибка: 1060:
+
+Указанная служба не установлена.
+
+
+Fallback: uninstalling vmware_bridge via netcfg -u
+Попытка удаления vmware_bridge ...
+
+
+... завершилось со сбоем. Код ошибки: 0x8007007e.
+
+
+
+After vmware_bridge fallback:
+
+DisplayName                  ComponentID   Enabled
+-----------                  -----------   -------
+VMware Bridge Protocol       vmware_bridge    True
+Драйвер моста                ms_l2bridge      True
+Вложенная виртуализация сети ms_l1vhlwf       True
+
+
+
+Failed: ms_l2bridge :: Не найден указанный модуль. 
+Failed: ms_l1vhlwf :: Не найден указанный модуль. 
+
+After:
+
+DisplayName                  ComponentID   Enabled
+-----------                  -----------   -------
+VMware Bridge Protocol       vmware_bridge    True
+Драйвер моста                ms_l2bridge      True
+Вложенная виртуализация сети ms_l1vhlwf       True
+
+
+

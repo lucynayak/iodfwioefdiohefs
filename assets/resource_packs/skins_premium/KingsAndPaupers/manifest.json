@@ -1,0 +1,23 @@
+{
+  "header": {
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "name": "KingsAndPaupers",
+    "uuid": "b9cd3646-0da8-4e09-a239-e2594a0673d8"
+  },
+  "modules": [
+    {
+      "version": [
+        1,
+        0,
+        0
+      ],
+      "type": "skin_pack",
+      "uuid": "d1241699-a2d8-4089-883a-02ff587ca651"
+    }
+  ],
+  "format_version": 1
+}

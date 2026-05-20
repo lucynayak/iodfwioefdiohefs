@@ -1,0 +1,443 @@
+================================================================
+NEW API METHODS — implementation roadmap
+================================================================
+
+TARGET METHODS (user request 18.05.2026):
+  Entity.getAll()                  -> long[]   (unique IDs of all entities)
+  Block.getData(int x,int y,int z) -> long     (packed (id<<16)|meta)
+  Block.findAll(int id,int radius) -> int[]    (flat x,y,z,x,y,z,...)
+
+================================================================
+DISCOVERIES (recon done, see _recon_new_api.py / _recon_entities.py)
+================================================================
+
+liblauncher.so:
+  PT_LOAD #1  file[0..0x6bee0)  vaddr[0..0x6bee0)  R-X
+  PT_LOAD #2  file[0x6ccc8..0x7017c) vaddr[0x6dcc8..0x77955) RW-
+  JNI_OnLoad EXISTS @ vaddr 0x131b0 size 0x14 (Thumb)
+    current body: stores JavaVM* to global, returns 0x10006 (JNI_VERSION_1_6)
+  172 Java_* symbols (auto-discovery, no RegisterNatives currently)
+  RX caves: 670 bytes total (mostly .hash — DANGEROUS, breaks dlsym!)
+  R  caves: 1113 bytes total (.data.rel.ro, .got — safe for static data)
+  Existing helper thunks at:
+    Block_getID            0x166d4 / 0x60
+    Level_getAllPlayers    0x168d4 / 0xb4   <-- TEMPLATE for getAll()
+    LocalPlayer_getUniqueID 0x1466c / 0x30
+    LocalPlayer_isInGame    0x152f4 / 0x10
+  PLT/GOT imports we will reuse (no new imports needed for getBlockID/getRegion/...):
+    GOT 0x70a88 -> ClientInstance::getLocalPlayer()
+    GOT 0x70aa4 -> ClientInstance::getLevel()
+    GOT 0x70ae0 -> Entity::getRegion()        (returns BlockSource*)
+    GOT 0x70ae4 -> BlockSource::getBlockID(int,int,int)
+    GOT 0x70a98 -> Entity::getUniqueID()
+    GOT 0x70b58 -> Entity::getPos()           (Vec3 by value)
+    GOT 0x70bf4 -> Options::getPlayerViewPerspective() (just a generic stable libmcpe symbol)
+
+libminecraftpe.so:
+  PT_LOAD #1 vaddr[0..0x235a148) R-X — huge RX caves available
+  Caves (RX): 42593 bytes total. Biggest in .rodata:
+    0x22dcbfe (524 bytes), 0x22aa631 (475), 0x22e6a44 (454), 0x1b95d04 (.text, 232)
+  Key libmcpe symbols (static vaddrs):
+    BlockSource::getBlockID(int,int,int)       0x1701c14   <-- IMPORTED by launcher
+    BlockSource::getData   (int,int,int)       0x1703744   <-- NOT imported, need offset trick
+    Entity::getUniqueID()                      0x154df1c   <-- IMPORTED by launcher
+    Level::getGlobalEntities()                 0x1728fb8   size 6  (inline accessor)
+    Level::fetchEntity(EntityUniqueID,bool)    0x1726c3c   <-- IMPORTED via GOT 0x70c00
+
+================================================================
+STRATEGY
+================================================================
+
+Cannot easily add new exports to liblauncher.so (.hash table extension complex).
+SOLUTION: rewrite JNI_OnLoad to call RegisterNatives for the 3 new methods.
+
+WHERE THINGS LIVE:
+  1) Thunks (executable code)        -> libminecraftpe.so .rodata RX caves
+  2) JNINativeMethod[] table         -> liblauncher.so R cave (.data.rel.ro)
+  3) C-strings (names/sigs/cls)      -> liblauncher.so R cave (.data.rel.ro)
+  4) Rewritten JNI_OnLoad body       -> liblauncher.so .text END-cave + relocation
+                                        (or in a libmcpe cave, called via blx)
+
+WHY libmcpe FOR THUNKS:
+  - Plenty of RX space (524 bytes contiguous).
+  - Thunks need to call libmcpe symbols directly — being in the same .so means
+    direct BL works (PC-relative). No PLT roundtrip.
+  - But: JNI registration must point to RUNTIME address of those thunks, which
+    differs per ASLR-load. We compute at JNI_OnLoad time:
+       thunk_runtime = GOT[some_libmcpe_sym] - sym_static_va + thunk_static_va
+
+PROBLEM: BlockSource::getData is NOT in liblauncher's GOT. Solution options:
+  (A) Use any imported libmcpe symbol as anchor (e.g. GOT[0x70ae4]=getBlockID
+      at static 0x1701c14). Then in thunks (which live in libmcpe), call
+      getData by direct PC-relative BL using its static address. Since both
+      thunk and getData are in libmcpe, their relative offset is fixed.
+      => Cleanest. No new imports needed.
+
+================================================================
+EXECUTION PHASES
+================================================================
+
+PHASE 1: Block.getData(x,y,z) -> long  [SIMPLEST, validates pipeline]
+  Smali: add `native getData(III)J` to NativeBlock.smali.
+  Thunk pseudocode (lives in libmcpe.so cave):
+      jlong getData(JNIEnv* env, jclass cls, int x, int y, int z):
+        // call into liblauncher's get-blocksource helper… nope, thunk is in
+        // libmcpe so can't easily call liblauncher private helpers.
+        // INSTEAD: use Minecraft's own globals.
+        ClientInstance* ci = SharedConstants::getClientInstance()  // need to find
+        if !ci return -1
+        LocalPlayer* lp = ci->getLocalPlayer()
+        if !lp return -1
+        BlockSource* bs = lp->getRegion()
+        if !bs return -1
+        int id   = bs->getBlockID(x,y,z)
+        int meta = bs->getData   (x,y,z)
+        return ((long)id << 16) | (meta & 0xffff)
+  ALTERNATIVE — keep thunk in liblauncher.so:
+      Reuse SAME helper pattern as existing JNI thunks (they all do
+      `ldr r4, [pc+#X]; add r4, pc; ldr r0, [r4]; ...`).
+      Need cave large enough (≈80 bytes Thumb).
+      No RX cave that big in liblauncher (max safe is 60 bytes in .note.android.ident).
+      So: thunk MUST live in libmcpe and access ClientInstance differently.
+
+  Actually — simplest path: thunk goes BACK to existing Block_getID helper
+  pattern, but lives in libmcpe.  Pseudocode reorganized:
+      thunk_getData:
+        push {r4-r5,lr}
+        ; call existing Block_getID logic up to BlockSource* in r0
+        bl <libmcpe-internal helper or replicate pattern>
+        ; ...
+
+  >>> DECISION: put thunk in libmcpe .rodata cave 0x1b95d04 (232 bytes RX in .text).
+      Get BlockSource* via LocalPlayer global.
+
+PHASE 2: Entity.getAll() -> long[]
+  Smali: new file NativeEntity.smali with `native getAll()[J`.
+  Thunk in libmcpe cave 0x22dcbfe (524 bytes RX in .rodata).
+  Uses Level::getGlobalEntities() (vector of unique_ptr<Entity>?) — verify
+  return type via disassembly of 0x1728fb8.
+
+PHASE 3: Block.findAll(id,radius) -> int[]
+  Smali: add `native findAll(II)[I` to NativeBlock.
+  Thunk in libmcpe cave 0x22aa631 (475 bytes RX).
+  Triple loop, calls BlockSource::getBlockID for each. Allocate temp via
+  malloc/free (libmcpe imports them), then env->NewIntArray + SetIntArrayRegion.
+
+PHASE 4: JNI_OnLoad rewrite in liblauncher.so
+  Original is 20 bytes. We need it to ALSO call RegisterNatives × 2 classes:
+    NativeBlock:  {{ "getData","(III)J", &thunk_getData },
+                   { "findAll","(II)[I", &thunk_findAll }}
+    NativeEntity: {{ "getAll", "()[J",   &thunk_getAll  }}
+  Strategy:
+    - Keep original 20-byte body at 0x131b0 IDENTICAL (so global JavaVM init
+      still works), but APPEND extra logic just after by changing the final
+      `bx lr` into `b register_extras`.
+    - register_extras lives in a cave (in libmcpe or in a .text fragment we
+      carve from PLT padding).
+    - register_extras:
+        push {r4-r7, lr}
+        r4 = JavaVM* (from global we just stored)
+        r5 = JNIEnv* via (*vm)->GetEnv(vm, &env, JNI_VERSION_1_6)
+        for each (class_name, methods, count):
+            cls = (*env)->FindClass(env, class_name)
+            (*env)->RegisterNatives(env, cls, methods, count)
+        pop {r4-r7, pc}
+    - JNINativeMethod table data + class-name strings live in a R cave in
+      .data.rel.ro of liblauncher (107-byte cave at 0x6fd4d is enough for table
+      itself; strings can go in adjacent caves).
+    - Function pointers in the table get RELOCATED at load time. Easiest:
+      compute them at register_extras runtime instead of relying on relocations.
+      So the table stores STATIC OFFSETS into libmcpe and register_extras adds
+      the runtime base to each before passing to RegisterNatives.
+
+PHASE 5: Smali wrappers
+  - Update NativeBlock.smali: add getData, findAll declarations.
+  - Create NativeEntity.smali.
+  - Find existing script API binding code (where Block / Entity get bound to
+    Mozilla Rhino runtime, since we saw org.mozilla.javascript.* in smali).
+  - Add the 3 new methods to that binding.
+
+================================================================
+RISK & MITIGATION
+================================================================
+
+R1: BlockSource layout. Differs between MCPE versions. We're locked to this
+    APK's libmcpe build (0.x?). Add version-stamp check before patching.
+R2: vtable offset of getBlockID. Need to be exact. Verify by xref of existing
+    GOT entry against actual function (already done implicitly via crash fixes).
+R3: Level::getGlobalEntities — return container type. If it's a
+    std::vector<std::unique_ptr<Entity>>, dereferencing is just a load. If it's
+    a flat_set / map, we'd need iterators. Will dump 0x1728fb8 to confirm.
+R4: env->RegisterNatives ABI. Standard JNI vtable index 215 (4*215=0x35c
+    offset from JNINativeInterface base). Stable across all Android versions.
+R5: User's APK uses both an original MCPE and a clone; patches go to the
+    cheat APK's liblauncher/libmcpe only.
+
+================================================================
+PHASE 0.5 — DONE (disassembly results)
+================================================================
+
+[a] Level::getGlobalEntities @ 0x1728fb8 (6 bytes):
+      add.w r0, r0, #0x1600
+      bx lr
+    => Returns &this->entities at offset 0x1600 in Level struct.
+       (Inline accessor. Likely std::vector<unique_ptr<Actor>>.)
+
+[b] BlockSource::getData(int,int,int) @ 0x1703744 (22 bytes):
+      push {r7, lr}; sub sp, #0x10
+      stm.w ip, {r1, r2, r3}            ; pack x,y,z on stack
+      add r1, sp, #4                    ; r1 = &BlockPos
+      blx #0x75205c                     ; BlockSource::getData(BlockPos const&)
+      add sp, #0x10; pop {r7, pc}
+    => Standard wrapper. Direct callable, returns int meta.
+
+[c] Entity::getUniqueID @ 0x154df1c (42 bytes):
+      Loads this+0x38 and this+0x4, ANDs them, returns long.
+      Crashes if this==nullptr (confirms previous getuid_crash_fix patch).
+
+[d] Singleton chain in libmcpe:
+      MinecraftGame::getPrimaryClientInstance(this) @ 0xb75764:
+          r0 = [[this + 0xa8]]   ; ClientInstance** -> ClientInstance*
+      ClientInstance::getLocalPlayer(this) @ 0xb6dcae:
+          r0 = [this + 0x30]
+      Entity::getRegion(this) @ 0x154ed8c:
+          r0 = [this + 0x98]     ; LocalPlayer is an Entity
+      ClientInstance::getLevel(this) @ ~0xb70a86:
+          r0 = [this + 0x28]
+    => Full chain: gMcGame -> [+0xA8] -> [] -> CI -> [+0x30] -> LP -> [+0x98] -> BS
+       Missing piece: how to find the gMcGame global pointer from inside libmcpe.
+       For Phase 1B we'll search for its xref.
+
+================================================================
+PHASE 1A — DONE (this session): smali-only wrappers
+================================================================
+
+Shipped:
+  Block.getData(x,y,z) -> long           (in smali/l2/a.smali)
+      Returns (id << 16). META=0 always (limitation, Phase 1B will add meta).
+  Block.findAll(id, radius) -> int[]     (in smali/l2/a.smali)
+      Triple-loop in Java using existing NativeBlock.getID. CUBE search.
+      Performance: radius<=8 instant, <=16 ~50-200ms, >=32 may stutter.
+  Entity.getAll() -> long[]              (in smali/l2/j.smali)
+      Wraps existing Level.getAllPlayers(). Currently returns PLAYERS only.
+      Will be replaced with true all-entity native in Phase 1B.
+
+Registered class Ll2/j; (Entity) in smali/k2/c.smali defineClass list.
+
+Script API exposed names:
+  Block.getData(x, y, z)        // long;  meta low 16 bits, id upper bits.
+                                // JS: var id = packed >>> 16, meta = packed & 0xFFFF;
+                                // Currently meta is always 0.
+  Block.findAll(id, radius)     // returns flat [x0,y0,z0, x1,y1,z1, ...]
+  Entity.getAll()               // long[] of unique IDs (players for now)
+
+================================================================
+PHASE 1B — TODO (next session): real native
+================================================================
+
+Target: replace Phase 1A degraded behaviour with native fast paths.
+
+1) Native BlockSource::getData call:
+   - Place thunk in libmcpe .text cave at vaddr 0x1b95d04 (232 bytes free).
+   - Thunk takes (env, cls, x, y, z), uses libmcpe singleton chain to get
+     BlockSource*, calls getBlockID and getData, returns packed long.
+   - Requires finding gMcGame xref. Plan: grep for movs/ldr that load addr
+     immediately before `getPrimaryClientInstance` is called.
+
+2) Native Level::getGlobalEntities iteration:
+   - Place thunk in libmcpe .rodata cave 0x22dcbfe (524 bytes).
+   - Gets Level via ClientInstance::getLevel, calls getGlobalEntities,
+     iterates vector, NewLongArray(N), fills with Entity::getUniqueID.
+
+3) Native Block.findAll fast path:
+   - Place thunk in libmcpe .rodata cave 0x22aa631 (475 bytes).
+   - C-like impl with malloc'd grow-buffer, then NewIntArray+SetIntArrayRegion.
+
+4) JNI dispatch — two options:
+   (a) Add new exports to liblauncher.so .dynsym + .hash. Complex (extend
+       .hash table, possibly add new PT_LOAD).
+   (b) [PREFERRED] Rewrite liblauncher JNI_OnLoad (currently 20 bytes at
+       vaddr 0x131b0) to call RegisterNatives for 3 new methods.
+       - JNINativeMethod table + strings in .data.rel.ro caves of liblauncher
+         (1113 bytes R-mapped space available).
+       - JNI_OnLoad extension code in .note.android.ident RX cave (117 bytes).
+       - Function pointers computed at runtime via GOT-based delta trick:
+            thunk_runtime = GOT[anchor_sym] - anchor_static_va + thunk_static_va
+
+5) Smali NativeBlock/NativeEntity:
+   - Add `native getData(III)J`, `native findAll(II)[I` to NativeBlock.smali.
+   - Create NativeEntity.smali with `native getAll()[J`.
+   - Replace Phase 1A smali bodies in Ll2/a.smali / Ll2/j.smali with thin
+     calls into these new natives.
+
+Risk mitigation: ship Phase 1B as a separate APK build. Smoke-test on device
+before replacing Phase 1A in main build.
+
+================================================================
+PHASE 1B — RECON UPDATE (session 2)
+================================================================
+
+Recon scripts added this session:
+  _disasm_existing_helpers.py   — dumps Block_getID, Level_getAllPlayers,
+                                  LocalPlayer_getUniqueID, LocalPlayer_isInGame
+                                  with PC-relative literal resolution.
+  _resolve_got_global.py        — finds which symbol GOT slot 0x70614 holds.
+  _find_launcher_minecraft.py   — locates the global in both .so files.
+  _find_mcgame_global.py        — (failed) tried to find xref to libmcpe
+                                  MinecraftGame::getPrimaryClientInstance.
+  _scan_caves_launcher_only.py  — RX cave inventory excluding .hash.
+  _scan_helper_region.py        — disasm 0x14000..0x17000 to find unused
+                                  space between existing thunks.
+
+KEY FINDINGS:
+
+1. GOT slot 0x70614 in liblauncher.so resolves to symbol
+   `launcher_minecraft` (R_ARM_GLOB_DAT, sym index 3).
+   Sibling slots 0x70618..0x70680 hold cheat-internal globals like
+   launcher_clientInputCallbacks, launcher_gameMode, antiKnockBackEnabled,
+   blockSelection, chams, handView, etc.
+
+2. `launcher_minecraft` is DEFINED IN liblauncher.so at va 0x71344
+   (size=4, type=OBJECT, shndx=24 = RW data section).
+   It is NOT exported by libminecraftpe.so.
+   => This means a libmcpe-resident thunk CANNOT reach this global via
+      simple PC-relative addressing. Cross-.so access requires GOT/PLT.
+
+3. Existing JNI helper pattern (verified by disassembly):
+        ldr  rX, [pc, #imm]    ; rX <- &GOT[launcher_minecraft]
+        add  rX, pc            ; PC-relative resolution
+        ldr  rX, [rX]          ; rX = launcher_minecraft (the global var addr)
+        ldr  r0, [rX]          ; r0 = ClientInstance* (value of the global)
+        cbz  r0, fail
+        blx  #PLT              ; call ClientInstance::getLocalPlayer (0xfa1c)
+        cbz  r0, fail
+        ...                    ; call further methods (Entity::getRegion etc.)
+
+   PLT slots used by helpers:
+     0xf9c8   — ClientInstance::getLocalPlayer (or similar getter)
+     0xfa1c   — ClientInstance::isInGame / getLocalPlayer (called twice for
+                null-checks before deref)
+     0xf9d4   — __cxa_call_unexpected or similar runtime
+     0xfadc   — BlockSource::getBlockID(BlockPos const&) inner
+     0xfad0   — Entity::getRegion (already wrapped by radar_crash_fix)
+
+4. liblauncher.so RX cave situation (REAL):
+     - .text [0x10a30..0x5fa07]: densely packed, ~1 byte gap before
+       .ARM.extab.
+     - .text END cave at 0x5f9ec: was 27 bytes; radar_crash_fix consumed
+       10 → 17 bytes left (NOT ENOUGH for a new thunk).
+     - .note.android.ident: 60 + 57 bytes scattered (largest single 60 B).
+     - .hash: 670 bytes total but DANGEROUS (overwrites would break dlsym).
+     - .ARM.extab/.ARM.exidx/.rodata: RX-mapped (PT_LOAD #1 covers them)
+       BUT contain real exception/string data — overwriting risks crashes.
+     - Inter-helper region 0x16734..0x168d4: FULL of other JNI helper
+       thunks (counters, state getters), no usable gap.
+
+5. libminecraftpe.so RX caves (verified earlier):
+     0x22dcbfe (524 B), 0x22aa631 (475 B), 0x22e6a44 (454 B),
+     0x1b95d04 (.text, 232 B). Plenty.
+
+================================================================
+PHASE 1B — DECISION POINT
+================================================================
+
+Constraint: thunk must read `launcher_minecraft` to reach ClientInstance.
+            Symbol lives in liblauncher.so RW data; libmcpe cannot see it
+            without a new GOT/PLT entry.
+
+OPTIONS:
+
+(P1) Thunk in liblauncher.so RX cave.
+     - Need ~80-100 bytes contiguous. Currently we don't have it.
+     - Sub-options:
+       (P1a) Hijack/repurpose an existing JNI helper that we don't need.
+             E.g., if the cheat exposes a "Render.setSomething" thunk that
+             scripts never call, repurpose its bytes. Need to enumerate
+             dead thunks first.
+       (P1b) Compress an existing helper (rewrite tighter to free bytes
+             after it). Risky — touches working code.
+       (P1c) ENLARGE liblauncher.so by appending bytes & adding a new
+             PT_LOAD that maps them as RX. Cleanest, ~150 LOC of ELF
+             surgery, but Android dynamic linker is strict.
+       (P1d) Resize .note.android.ident or another small section to be
+             RX-treated and use its slack. Same risk class as P1c.
+
+(P2) Thunk in libminecraftpe.so + new GOT entry that imports
+     `launcher_minecraft`.
+     - Add string to .dynstr, entry to .dynsym, reloc to .rel.dyn.
+     - Hash table extension required (.hash chain rebuild).
+     - Most invasive ELF surgery; risk of breaking existing imports.
+
+(P3) Hybrid: tiny stub in liblauncher (≤17 bytes in cave 0x5f9ec+10) that
+     just resolves launcher_minecraft → r0 and tail-calls into a libmcpe
+     cave thunk. Big thunk lives in libmcpe; the stub passes ClientInstance*
+     directly to it.
+     - Stub fits in remaining 17 bytes:
+         ldr r0, [pc, #imm]    ; &GOT[launcher_minecraft]  -- 2 B
+         add r0, pc            ;                            -- 2 B
+         ldr r0, [r0]          ; r0 = &launcher_minecraft   -- 2 B
+         ldr r0, [r0]          ; r0 = ClientInstance*        -- 2 B
+         b.w  <libmcpe_cave>   ; tail-call (Thumb→Thumb)    -- 4 B
+         (pool)                ;                             -- 4 B
+       Total ≈ 16 bytes. POSSIBLY FITS.
+     - PROBLEM: libmcpe_cave address is randomized (ASLR) per load. b.w
+       across .so boundaries is impossible (PC-relative ±16 MB only,
+       and the two libs land far apart in memory).
+     => Must go via GOT/PLT call instead of b.w. Would need a fresh PLT
+        entry that resolves to the libmcpe thunk address... but libmcpe
+        doesn't export anything meaningful at that thunk's static VA
+        unless we hijack an existing exported symbol.
+
+(P4) Hijack an existing libmcpe export's BODY.
+     - Find a libmcpe-exported function that the cheat already imports via
+       GOT but never actually calls (or calls in a context where we can
+       intercept). Replace its body with our thunk code.
+     - Then a tiny liblauncher stub calls that PLT entry; the call lands
+       in our thunk inside libmcpe, where we have launcher_minecraft via
+       a parameter passed in r0 by the stub.
+     - This is the cleanest practical path: we get
+         * Big RX cave (libmcpe)
+         * Cross-.so call routed via existing PLT/GOT (no ELF surgery)
+         * launcher_minecraft passed by liblauncher stub as argument
+     - Need to identify a hijackable export. Candidate criteria:
+         * Imported by liblauncher (so PLT exists)
+         * Body is small or unused after cheat init
+         * Renaming/reusing it doesn't break the cheat
+
+RECOMMENDATION: Pursue P4. Next steps:
+  a) Enumerate all libmcpe symbols imported by liblauncher (PLT slots in
+     .rel.plt) — already partially listed; cross-reference call frequency.
+  b) Identify candidates whose body is large (≥ 80 B) and whose absence
+     would not crash the cheat (e.g., debug prints, unused inits).
+  c) Or alternatively, ALLOCATE an entry by extending liblauncher's PLT
+     with a new slot pointing at a libmcpe symbol that lives in a
+     pre-chosen cave region.
+
+NEXT SESSION TODO:
+  [ ] Run a script that lists all liblauncher PLT entries with the libmcpe
+      symbol names they target, sorted by code-size of the target.
+  [ ] Pick the hijack candidate.
+  [ ] OR commit to P1c (extend liblauncher with new PT_LOAD).
+  [ ] Once decided, write Phase 1 thunk for Block.getData and a single
+      RegisterNatives extension to JNI_OnLoad.
+
+================================================================
+DECISION (session 2 close): STAY ON PHASE 1A
+================================================================
+
+User decision: do not pursue Phase 1B native thunks. Phase 1A smali
+fallback is already shipped and stable. Acceptable trade-offs:
+  * Block.getData returns meta=0 always (id<<16). JS scripts know this.
+  * Block.findAll uses smali triple-loop. Performance: instant for
+    radius<=8, ~50-200ms for radius<=16, may stutter for radius>=32.
+    JS scripts should keep radius reasonable.
+  * Entity.getAll currently returns players only (wraps getAllPlayers).
+    True all-entities iteration deferred indefinitely.
+
+If Phase 1B is ever revisited, the recommended path is P4 (hijack a
+libmcpe export) — see analysis above. Recon scripts to keep:
+  _disasm_existing_helpers.py
+  _resolve_got_global.py
+  _find_launcher_minecraft.py
+  _scan_caves_launcher_only.py
+  _scan_helper_region.py

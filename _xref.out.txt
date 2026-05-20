@@ -1,0 +1,4 @@
+﻿Entity::getRegion sym idx=95 value=0x0 shndx=0
+.rel.plt @ off=0xee9c size=0xb00
+  RELOC @ off=0x70ae0 GOT slot for getRegion
+.plt @ vaddr=0xf99c foff=0xf99c size=0x1094

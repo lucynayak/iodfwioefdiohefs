@@ -1,0 +1,7 @@
+﻿backup -> lib/armeabi-v7a/liblauncher.so.getuid_crash_backup
+=== lib/armeabi-v7a/liblauncher.so (460728 bytes) ===
+  installing thunk at 0x5f9f6 (18 bytes)
+  0x00014684: blx 0xf9f8 -> bl 0x5f9f6  [PATCH]
+  wrote 460728 bytes
+
+Done. Rebuild APK to apply.

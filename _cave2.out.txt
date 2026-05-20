@@ -1,0 +1,7 @@
+﻿=== Executable section bounds ===
+              .plt: foff=0xf99c va=0xf99c size=0x1094 end_va=0x10a30
+             .text: foff=0x10a30 va=0x10a30 size=0x4efd7 end_va=0x5fa07
+
+=== Caves >=10 bytes in .text ===
+  .plt: 0 caves >=10
+  .text: 0 caves >=10

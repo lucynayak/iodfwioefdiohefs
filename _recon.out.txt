@@ -1,0 +1,80 @@
+﻿====== liblauncher.so: existing JNI thunks of interest ======
+  Java_dev_virus_variable_launcher_api_NativeBlock_getID  va=0x166d4 size=0x60
+  Java_dev_virus_variable_launcher_api_NativeLevel_getAllPlayers  va=0x168d4 size=0xb4
+  Java_dev_virus_variable_launcher_api_NativeLocalPlayer_getUniqueID  va=0x1466c size=0x30
+  Java_dev_virus_variable_launcher_api_NativeLocalPlayer_isInGame  va=0x152f4 size=0x10
+  Java_dev_virus_variable_launcher_api_NativePlayer_getPositionX  va=0x154fc size=0x34
+
+====== libmcpe.so: candidate symbols ======
+
+  pattern='LocalPlayer': 174 matches
+     va=0xd3c55c size=0x48  _ZN11LocalPlayer29registerFramewiseActionOrStopEv
+     va=0xb89c00 size=0xc4  _ZN13MinecraftGame20onClientCreatedLevelESt10unique_ptrI5LevelSt14default_deleteIS1_EES0_I11LocalPlayerS2_IS5_EE
+     va=0xb6dcae size=0x4  _ZN14ClientInstance14getLocalPlayerEv
+     va=0xb70bf0 size=0x70  _ZN14ClientInstance20onClientCreatedLevelESt10unique_ptrI5LevelSt14default_deleteIS1_EES0_I11LocalPlayerS2_IS5_EE
+     va=0xb70a86 size=0x4  _ZN14ClientInstance9setPlayerEP11LocalPlayer
+     va=0xd3e614 size=0xa  _ZN11LocalPlayer10setTeacherEv
+     va=0xd3c5a4 size=0x1a  _ZN11LocalPlayer18clearMovementStateEv
+     va=0xd38978 size=0x4c  _ZN11LocalPlayer18requestChunkRadiusEj
+
+  pattern='BlockSource': 1812 matches
+     va=0x1704e42 size=0x16  _ZN11BlockSource14getBlockEntityEiii
+     va=0x17018ea size=0x54  _ZN11BlockSource15setBlockAndDataEiii7BlockIDhi
+     va=0x170120e size=0x54  _ZN11BlockSource8setBlockEiii7BlockIDi
+     va=0xb9040a size=0x2  _ZN19BlockSourceListener12onBlockEventER11BlockSourceiiiii
+     va=0xb903f8 size=0x2  _ZN19BlockSourceListener13onAreaChangedER11BlockSourceRK8BlockPosS4_
+     va=0xb903fa size=0x2  _ZN19BlockSourceListener14onBlockChangedER11BlockSourceRK8BlockPos9FullBlockS5_iP6Entity
+     va=0xb90408 size=0x2  _ZN19BlockSourceListener15onEntityChangedER11BlockSourceR6Entity
+     va=0xb903f4 size=0x2  _ZN19BlockSourceListener15onSourceCreatedER11BlockSource
+
+  pattern='Level11fetchEntity': 1 matches
+     va=0x1726c3c size=0x36  _ZNK5Level11fetchEntityE14EntityUniqueIDb
+
+  pattern='Entity11getUniqueID': 1 matches
+     va=0x154df1c size=0x2a  _ZNK6Entity11getUniqueIDEv
+
+  pattern='11BlockSource10getBlockID': 2 matches
+     va=0x1700570 size=0xcc  _ZN11BlockSource10getBlockIDERK8BlockPos
+     va=0x1701c14 size=0x1a  _ZN11BlockSource10getBlockIDEiii
+
+  pattern='11BlockSource7getData': 2 matches
+     va=0x1703744 size=0x16  _ZN11BlockSource7getDataEiii
+     va=0x170063c size=0xc8  _ZN11BlockSource7getDataERK8BlockPos
+
+====== liblauncher.so PLT imports from libmcpe ======
+  GOT vaddr=0x70a88  -> _ZN14ClientInstance14getLocalPlayerEv
+  GOT vaddr=0x70a98  -> _ZNK6Entity11getUniqueIDEv
+  GOT vaddr=0x70aa4  -> _ZN14ClientInstance8getLevelEv
+  GOT vaddr=0x70aac  -> _ZN5Level13forEachPlayerESt8functionIFbR6PlayerEE
+  GOT vaddr=0x70ab0  -> _ZNK6Entity18getPosExtrapolatedEf
+  GOT vaddr=0x70ae0  -> _ZNK6Entity9getRegionEv
+  GOT vaddr=0x70ae4  -> _ZN11BlockSource10getBlockIDEiii
+  GOT vaddr=0x70b3c  -> _ZNK6Player11getSuppliesEv
+  GOT vaddr=0x70b40  -> _ZNK20PlayerInventoryProxy7getItemEi11ContainerID
+  GOT vaddr=0x70b58  -> _ZNK6Entity6getPosEv
+  GOT vaddr=0x70b94  -> _ZN5Level12getHitResultEv
+  GOT vaddr=0x70b98  -> _ZNK5Level9getPlayerE14EntityUniqueID
+  GOT vaddr=0x70ba0  -> _ZN11LocalPlayer6setPosERK4Vec3
+  GOT vaddr=0x70ba4  -> _ZN11LocalPlayer12sendPositionEv
+  GOT vaddr=0x70bb8  -> _ZN8GameMode12destroyBlockER6Player8BlockPosa
+  GOT vaddr=0x70bbc  -> _ZN11LocalPlayer13openContainerERK8BlockPos
+  GOT vaddr=0x70bc0  -> _ZN11LocalPlayer13openInventoryEv
+  GOT vaddr=0x70bc4  -> _ZN11LocalPlayer11closeScreenEv
+  GOT vaddr=0x70bc8  -> _ZNK5Level15getPacketSenderEv
+  GOT vaddr=0x70bd4  -> _ZN11LocalPlayer12setSprintingEb
+  GOT vaddr=0x70bf4  -> _ZNK7Options24getPlayerViewPerspectiveEv
+  GOT vaddr=0x70bf8  -> _ZN7Options24setPlayerViewPerspectiveEi
+  GOT vaddr=0x70c00  -> _ZNK5Level11fetchEntityE14EntityUniqueIDb
+  GOT vaddr=0x70c0c  -> _ZN6Player16isInCreativeModeEv
+  GOT vaddr=0x70c48  -> _ZNK20PlayerInventoryProxy19getLinkedSlotsCountEv
+  GOT vaddr=0x70c50  -> _ZN20PlayerInventoryProxy7setItemEiRK12ItemInstance11ContainerID
+  GOT vaddr=0x70c54  -> _ZNK20PlayerInventoryProxy13getLinkedSlotEi
+  GOT vaddr=0x70c58  -> _ZN20PlayerInventoryProxy8dropSlotEibb11ContainerIDb
+  GOT vaddr=0x70c5c  -> _ZN20PlayerInventoryProxy9clearSlotEi11ContainerID
+  GOT vaddr=0x70c60  -> _ZNK20PlayerInventoryProxy15getSelectedSlotEv
+  GOT vaddr=0x70c68  -> _ZN20PlayerInventoryProxy10selectSlotEi11ContainerID
+  GOT vaddr=0x70cc8  -> _ZNK5Level7getTimeEv
+  GOT vaddr=0x70cd4  -> _ZN5Level11addParticleE12ParticleTypeRK4Vec3S3_i
+  GOT vaddr=0x70cd8  -> _ZN5Level7setTimeEi
+  GOT vaddr=0x70cfc  -> _ZNK14ClientInstance16getLevelRendererEv
+  GOT vaddr=0x70d18  -> _ZNK6Player14getCarriedItemEv

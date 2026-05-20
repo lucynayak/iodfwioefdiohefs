@@ -1,0 +1,55 @@
+{
+   "content" : [
+      {
+         "path" : "BlueLumberjack.png"
+      },
+      {
+         "path" : "BlueMiner.png"
+      },
+      {
+         "path" : "BlueScout.png"
+      },
+      {
+         "path" : "BlueSoldier.png"
+      },
+      {
+         "path" : "GreenLumberjack.png"
+      },
+      {
+         "path" : "GreenMiner.png"
+      },
+      {
+         "path" : "GreenScout.png"
+      },
+      {
+         "path" : "GreenSoldier.png"
+      },
+      {
+         "path" : "RedLumberjack.png"
+      },
+      {
+         "path" : "RedMiner.png"
+      },
+      {
+         "path" : "RedScout.png"
+      },
+      {
+         "path" : "RedSoldier.png"
+      },
+      {
+         "path" : "skins.json"
+      },
+      {
+         "path" : "YellowLumberjack.png"
+      },
+      {
+         "path" : "YellowMiner.png"
+      },
+      {
+         "path" : "YellowScout.png"
+      },
+      {
+         "path" : "YellowSoldier.png"
+      }
+   ]
+}

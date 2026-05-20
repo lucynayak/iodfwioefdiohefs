@@ -1,0 +1,23 @@
+{
+  "header": {
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "name": "EneijaSurvivors",
+    "uuid": "d637ef26-1c09-42a1-8ad4-e7316325ddc0"
+  },
+  "modules": [
+    {
+      "version": [
+        1,
+        0,
+        0
+      ],
+      "type": "skin_pack",
+      "uuid": "b1382633-fdb9-48d9-987e-4e98348de55c"
+    }
+  ],
+  "format_version": 1
+}

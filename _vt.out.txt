@@ -1,0 +1,15 @@
+﻿=== Thunk @ 0x5f9ec ===
+  0x0005f9ec: 00b5       push     {lr}
+  0x0005f9ee: 08b1       cbz      r0, #0x5f9f4
+  0x0005f9f0: b0f76ee8   blx      #0xfad0
+  0x0005f9f4: 00bd       pop      {pc}
+  0x0005f9f6: 0000       movs     r0, r0
+
+=== Call site 0x000127bc (patched instr) ===
+  0x000127bc: 4df016f9   bl       #0x5f9ec
+
+=== Call site 0x000166fc (patched instr) ===
+  0x000166fc: 49f076f9   bl       #0x5f9ec
+
+=== Call site 0x00016754 (patched instr) ===
+  0x00016754: 49f04af9   bl       #0x5f9ec

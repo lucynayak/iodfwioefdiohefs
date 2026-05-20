@@ -1,0 +1,10 @@
+﻿backup: lib/armeabi-v7a/liblauncher.so.radar_crash_backup
+
+=== lib/armeabi-v7a/liblauncher.so (460728 bytes) ===
+  installing thunk at cave 0x5f9ec (10 bytes)
+  0x000127bc: blx 0xfad0 -> bl 0x5f9ec  [PATCH]
+  0x000166fc: blx 0xfad0 -> bl 0x5f9ec  [PATCH]
+  0x00016754: blx 0xfad0 -> bl 0x5f9ec  [PATCH]
+  wrote 460728 bytes
+
+Done. Rebuild APK to apply.

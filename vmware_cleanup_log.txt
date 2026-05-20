@@ -1,0 +1,207 @@
+VMware cleanup
+Timestamp: 17.05.2026 18:06:01,63
+ScriptVersion: vmware-cleanup-onefile-3
+LauncherStarted: True
+
+Admin: True
+
+=== Stop services ===
+--- sc stop "VMAuthdService" --- 
+
+SERVICE_NAME: VMAuthdService 
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+--- sc config "VMAuthdService" start= disabled --- 
+[SC] ChangeServiceConfig: гбЇҐе
+--- sc stop "VMnetDHCP" --- 
+
+€¬п_б«г¦Ўл: VMnetDHCP 
+        ’ЁЇ                : 10  WIN32_OWN_PROCESS  
+        ‘®бв®п­ЁҐ          : 3  STOP_PENDING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        Љ®¤_ўле®¤ _Win32   : 0  (0x0)
+        Љ®¤_ўле®¤ _б«г¦Ўл  : 0  (0x0)
+        Љ®­ва®«м­ п_в®зЄ   : 0x0
+        Ћ¦Ё¤ ­ЁҐ           : 0x0
+--- sc config "VMnetDHCP" start= disabled --- 
+[SC] ChangeServiceConfig: гбЇҐе
+--- sc stop "VMware NAT Service" --- 
+
+€¬п_б«г¦Ўл: VMware NAT Service 
+        ’ЁЇ                : 10  WIN32_OWN_PROCESS  
+        ‘®бв®п­ЁҐ          : 3  STOP_PENDING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        Љ®¤_ўле®¤ _Win32   : 0  (0x0)
+        Љ®¤_ўле®¤ _б«г¦Ўл  : 0  (0x0)
+        Љ®­ва®«м­ п_в®зЄ   : 0x0
+        Ћ¦Ё¤ ­ЁҐ           : 0x0
+--- sc config "VMware NAT Service" start= disabled --- 
+[SC] ChangeServiceConfig: гбЇҐе
+--- sc stop "VMUSBArbService" --- 
+
+SERVICE_NAME: VMUSBArbService 
+        TYPE               : 10  WIN32_OWN_PROCESS  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+--- sc config "VMUSBArbService" start= disabled --- 
+[SC] ChangeServiceConfig: гбЇҐе
+--- sc stop "VmwareAutostartService" --- 
+[SC] ControlService: ®иЁЎЄ : 1062:
+
+‘«г¦Ў  ­Ґ § ЇгйҐ­ .
+
+--- sc config "VmwareAutostartService" start= disabled --- 
+[SC] ChangeServiceConfig: гбЇҐе
+--- sc stop "VMnetBridge" --- 
+[SC] ControlService: ®иЁЎЄ : 1062:
+
+‘«г¦Ў  ­Ґ § ЇгйҐ­ .
+
+--- sc config "VMnetBridge" start= disabled --- 
+[SC] ChangeServiceConfig: гбЇҐе
+--- sc stop "VMnetuserif" --- 
+[SC] ControlService: ®иЁЎЄ : 1051:
+
+Љ®¬ ­¤  ®бв ­®ўЄЁ Ўл«  ®вЇа ў«Ґ­  б«г¦ЎҐ, ®в Є®в®а®© § ўЁбпв ¤агЈЁҐ б«г¦Ўл.
+
+--- sc config "VMnetuserif" start= disabled --- 
+[SC] ChangeServiceConfig: гбЇҐе
+--- sc stop "VMnetAdapter" --- 
+[SC] ControlService: ®иЁЎЄ : 1052:
+
+Љ®¬ ­¤  ­Ґг¬Ґбв­  ¤«п ¤ ­­®© б«г¦Ўл.
+
+--- sc config "VMnetAdapter" start= disabled --- 
+[SC] ChangeServiceConfig: гбЇҐе
+--- sc stop "vmusb" --- 
+[SC] ControlService: ®иЁЎЄ : 1062:
+
+‘«г¦Ў  ­Ґ § ЇгйҐ­ .
+
+--- sc config "vmusb" start= disabled --- 
+[SC] ChangeServiceConfig: гбЇҐе
+--- sc stop "vmx86" --- 
+
+SERVICE_NAME: vmx86 
+        TYPE               : 1  KERNEL_DRIVER  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+--- sc config "vmx86" start= disabled --- 
+[SC] ChangeServiceConfig: гбЇҐе
+--- sc stop "vmci" --- 
+[SC] ControlService: ®иЁЎЄ : 1052:
+
+Љ®¬ ­¤  ­Ґг¬Ґбв­  ¤«п ¤ ­­®© б«г¦Ўл.
+
+--- sc config "vmci" start= disabled --- 
+[SC] ChangeServiceConfig: гбЇҐе
+--- sc stop "hcmon" --- 
+
+SERVICE_NAME: hcmon 
+        TYPE               : 1  KERNEL_DRIVER  
+        STATE              : 1  STOPPED 
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x0
+--- sc config "hcmon" start= disabled --- 
+[SC] ChangeServiceConfig: гбЇҐе
+
+=== Remove VMware adapters ===
+Служебная программа PnP (Майкрософт)
+
+Удаление устройства:          ROOT\VMWARE\0000
+Устройство успешно удалено.
+
+Служебная программа PnP (Майкрософт)
+
+Удаление устройства:          ROOT\VMWARE\0001
+Устройство успешно удалено.
+
+
+=== Remove VMware driver packages ===
+Служебная программа PnP (Майкрософт)
+
+Пропуск параметра /force при использовании с параметром /uninstall для удаления пакета драйвера.
+Пакет драйвера удален.
+Пакет драйвера успешно удален.
+Служебная программа PnP (Майкрософт)
+
+Пропуск параметра /force при использовании с параметром /uninstall для удаления пакета драйвера.
+Пакет драйвера удален.
+Пакет драйвера успешно удален.
+Служебная программа PnP (Майкрософт)
+
+Пропуск параметра /force при использовании с параметром /uninstall для удаления пакета драйвера.
+Пакет драйвера удален.
+Пакет драйвера успешно удален.
+Служебная программа PnP (Майкрософт)
+
+Пропуск параметра /force при использовании с параметром /uninstall для удаления пакета драйвера.
+Пакет драйвера удален.
+Пакет драйвера успешно удален.
+
+=== Delete services ===
+--- sc delete "VMAuthdService" --- 
+[SC] DeleteService: гбЇҐе
+--- sc delete "VMnetDHCP" --- 
+[SC] DeleteService: гбЇҐе
+--- sc delete "VMware NAT Service" --- 
+[SC] DeleteService: гбЇҐе
+--- sc delete "VMUSBArbService" --- 
+[SC] DeleteService: гбЇҐе
+--- sc delete "VmwareAutostartService" --- 
+[SC] DeleteService: гбЇҐе
+--- sc delete "VMnetBridge" --- 
+[SC] DeleteService: гбЇҐе
+--- sc delete "VMnetuserif" --- 
+[SC] DeleteService: гбЇҐе
+--- sc delete "VMnetAdapter" --- 
+[SC] DeleteService: гбЇҐе
+--- sc delete "vmusb" --- 
+[SC] DeleteService: гбЇҐе
+--- sc delete "vmx86" --- 
+[SC] DeleteService: гбЇҐе
+--- sc delete "vmci" --- 
+[SC] DeleteService: гбЇҐе
+--- sc delete "hcmon" --- 
+[SC] DeleteService: гбЇҐе
+
+=== Final checks ===
+[SC] EnumQueryServicesStatus:OpenService: ®иЁЎЄ : 1060:
+
+“Є § ­­ п б«г¦Ў  ­Ґ гбв ­®ў«Ґ­ .
+
+
+€¬п_б«г¦Ўл: VMnetuserif 
+        ’ЁЇ                : 1  KERNEL_DRIVER  
+        ‘®бв®п­ЁҐ          : 4  RUNNING 
+                                (STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        Љ®¤_ўле®¤ _Win32   : 0  (0x0)
+        Љ®¤_ўле®¤ _б«г¦Ўл  : 0  (0x0)
+        Љ®­ва®«м­ п_в®зЄ   : 0x0
+        Ћ¦Ё¤ ­ЁҐ           : 0x0
+[SC] EnumQueryServicesStatus:OpenService: ®иЁЎЄ : 1060:
+
+“Є § ­­ п б«г¦Ў  ­Ґ гбв ­®ў«Ґ­ .
+
+[SC] EnumQueryServicesStatus:OpenService: ®иЁЎЄ : 1060:
+
+“Є § ­­ п б«г¦Ў  ­Ґ гбв ­®ў«Ґ­ .
+
+[SC] EnumQueryServicesStatus:OpenService: ®иЁЎЄ : 1060:
+
+“Є § ­­ п б«г¦Ў  ­Ґ гбв ­®ў«Ґ­ .
+
+
+RebootRequired: True

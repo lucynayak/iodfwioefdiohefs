@@ -1,0 +1,52 @@
+{
+   "content" : [
+      {
+         "path" : "Astronaut.png"
+      },
+      {
+         "path" : "BlueHelmet.png"
+      },
+      {
+         "path" : "Chef.png"
+      },
+      {
+         "path" : "Construction.png"
+      },
+      {
+         "path" : "Doctor.png"
+      },
+      {
+         "path" : "Fireman.png"
+      },
+      {
+         "path" : "Judge.png"
+      },
+      {
+         "path" : "Lawyer.png"
+      },
+      {
+         "path" : "Lifeguard.png"
+      },
+      {
+         "path" : "MailWoman.png"
+      },
+      {
+         "path" : "Nurse.png"
+      },
+      {
+         "path" : "Paramedic.png"
+      },
+      {
+         "path" : "Pilot.png"
+      },
+      {
+         "path" : "PoliceWoman.png"
+      },
+      {
+         "path" : "Scientist.png"
+      },
+      {
+         "path" : "skins.json"
+      }
+   ]
+}

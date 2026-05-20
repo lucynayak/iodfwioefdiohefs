@@ -1,0 +1,35 @@
+﻿Looking for relocation targeting va 0x70614 in liblauncher.so ...
+  in .rel.dyn: r_offset=0x70614 type=21 sym=#3 'launcher_minecraft' value=0x71344
+
+Neighbor relocations in .rel.dyn (0x70600..0x70620):
+  off=0x70614 type=21 sym='launcher_minecraft'
+  off=0x70618 type=21 sym='launcher_clientInputCallbacks'
+  off=0x7061c type=21 sym='launcher_moveInputHandler'
+  off=0x70620 type=21 sym='launcher_gameMode'
+  off=0x70624 type=21 sym='antiKnockBackEnabled'
+  off=0x70628 type=21 sym='akbHorizontalMultiplier'
+  off=0x7062c type=21 sym='akbVerticalMultiplier'
+  off=0x70630 type=21 sym='aspectRatio'
+  off=0x70634 type=21 sym='arHorizontal'
+  off=0x70638 type=21 sym='arVertical'
+  off=0x7063c type=21 sym='launcher_viewMatrix'
+  off=0x70640 type=21 sym='blockSelection'
+  off=0x70644 type=21 sym='bsRed'
+  off=0x70648 type=21 sym='bsGreen'
+  off=0x7064c type=21 sym='bsBlue'
+  off=0x70650 type=21 sym='chams'
+  off=0x70654 type=21 sym='handView'
+  off=0x70658 type=21 sym='hvHand0'
+  off=0x7065c type=21 sym='hvHand1'
+  off=0x70660 type=21 sym='hvHandRX1'
+  off=0x70664 type=21 sym='hvHandRY1'
+  off=0x70668 type=21 sym='hvHandRZ1'
+  off=0x7066c type=21 sym='hvHandRX'
+  off=0x70670 type=21 sym='hvHandRY'
+  off=0x70674 type=21 sym='hvHandRZ'
+  off=0x70678 type=21 sym='launcher_projectionMatrix'
+  off=0x7067c type=21 sym='launcher_ping'
+  off=0x70680 type=21 sym='launcher_partialTicks'
+
+Now scan libmcpe.so for the matching exported symbol:
+  Target symbol: 'launcher_minecraft'

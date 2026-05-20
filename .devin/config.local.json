@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Exec(git)",
+      "Exec(rg)",
+      "Exec(python)",
+      "Exec(printf)",
+      "Exec(head)",
+      "Exec(ls)",
+      "Exec(grep)",
+      "Exec(true)",
+      "Exec(java)",
+      "Exec(sed)",
+      "Exec(apktool b)",
+      "Exec(cmd.exe)",
+      "Exec(powershell.exe)",
+      "Exec(test)",
+      "Exec(rm)",
+      "Exec(sleep)",
+      "Exec(cygpath)",
+      "Exec(cmd)",
+      "Exec(findstr)",
+      "Exec(diff)",
+      "Exec(cat)",
+      "Exec(wc)",
+      "Exec(find)",
+      "Exec(pgrep)",
+      "Exec(tail)",
+      "Exec(unzip)",
+      "Exec(strings)",
+      "Exec(file)",
+      "Exec(cp)",
+      "Exec(python3)",
+      "Exec(awk)",
+      "Exec(md5sum)",
+      "Exec(mkdir)",
+      "Exec(readelf)"
+    ]
+  }
+}

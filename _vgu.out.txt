@@ -1,0 +1,35 @@
+﻿=== Both thunks at 0x5f9ec (combined region) ===
+  0x0005f9ec: 00b5       push     {lr}
+  0x0005f9ee: 08b1       cbz      r0, #0x5f9f4
+  0x0005f9f0: b0f76ee8   blx      #0xfad0
+  0x0005f9f4: 00bd       pop      {pc}
+  0x0005f9f6: 18b1       cbz      r0, #0x5fa00
+  0x0005f9f8: 00b5       push     {lr}
+  0x0005f9fa: aff7feef   blx      #0xf9f8
+  0x0005f9fe: 00bd       pop      {pc}
+  0x0005fa00: 0020       movs     r0, #0
+  0x0005fa02: 0138       subs     r0, #1
+  0x0005fa04: 0146       mov      r1, r0
+  0x0005fa06: 10bd       pop      {r4, pc}
+  0x0005fa08: 08b1       cbz      r0, #0x5fa0e
+  0x0005fa0a: 0181       strh     r1, [r0, #8]
+
+=== JNI thunk NativeLocalPlayer.getUniqueID after patch (around 0x14684) ===
+  0x0001466c: 10b5       push     {r4, lr}
+  0x0001466e: 0a4c       ldr      r4, [pc, #0x28]
+  0x00014670: 7c44       add      r4, pc
+  0x00014672: 2468       ldr      r4, [r4]
+  0x00014674: 2068       ldr      r0, [r4]
+  0x00014676: 50b1       cbz      r0, #0x1468e
+  0x00014678: fbf7d0e9   blx      #0xfa1c
+  0x0001467c: 38b1       cbz      r0, #0x1468e
+  0x0001467e: 2068       ldr      r0, [r4]
+  0x00014680: fbf7a2e9   blx      #0xf9c8
+  0x00014684: 4bf0b7f9   bl       #0x5f9f6  <-- patched
+  0x00014688: d0e90001   ldrd     r0, r1, [r0]
+  0x0001468c: 10bd       pop      {r4, pc}
+  0x0001468e: 4ff0ff30   mov.w    r0, #-1
+  0x00014692: 4ff0ff31   mov.w    r1, #-1
+  0x00014696: 10bd       pop      {r4, pc}
+  0x00014698: a0bf       hint     #0xa
+  0x0001469a: 0500       movs     r5, r0

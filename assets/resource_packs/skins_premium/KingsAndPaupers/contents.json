@@ -1,0 +1,52 @@
+{
+   "content" : [
+      {
+         "path" : "baker.png"
+      },
+      {
+         "path" : "barmaid.png"
+      },
+      {
+         "path" : "beggar.png"
+      },
+      {
+         "path" : "blacksmith.png"
+      },
+      {
+         "path" : "butcher.png"
+      },
+      {
+         "path" : "commoner_woman.png"
+      },
+      {
+         "path" : "executioner.png"
+      },
+      {
+         "path" : "fisherman.png"
+      },
+      {
+         "path" : "friar.png"
+      },
+      {
+         "path" : "jester.png"
+      },
+      {
+         "path" : "king.png"
+      },
+      {
+         "path" : "knight.png"
+      },
+      {
+         "path" : "nobleman.png"
+      },
+      {
+         "path" : "noblewoman.png"
+      },
+      {
+         "path" : "queen.png"
+      },
+      {
+         "path" : "skins.json"
+      }
+   ]
+}

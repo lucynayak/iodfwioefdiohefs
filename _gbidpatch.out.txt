@@ -1,0 +1,7 @@
+﻿backup -> lib/armeabi-v7a/libminecraftpe.so.getblockid_crash_backup
+=== lib/armeabi-v7a/libminecraftpe.so (37980728 bytes) ===
+  installed thunk at 0xbb2128 (34 bytes)
+  0x01701c14: push;sub -> b.w 0xbb2128  [PATCH]
+  wrote 37980728 bytes
+
+Done. Rebuild APK to apply.

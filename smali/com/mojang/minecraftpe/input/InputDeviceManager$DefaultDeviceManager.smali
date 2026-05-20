@@ -1,0 +1,58 @@
+.class public Lcom/mojang/minecraftpe/input/InputDeviceManager$DefaultDeviceManager;
+.super Lcom/mojang/minecraftpe/input/InputDeviceManager;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/mojang/minecraftpe/input/InputDeviceManager;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "DefaultDeviceManager"
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .registers 1
+
+    invoke-direct {p0}, Lcom/mojang/minecraftpe/input/InputDeviceManager;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lcom/mojang/minecraftpe/input/InputDeviceManager$1;)V
+    .registers 2
+
+    invoke-direct {p0}, Lcom/mojang/minecraftpe/input/InputDeviceManager$DefaultDeviceManager;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public register()V
+    .registers 3
+
+    const-string v0, "MCPE"
+
+    const-string v1, "INPUT Noop register device manager"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+.end method
+
+.method public unregister()V
+    .registers 3
+
+    const-string v0, "MCPE"
+
+    const-string v1, "INPUT Noop unregister device manager"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-void
+.end method

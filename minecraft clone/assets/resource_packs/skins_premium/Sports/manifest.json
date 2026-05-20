@@ -1,0 +1,23 @@
+{
+  "header": {
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "name": "Sports",
+    "uuid": "8d1cce17-c707-4ae5-bf45-989e49e9b504"
+  },
+  "modules": [
+    {
+      "version": [
+        1,
+        0,
+        0
+      ],
+      "type": "skin_pack",
+      "uuid": "af57794c-4f5b-423a-b6f9-1405081cd660"
+    }
+  ],
+  "format_version": 1
+}
