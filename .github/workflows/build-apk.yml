@@ -1,0 +1,50 @@
+name: Build APK
+on:
+  workflow_dispatch:
+    inputs:
+      version_name: { description: 'versionName (опционально)', required: false, default: '' }
+      version_code: { description: 'versionCode (опционально)', required: false, default: '' }
+  push:
+    branches: [main]
+    paths-ignore: ['.github/**', 'README.md', '.build_version']
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions: { contents: write }
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: '17' }
+      - id: bump
+        run: |
+          VER=$(cat .build_version 2>/dev/null | tr -d '[:space:]'); [ -z "$VER" ] && VER=0
+          VER=$((VER+1)); echo "$VER" > .build_version
+          STAMP=$(date -u +%Y%m%d_%H%M%S)
+          echo "ver=$VER" >> $GITHUB_OUTPUT
+          echo "stamp=$STAMP" >> $GITHUB_OUTPUT
+          echo "apk_name=horrible_v${VER}_${STAMP}" >> $GITHUB_OUTPUT
+      - name: Update version metadata
+        run: |
+          VN="${{ github.event.inputs.version_name }}"; VC="${{ github.event.inputs.version_code }}"
+          [ -n "$VN" ] && sed -i -E "s/versionName: .*/versionName: ${VN}/" apktool.yml && sed -i -E "s/\"versionName\": \"[^\"]*\"/\"versionName\": \"${VN}\"/" apktool.json || true
+          [ -n "$VC" ] && sed -i -E "s/versionCode: '[0-9]+'/versionCode: '${VC}'/" apktool.yml && sed -i -E "s/\"versionCode\": \"[0-9]+\"/\"versionCode\": \"${VC}\"/" apktool.json || true
+      - name: Build APK
+        run: |
+          mkdir -p build/apktool-framework out
+          rm -rf build/apk
+          java -jar apktool.jar b . -o "out/${{ steps.bump.outputs.apk_name }}.apk" --use-aapt2 --frame-path build/apktool-framework
+      - name: Sign APK
+        run: java -jar uber-apk-signer.jar --apks "out/${{ steps.bump.outputs.apk_name }}.apk" --allowResign --overwrite
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.bump.outputs.apk_name }}
+          path: out/*.apk
+          if-no-files-found: error
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: build-${{ steps.bump.outputs.ver }}-${{ steps.bump.outputs.stamp }}
+          name: Horrible build #${{ steps.bump.outputs.ver }}
+          files: out/*.apk
+        env: { GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}' }
