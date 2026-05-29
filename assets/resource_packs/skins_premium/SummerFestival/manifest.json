@@ -1,0 +1,23 @@
+{
+  "header": {
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "name": "SummerFestival",
+    "uuid": "9ed86ce1-4f5e-4f23-a8c5-ae6b7ae4dc5c"
+  },
+  "modules": [
+    {
+      "version": [
+        1,
+        0,
+        0
+      ],
+      "type": "skin_pack",
+      "uuid": "8af4db13-63da-40c9-9bc0-2d9906f15cb2"
+    }
+  ],
+  "format_version": 1
+}

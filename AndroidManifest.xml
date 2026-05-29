@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    android:compileSdkVersion="35"
+    android:compileSdkVersionCodename="15"
+    package="dev.virus.variable"
+    platformBuildVersionCode="35"
+    platformBuildVersionName="15"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <queries>
+        <package
+            android:name="jopa.triggertrash.minecraft" />
+        <package
+            android:name="com.mojang.minecraftpe" />
+    </queries>
+    <uses-feature
+        android:glEsVersion="0x20000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <!-- Приложение сможет просматривать информацию о сетевых подключениях, например о том, какие сети доступны и к каким из них вы подключены. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Приложение сможет создавать сетевые сокеты и использовать различные сетевые протоколы. Так как браузер и другие приложения обеспечивают средства для отправки данных в интернет, это разрешение предоставлять не обязательно. -->
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <!-- Приложение сможет считывать изображения из общего хранилища. -->
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES" />
+    <!-- Приложение сможет считывать данные с общего накопителя. -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- Приложение сможет просматривать информацию о сети Wi-Fi: состояние сети и имена подключенных устройств. -->
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- Приложение сможет запрашивать разрешения на установку пакетов. -->
+    <uses-permission
+        android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- Приложение может открываться поверх других окон. Это может влиять на работу с другими приложениями. -->
+    <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- Приложение сможет запрещать перевод планшетного ПК в спящий режим. -->
+    <uses-permission
+        android:name="android.permission.WAKE_LOCK" />
+    <!-- Разрешить приложению использовать активные сервисы. -->
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+    <!-- Приложение сможет просматривать конфигурацию Bluetooth на планшетном ПК, а также запрашивать и подтверждать соединение с другими устройствами. -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+    <!-- Приложение сможет изменять состояние подключения к сети. -->
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- Приложение сможет показывать уведомления. -->
+    <uses-permission
+        android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Разрешает приложению игнорировать ограничение на расход заряда батареи. -->
+    <uses-permission
+        android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <!-- Приложение сможет запускаться после начальной загрузки системы. Это может привести к увеличению времени включения планшетного ПК и уменьшить его быстродействие в связи с постоянной работой приложения. -->
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- Приложение сможет контролировать вибросигналы. -->
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+    <!-- Приложение сможет записывать данные на общий накопитель. -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:name="dev.virus.variable.LauncherApplication"
+        android:debuggable="true"
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:extractNativeLibs="true"
+        android:roundIcon="@drawable/ic_launcher_round"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:requestLegacyExternalStorage="true">
+        <meta-data
+            android:name="xperiaplayoptimized_content"
+            android:resource="@string/xperiaplayoptimized_content" />
+        <meta-data
+            android:name="game_display_name"
+            android:resource="@string/app_name" />
+        <meta-data
+            android:name="game_icon"
+            android:resource="@drawable/ic_launcher" />
+        <activity
+            android:theme="@style/FullScreenTheme"
+            android:name="dev.virus.variable.app.MainActivity"
+            android:exported="true"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/FullScreenTheme"
+            android:name="dev.virus.variable.app.MinecraftActivity"
+            android:exported="true"
+            android:excludeFromRecents="false"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+            android:alwaysRetainTaskState="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="launcher" />
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="minecraft" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/FullScreenTheme"
+            android:name="dev.virus.variable.app.NoMinecraftActivity"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:theme="@style/FullScreenTheme"
+            android:name="dev.virus.variable.app.UnsupportedMinecraftActivity"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:theme="@style/FullScreenTheme"
+            android:name="dev.virus.variable.app.UpdateActivity"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:theme="@style/FullScreenTheme"
+            android:name="dev.virus.variable.app.ScriptManagerActivity"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:theme="@style/FullScreenTheme"
+            android:name="dev.virus.variable.app.ScriptEditorActivity"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:theme="@style/FullScreenTheme"
+            android:name="dev.virus.variable.app.InterfaceActivity"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:theme="@style/FullScreenTheme"
+            android:name="dev.virus.variable.app.LoadingActivity"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="dev.virus.variable.app.FileImportActivity"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:noHistory="true">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:mimeType="application/octet-stream"
+                    android:scheme="content" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:mimeType="application/zip"
+                    android:scheme="content" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:mimeType="application/javascript"
+                    android:scheme="content" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:mimeType="text/javascript"
+                    android:scheme="content" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:mimeType="application/json"
+                    android:scheme="content" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:mimeType="*/*"
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*\\.js" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:mimeType="*/*"
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*\\.json" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:mimeType="*/*"
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*\\.mcpack" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:mimeType="*/*"
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*\\.mcworld" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.VIEW" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:mimeType="*/*"
+                    android:scheme="file"
+                    android:host="*"
+                    android:pathPattern=".*\\.mcaddon" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.SEND" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:mimeType="application/octet-stream" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.SEND" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:mimeType="application/javascript" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.SEND" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:mimeType="text/javascript" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.SEND" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:mimeType="application/json" />
+            </intent-filter>
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.SEND" />
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:mimeType="application/zip" />
+            </intent-filter>
+        </activity>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:exported="false"
+            android:authorities="dev.virus.variable.provider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+    </application>
+</manifest>

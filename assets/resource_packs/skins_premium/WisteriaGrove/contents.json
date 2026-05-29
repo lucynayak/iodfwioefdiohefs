@@ -1,0 +1,22 @@
+{
+   "content" : [
+      {
+         "path" : "druid.png"
+      },
+      {
+         "path" : "dryad.png"
+      },
+      {
+         "path" : "elf_man.png"
+      },
+      {
+         "path" : "elf_woman.png"
+      },
+      {
+         "path" : "pixie.png"
+      },
+      {
+         "path" : "skins.json"
+      }
+   ]
+}

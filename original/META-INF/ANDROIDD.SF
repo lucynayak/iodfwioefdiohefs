@@ -1,0 +1,5054 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA-256-Digest-Manifest: evfl050tymqEwCYmkxXk4WCc0czkaLoRMo77w9LhNGc=
+X-Android-APK-Signed: 2, 3
+
+Name: AndroidManifest.xml
+SHA-256-Digest: dxxddQYdH7677X5ef2/hYLqhNbz461wAlwAiL787/UA=
+
+Name: assets/changes.html
+SHA-256-Digest: fZyzXi4Ue7wVfC1eyRJEV1N8uNycfxp+o/EhtPTplso=
+
+Name: assets/resource_packs/skins/manifest.json
+SHA-256-Digest: swNZUV3/Tt9iMhnrgEx5l/xUYK0jds9WPtqYXwguEp4=
+
+Name: assets/resource_packs/skins/pack_icon.png
+SHA-256-Digest: 9+rIpI52ts7Zbfkyt+GL9buO6vYA/W4p2eCCsuiCSJc=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/BMO.png
+SHA-256-Digest: Zb4/26xONZLVhI+38R3ryce++6OtV7ErT8NoISTjR0c=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/BananaGuard.
+ png
+SHA-256-Digest: 3N50jBvusbgZ7ciHXIvaRc16476LevF/RMAOfhSE0zc=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/BettyGrof.pn
+ g
+SHA-256-Digest: SNrdPgW6GxTxWwgqoQ42TmkhXXSSZozTSaw8rPKMK9U=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/Billy.png
+SHA-256-Digest: +gIkwPGbUCo9ZfSeNenKSGwepgBl0whXPhy8r1qVDZY=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/BillyYoung.p
+ ng
+SHA-256-Digest: bkRlGt715JDHfUMfUORJ+SPExIL4Lff9WuMfPieTM5w=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/BreakfastPri
+ ncess.png
+SHA-256-Digest: qqQClBoJtkR2vQ6GstlCiK6mO3n/14pRMA6Dy7XAZXU=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/Cake.png
+SHA-256-Digest: o31uK4WHfQLaYabI30y3SZwyn6DQ3ytoRll94Eow7vU=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/Charlie.png
+SHA-256-Digest: MBwnIwfbzKKrryvoXuEfWcdGBbICqomUBT7O0sKDu9I=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/Death.png
+SHA-256-Digest: g3XhFdnBCMBKdPhscYaYTjO1qk5QSCYpAuU139shzzA=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/DrGross.png
+SHA-256-Digest: /vv+3qF+b0lH3GiMAqQSPfWcq66jU7Yfx4cJIkScpGc=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/DrPrincess.p
+ ng
+SHA-256-Digest: iQ9UwJ0KeSlOb85MPuwKJ27utcOev3pitZrR5ThIEME=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/EarlofLemong
+ rab.png
+SHA-256-Digest: QnB9Zk3ZowJ21N78VGBwlyU85FWhLjySRnTJ5zlJh7U=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/EmeraldPrinc
+ ess.png
+SHA-256-Digest: eSoFn17hBXxFA5Kpnom7GGlWthty4tXHtP/ejXki0kM=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/Finn.png
+SHA-256-Digest: vfhayUOLQwCo43AZDf6NTcswepOYMp5bNgEv+StUn28=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/FinnJammies.
+ png
+SHA-256-Digest: WJXjKtnQEzaeifkPC1PjR4zd4BpigL+U+MZCU53ro6c=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/Fionna.png
+SHA-256-Digest: VkAZhI3mKrWLsO8VXuzno0wPy2uvPhP2wVJaa/EfB8Q=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/FionnaDress.
+ png
+SHA-256-Digest: 1H0iXhwpm/pg/PipiMdTqZLswiSVNF8DTedXLexI3io=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/FlamePrince.
+ png
+SHA-256-Digest: cvvtGGEiXA05eLsTKQLb0cn2YVg81sNHeCdQotN2pCw=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/FlamePrinces
+ s.png
+SHA-256-Digest: U7PQ4QZ7P9e0I6lzEWJtTokBCSgGNkrsefYAdSZ/g00=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/Frieda.png
+SHA-256-Digest: ul5f+9R1Xwz+mUJCaw9if/xkEG1IA5wcPKDtdp4Wc5w=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/FrozenYogurt
+ Princess.png
+SHA-256-Digest: DvHktwqxU4/s2OiIuqdMXGxRO8wlspZw/egf0VKVZvM=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/GaryTheMerma
+ idQueen.png
+SHA-256-Digest: C4klcHo6EmTgpON5lRpbqHtMQmZqGfNAyXxQh4ty0PM=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/GrassFinn.pn
+ g
+SHA-256-Digest: S8+maK14ujleBFp4oAOYnJVCt/aykRXPwuh78iW19C0=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/GrobGobGlobG
+ rod.png
+SHA-256-Digest: ovkoGX9DL/xOUi1+f9cPk+W5+w4Mh2CzQ5hg2Ph9WWM=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/Gunter.png
+SHA-256-Digest: Rl+mnNkqompvnNQZ0jx9lDM9FgM/WRWJqhKfTfSgH/E=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/HeadMarauder
+ .png
+SHA-256-Digest: to25Ng5KxZGQQxElnYdce3EGVnumqb+X8O5m9953aaM=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/HunsonAbadee
+ r.png
+SHA-256-Digest: oruJop1XouNOdzgJYRUjmqmxINGIQpzMCYARbHZgrpw=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/HuntressWiza
+ rd.png
+SHA-256-Digest: 5XTf7d6Hr0JTc+1uAfraMjrG20MPEt/PvoIkw0Ax8rw=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/HuntressWiza
+ rd_cape.png
+SHA-256-Digest: WN/xfXdBvoist+ZqKYgcC+Wgpq+8ZpP4ieHVWBai6ZY=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/IceKing.png
+SHA-256-Digest: J5IUDlCcIigV/4472BzQuPYuc8cOIcRLRTQoEtVdaTQ=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/IceQueen.png
+SHA-256-Digest: A/P1YQo+MYZ7fL4aUes4PYXSVf05lorhgbps1vDgPO4=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/Jake.png
+SHA-256-Digest: SlrK8pZ/h/QCqJO877zVJx43/lKVhv3y1vxluY/ZT40=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/JakeJr.png
+SHA-256-Digest: nVnsvbTQtAQLz2Y77xdXTHyB0nTmHiLQblQPuKpX6mk=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/KingofOoo.pn
+ g
+SHA-256-Digest: 2r1E9Ap6H4rdLTYi6ZgDUG6xJRAcPIz6+aiMGevYq6U=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/LadyRainicor
+ n.png
+SHA-256-Digest: LgdlnWRAimCN2egASxKIgZeiUQQCwQhpzBpUdGYaZjU=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/LumpySpacePr
+ incess.png
+SHA-256-Digest: FsfkZqRqDODEu3rPhOhTE1ylJRnY9JgvmVlb7mX1/4E=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/MagicMan.png
+SHA-256-Digest: GBAz1L/0Hixe+q16jVl/SBaRCWUg0+p3ROnJ3mRNnjc=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/Marceline.pn
+ g
+SHA-256-Digest: b8BtONpmIKWof3w0kw9GIIqt/qgJEPAKQw9VPIJWUYY=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/MarshallLee.
+ png
+SHA-256-Digest: 0snrJnRiMFBGQ7kQ28iKSNgWu6npiNCV0pYeekxLV8E=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/MartinMerten
+ s.png
+SHA-256-Digest: LT+SoW7A0v0u3CaXdGMR3caVlWZhD7Au3zK0ymJzQwo=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/MartinMerten
+ sYoung.png
+SHA-256-Digest: sCRVrkWlN0JK/g1gP7SHVa3AnLER5gnEl8l/J0s3VR4=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/Minerva.png
+SHA-256-Digest: x4kPzWIPnsxw8D1DFH0bbvWPpX8bvS1ugAcliNbgj8c=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/PrinceGumbal
+ l.png
+SHA-256-Digest: DMHzP9auG8BQfPcfimnm5AWEq7ucl/0wlChNB6jwwcs=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/PrincessBubb
+ legum.png
+SHA-256-Digest: EK25PHjyEdq1xmNh3ON1TSZAls2evNfeCtIhoEX4hjI=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/RaggedyPrinc
+ ess.png
+SHA-256-Digest: 4/JJ+LeChmRi383eNIqHMyiRq0IaHWqf6jOOAql2kvc=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/Ricardio.png
+SHA-256-Digest: GtrbW59yf/Ws8WixSynyp+OfaI0RDom01DToZdHo20I=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/SimonPetriko
+ v.png
+SHA-256-Digest: JKAp1XpnfRp6IjIXYkhpXdIru8PaH1ygIEv2awW7aDg=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/SirSlicer.pn
+ g
+SHA-256-Digest: 0BuZekpEZi3CdQN7bQhthdJ7Q3h875X8P5DiqMAXCeQ=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/SusanStrong.
+ png
+SHA-256-Digest: yd2YDBm+Bmuqxmqf9QvZHCPlzc5+9ow8OnubMbJPZZw=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/TheLich.png
+SHA-256-Digest: 7tV+ZTFj0CejFbCxCReIzg8Zl4R9kpWaDK8CtKfQk30=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/Viola.png
+SHA-256-Digest: W9zTgmGiHd8eiYTCBs21nklaEanstl91kWKtRfnRyQ0=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/Witch.png
+SHA-256-Digest: 0dkRZjfm2gD3vxkVAr2VkYRwk7C4/UY6MKqlA1i2zwc=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/geometry.jso
+ n
+SHA-256-Digest: SOAtvAUZfKGUYhCOf22fpWfIa+rZ7h3JF3WLTLFxWIU=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/manifest.jso
+ n
+SHA-256-Digest: Vm75lR/hTx3QPF3kLRuK2/Mh6SHF+JU8Infy6vQCWfU=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/skins.json
+SHA-256-Digest: NIp+c8cUo9JJhhmHxByurYalvkXIAGkliWTUXUXP3xU=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/texts/en_US.
+ lang
+SHA-256-Digest: 9UUUIoy8Gi0n673zWLqb7Y1lKoMvC2Cb0CiZ45ZEMh0=
+
+Name: assets/resource_packs/skins/skinpacks/AdventureTime/texts/langua
+ ges.json
+SHA-256-Digest: bA0OgeqJWEorhX/DfmxPO6W9H54lYQ4D/emERCEVQxI=
+
+Name: assets/resource_packs/skins/skinpacks/Base/alex.png
+SHA-256-Digest: LmQm9gi6EgsIqaVQzYXVi53p/Yv8zhxrky7my9vBavU=
+
+Name: assets/resource_packs/skins/skinpacks/Base/alex_dev.png
+SHA-256-Digest: XUIuL+1Qtnyw4U34rG1ZYURSw8hFmidpbaEU6i58eTI=
+
+Name: assets/resource_packs/skins/skinpacks/Base/base.json
+SHA-256-Digest: Qj1UqMDu6XLzvrcaTgxYjalFzUM/4Wptrvxcl+gETM0=
+
+Name: assets/resource_packs/skins/skinpacks/Base/dummy.png
+SHA-256-Digest: w6r2yqrcQpuHf0P2lrMBE+jLxuCxf1vWZ4Pxtx3sc5Y=
+
+Name: assets/resource_packs/skins/skinpacks/Base/skindefs.json
+SHA-256-Digest: Sae48W79KebhyK2jDBmkuVLsa9Usr/b+PfQkh7quxz0=
+
+Name: assets/resource_packs/skins/skinpacks/Base/steve.png
+SHA-256-Digest: PRrqgpbXPN7be1cb6LdzpxHdv+Lf4NMPW8rrbYglsZQ=
+
+Name: assets/resource_packs/skins/skinpacks/Base/steve_dev.png
+SHA-256-Digest: 22/Mc8ENxmDEKUXXkf3RrrClycLCYqm/KUkWFsHql9E=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Aardvark.p
+ ng
+SHA-256-Digest: zwsDeqW6p85vrs9om5IOm+1iiw0xvak8jEmsIn1jvpg=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/AfricanWar
+ rior.png
+SHA-256-Digest: XJAoifW/ZZdbbHjMZ+QZ7cLWaW4GktdNJ53Lbb0bvGQ=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/AfricanWar
+ riorv2.png
+SHA-256-Digest: RWr+5QSu/ft1hJnww9MDN+5z/RC1RzsTqbwgRfV3OpY=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Antelope.p
+ ng
+SHA-256-Digest: 1QV976DpUKV7hxO9zhB5pgwMChtcUHg8r/sSb7zOqaw=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/BushBaby.p
+ ng
+SHA-256-Digest: RKknGLUH8zEE9WKYv786rrXfq5Uhh6aVoIj5Wdqsu0I=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/CaveSpider
+ inaSuit.png
+SHA-256-Digest: SbR2Et09RsRPLwg6M09mglwHKuUtuZxLakyzBFoLpVo=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Chickenina
+ Suit.png
+SHA-256-Digest: tdLC79GdYyz2zV12Up+wEbE20FkUinkCOqbJzRNbGsM=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Cowhand.pn
+ g
+SHA-256-Digest: SooFMmkCTyGN7LTX/JaVaBRatufxohZOTTKcB/t7I6k=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Cowhandv2.
+ png
+SHA-256-Digest: vHrWVU5OB0TauVq1zo0bqmVj4/76Y4KOyJ1JHohMAVI=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Crocodile.
+ png
+SHA-256-Digest: Nf7AOx+jXDa/qtwEieokuyYKEOryinNat/FtuFeTrt0=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Elephant.p
+ ng
+SHA-256-Digest: ftY0LMj7SEg8h1Bo4G8BcNW4aMjv0LJO+p0R1Rdgvls=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Endermanin
+ aSuit.png
+SHA-256-Digest: jzZcAkoOjiS0CmSV3ZFbyCmfFj9mM709e3KruSsEt7U=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Gnu.png
+SHA-256-Digest: nusmOwkNTwto2DED7p1Z7YMDbjQ8XmAUb+YOQem31Jo=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Gorilla.pn
+ g
+SHA-256-Digest: LNbSfsoqr+IqI5EF9ykumpjKDCmI3hgZ8zr/SSELaSE=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Hippopotam
+ us.png
+SHA-256-Digest: pwC3Anv6CvLi9145+FWx+IATMhLh1XskC1UCloU5Gts=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Hyena.png
+SHA-256-Digest: svIkDioEvVMViwCieXP6gHp4S95U+rG/XBErABUo26o=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/ImperialBr
+ itishSoldier.png
+SHA-256-Digest: VwRbQ2zAH2UXrZVsrfyIcpaBynGqiigSeP+LwyaoBqo=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/ImperialBr
+ itishSoldierv2.png
+SHA-256-Digest: 90NmC+bKLGenWKMuvcvW2fcC5pPnPzTAXrCENF9cQiI=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/ImperialFr
+ enchSoldier.png
+SHA-256-Digest: k5v5/pBkGDujHlomCQ6WBoqLe9zra3q/Rmzw6MRQgCE=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/ImperialFr
+ enchSoldierv2.png
+SHA-256-Digest: fl1O5dprBZXPr6IOrqAAPHQdzE5EGINmgCvG3f8NSvg=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Leopard.pn
+ g
+SHA-256-Digest: AueZxNGx0b2+sKtLWcyFPPHdteD2+X8wy9a9cNM0v2M=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Lion.png
+SHA-256-Digest: C7tPgGarZHkLJrt2jX9j5UUjaEDDAHe12EMUcNi3T6w=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/MandrillBa
+ boon.png
+SHA-256-Digest: Duf+4UiBv6EjBDvycOQG8QPbxcfcuJIXJ7GisTI5jWE=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/MedievalKn
+ ight.png
+SHA-256-Digest: HTU0qv+zUh6ODEjcrPqSkaxuwW1l3Om4dPsPxHMAcV8=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/MedievalKn
+ ightv2.png
+SHA-256-Digest: MWtjiT/laSRXB3ViPGL8bzRIQTeebHUicMR5KB+ELGQ=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Meerkat.pn
+ g
+SHA-256-Digest: TbDw/JZP5SHCpfRwyWc1aroOy5KkBPs8NQNE8rD96M0=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/NativeAmer
+ ican.png
+SHA-256-Digest: ecGQYO4RCzxIYzsn/pbIT3IkexnCFMFLLxr3MYvCAWM=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/NativeAmer
+ icanv2.png
+SHA-256-Digest: blBdur0vZMvUMUHTGcX1NBPN6Zf+24vItRIh3LItaTU=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/NorseRaide
+ r.png
+SHA-256-Digest: ERzjpA6xJx/qLQD4nU84Es394XOCXwPWMO1ZuW79Pxw=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/NorseRaide
+ rv2.png
+SHA-256-Digest: eKBJaXTqrIbXHPfdB6y9xNI/1EA3fcIAjK+fpuM7IEU=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Panther.pn
+ g
+SHA-256-Digest: OAXDg0k0e7MZYiXRcNzqMWc7zF/b2RM1NaixiapwLCE=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Rhinoceros
+ .png
+SHA-256-Digest: RZie5DZig36Xy+/n7f5PJUewr/YbvanvjrdX5QLIJkY=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Roman.png
+SHA-256-Digest: dgA0FlYr4WwH4ui914iIScpBiRBbYUPOEjOSngQNqUg=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Romanv2.pn
+ g
+SHA-256-Digest: Najc49uiVvsw/wZjZEeAwUl2J04A6CK8XIFOvoixS68=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/SamuraiWar
+ rior.png
+SHA-256-Digest: jmuvxOxePvAdVV5ZNaS++/yIE9U64SSf+tas/EsBQUc=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/SamuraiWar
+ riorv2.png
+SHA-256-Digest: A65tPZZKTjc8RlAgCbcQd6JJdDOCfAtPZAli/vxbJnA=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/SouthernAf
+ ricanWarrior.png
+SHA-256-Digest: wCJWUjSuM5v7ZPetz2zeo0udZizHtUx7ImmlB4n4AL0=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/SouthernAf
+ ricanWarriorv2.png
+SHA-256-Digest: O096ADkMysqn/xFBuHHUt4qUYbSS0kEiRi5hil0hAnk=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Spartan.pn
+ g
+SHA-256-Digest: nZ9KJbpH+28g28y7sA64pYNK+XcnzzEFxIYymG4qhbA=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Spartan_ca
+ pe.png
+SHA-256-Digest: /fSm2LO+VrWE3CpEl6ikEnDGdPr0KmlwWI6N3gl3pzM=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Spartanv2.
+ png
+SHA-256-Digest: SrDXR7DTqxGIpZZfXrbmHXBIh2oqvsupoeSrpRRrqDE=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Spartanv2_
+ cape.png
+SHA-256-Digest: xvDR1wShrSXSAjK2zGe8xGrSMDHPtX0Ngwlaezoktuo=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/SteppesWar
+ rior.png
+SHA-256-Digest: zg/E3LPeMDod+mZxtyDUiUTC44OWYNllyVviFJ9RSo0=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/SteppesWar
+ riorv2.png
+SHA-256-Digest: LJi2UrQ5c7yN+emEpogN5bMrDrONfX9GrCCVQmlalQE=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Warthog.pn
+ g
+SHA-256-Digest: E1LNzOQB3jEt1efo84ys76U+jpwbx+E51cnlpjYsqGk=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/Zebra.png
+SHA-256-Digest: rYa0He3mKhRv/rix0ekxSxk/LqkvT79Wf/0BADPQ9ZQ=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/ZombieinaS
+ uit.png
+SHA-256-Digest: 1DaeNuOUc8vGZukyOdGJ0+ivdDQkv67Q5VAZIm8PQWU=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/geometry.j
+ son
+SHA-256-Digest: P/BM1a4vTzEw109zwZiJYrwuEjLaqoXUHPJ3eF4D+sI=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/manifest.j
+ son
+SHA-256-Digest: 9DCYtrC3dIHkZ8RQaFeEw6SJg34NECuPtvToKAeig0w=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/skins.json
+SHA-256-Digest: P8ReMezsieHLIarzHSWAxHcV96eqI+StiOFE1F8SFZo=
+
+Name: assets/resource_packs/skins/skinpacks/BattleAndBeasts/texts/en_U
+ S.lang
+SHA-256-Digest: oOSXFjFbjREF9qF96UnuMS32IM9mAEtZXx36W0IVYAc=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/biomesettlers2.json
+SHA-256-Digest: gTKiTIDAXzQNdNZcj8ULOSnZonsUXTBBu1S780w4jAk=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/mushroom_archer_sli
+ m.png
+SHA-256-Digest: 7zU8UmcxE4oY5rAfJImSkPYahuboWNdJCC/4B30KdmY=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/mushroom_brawler_sl
+ im.png
+SHA-256-Digest: hzbPXt4i0DBpMeGULwXXIDoa7oazgQWZNNiZhPBdUwc=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/mushroom_brewer.png
+SHA-256-Digest: IxiGGBz407nDapKjIuTYaWn77cloT1bTPUxAx01iQEo=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/mushroom_engineer.p
+ ng
+SHA-256-Digest: Q3PF/9SJj+zdv/gRkkZbhq1P1c/CRXwLrtkxPBQBAlI=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/mushroom_explorer_s
+ lim.png
+SHA-256-Digest: NYfS7kp4Pw+DXfLfd/iC1wPbZexRexAszlFf8WW/jUA=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/mushroom_farmer_sli
+ m.png
+SHA-256-Digest: MtIB1g2wfekuWyuzJS5k+8WsCAe7g8EJgyWE1lxp9u8=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/mushroom_forager.pn
+ g
+SHA-256-Digest: a93rsPDoUJxrOvYUamBaehkSggrOgXzSDP5jBvjazXQ=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/mushroom_griefer.pn
+ g
+SHA-256-Digest: cDsx1awqCCG5OtPDlkvfiVWy21GaphNOpPF2xIUfUMs=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/mushroom_hunter_sli
+ m.png
+SHA-256-Digest: cd5s8fwfFKYEk1HykSpkVeR9TSExps0AiLuWneiOCbE=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/mushroom_miner.png
+SHA-256-Digest: DPjeQQj+IiXGfQrxALFIERIcDx3CC0SjFmHdzVJ24jk=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/mushroom_shroom_glu
+ tton.png
+SHA-256-Digest: lFJV0GLDxXUP6J5G0J6xWjRLa/BgOB7Bbi0Uu6UBCD8=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/mushroom_tamer.png
+SHA-256-Digest: mtiLd9WCgXDMYEpVHUox4wdJKbygC0fGsZs4iNNu1Nw=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/nether_archer.png
+SHA-256-Digest: M55X9Sh8DXFu8Qshl41TZhGvHVHNl7HzB4rzVG+cr+0=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/nether_banished.png
+SHA-256-Digest: eY1KZx/PvTuA5QngbLaMLI4rsDayUpORtykW89uTEYs=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/nether_brawler.png
+SHA-256-Digest: 6jGyp/+UKNwXUOheqaeSH+hilQpLEsMxzuF4NzAxNSI=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/nether_brewer.png
+SHA-256-Digest: Wdog59fUhYWdxOEohazG0JwVm8kZ8kj4A96/HsqTUW4=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/nether_engineer.png
+SHA-256-Digest: oL5xk0II84LbpyQOvpyLmwHYGC6cNCEXToaE4QAz+Oc=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/nether_explorer.png
+SHA-256-Digest: OX4jBcrIav2lNbxOWYHgnJzqtUP6aOv1u8ib6hiAhwA=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/nether_extinguisher
+ .png
+SHA-256-Digest: Bir7fFYZOysZoVOF5NfoO9SGhV6hgwXQNLv+K98byV4=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/nether_farmer.png
+SHA-256-Digest: rFwNDzX5UbS+i7z7hMdKgo9absTWpOfa4orqJmcjpTo=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/nether_griefer_slim
+ .png
+SHA-256-Digest: B7qRZXc98knkN/e/GH3K8+mprm4G/Oilae5h1vmmoD8=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/nether_hunter.png
+SHA-256-Digest: diNeyAnJ6+4MUInSy2kujBp1tSMjHgDozec/IjpWLuE=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/nether_miner.png
+SHA-256-Digest: QAlJN8gkbRqBMV0GG4pCCWjku/MmsoP2YuuRRr1qISI=
+
+Name: assets/resource_packs/skins/skinpacks/Biome2/nether_tamer_slim.p
+ ng
+SHA-256-Digest: Bl+0zDt31ywDNSCnjTZ9UdMkT2FMRHF98xKIjdUM+wA=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/BiomeSettl
+ ers03.json
+SHA-256-Digest: ltfHcnjEOxRS4ZSclSkKLYyLNq9vu2YciNngiD6PVd8=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/EndArcher.
+ png
+SHA-256-Digest: nNpbRjpJW8FnYJcULfxX8x/dkvnLLwX1Kbebub5T5bk=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/EndBrawler
+ .png
+SHA-256-Digest: AjU2zLY62L0sTjS7NpaCDZ+WFJnwc+SmD9UE0hvejBI=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/EndBrewer.
+ png
+SHA-256-Digest: U5Yk7UWDL35OUri0ovLc3vlQMAUp0YHWRGZjgBvDjwM=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/EndEnginee
+ r.png
+SHA-256-Digest: NPNnpLo0rZwavNctpIikquVseTHSbAVBHV45Uwg8k04=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/EndGriefer
+ .png
+SHA-256-Digest: vnyo+xKx1S7lb9+OVzKZrey3WmuRBkLhz53TcMgdRi4=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/EndHunter.
+ png
+SHA-256-Digest: qBfYgwL4iYk8RM1KotPfz9CGQB1X64BsLEpiu7cQxgk=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/EndTamer.p
+ ng
+SHA-256-Digest: Eqlm4OxKrnvIxaeb9JOD6a3jGFQN/jlsY/m748q3q5g=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/EndZealot.
+ png
+SHA-256-Digest: RNUpYmFbnCkDwmmibBI4Ql6gTnD7jtwprYgiB7CjOeY=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/FarlandArc
+ her.png
+SHA-256-Digest: CRlnUo0HWbllSurrDLIiV2UynjuJmsoegclVJXuCMB8=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/FarlandBra
+ wler.png
+SHA-256-Digest: TOA93Fd10DNB/Be8Jvxt6ECewiIuNGDUkLAmseIZPJA=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/FarlandBre
+ wer.png
+SHA-256-Digest: M4hHBSFlWWFSDaeEuf/7PrvbNVHJTjNEbpujYF5tDsY=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/FarlandEng
+ ineer.png
+SHA-256-Digest: CTFxf+K2m8QUelff+bqinBw5c+nE26u7e14jNoZsI1A=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/FarlandGri
+ efer.png
+SHA-256-Digest: OLEDk4eN5hgSlWQH/eBHZ2TPsyY7X5dBvfr+C3V12iw=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/FarlandHun
+ ter.png
+SHA-256-Digest: hfTizdM+tjm6B4BG4L//fzP5efaBSFz3u/qN46tYv9Y=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/FarlandMin
+ er.png
+SHA-256-Digest: j+zR71rJ+GCXJ8pzzA0gEzlP3/S6U2mJfe2VLga+sgw=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/FarlandTam
+ er.png
+SHA-256-Digest: VD1IYnYwusq3TLMPh2055IC2erzMHnzIC+DEM0C5vtY=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/FarlandZea
+ lot.png
+SHA-256-Digest: 5/UFwsfuwub7aKePeNzIYdmTH4diJOKDQvr01/Rahhs=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/OceanArche
+ r.png
+SHA-256-Digest: IqN5vnQFG97fQu+GWF/8RBzQ2aefhY76XVIHpWq9r5w=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/OceanBrawl
+ er.png
+SHA-256-Digest: +2tBtt59JGP2ahUW9o4cqGdAOJ/+EfpZ5BPTleQ/PBk=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/OceanBrewe
+ r.png
+SHA-256-Digest: Ka/FNrHk5LMkLtgZM7rga5OMMQpUDZG45jQhQcmLu/I=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/OceanEngin
+ eer.png
+SHA-256-Digest: TkfwugBq8MhtE+Y2mJJnOeEAvSBvCrdrT84K30Y4OEc=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/OceanGrief
+ er.png
+SHA-256-Digest: w8a7Iqc28jg5Jj/6zY9DBKeXtXBJowYFcR7oHGu3xDY=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/OceanHunte
+ r.png
+SHA-256-Digest: Lw++Ohh2j1vVNcxxGzHYpzQcec4DnNOc10VYDJpQFWs=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/OceanTamer
+ .png
+SHA-256-Digest: pdW8l/9Kx61kHsGmXziE2FKyi3NJ5UafAZYlmu7klgs=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/OceanZealo
+ t.png
+SHA-256-Digest: W3d78KkYfPuFDAWQJ754KqMGbeHy3+ZEVyadtKSB6kk=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/manifest.j
+ son
+SHA-256-Digest: srw8PqhWRQUoLCjK+HbMaCJMKrI2V3AnI/awrTzlO+k=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/skins.json
+SHA-256-Digest: nYClz7EkPoNIAgETITq9CqZllLEXc6Do6noMhJ9rNAA=
+
+Name: assets/resource_packs/skins/skinpacks/BiomeSettlers03/texts/en_U
+ S.lang
+SHA-256-Digest: wNLo1NK/GKEss9Nkd6Zt0bypD86EfNFrYWocOUrhmYc=
+
+Name: assets/resource_packs/skins/skinpacks/CampfireTales/Bedlam.png
+SHA-256-Digest: gpcw8+iapV7JAqQcNTqv6AgiHXKIat5yV8Hx040EIPc=
+
+Name: assets/resource_packs/skins/skinpacks/CampfireTales/CampfireTale
+ s.json
+SHA-256-Digest: uczEQCKz5KFv5Ol07QAQHkiGM7ysR81oh/ArIPb2uww=
+
+Name: assets/resource_packs/skins/skinpacks/CampfireTales/Crisp.png
+SHA-256-Digest: S4qp2rsuVWkOdapIZv5t18w7rmmG3pYc+d+Bh7oS20s=
+
+Name: assets/resource_packs/skins/skinpacks/CampfireTales/Cropsy.png
+SHA-256-Digest: AJ3yrWfgpGC8hb04+FrZaPWCF0psS7bem0kZkmTQy+s=
+
+Name: assets/resource_packs/skins/skinpacks/CampfireTales/Farlander.pn
+ g
+SHA-256-Digest: uhniKnGFjdyDe/w0GeUf7jfepYFH7/ymUAHzUN4pQXM=
+
+Name: assets/resource_packs/skins/skinpacks/CampfireTales/LumberingJac
+ k.png
+SHA-256-Digest: NdahS09IxH8jXHX/ZhxXqMALh3wFEK8ZZiyCIqu6J6Y=
+
+Name: assets/resource_packs/skins/skinpacks/CampfireTales/OLDiggy.png
+SHA-256-Digest: xSrdiKg31389QBAdPvObxb/QDIpxE1txTTwXr/ZtEBE=
+
+Name: assets/resource_packs/skins/skinpacks/CampfireTales/RancidAnne.p
+ ng
+SHA-256-Digest: OwqAUxp/G4PZ3KgHVGiLPZU0tdoWuB45P+lMECWdenI=
+
+Name: assets/resource_packs/skins/skinpacks/CampfireTales/Silksnatcher
+ .png
+SHA-256-Digest: Evk9tNt6EIQR13GEO26nm05fiOY0m0ELZzqez9hSuY8=
+
+Name: assets/resource_packs/skins/skinpacks/CampfireTales/TheArisenRos
+ e.png
+SHA-256-Digest: B1wp9781M2shVLp3NZe+utES+E2tY3wJMG71asWfwEY=
+
+Name: assets/resource_packs/skins/skinpacks/CampfireTales/TheBlocksqua
+ tch.png
+SHA-256-Digest: lMGyFNDjTZS83BJcUxk4eUSif2hj2nB9KhOI11tnKkg=
+
+Name: assets/resource_packs/skins/skinpacks/CampfireTales/TheEnderall.
+ png
+SHA-256-Digest: u/NjjeGJjOD1mCfIO46WfDa5v4KR+tX773BeRoXKmkw=
+
+Name: assets/resource_packs/skins/skinpacks/CampfireTales/TheHeadlessH
+ aunter.png
+SHA-256-Digest: yVX1dBK6oS5dEi5NEAfDMAzVp1VlaB3JtoO3FIq9wdI=
+
+Name: assets/resource_packs/skins/skinpacks/CampfireTales/TheLapisLady
+ .png
+SHA-256-Digest: MCVH7c8WT8/u2jhUnEFTp4p3uUZEn79y6QrLDw8Ca3Q=
+
+Name: assets/resource_packs/skins/skinpacks/CampfireTales/TheSeaSwallo
+ wedCaptain.png
+SHA-256-Digest: 8CtiUuoS+4AO7hordkWPZgWOeZFyWwCcElR59YM4ON4=
+
+Name: assets/resource_packs/skins/skinpacks/CampfireTales/TheUnshorn.p
+ ng
+SHA-256-Digest: tNZdrED8up52E524iuoapp+nCY2lihVYSjM/k1WX12k=
+
+Name: assets/resource_packs/skins/skinpacks/CampfireTales/TheWellWishe
+ r.png
+SHA-256-Digest: iR1+7Kt+BOA3mof+2MSnSzpEeq+Rtv6Ob0Jkp1Ivul0=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/BronzeSta
+ tueGuardianLion.png
+SHA-256-Digest: Pti4RdqCqBPmaD/TYNBQNvYkGJz7dfbrZMVL/jrfu4k=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/ChineseMy
+ thology.json
+SHA-256-Digest: UU0tNkUOLIU3qA/26W2vKsRChtT3RIr30PEqYwv+Vaw=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/ChineseOp
+ eraChing.png
+SHA-256-Digest: 58myXf5ZUhrLWhhJws6qc5Z48HlOoRUDztsFRfBtu64=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/ChineseOp
+ eraTan.png
+SHA-256-Digest: P1vZxT7lh4TQJZwrzHn0Q3EaOaM24Rjh6TK0sSJZTBE=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/ClayStatu
+ eTerracottaWarrior.png
+SHA-256-Digest: oAblKwItDFTvLxyemCFceNOdWB+7xNO/B4vxodzWn+A=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/DemonBand
+ itGoldenHorn.png
+SHA-256-Digest: +MUspdd4PaqAiClCIAEp7qAFxUDn2Q6C3En8+cgQHOo=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/DemonBand
+ itSilverHorn.png
+SHA-256-Digest: NAWjUfa3K9nga+gFBUT5Ze1dBxH2DWW44r11DPf/u0U=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/DragonDan
+ cerSuitChineseDragonHead.png
+SHA-256-Digest: kfkgRLg1WgPG4kFZSu3W+oF+hic+1r0s9fIPcuGt+GA=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/DragonDan
+ cerSuitChineseDragonTail.png
+SHA-256-Digest: bS1XcEi8LLhEM5VkGpp+DqxQsDfel10P732Bc1+LDxs=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/DragonMot
+ herGoddessLongmu.png
+SHA-256-Digest: Jb7O1RO3WLTX4CWnp18G6tHyreBm38zCxs2Ibc48sd0=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/EasternSy
+ mbolAzureDragon.png
+SHA-256-Digest: 3qj3MdzLsi5nCNnoSQtvjeow6WH0HmcZ8ud4Puq8xq8=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/FishWarri
+ orRiverDemon.png
+SHA-256-Digest: yqModnD+/8DILYw5T+7NFM/f3zlCcHZuNgBcqWyuOD0=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/HeavensGa
+ tekeeperHeavenlyKingLiJing.png
+SHA-256-Digest: /ZUHnD0HS9S31P/hKc8L8o6OCKHoBh/UWGqc8hKr0AA=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/Legendary
+ EmpressEmpressWuZetian.png
+SHA-256-Digest: vx+a3kvZ0IvaPYbNp+rc56LKqMYOzgS/Lg5N2zu3QwA=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/Malevolen
+ tImmortalFoxSpiritDaji.png
+SHA-256-Digest: 6UFX06bnotzXsp3d23TyN0UXpgEsycG3OAIzfwAmsAc=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/MoonGodde
+ ssChange.png
+SHA-256-Digest: G2cADdEh+FIj3H07Y3AftoT4eoa5wNk79jMqHzLrrh0=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/MoonSpiri
+ tJadeRabbit.png
+SHA-256-Digest: R1VxeMIp8/6I3/eYg40set5uV5qtygQ1iHO728oQGiQ=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/NorthernS
+ ymbolBlackTurtle.png
+SHA-256-Digest: S5yJ5iGibwTmx6DhmWY0rP0a2+z++bzUq91TXxrJWO4=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/OneHorned
+ DemonRhinocerosKing.png
+SHA-256-Digest: UPmOrYHrWe+2xM7CgHnAUzk1xQLFzZaQwmCpl67E5E0=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/Rebellion
+ LeaderPrincessZhaoofPingyang.png
+SHA-256-Digest: PauNunB9cvIJgrK16ayJTUlJoQecKmxTzJHbPbDVcLo=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/SnakeCele
+ stialGoddessNuwa.png
+SHA-256-Digest: zEAMjtMwpD87sZnSs1/8Czj4MDoPk11dlZD7ixFC1HU=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/SouthernS
+ ymbolVermillionBird.png
+SHA-256-Digest: GCJYMapAurAABKyflzA/rh1Oei8Z/yyi69IMrcU1MuI=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/SunWukong
+ sMasterElderSubhuti.png
+SHA-256-Digest: J3VzfCWk99rV0nMtWdGOQHRsr7EqCnlni9LX4oVernw=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/TangDynas
+ tyEmperorTaizong.png
+SHA-256-Digest: XiYgh2KIttSEbrDl0cIml6x2Q/A80ixfWH6E8wYhuDQ=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/TheLotusP
+ rincePrinceNezha.png
+SHA-256-Digest: y8+F6E3QXd/43xlwyG3v/jylrApoBUPR140NPuPEiYI=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/Underworl
+ dKingYanWang.png
+SHA-256-Digest: nKRQRb9NHvUTrFZZsALMoHfEZEV8nK8KXPEMoTWvDkE=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/WesternSy
+ mbolWhiteTiger.png
+SHA-256-Digest: 0j98EDsA6VcznfdjGVa3Uh+XURmDZDdJhU3Ojooum54=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/manifest.
+ json
+SHA-256-Digest: W/JErP3EosBNyimob9GLwmdP9DGw1dJFuGXq1AsEv74=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/skins.jso
+ n
+SHA-256-Digest: bME6L4/TjG21e0euXhhuUZo3Zcg5aR6902y9xGiNdzY=
+
+Name: assets/resource_packs/skins/skinpacks/ChineseMythology/texts/en_
+ US.lang
+SHA-256-Digest: MYbV9koa9bYh3u1B8CjDSR38xR6skzARRIWU6NIhdW4=
+
+Name: assets/resource_packs/skins/skinpacks/CityFolk/Baker.png
+SHA-256-Digest: pAdrX192iKikERF9taC0OAzllSv+k3tmnSLUt7CKF6c=
+
+Name: assets/resource_packs/skins/skinpacks/CityFolk/Barmaid_slim.png
+SHA-256-Digest: BgBasR/6ZCBA/dcGHda5JlQGpWFGpy5x24eDAySDbo0=
+
+Name: assets/resource_packs/skins/skinpacks/CityFolk/Barman.png
+SHA-256-Digest: RpUvYrwdn9ovXoNfEQgqDpUdtsE6NqZD3W33OSYPZzU=
+
+Name: assets/resource_packs/skins/skinpacks/CityFolk/Baron.png
+SHA-256-Digest: MsXrBEGi+Pxc8xs+pF1fGCL76qFR2k3umT7u+qgPgi8=
+
+Name: assets/resource_packs/skins/skinpacks/CityFolk/Baroness.png
+SHA-256-Digest: diuVh7zvml75yp9XndZsOGKHlCNjAZTI8gkgem1ZXkc=
+
+Name: assets/resource_packs/skins/skinpacks/CityFolk/Blacksmith.png
+SHA-256-Digest: KkbTfU4o/7gpM+OBjWyY90Ch6ZNlbPeSigg5w00ERuY=
+
+Name: assets/resource_packs/skins/skinpacks/CityFolk/ButcherSkin.png
+SHA-256-Digest: XmdMxlrTOhAQ0yovchYkCpN8dn08bMlpfy+RNq/ROd4=
+
+Name: assets/resource_packs/skins/skinpacks/CityFolk/Carpenter.png
+SHA-256-Digest: Eb8bNOFD4kNDarZ8339WSc5V/3zPTZ+ULWBIldTqJJc=
+
+Name: assets/resource_packs/skins/skinpacks/CityFolk/Chef.png
+SHA-256-Digest: xqKRKAuGMDS/dBXxHjf/SIDGDcPiOZ9F7++oI5Bqqlo=
+
+Name: assets/resource_packs/skins/skinpacks/CityFolk/HolyMan.png
+SHA-256-Digest: m5KCAA/NJiZav4SIMk77L5yQyc+ZmfHpqlOmC5TQOdg=
+
+Name: assets/resource_packs/skins/skinpacks/CityFolk/HolyWoman.png
+SHA-256-Digest: rTfqzG/xvHdyN4aiGruSFjK97x8BF7ltGjauP+YBlZw=
+
+Name: assets/resource_packs/skins/skinpacks/CityFolk/Jailer.png
+SHA-256-Digest: TRfJHiFmLbexLAX0sYsxf8IBQZcO0oj1wsh/7ymL+qY=
+
+Name: assets/resource_packs/skins/skinpacks/CityFolk/King.png
+SHA-256-Digest: yMuYHSzMXxWBLzL0YNbk6bR/2XiW3U6NbxfVg43IvI4=
+
+Name: assets/resource_packs/skins/skinpacks/CityFolk/Mage.png
+SHA-256-Digest: p5XJF2mc0Lc4pcEgb/RFGgy1jPXcGUqh1Hk+VLDYSkc=
+
+Name: assets/resource_packs/skins/skinpacks/CityFolk/Postman.png
+SHA-256-Digest: hlrmtYNhdHXv47iUKHx5ndEuDbfYifq0uQ1QN2XPLlI=
+
+Name: assets/resource_packs/skins/skinpacks/CityFolk/Queen.png
+SHA-256-Digest: XLzYb/z8rI1S0VMysJUgfmVadjz6tY5671obyj8UsMQ=
+
+Name: assets/resource_packs/skins/skinpacks/CityFolk/Shoemaker.png
+SHA-256-Digest: J1Dbt3YSlo9WaJHQjqnZ+4n7NEQ/o1RsSYyGhCpzO2g=
+
+Name: assets/resource_packs/skins/skinpacks/CityFolk/Victorian.png
+SHA-256-Digest: jf89xLTsMZjRR9IC1KZ/4gFNqn52qz8BpYROLk8SdrY=
+
+Name: assets/resource_packs/skins/skinpacks/CityFolk/Watchman.png
+SHA-256-Digest: v1bvui4yaobnXDGr7FXNneaZVVe8zMHkmMM8fLokVe0=
+
+Name: assets/resource_packs/skins/skinpacks/CityFolk/WeaponSmith.png
+SHA-256-Digest: qqCV3QSu69P8QY0Bz33O/TffNtYaZS571TYSOAi72d8=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout1AlbertCole
+ .png
+SHA-256-Digest: ugrePjVCIm1PLca2FEF1pUFuDD1z7fN51rG1KzcjWt0=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout1AlbertCole
+ v2.png
+SHA-256-Digest: bWSGHjAwHLnXI4KoTW6nkTv0OxGeAc3ARRnsZYMtC2U=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout1MaxStone.p
+ ng
+SHA-256-Digest: ASyNn+mIPp07B9M0CBbueZ0JTsoX0DdbWFiv7tY0pho=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout1MaxStonev2
+ .png
+SHA-256-Digest: sqqzT6Rf0U8nWmCAGOmKyGDV69/OMnGZjZNT0+4YoYU=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout1NataliaDub
+ rovhsky.png
+SHA-256-Digest: lRQ/L597Ml/s+glyViCKWfzOJ17txbrWGWf4QtBtGCY=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout1NataliaDub
+ rovhskyv2.png
+SHA-256-Digest: kTM1nOrNvR+PDWfC0s7VyZj1hGo10MF/0+83oB6apJc=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout2Chitsa.png
+SHA-256-Digest: 52WFZGhu5pgz+0wQzNDRRY255RDa8GNaLU+84nh5jA8=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout2Hakunin.pn
+ g
+SHA-256-Digest: TE3tnPpwyjjUJGhqxsyMvF6LHcglUcjVyC5hZt8L5YA=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout2Harold.png
+SHA-256-Digest: id63GAY0aS/CCwYGqGWejQSr7FD8xugKlHTuWWCqpjU=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout2Mingan.png
+SHA-256-Digest: I+DZe4OZNxtd5kHBJ+PkzbuDfo2/uVHSRranW038jlc=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout2Narg.png
+SHA-256-Digest: TD201znN03M/XluQ735xbDWc43d4ta5T9OkufI69/sw=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout3BettyStani
+ slausBraun.png
+SHA-256-Digest: a59RmYw3xB8G+Hmj47rw1c0MDzfIjWQnRxO/SPFwzAU=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout3Brotherhoo
+ dofSteelPaladin.png
+SHA-256-Digest: hWQ6fepmUSWo78q5omAe3pdsK/fQXrylAvVlIlXfV70=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout3ButchDeLor
+ ia.png
+SHA-256-Digest: bHJ4D90Z3aNpsPbxHlwliqM1NrUfu66ViS0ObaGNStA=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout3Clover.png
+SHA-256-Digest: JuqfzAwROUpgGhvYPIkLwCcY+8gEDml22KJROtC4cZw=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout3ColonelAut
+ umn.png
+SHA-256-Digest: J0PZseB3yeKMMlhmTpXxZexPOsNg4yIARLUeJI3djM8=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout3Fawkes.png
+SHA-256-Digest: 32g1SVH6ZkLK5H6xvnS7OY7+ada3n/+TYWxsNqgFIzg=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout3James.png
+SHA-256-Digest: hbqkv2PjMr3zAcpNFejS1CDatPk7PjA2/N8BsC8baog=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout3LoneWander
+ er.png
+SHA-256-Digest: gmVwUN9B5kOkG7fO5wR/V+3XJwa7ayUFptnelDcdlkI=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout3LoneWander
+ erv2.png
+SHA-256-Digest: 2oZ24mhLGNW/alcgeNksvvrNA34PNoLR/shxyoagSnw=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout3MoiraBrown
+ .png
+SHA-256-Digest: IqYm6TD3ea07pRv8jjFCC6NAJ6yxBDdIZgK3CJq691U=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout3StarPaladi
+ nCross.png
+SHA-256-Digest: b2pTg44kSBNGCTm33c1ewIi5T8/N29hhM3Aw0S70KgA=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout3ThreeDog.p
+ ng
+SHA-256-Digest: OpVzs85XL3o0jhCm9CLBJY3rpBRO8sjo4E4afiuZhjs=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout4Bosco.png
+SHA-256-Digest: 4qdIiq+MJt7jD6bCW3CCbl1X0TKeVyA9X7hkQez9YZE=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout4Cait.png
+SHA-256-Digest: mXCiBy96Qy4D3iZrnLaW7rFHVxgtiLRDSjI8+hyazHE=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout4Hancock.pn
+ g
+SHA-256-Digest: t4Rd7dZBf+lqFZWMeC9lPlqGhO+cul3Vn1pLj4ugITg=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout4Janglesthe
+ MoonMonkey.png
+SHA-256-Digest: Qlriqxo+3CJR62mYYkHaxxgdOd57rz8ff73m5UFQcac=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout4Kellogg.pn
+ g
+SHA-256-Digest: v4OoXGjOcfqIruq5DLDxehIX6M3IWjzQTDF6UdJWVmU=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout4NickValent
+ ine.png
+SHA-256-Digest: Ii00D3eQNiCMhslGmfuvD/zcyNo7A1QXBvrUzO4EtDg=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout4PaladinDan
+ se.png
+SHA-256-Digest: tcR3qiWIh10YHlAQPyln4adHeJwUXz9afg5ntwDTqks=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout4Piper.png
+SHA-256-Digest: 6EKmOLUg6L9ASgPsFaywkR1c0EMZgcGhs4zOEj7Tolc=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout4PrestonGar
+ vey.png
+SHA-256-Digest: GYCm6eirGBaQCDvvaKsKQku3csJmJYYHkfsGSPD5scs=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout4SilverShro
+ ud.png
+SHA-256-Digest: dlUca0xVwNSxAVEWDfLmku7mS7h34QI1y11B8HUro98=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout4SoleSurviv
+ or.png
+SHA-256-Digest: +TZvvuceHSikbdQ1TgiIl2R9FW4ugdY1VnknMyBClUQ=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout4SoleSurviv
+ orv2.png
+SHA-256-Digest: APTszr9TP/jCS5HGX3fUGKjAY8MEqUZ1ONHZilYJWxo=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout4TheMechani
+ st.png
+SHA-256-Digest: 35PaJlZ6ipJwN38jSbL8ovsYT2CvjVE+4yRfqWTX11E=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/Fallout4TinkerTom.
+ png
+SHA-256-Digest: QOEMV8br0FTZS4EID1VUj1uSTOo4ONJy+WW7Iv59Z10=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/FalloutGrognaktheB
+ arbarian.png
+SHA-256-Digest: 0rAqlKCVUQdI2kqDMG2M6MPK2oBgi2f+V3Oa0vGd7vU=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/FalloutGrognaktheB
+ arbarianv2.png
+SHA-256-Digest: COnJMkOBmV4visbdroWZcN28lAXYKlWPesDPTw3i3nI=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/FalloutRaider.png
+SHA-256-Digest: JOqgdUBdiqSx2VGXageVgTTQ1RQAOJbqHkMD42GKxgc=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/FalloutRaiderv2.pn
+ g
+SHA-256-Digest: TD/s+P0FqACydhmZJuSz0U4cXqOpUK24o/Nv8XN/Xr4=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/FalloutSuperMutant
+ .png
+SHA-256-Digest: FX3YtEB/xQXTYYY5TbnxExY2f2iSPYjCrvSR8ZFKRQ4=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/FalloutVaultBoy.pn
+ g
+SHA-256-Digest: S4+8RJ8MVgm2SjpHumxcr+oH5NR5ZxwvtZHw1rsTo+U=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/FalloutVaultGirl.p
+ ng
+SHA-256-Digest: UBHQUueueMQRwhHxM3zqorzk9VTEK0qi9n1zgawSv/8=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/geometry.json
+SHA-256-Digest: yPSRvL2eXw7ShsqpvdzoKruJXunVIGILIjRCfFOH56M=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/manifest.json
+SHA-256-Digest: VGugW8rDBbo70yBGIH4kEsQrwhi1Y7ZKMqtqs9tCADM=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/skins.json
+SHA-256-Digest: ZVwKcd2BFAGUQB+y1Y5ESE15LwR/utzlWTvFv3uGPZ8=
+
+Name: assets/resource_packs/skins/skinpacks/Fallout/texts/en_US.lang
+SHA-256-Digest: oOwk3ybFdv4d7E4VJTUbcawLbxCD1+A9G+/QeIykSAs=
+
+Name: assets/resource_packs/skins/skinpacks/Festive/Festive.json
+SHA-256-Digest: YfLjh9DFlOrjiNpRnEfudYSUR1KWmC80j0An8Y0xYRM=
+
+Name: assets/resource_packs/skins/skinpacks/Festive/Festive_Pajama_Kid
+ _Slim.png
+SHA-256-Digest: FNDOPN+zF5X0jChAv6aO1dd/jwkLTU6oSJZDdegJdU4=
+
+Name: assets/resource_packs/skins/skinpacks/Festive/Festive_Ski_Bibs_S
+ lim.png
+SHA-256-Digest: Wg++P8ejPNgxozy9JOw+EypyzqraCsQfJbZee0+3yIk=
+
+Name: assets/resource_packs/skins/skinpacks/Festive/Festive_Snow_Suit_
+ Kid.png
+SHA-256-Digest: 9n0QTO5jiVEaiY+9wKcfhekq5+QXxdDT5sRMamcGvhE=
+
+Name: assets/resource_packs/skins/skinpacks/Festive/Festive_Sweater_Al
+ ex_Slim.png
+SHA-256-Digest: jWIzJQmUlEQrZNVVPT4Q/oR3oSQb1gMdBFf5PMeB8+Y=
+
+Name: assets/resource_packs/skins/skinpacks/Festive/father_christmas.p
+ ng
+SHA-256-Digest: Xam7F6V2gVRzrNbi8JImjP8PxJixYZwc4j9kxAf0lZA=
+
+Name: assets/resource_packs/skins/skinpacks/Festive/gingerbread.png
+SHA-256-Digest: nPjN++ZWD8WJHGkvaIVjZheliymyfrPYlK7D/vrOCII=
+
+Name: assets/resource_packs/skins/skinpacks/Festive/gingerbread_creepe
+ rSlim.png
+SHA-256-Digest: OxN//TR93tn1JyjmZ079diq+I1sTGaGU6VZpGcvZAH4=
+
+Name: assets/resource_packs/skins/skinpacks/Festive/greenelf.png
+SHA-256-Digest: /WonnIJOY2aqZoR9ZRK7FGbdFxvgWC8cMIae8vokZTU=
+
+Name: assets/resource_packs/skins/skinpacks/Festive/mother_christmas.p
+ ng
+SHA-256-Digest: U8T7/z5/AvzEa9+nG0ZWCt+cyzs55phKnTjFUjw1jpE=
+
+Name: assets/resource_packs/skins/skinpacks/Festive/mrs_claus_slim.png
+SHA-256-Digest: nUs0sOmOUInVfJGupJX9rgSO/HWAJvMxj8MQdQLtieo=
+
+Name: assets/resource_packs/skins/skinpacks/Festive/parka_steve.png
+SHA-256-Digest: 5Q2TgT4xz3Sk0hNdNRFELqmO9mCjzmyUt8cWxss8qoo=
+
+Name: assets/resource_packs/skins/skinpacks/Festive/rudolph.png
+SHA-256-Digest: MvSh+AaxBX0VwitpJV5yR7rfSdX2QqP/+gxiaVB3/FU=
+
+Name: assets/resource_packs/skins/skinpacks/Festive/santa.png
+SHA-256-Digest: UgAdUEBRRufAXr9bNKRbPGr2f8zw2MOsfGzXtr8RIM8=
+
+Name: assets/resource_packs/skins/skinpacks/Festive/sweater_steve.png
+SHA-256-Digest: MJmNqzaqleKD1sq6WZKlHKcYB6rQeMu8xSjTRENnO0w=
+
+Name: assets/resource_packs/skins/skinpacks/Festive/tomte.png
+SHA-256-Digest: YgbkshUeF/2Mh/2rj1pLb8/C24bAqc1jqTYpmEspGeM=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/Blitzen.
+ png
+SHA-256-Digest: ulcD+rdsS3ZiFDqYVpBmmi+xyQNlfPy1nb89x/3nu2Y=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/ChrisCri
+ ngle.png
+SHA-256-Digest: T5exRA3PzTSeVw/qQ4JY3loI/pr2gjR8V+TQSe4qO8E=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/Comet.pn
+ g
+SHA-256-Digest: 6crQz7arXAPQnXkjosEuFqhQUuzhafDo7LE5AwBnMPA=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/CoolClau
+ s.png
+SHA-256-Digest: sLGMgBK25UnmYnBjq3+Sa3h0RAj5qUssVkX5ZTAR3Aw=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/CringleC
+ reeperCardigan.png
+SHA-256-Digest: 5sDJm8l5CGxPr/yz8bRvefAMhSBo36KzF1+mT5qfB5s=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/Cupid.pn
+ g
+SHA-256-Digest: /MuR3XeveSPPEyZlJRx/C7E0TYJ+MgDxyPr6U55HPo0=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/Dancer.p
+ ng
+SHA-256-Digest: amEwDcNqf0khsUAkA1apv2ApJVy9LoA4sNV5ecJjYAM=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/Dasher.p
+ ng
+SHA-256-Digest: MQOdEWGpUbafmLqv/RhCqs1Zv6tq2angjNr2IRZMU1o=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/Dishevel
+ f.png
+SHA-256-Digest: HreIwrmbJZfekeIQJKWcXzO70RJUwtgmaryQ+Guz0w8=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/Donner.p
+ ng
+SHA-256-Digest: eiCFzocGnh4ssUz+bNlpAUHAX+NQKyV0AOnOT3vK08E=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/FestiveM
+ ashup2016.json
+SHA-256-Digest: NTrOryD+SUk6DrMte+ZTtyNEwYfpzTruOIDRcOt8H9o=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/Krampus.
+ png
+SHA-256-Digest: jqbzCv+dAFDbPffZcJ1ObWnkQSPb60ToqZsJsIbQP0o=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/Mistleto
+ esTheBigfoot.png
+SHA-256-Digest: NlZMMpHrA2sFF5Y5tyDxvhfvlu19ObVir3Sbjwu1E5U=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/MrsCoolC
+ laus.png
+SHA-256-Digest: x9A92KVP2T7OTM6WKh0xFvhdm9PHwLhGf2RGlBm27HM=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/Noelf.pn
+ g
+SHA-256-Digest: XTYRs9cuWZZBO/AbpKnceGLA4Zr+KNjiVH0BFblQHng=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/Prancer.
+ png
+SHA-256-Digest: MEPBfAlgFBR2GJbe3iGnwXLM4U6Vb9+OHSk4TzFET4c=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/Snowhoho
+ manSweater.png
+SHA-256-Digest: 0d7PldH9O8QrLaO3xwlU4dsxKAJfUdEHW0XAACDkfdc=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/Tinself.
+ png
+SHA-256-Digest: NDMX/LtaZISepvRii+nn6K66wSXjrUlBLf1EnMXFjv8=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/Toastmas
+ ter.png
+SHA-256-Digest: XxicSsF3RZbKG3iz4P7tReNKwAxkB56l4pGmcBdlIEI=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/Toastmis
+ tress.png
+SHA-256-Digest: hii3jECEuVUhzfdtwcVvvKiCBxJoItsdSuHbZZUpRkY=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/Vixen.pn
+ g
+SHA-256-Digest: Prza7ytXCxyVM7BvvFrp+P2FoOazuvfExv2hIbaZwcU=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/Yuletide
+ Yeti.png
+SHA-256-Digest: shB1eJOx4EnUHkZWR608wt3htoGcgNn205+Tn6VPIFM=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/manifest
+ .json
+SHA-256-Digest: xv/a8aMVL+TEvaJqDBWGtj4O3mROi/fNIO4oCytSzLk=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/skins.js
+ on
+SHA-256-Digest: DKTeLStoYq/KhnAS0gUSmDhNxoqJKATI8z44Kzdc7TI=
+
+Name: assets/resource_packs/skins/skinpacks/FestiveMashup2016/texts/en
+ _US.lang
+SHA-256-Digest: iotX/rcK2GXJgSE3z3/2Q9MLyCL5VRbPbFcZsWmeWfI=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Achilles.pn
+ g
+SHA-256-Digest: +KhD91k+XzkwJa2CZE15STAEDC709XNtlDLXLa6Ayck=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Aphrodite.p
+ ng
+SHA-256-Digest: +WUD49/dWReSGlzDlom6UT3NvfNev1cjglnlQWtWLx4=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Apollo.png
+SHA-256-Digest: vmAj4v0FnswIuLhFZPZEPCafGBqq0hz09xe19PD7HmY=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Ares.png
+SHA-256-Digest: 7PF/G7yiBor+zSew8khQ3aT8pjcqWq//64ySj39e/ao=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Argonaut1.p
+ ng
+SHA-256-Digest: jVpj1EPQXhrzTVFpiZl3NDbNtJJHBCMjVPxr4W6T4kA=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Argonaut2.p
+ ng
+SHA-256-Digest: J+QY1YyOiAUs+OFdqiJXKtHht0It7P379rLocWDTSmg=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Artemis.png
+SHA-256-Digest: bIRglq6AFSBvZrqGQqvxWjOSud2uhHXAQ8/jkkOtIaQ=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Atalanta.pn
+ g
+SHA-256-Digest: d2nR71YQR5893HFMss1nZhq+FOGSU+DYieoy4ia78fI=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Athena.png
+SHA-256-Digest: Sxb154RSlD7o/yTMd0j/Mik2BUKuluJTTXOQ8Umm8ow=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Cadmus.png
+SHA-256-Digest: OWwLcLEKtuGK8iiAQXoCAyp6MsG2u/wfo9aXuVtTTCk=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Cerberus.pn
+ g
+SHA-256-Digest: B2/i1Ii13XEYouTEOuvQfAeUQDZvJ5s5NgvEiig1gOU=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Cyclops.png
+SHA-256-Digest: l+DoM09sgKfCCP7f+OwdqGqn2MCmtWsYkhHDZd3Pqv4=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Dryad.png
+SHA-256-Digest: GvZMY/WG12Cfk0zVfA0PSRvwYPTgxtiFNU33J3achvk=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Erinyes.png
+SHA-256-Digest: 6nvNpJrPMin7OFIAyuQEjiW5q1AA2huheM4Y+hCwN30=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Hades.png
+SHA-256-Digest: 5bGUJyRk6uuntaOT5YkNIovQLlEtxww8CnMq1gje3F0=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Harpy.png
+SHA-256-Digest: SB9259t6sdFV33DOCHFG6JpRz22ZvaPMDfDcman4Uqg=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/HelenOfTroy
+ .png
+SHA-256-Digest: WRlTzKT+mTO1l3WBtBhIBDgWE6nYGZ04Tf9ACz2jng4=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Hephaestus.
+ png
+SHA-256-Digest: jVEanZp6AL97lIVvW2gDnNf7SbRCO2NWl5kCp9j7PbY=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Hera.png
+SHA-256-Digest: r5BQ0/aKwffzz2uMz2NNePWqkVdR/fBUd0jeXe3CRmY=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Heracles.pn
+ g
+SHA-256-Digest: N58ePIpR0x/WCHbnXpBJreQyV5rV5P6tGqK0ArHL4xk=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Hermes.png
+SHA-256-Digest: fx2vUHvoCZTgRH4OS/oysWGi6QiVEnnIBFYJQjGo2Nk=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Hydra.png
+SHA-256-Digest: 3aq+GhCc/Wv4YTAcq+5vK95coccb70vwGTw+AoDp8pQ=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Jason.png
+SHA-256-Digest: VQxyZdKQNGc6CIMVbntPSob5XuKsMvzU86+2xkTxxzA=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Medea.png
+SHA-256-Digest: VmgwhRqFXG48FbtVcklAqgej47hro8ZA9vPK+chE00s=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Medusa.png
+SHA-256-Digest: kUUqUPqxOjAKj5e+c+pEhFpEbIVl12eq+EKkjLtN3CQ=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Minos.png
+SHA-256-Digest: DhckDnyX+0bY8cVVXHjSnZn7iT+lnGwwzZGpyb49LFw=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Minotaur.pn
+ g
+SHA-256-Digest: B4qVxkJz+4mGbaMiVBzPb1SSUHLXM0Hw+/keRvYkC9Y=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Odysseus.pn
+ g
+SHA-256-Digest: ZZ/VAOpgVYzXvCSkK5a3NAgseDJZ0w9qijiupICgbdg=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Perseus.png
+SHA-256-Digest: FK4Nqg5wkvEe+H+GEzNQsnE+U7xFXK33/wrq/otYnsQ=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Poseidon.pn
+ g
+SHA-256-Digest: YLopKGdIfj0+sM377TtQM2VqNtRukTYTsIhD2E3c+RA=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Prometheus.
+ png
+SHA-256-Digest: iRlQ0f5wK4+r0uS9JRuiiVfA3HNS3LNRI8ioP6851oU=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Satyr.png
+SHA-256-Digest: blttsIM55ZA22XHMV1tldY1ERN9oSw5YDuOE+/37OE8=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/SeaMonster.
+ png
+SHA-256-Digest: nHD6comBeuiHm0YtfXMULL0uhcH6IjJr37yIz+5ag1E=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Siren.png
+SHA-256-Digest: bUoK4aWpD0Lxo2acBuyAz59DzVbf20q+LmQOESzpEBg=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Spartoi.png
+SHA-256-Digest: tHOtsWnGvlgGHWWkz12GryCIGOpYGZK8+VEEM/Ytl1A=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/StygianWitc
+ h.png
+SHA-256-Digest: P6UvNSsfIUqmAXVT2HmCDj+sbypbS5u9xQX7HAHL6Io=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Theseus.png
+SHA-256-Digest: WTgskfEDOIOAlKhdPDsgpWf4n8nmDyc3114tJG2B0c4=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/TrojanWarri
+ or.png
+SHA-256-Digest: k43op5GB1eVm4ynDnoeIpTJX1CbgzXgmGmwqVjn+FlQ=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/Zeus.png
+SHA-256-Digest: IQ3G3hZtwlTp6Wqe3eyQlXTSXOxLnu9lPbMh83T0c6Y=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/geometry.js
+ on
+SHA-256-Digest: u8Ts3uVPS16G+ctHVyS1lr9GP1+UJ6OMLD3FlMDh1gA=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/manifest.js
+ on
+SHA-256-Digest: JDDTN8hfTOrj7bhV/+r/4Mx0nNbqFaUduQU3XAZRPbQ=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/skins.json
+SHA-256-Digest: QyN1l/E9LR1t3IuySKnwyOIOL2qEAZOIvnACefpYD44=
+
+Name: assets/resource_packs/skins/skinpacks/GreekMythology/texts/en_US
+ .lang
+SHA-256-Digest: 5CC65LXM5yragpIsq/0GsW+yIE+0LUTOdMyrtTalG8I=
+
+Name: assets/resource_packs/skins/skinpacks/Halloween/cow_costume.png
+SHA-256-Digest: MfzYR/5HWrO2MlRsF2VlLbgwYyoBimfbPWDE2W+npIA=
+
+Name: assets/resource_packs/skins/skinpacks/Halloween/creeper_costume.
+ png
+SHA-256-Digest: 6fLJ2Dpti3vtPVAQi7xxGMmSzj0ABhhG+q+VI6u9lcY=
+
+Name: assets/resource_packs/skins/skinpacks/Halloween/enderman_costume
+ .png
+SHA-256-Digest: yol36+VVDlTc675JlJmgUYC+x9LOgw+lAkMw1tCozQw=
+
+Name: assets/resource_packs/skins/skinpacks/Halloween/ghast_costume.pn
+ g
+SHA-256-Digest: 3Nk1bkK4Lr/yonvSjkQEYytmrJvuPY3fNlpVjaLl+z8=
+
+Name: assets/resource_packs/skins/skinpacks/Halloween/iron_golem_costu
+ me.png
+SHA-256-Digest: oeU4ZvoGGwsVxYbSrmnJ1F/T76nZe1HYZXdrcHt42Fc=
+
+Name: assets/resource_packs/skins/skinpacks/Halloween/mooshroom_costum
+ e.png
+SHA-256-Digest: Svvk1wUxabG4rkcQqTHov7XtxijVIWnLq2XgtJvDR7c=
+
+Name: assets/resource_packs/skins/skinpacks/Halloween/ocelot_costume.p
+ ng
+SHA-256-Digest: X32T+zAxGbA1LY7K/ZXRHqXx+lMbVw6KtPzturCrtPs=
+
+Name: assets/resource_packs/skins/skinpacks/Halloween/pig_costume.png
+SHA-256-Digest: mbPOW1jN1+NET+8CWulbQaao51rTjTGk8qOw30T3ZzM=
+
+Name: assets/resource_packs/skins/skinpacks/Halloween/pink_sheep_costu
+ me.png
+SHA-256-Digest: j1xD/CIxvqHePBLlp7r2Up+kZ5cjh8TLyabUuOGA6nI=
+
+Name: assets/resource_packs/skins/skinpacks/Halloween/rainbow_sheep_co
+ stume.png
+SHA-256-Digest: WWFIyh0YjWyJP765qLBB0feRMWwLeWsBy+N0h8sEku0=
+
+Name: assets/resource_packs/skins/skinpacks/Halloween/skeleton_costume
+ .png
+SHA-256-Digest: YxMxMAs278qsEt4xm+Bpx7FLZ2de1Wyoc5pecLQIZ8U=
+
+Name: assets/resource_packs/skins/skinpacks/Halloween/snow_golem_costu
+ me.png
+SHA-256-Digest: 0k+q9+BIcKI4QQ/IpfX5GtBvU5QS/srQWjKi622ud2c=
+
+Name: assets/resource_packs/skins/skinpacks/Halloween/spider_costume.p
+ ng
+SHA-256-Digest: 0KWvOxQf9FzlPEDoM8NQbHTne+nQYlyurggDX/wBWGY=
+
+Name: assets/resource_packs/skins/skinpacks/Halloween/zombie_costume.p
+ ng
+SHA-256-Digest: UZF08b31b8nMYXhweDOKHvoj3JsogjcGWhRxrI9LPgM=
+
+Name: assets/resource_packs/skins/skinpacks/Halloween/zombie_pigman_co
+ stume.png
+SHA-256-Digest: ncVb3zF2FgDm8jYlHUet9J2fa+AU2u5omrrcV2pwYqU=
+
+Name: assets/resource_packs/skins/skinpacks/JTTW/Baigujing_Slim.png
+SHA-256-Digest: o1ozkMSX88tdBLG1hdP94UYgS0w6VkV1xek9M35oEug=
+
+Name: assets/resource_packs/skins/skinpacks/JTTW/JTTW.json
+SHA-256-Digest: +oX4owgTwxDFByLWFXJj2Lii24Mx/o8mXuza1O4ajb4=
+
+Name: assets/resource_packs/skins/skinpacks/JTTW/Jade_Emperor.png
+SHA-256-Digest: NRp9GrdCWl3Qd2afq3gOe7mnwWqE7PL5hY7sz4W7mTw=
+
+Name: assets/resource_packs/skins/skinpacks/JTTW/Many_Eyed_Demon_Lord.
+ png
+SHA-256-Digest: bvu7g7zMUwXZPr9CPlC/v5iPWef8IyTNlQfpLAufbcg=
+
+Name: assets/resource_packs/skins/skinpacks/JTTW/Red_Boy.png
+SHA-256-Digest: qBKgXuQnjQvuHwZDIbvCxm9cive2/Jj5l7L7V42finY=
+
+Name: assets/resource_packs/skins/skinpacks/JTTW/Scorpion_Demon_Slim.p
+ ng
+SHA-256-Digest: 86CIbjfqT/21ZVQXX/YnK+jaoqO4GIa/CxpGgTxmaPE=
+
+Name: assets/resource_packs/skins/skinpacks/JTTW/blackwinddemon.png
+SHA-256-Digest: L8VIBWORY1RdU10yrj6nDhEr/Lv8I2IA223cgd9Btps=
+
+Name: assets/resource_packs/skins/skinpacks/JTTW/bull_demon_king.png
+SHA-256-Digest: 6lQOVIoX50DgL0jwgTi4E3pnBEX54iqF4auPrhfcMMY=
+
+Name: assets/resource_packs/skins/skinpacks/JTTW/guanyin_slim.png
+SHA-256-Digest: RgrzWht7d6pbgo4bfzTFqGbdTIVA2OlsXYSz6A34mfE=
+
+Name: assets/resource_packs/skins/skinpacks/JTTW/lady_earth_flow_slim.
+ png
+SHA-256-Digest: aKBVEb2snyqLQs3ETltw2qZT8kG78IXtfWKiER1VJWg=
+
+Name: assets/resource_packs/skins/skinpacks/JTTW/monkeyking.png
+SHA-256-Digest: uOznJYlkY35KGc+ystGBDCm4V/6nDwnsOyM71g2FyXE=
+
+Name: assets/resource_packs/skins/skinpacks/JTTW/princess_iron_fan_sli
+ m.png
+SHA-256-Digest: hBmX0C8zLfatHVosSzWzIGhq3CUe4OTEve09SQog8I8=
+
+Name: assets/resource_packs/skins/skinpacks/JTTW/sha_wujing.png
+SHA-256-Digest: mlJNG7ymtKVqZypedo5/TT8tCv6sY4oyH4Bsc1OFfHU=
+
+Name: assets/resource_packs/skins/skinpacks/JTTW/spider_demon_slim.png
+SHA-256-Digest: Ok5jpJIREso9/viI/DYN/LlCJmzbgt32RX3EFVo9d2g=
+
+Name: assets/resource_packs/skins/skinpacks/JTTW/xuangzang_slim.png
+SHA-256-Digest: SZmVGrSmpkwo+y/dUkZZAT4EfTU9l/AyBNgfW8puyuI=
+
+Name: assets/resource_packs/skins/skinpacks/JTTW/zhu_bajie.png
+SHA-256-Digest: CIvLJnPDE8O2ATodfeUZzCy0ez4Xywsj0juvIShnj3Q=
+
+Name: assets/resource_packs/skins/skinpacks/MagicTheGathering/Ajani.pn
+ g
+SHA-256-Digest: SIdS1veXmhJruKkXikVKZK1r2HKqptoQJVH323KFePg=
+
+Name: assets/resource_packs/skins/skinpacks/MagicTheGathering/Avacyn.p
+ ng
+SHA-256-Digest: Y7TkjKhsZCNmJtsRqaVjBud58OShdc9KDGp1CScHhUA=
+
+Name: assets/resource_packs/skins/skinpacks/MagicTheGathering/Chandra.
+ png
+SHA-256-Digest: yZE2NeIayKAMv9MjMm02bgs5kfE9R2KWY3+jPQKLb9U=
+
+Name: assets/resource_packs/skins/skinpacks/MagicTheGathering/DovinBaa
+ n.png
+SHA-256-Digest: fsi8qQ9mp4+qPcHrEbt71VTiFNV3k9x8KNGJVOqxCHw=
+
+Name: assets/resource_packs/skins/skinpacks/MagicTheGathering/Emrakul.
+ png
+SHA-256-Digest: QkWlUCtewlCbYcLrrgU0K633XaPuNiYu6jSi6rX1F10=
+
+Name: assets/resource_packs/skins/skinpacks/MagicTheGathering/Gideon.p
+ ng
+SHA-256-Digest: qAN8mI37m8GfgoFXCV66+v4MaC43gIw5AfCupbgg4uM=
+
+Name: assets/resource_packs/skins/skinpacks/MagicTheGathering/Hazoret.
+ png
+SHA-256-Digest: yxSdH+yXJ1B8lK5Qp7kLr8rdc9EExRrAiae/NoNHR3Q=
+
+Name: assets/resource_packs/skins/skinpacks/MagicTheGathering/Jace.png
+SHA-256-Digest: A3JhCr/hGoU9a8ojhhqeK+dedLP2KqkjwKS/O4LQpng=
+
+Name: assets/resource_packs/skins/skinpacks/MagicTheGathering/Liliana.
+ png
+SHA-256-Digest: 11xijiKZMUQgRUyj4+Ll4757k/xa9+LD0x2dfRKZwY4=
+
+Name: assets/resource_packs/skins/skinpacks/MagicTheGathering/NicolBol
+ as.png
+SHA-256-Digest: 1YpN05B3ggMr9arOwgVwyXZ4+LAU4YzFVWZYAi3T6VA=
+
+Name: assets/resource_packs/skins/skinpacks/MagicTheGathering/Nissa.pn
+ g
+SHA-256-Digest: hzS/5UZK5JmK108/H35vKlS7IxxXId7UVWrP09IpJ4M=
+
+Name: assets/resource_packs/skins/skinpacks/MagicTheGathering/SaheeliR
+ ai.png
+SHA-256-Digest: p4MVTnuR9Sa/9pIn1/PBARv1B8zceF8oveRFv+tFQos=
+
+Name: assets/resource_packs/skins/skinpacks/MagicTheGathering/Samut.pn
+ g
+SHA-256-Digest: RSlqvNB26vslA6blSWD0sPqsVzbKEoj5UNShdOQBMLk=
+
+Name: assets/resource_packs/skins/skinpacks/MagicTheGathering/SkinRepo
+ sitory_CPP.txt
+SHA-256-Digest: nldRQjZOrvae8i07jazq6M33rcvS2M6GZMz4iBkt0SM=
+
+Name: assets/resource_packs/skins/skinpacks/MagicTheGathering/Tamiyo.p
+ ng
+SHA-256-Digest: HHMb2qVr+RzX+nW+e4DzxKcChGj4c1zPPBdNVmcI09M=
+
+Name: assets/resource_packs/skins/skinpacks/MagicTheGathering/Tezzeret
+ .png
+SHA-256-Digest: gRgCpM08+vOUaD/nNYHz8DVjKwWaB+KOxfiZpfkSNHE=
+
+Name: assets/resource_packs/skins/skinpacks/MagicTheGathering/geometry
+ .json
+SHA-256-Digest: wmzYu+9FoDOrPxb4yFbOG6gDxvxprdyugLhYdGO1OAc=
+
+Name: assets/resource_packs/skins/skinpacks/MagicTheGathering/manifest
+ .json
+SHA-256-Digest: cjmBT6QkGfGIVVVxCXx6DW+CHx9MkZBWkLgQolbDkiI=
+
+Name: assets/resource_packs/skins/skinpacks/MagicTheGathering/skins.js
+ on
+SHA-256-Digest: s6LBI5vKcHandQD71exKrMtd7R5l5TCMTvymYOiazZA=
+
+Name: assets/resource_packs/skins/skinpacks/MagicTheGathering/texts/en
+ _US.lang
+SHA-256-Digest: 3/06D2QjWwCl1R8Gqp+KPuxf+uIqI7PWXZxMhBK1/Zw=
+
+Name: assets/resource_packs/skins/skinpacks/Minecon/Minecon2011Cape.pn
+ g
+SHA-256-Digest: TVz4SscS236OfLU6wqIJL6BhaAFOvvvdtXhJI1pIk6w=
+
+Name: assets/resource_packs/skins/skinpacks/Minecon/Minecon2012Cape.pn
+ g
+SHA-256-Digest: gtbri94mJeYei+Je6yfMy2K76pkdmBh1Vv4J5ytwWrk=
+
+Name: assets/resource_packs/skins/skinpacks/Minecon/Minecon2013Cape.pn
+ g
+SHA-256-Digest: 9a/zKYxAVfo+NqFwxQOFtm1qFzsv33oiBN8jQs1N6yA=
+
+Name: assets/resource_packs/skins/skinpacks/Minecon/Minecon2015Cape.pn
+ g
+SHA-256-Digest: tll5aHhiZ3D+n562TMbrPQ0nV6eLGmh7KVbIwtcvXUc=
+
+Name: assets/resource_packs/skins/skinpacks/Minecon/Minecon2016Cape.pn
+ g
+SHA-256-Digest: nz3aB0XYOOMxrb3Tt2KVYyuz4avZMFeqWxlXa4exBTo=
+
+Name: assets/resource_packs/skins/skinpacks/Minecon/forest_pvp.png
+SHA-256-Digest: R8D/OODktkPSzTmqPiRIGY+qy/OaxbJVQdb8c1eM2o0=
+
+Name: assets/resource_packs/skins/skinpacks/Minecon/ice_explorer.png
+SHA-256-Digest: yYat1ei4szr3LV83xy7u0TJEvpu0+cHP/M+rtQU3sgE=
+
+Name: assets/resource_packs/skins/skinpacks/Minecon/mesa_crafter.png
+SHA-256-Digest: wjZ1c/MYyxg846TINklzECVbUYK38w3WlzCZY4r2Z7A=
+
+Name: assets/resource_packs/skins/skinpacks/Minecon/ocean_inventor.png
+SHA-256-Digest: grFeRwJ98n3ueE+StPSyjL9N40FdgszqFDf3vcC/85U=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/Desert_Archer
+ _Slim.png
+SHA-256-Digest: 01GPrg/Z5mVylVt62oZT9YsrAlHzS6egV2miGLEO3IY=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/Desert_Brawle
+ r_Slim.png
+SHA-256-Digest: 8yI6GB4FWzNBH+2iZP8o4CVNbWLD+ggHsVa8sOQqwYo=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/Desert_Brewer
+ .png
+SHA-256-Digest: hAqf+BauLUd0KcDrrdN4nZMqUy3OZmZwMKOegZJHuSo=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/Desert_Engine
+ er.png
+SHA-256-Digest: 9BRrDbovbjbjxKdUvaJwl5Lx9u5T18jbfrahZjUQ7tc=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/Desert_Griefe
+ r.png
+SHA-256-Digest: zYCmqIV65IbO4hjPV8mH6t/NwJOfD40eKW24F+tpml0=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/Desert_Hunter
+ .png
+SHA-256-Digest: 6fFxo3+i8Ux0wexyuMe7mjZobGMUU+goWpnhYv7ybMc=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/Desert_Husk_S
+ lim.png
+SHA-256-Digest: d3LQsm0ba5zJhnaqLNHhOOGyhlohF3fiZMtN0PRkYp4=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/Desert_Tamer_
+ Slim.png
+SHA-256-Digest: HGAUs8GU5DLVWGEikwTPwXO+4bV88pb+/rZ14AUPTyQ=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/Forest_Archer
+ .png
+SHA-256-Digest: OUHI6iQZnUX46F9G5q2UeMbkuYaxpts2n+ghU8eXLmQ=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/Forest_Brawle
+ r.png
+SHA-256-Digest: kTip0y+GCTERze8hg/98CUcFK2d2Hgd5Ldr/TyEsUtE=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/Forest_Brewer
+ .png
+SHA-256-Digest: FsocGcJijb+Lck2hF17ECpEf3ncuf77FtHfYWQUGrRE=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/Forest_Engine
+ er_Slim.png
+SHA-256-Digest: usmhtMyFgGNi7PBGYMUOd/xO66SOlIr08mBv4kVB9us=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/Forest_Griefe
+ r_Slim.png
+SHA-256-Digest: iFegx96fDS9TlRX5TLzAItBdq9Pt7PXJ5kbjG5KbKUM=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/Forest_Hunter
+ _Slim.png
+SHA-256-Digest: KuwYhfFt8tRIwrqCxGaj3vY6Ko+pmCChWeR3nBZwTMY=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/Forest_Tamer_
+ Slim.png
+SHA-256-Digest: JWn3ovUDTjp17mQ5YH3cIdH3w6zLJP6VOMKiVbhlILk=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/Forest_Woodbe
+ ast_Slim.png
+SHA-256-Digest: uUxWnk8EBcYBg9TZL1joNodzFwbjWcMPhyWJfeMtxh0=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/tundra_archer
+ .png
+SHA-256-Digest: gXz2xfIKFhT5p6yj+l8wy4NQHXoVTyX0BRBpwR66sb4=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/tundra_brawle
+ r.png
+SHA-256-Digest: ClcauDNtIij7lmTUt1OF0nxczJ7Ow/kK1EewqEZAQzI=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/tundra_brewer
+ _slim.png
+SHA-256-Digest: MJRH/UX2rRbVT8HydtyvXad5ZyS36r+k5LLzjbu68zU=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/tundra_engine
+ er.png
+SHA-256-Digest: yk+vb+LClI5kYYqhRyNeCw3+D+zCzPckP1Wda5bdGG4=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/tundra_griefe
+ r_slim.png
+SHA-256-Digest: UtXXbv4mYUuJdVmvWVf5a55rOV9veFRnJzaMqDwVr7I=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/tundra_hunter
+ _slim.png
+SHA-256-Digest: hGegdU1zS5EERYU1+wqqJ14kYqyFLspwalVeuDWM3iQ=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/tundra_stray.
+ png
+SHA-256-Digest: VNBrp3V5qoXhQhQDyLRkxQNkqENNk9wlQPduvRR9wGo=
+
+Name: assets/resource_packs/skins/skinpacks/PVP_Warriors/tundra_tamer_
+ slim.png
+SHA-256-Digest: dVRMxicwbkNla9nXkEEMS+mDN4qetUhuRzbnVNf4G+A=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/Alpha5.png
+SHA-256-Digest: jh2qPKKkHBrkQEJruQOHJKMrRmgxjQwFVcKrDd+ClxA=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/BlackRanger.p
+ ng
+SHA-256-Digest: DhNxWkSJKgtiQ+zHGT+FyaUzS4h6bKi+W51IqMgcY+Y=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/BlackRangerDr
+ agonShield.png
+SHA-256-Digest: RKPsPURmYjAVL+5LGX24KVVpeJvvPgHMkGvaoQ+bUuc=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/BlueRanger.pn
+ g
+SHA-256-Digest: /ESSlMg9sTkiVfBggf8f86RMD1WmoUKIfuntAJsQm/Q=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/Bulk.png
+SHA-256-Digest: yBlifEhStYH3Guh2ip3+cDVPANp+XCFzjDSArQtxCNc=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/Goldar.png
+SHA-256-Digest: J1sxCT3jed63MHdubW0Ade0yyMGj6guo7VGaMivKHHw=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/GreenRanger.p
+ ng
+SHA-256-Digest: 8IQVdmcOVf69Rn/YFywjjyjOYdyHQL5Nsuo0vjrc0EM=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/LordZedd.png
+SHA-256-Digest: 0vrC0gJGae/KDL7SuRfeHs40wtf1nlZTmn34ga6owFQ=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/Megazord.png
+SHA-256-Digest: yghmVHoNsTSS82/UVYFaJfWTLSlR7DLKxPk0Eg7NwqE=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/Ninjor.png
+SHA-256-Digest: sd4ouiP6zi73IrYqFvfWAKRcNcNz/9yLtbcZDjGbW9U=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/PinkRanger.pn
+ g
+SHA-256-Digest: S+p98qzwlHTTNRvSzgVjQ7JtL02WeCjkd4wlZYCqpGE=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/Putty.png
+SHA-256-Digest: R/fNb3+7m7L1lYCsfppCeuarJ1PJutZu5bq9gMKrRvc=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/RedRanger.png
+SHA-256-Digest: XBxxfqidampHme4wobEZwSYeje+C+YDopMMH3UFjMZE=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/RedRangerDrag
+ onShield.png
+SHA-256-Digest: 7OKFbuQ+jaMiJtepN4qrMau2x1OhkqmPy4wMWilrK78=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/RitaRepulsa.p
+ ng
+SHA-256-Digest: 3O+74b6dJVSY6rW8mvH3W85mO+xyup5JpETXikI/+Us=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/RitoRevolto.p
+ ng
+SHA-256-Digest: XKu5r82qFfZJPEydfdUlPtq6cUwuPJpxFmq1KdmI+7g=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/Scorpina.png
+SHA-256-Digest: EB2UsdQdkq7KfSn9f4ay9IA1tgjMm3t/nSqId+ZJFQc=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/Skull.png
+SHA-256-Digest: tbtL+Z2x48r72ckYjdJde9n7EwPuAQQkHLQso6NMz1I=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/WhiteRanger.p
+ ng
+SHA-256-Digest: LLQ36CJB1O0rmel2w+BzzLZ3/UE+BxdiMrjt+QLhKSU=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/YellowRanger.
+ png
+SHA-256-Digest: 3mnX6vwWWHS31WhlAQlZJeE8H4dwcgiVfIbqhD22w70=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/geometry.json
+SHA-256-Digest: aqRvCmXMzGpkNToqtW6ssseHCwGO3J8KJ6fV/SWgGVI=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/manifest.json
+SHA-256-Digest: X5d7zPz2gIJSDqMDFL+0sUt6D/m0Uq5pEuw45wgSReA=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/skins.json
+SHA-256-Digest: R4Frr3R5XblxFryIAC4u4Fwk9afrDTAWbP1pAQJ4BZc=
+
+Name: assets/resource_packs/skins/skinpacks/PowerRangers/texts/en_US.l
+ ang
+SHA-256-Digest: GkVQbg8ecBcJOaxoAgXqkDcCoqde0hvPWh1SNafmab0=
+
+Name: assets/resource_packs/skins/skinpacks/Redstone/Redstone_Architec
+ t_Slim.png
+SHA-256-Digest: 791IAeqfSxJbc5FcGoUfZoXuNTE7vJiPFSgi7ZqWiuM=
+
+Name: assets/resource_packs/skins/skinpacks/Redstone/Redstone_Artisan_
+ Slim.png
+SHA-256-Digest: O7CV64E+fEzJR0DiBn0zIBygdgzUxZl2lPkrx0CfYEA=
+
+Name: assets/resource_packs/skins/skinpacks/Redstone/Redstone_Chemist.
+ png
+SHA-256-Digest: aEJmvxiEsyaRoqUOziZP6ZZ0+JUdETU2gdKTVUirBh4=
+
+Name: assets/resource_packs/skins/skinpacks/Redstone/Redstone_Composer
+ .png
+SHA-256-Digest: 7WLDpqru11wQckjUiyUTUq6RvX8L2+Am4ElpJ14rU3M=
+
+Name: assets/resource_packs/skins/skinpacks/Redstone/Redstone_Electric
+ ian.png
+SHA-256-Digest: VN1ulJgWP4wb8A5zCimqnQKTQxp83u1pE0D1q8kQko8=
+
+Name: assets/resource_packs/skins/skinpacks/Redstone/Redstone_Experime
+ nter_Slim.png
+SHA-256-Digest: HMjiOR9otzjujKYS50pT/WhnHP4QT7DjS/+dDdfKrP4=
+
+Name: assets/resource_packs/skins/skinpacks/Redstone/Redstone_Golem.pn
+ g
+SHA-256-Digest: FZ8cYQYtnTma5/14ag7vSU5VPNjI4K7y2b0opdWZfgk=
+
+Name: assets/resource_packs/skins/skinpacks/Redstone/Redstone_Hoarder.
+ png
+SHA-256-Digest: H1FBAsSlbCzDHaqh/nurpkGFI8iKUxOMimd4golZm4Q=
+
+Name: assets/resource_packs/skins/skinpacks/Redstone/Redstone_Miner_Sl
+ im.png
+SHA-256-Digest: 8lxfxBefglJJcIOlynsLQ+SLMQgBMemI6m4psflfmmE=
+
+Name: assets/resource_packs/skins/skinpacks/Redstone/Redstone_Programm
+ er_Slim.png
+SHA-256-Digest: iA2EKXKjeH48bRSBUkMQrHUEOfHINJTJenzCAWKlIP4=
+
+Name: assets/resource_packs/skins/skinpacks/Redstone/Redstone_Prospect
+ or_Slim.png
+SHA-256-Digest: UdNtrjJHu2aLTlhr1qW6miUE8+Nvglmq2rFehWIEutI=
+
+Name: assets/resource_packs/skins/skinpacks/Redstone/Redstone_Rail_Rid
+ er_Slim.png
+SHA-256-Digest: VY5NospHCi33rYAzhCGz5+/y7KoAmRK6fBXH1Yn+71c=
+
+Name: assets/resource_packs/skins/skinpacks/Redstone/Redstone_TNT_Tech
+ nician.png
+SHA-256-Digest: crivuzO7/yBsT1EK1xSZw35aHsqgOGw4AhGVLe3gisw=
+
+Name: assets/resource_packs/skins/skinpacks/Redstone/Redstone_Tinkerer
+ .png
+SHA-256-Digest: 4LXBAd7hx+BZTsFLeLrnlfxNoxpth8V+pq3E4VRNRTU=
+
+Name: assets/resource_packs/skins/skinpacks/Redstone/Redstone_Trapper.
+ png
+SHA-256-Digest: gDQ6AsHP22/QMpYB31RB/FlYI39OGq3s75jEinet/w0=
+
+Name: assets/resource_packs/skins/skinpacks/Redstone/redstone.json
+SHA-256-Digest: UMjyJQpwyHKrN4lTtGoPghOt89pQltkO/5GBhzfPD8E=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimAelatheHuntre
+ ss.png
+SHA-256-Digest: J6yD4OVcx22+F28IYcufOxA3g0Ig7BeX64sD4kqXEwY=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimAncano.png
+SHA-256-Digest: MjJTLU/EdF9BP3fnAKIMFNyJAuoCXDWQij0nR/DRJ1w=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimArgonianFight
+ er.png
+SHA-256-Digest: Iw1MBlSn0hzxGfqgOF4gjtaEkjsTWMCqJyFj75muqUY=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimArgonianMage.
+ png
+SHA-256-Digest: rDD1zkvJ3TYD3aySaGk0cEM8a5QPOENvmG06/Pe6Mag=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimAstrid.png
+SHA-256-Digest: rIWp3HYkw74RcNo0RuuiH/Ze9ituxZRYz6ioOH6z8Sg=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimBretonMage.pn
+ g
+SHA-256-Digest: Trq+yJrnocuPVbBqyERrv85ahG7qSWGM/6SG4jAE33k=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimDarkElfAssass
+ in.png
+SHA-256-Digest: Y+R0wJKf9khfQ4JwKwwl3/Erdwzh9B0WwPy5r3laYP0=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimDarkElfMage.p
+ ng
+SHA-256-Digest: QZlF0YRUJrD2SHdnLSynIJW5KdlUfvtL80cgy5b5N9A=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimDragonPriest.
+ png
+SHA-256-Digest: NQVXkilJwRt5yAPUgrfqPnFXk4br1O/bsMH5ge3eqKE=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimDragonbornFem
+ ale.png
+SHA-256-Digest: k4Z8OfE/4gHy9+7aMaTHvfbyUpvbaDA98C9w089qUo0=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimDragonbornMal
+ e.png
+SHA-256-Digest: zM+LH5PPBgf252zsdFjU3W7M+CL0ss/PWfc1iZTYwY4=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimDraugrDeathlo
+ rd.png
+SHA-256-Digest: ifI/1hE4LXRhI8oxIJbjl2r2Gm1cgu2kzbIcubrmnWI=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimDremoraLord.p
+ ng
+SHA-256-Digest: qqzuIHS2esLvRFtL/GCZS23BMU2xae804fn/DPKaDcg=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimDwarvenCentur
+ ion.png
+SHA-256-Digest: EEAKolEbE2mYPpnRt/npZ1blWEyU1KRF7OwpWyhj144=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimElenwen.png
+SHA-256-Digest: HtRaPID8dCiK6wrAxYu30FUNuLB/ocffaUp2alnIAoU=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimFlameAtronach
+ .png
+SHA-256-Digest: qxD5T4FXGvlSW7l68RQusjAViU1uVeSwNsN/vUSDZQM=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimForswornShama
+ n.png
+SHA-256-Digest: gkr5cAHcjd1/CipJAysmhPpfD3VKGvuUWol4IMPc9HQ=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimFrostTroll.pn
+ g
+SHA-256-Digest: OKoeDsgdBoeOBUoJyPLvLjALOpUxtEX2BIfP9DH3FSA=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimGreybeard.png
+SHA-256-Digest: nJdHdt7yCzxUoxLINvaGmIgIwasn9i6aLNv7a/9dyfc=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimHagraven.png
+SHA-256-Digest: jVSg7RLKB9Por40aO6xYCm59295KpHK9w3GnjhUh6eU=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimImperialSoldi
+ er.png
+SHA-256-Digest: A0MVG31jEPb81l2eDia1yYEz0Pe51iCl+R7U0smvDj4=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimIsran.png
+SHA-256-Digest: ehvqctuH4w3r3IkQPSQ3OP816SrbIE5UGqsV/BRTYto=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimKhajiitMercha
+ nt.png
+SHA-256-Digest: dIbty6ssVsIyrLfxsNE+p9jvhWYHJBp2GLNZFWgxj+w=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimLydia.png
+SHA-256-Digest: j+OA9uq7b5o1qFpNOM4C68V1eGOZfZL1LAtIDqDm17s=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimMaiqtheLiar.p
+ ng
+SHA-256-Digest: M39GjW49vIEsSnO5QSP4e7RIXWOMy6C5EQRt5tWYIx0=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimMasterNecroma
+ ncer.png
+SHA-256-Digest: 4ELqgOqpRzEr2bJODvHariaX0HB6NpMcY8O/re+Uf34=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimNazir.png
+SHA-256-Digest: ZRISbozMbWDiTsxnhkfaY1UXqrCbuMNb7z+Qmz896sc=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimNazir_cape.pn
+ g
+SHA-256-Digest: ir8KUJ1pkyp67DUdjexOI84+746LhcsvkzcNCQcTons=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimOrcBlacksmith
+ .png
+SHA-256-Digest: uhpH4hkh6lDTjGjduOlMD2FcOvHPMrxExoZqtq188qo=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimOrcWarriorFem
+ ale.png
+SHA-256-Digest: gfzkMuFJNLUuuD7dQmX5tItDTfiUT/BQA9biPNd/So4=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimOrcWarriorMal
+ e.png
+SHA-256-Digest: XfFR/Ffk9X88aDLPpOEUjpZR+LEBMF+1egunDJmZ2PY=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimSaadia.png
+SHA-256-Digest: LgLcV+6RYCzi0XEjYYXBkjHTLWf9KbRxJCTQdBFFUe4=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimSheogorath.pn
+ g
+SHA-256-Digest: kI6uZt6a9dBsXC8juetB4dJ/94YgCnzjCuuKuaG47F8=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimSpriggan.png
+SHA-256-Digest: inoqcXSimVnfY+RpRvJWsk9gHs6KGNgg2tsqpduFj1U=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimStormcloakSol
+ dier.png
+SHA-256-Digest: osDemXtaOAyi+4i650CMGUo7/l3Vlf+kTU/SUr522zc=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimVampireLord.p
+ ng
+SHA-256-Digest: jJxDNdi67VW1ozW3VmhG7GKzAQPxnsQy/Pu3hzmLMl0=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimVampireLord_c
+ ape.png
+SHA-256-Digest: OMD6qXhpY4u7qCp0OyROo9N2r65vFHOYxSfFGg2DmNI=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimVex.png
+SHA-256-Digest: 6tu6ILgKKkdSi+hDKfsoMnlClFBDM1zu3CJPTBBAbUA=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimVilkas.png
+SHA-256-Digest: 5EiE6e30xtyKHDtXyC7ZP3nJTRZynMWa8NsrgdhlrnE=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimWispmother.pn
+ g
+SHA-256-Digest: HVNur590nYvf1ABwpl1UeTtvhjUox+vHaq1H0hOG8NM=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimWoodElfArcher
+ .png
+SHA-256-Digest: 3ZXTFRGqm8CTH7e6bWruMJi1Qmfr1GcjpW8I8m347mk=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/SkyrimWoodElfMage.p
+ ng
+SHA-256-Digest: tnAM243yNPHhXpWL8V6wBdMe4V1GtJ5huM2tqY5k/bY=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/geometry.json
+SHA-256-Digest: CxXaNxubE5WRpz/PqczKDL39A0IjUgUVRb/GFNWl2tg=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/manifest.json
+SHA-256-Digest: Ie1qVTwSOk7Wk/G3QcIba5/YuTrpRdcixT2J/E5ggOg=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/skins.json
+SHA-256-Digest: V+gj7e8YpeRUlXiUTBup8ggjjKHUEEeuw5Tq9kcCmVE=
+
+Name: assets/resource_packs/skins/skinpacks/Skyrim/texts/en_US.lang
+SHA-256-Digest: EsPZAxM44ByxZHOH/m59tdtro198M68d/XB+hm3xe7k=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/Axel.png
+SHA-256-Digest: 1zDKL2JweyZ8MUvHV3wiFnIjdxBk8/KmHL9io7gE0ag=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/Axel_Armored.png
+SHA-256-Digest: OqAdNgx/EAg1clMRLvHYrfpiiuqbW+yt0yWBQ41V8kU=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/Ellegaard.png
+SHA-256-Digest: ZXvookE7jIfY37KLz8ke3zY6gAAYAdOajxGlgI9okHY=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/Ellie_armored.pn
+ g
+SHA-256-Digest: MXHzDVHZ2gxJw/reA3TR6bURhoJni0p9J38zK3ZZLZ8=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/Gabriel.png
+SHA-256-Digest: LBgXswjeOA8AVUoYFDaundlKuJVHmkjcrZB03TLQ1FA=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/Ivor.png
+SHA-256-Digest: P/XTHLKU5pQWugL3K+X9OIsoMYYA55mhOMgE4aFxzQw=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/JesseF_T0.png
+SHA-256-Digest: pontcQjafolhY4YY+t0mRIVYuXz10TQRu0zTx018lZY=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/JesseF_T0_Armore
+ d.png
+SHA-256-Digest: WEFJ7HtlRAEX2gim2X6NKa/7//2PZtRwZ1g5ZZRtdxA=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/JesseF_T1.png
+SHA-256-Digest: gNgZ8LsMiRd4HcsGZsgUao+JRo7//sa3yc12Ejwdhus=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/JesseF_T1_Armore
+ d.png
+SHA-256-Digest: b392t/smO9VIHSsdj3+m/FkBgCRg4jVbxlO6hOW8RWI=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/JesseF_T2.png
+SHA-256-Digest: mnbeTDBk4SbjDytB27XgQGVQTPK9Fvp+VTRc7N3ayHg=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/JesseF_T2_Armore
+ d.png
+SHA-256-Digest: vsPKYGLFXeDJ0oNBNVg6tgeRIckhgeA1opSAdw3zA0o=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/JesseM_T0.png
+SHA-256-Digest: FFY4xEAcTHVUsRX1sk6FAVsaUV2UqgATkQmpzS9iMZY=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/JesseM_T0_Armore
+ d.png
+SHA-256-Digest: fsUDzYYEIzANP3ZJ2ewNxqWz3FNalhfCdY/ozYH5d7o=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/JesseM_T1.png
+SHA-256-Digest: QrPdSQfjGq/8scEdzrrrEXIaakQnBzXUWxSxy4wX004=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/JesseM_T1_Armore
+ d.png
+SHA-256-Digest: BF1pDZX9ZFGWn0Qbf+25imhVGy197vvHqerr46EWCJc=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/JesseM_T2.png
+SHA-256-Digest: rnZ91rNoMWgWzr+NJyff9jWtU43TbFdL9wq+4o+2cog=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/JesseM_T2_Armore
+ d.png
+SHA-256-Digest: fkfXoMgWUorDm2uY/fnHap3ikCo/iXPYCZezAXK+uNw=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/Lukas.png
+SHA-256-Digest: SpLDJJZNkOe+HuyFeg8FY8rLS/ofQrBVKWTXftjfLHI=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/Magnus.png
+SHA-256-Digest: Mu7CjkvUc53D21P8Ai7/ipozXbP/2dEmAhqeyx/UacM=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/Magnus_armored.p
+ ng
+SHA-256-Digest: tpA00Xpj+MyBLNEk7CiFmB9BCTukhXivryk5pQtoQqc=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/Olivia_Armored.p
+ ng
+SHA-256-Digest: dtjPppij0ZTxKFGkW314ohVuk76Iiqh4YGSrt4vYKbE=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/Petra.png
+SHA-256-Digest: /npuQUMWHNcvEWDPY98CZtxqcY3kMs2wCqRqLtfUXTs=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/Petra_armored.pn
+ g
+SHA-256-Digest: O1h3DClNu3YZJTUdooys4r2oJVhl8SV8WYLlaPWJqas=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/Soren.png
+SHA-256-Digest: y1UJN3Yx2vvsdn0SYOViVIDuS9GC/Wd/FMQG78Mc8WU=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/Soren_Armored.pn
+ g
+SHA-256-Digest: txAsme1uuBt1aG02uCv/mVPWHpMgDov/bk96Pqj23j8=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/olivia.png
+SHA-256-Digest: kFc6UgGrkG6w4XG4SUMBw7oQrFkIgl3tSWpw5ECJEhM=
+
+Name: assets/resource_packs/skins/skinpacks/StoryMode/storymode.json
+SHA-256-Digest: wCJ5fQoXitQ1h+kwp0s6rOYXHW8NphHrWc/SgGt0Fy0=
+
+Name: assets/resource_packs/skins/skinpacks/TownFolk/Bandit_slim.png
+SHA-256-Digest: JHQ+F5PLHTCiw80r/RcRaThqMWCPk/qCraNbuVk1nck=
+
+Name: assets/resource_packs/skins/skinpacks/TownFolk/Bard.png
+SHA-256-Digest: ztfgF1TaF8seCJ41MstHMSinO3JaJFfsC4qXsYX26TA=
+
+Name: assets/resource_packs/skins/skinpacks/TownFolk/Castaway.png
+SHA-256-Digest: yuIL9mGYdz540KxJ/u6BL/FqhSbC05vqiBBywY78CGw=
+
+Name: assets/resource_packs/skins/skinpacks/TownFolk/FarmerSkin.png
+SHA-256-Digest: c8VJfiQzpkza7WXep3AxvDqKdS314RHbfmVsrYN01zU=
+
+Name: assets/resource_packs/skins/skinpacks/TownFolk/Forester.png
+SHA-256-Digest: fe9vWhDbC+TDb+rIZ6WhuD9dqIfmcKG1O175RYo60uc=
+
+Name: assets/resource_packs/skins/skinpacks/TownFolk/Gardener.png
+SHA-256-Digest: oOHNZ5ISnyeVzWx9IgYPv4WcfLhqpOqbbiEd5mbyLyI=
+
+Name: assets/resource_packs/skins/skinpacks/TownFolk/Mime.png
+SHA-256-Digest: haaEPApPzi5Bb8rWUjEV/i49FOY+9Ewhnfi3c1CK0rY=
+
+Name: assets/resource_packs/skins/skinpacks/TownFolk/Miner.png
+SHA-256-Digest: SWZrbVbFp9MeCHajxa3cW55325pYZanVa7KYCVhI+O0=
+
+Name: assets/resource_packs/skins/skinpacks/TownFolk/Monk.png
+SHA-256-Digest: 8xVGoSQKK4+LTWU4XLD+i5CQTnmp7+hPTVWcngn5zgs=
+
+Name: assets/resource_packs/skins/skinpacks/TownFolk/OldLady.png
+SHA-256-Digest: ggCPVK0mBqyLMpABXJOmFjl+jF8NLjtKvnlC61Cw62s=
+
+Name: assets/resource_packs/skins/skinpacks/TownFolk/OldMan.png
+SHA-256-Digest: DQM7YRVsvc3veIy2Hqh4s1HHp/hgcw2d665pL5pf8Zk=
+
+Name: assets/resource_packs/skins/skinpacks/TownFolk/Peasant.png
+SHA-256-Digest: j0WvM2hBRBQIzk8pe5pYHVHC+Mk1hrdwZ5j+aMkmx/k=
+
+Name: assets/resource_packs/skins/skinpacks/TownFolk/Rogue.png
+SHA-256-Digest: UqCoyIUdx7huJcYlPuFt/3Hqva1FlqE2qLxKMnD4Zrg=
+
+Name: assets/resource_packs/skins/skinpacks/TownFolk/Shopkeeper_slim.p
+ ng
+SHA-256-Digest: 4neIhTWGHUrTdeSIZHGbV36/Mx2ZQUgpUV4ttt5tN5Q=
+
+Name: assets/resource_packs/skins/skinpacks/TownFolk/StrongMan.png
+SHA-256-Digest: kM9l32EZoBCjmR8EoPh+ykoTBDgcsqEVaJUJM9zA8x8=
+
+Name: assets/resource_packs/skins/skinpacks/TownFolk/Thief.png
+SHA-256-Digest: 7SfA7n8H24mHsiPjZiwfqrcoc5D4ik4um9q1RBh9U0w=
+
+Name: assets/resource_packs/skins/skinpacks/TownFolk/TownCrier.png
+SHA-256-Digest: XtehKKagxKCY41XzAKq+wZqo+R7BojjzdfFG3yWaF/s=
+
+Name: assets/resource_packs/skins/skinpacks/TownFolk/Townswoman.png
+SHA-256-Digest: m9VJ5XJyESGNLFsifsNp2TuH+titRyyJJYSeD5ASDmw=
+
+Name: assets/resource_packs/skins/skinpacks/TownFolk/Vagrant.png
+SHA-256-Digest: zbWZCAy+VxNgQdSiHIyvfZrK4WLMzfun1eUUwbVSHXc=
+
+Name: assets/resource_packs/skins/skinpacks/TownFolk/Witch_slim.png
+SHA-256-Digest: naPTPQCHBS1PEVcfpNQOct6GRMkIiVjK1zKHtRwRkGc=
+
+Name: assets/resource_packs/skins/skinpacks/Villains/bisector.png
+SHA-256-Digest: VIJUkyH7aVW2lZLiepppqe1CMfHeSmExRvJeTKY739k=
+
+Name: assets/resource_packs/skins/skinpacks/Villains/cake_maniac.png
+SHA-256-Digest: QMMdq1DGdZfaUm2j/28ASeWZmvsP3JRXV4Lgtg7+97U=
+
+Name: assets/resource_packs/skins/skinpacks/Villains/doorman.png
+SHA-256-Digest: ttVf64nmwM+t+SgAj0OAGlomzAzApppuP3fZrCwAg4s=
+
+Name: assets/resource_packs/skins/skinpacks/Villains/dungeon_spector.p
+ ng
+SHA-256-Digest: a12oVGG5/uSzD34xGpwvQ6jTIcVO10FNA94bxIwlSXo=
+
+Name: assets/resource_packs/skins/skinpacks/Villains/enchantro.png
+SHA-256-Digest: oXLYi8atsfuHnU1QE26Hi4sXmpJvzmHqmcgSNfvBYpk=
+
+Name: assets/resource_packs/skins/skinpacks/Villains/endergaunt.png
+SHA-256-Digest: y4wjeEHm9FljsndgNXH24KQ5b6cQIWqEIm6Sj6Mz33w=
+
+Name: assets/resource_packs/skins/skinpacks/Villains/eyece.png
+SHA-256-Digest: rFPTAfvcoSRf9bbVgPjqQ+ztgzvnr1dTjuhDbuIsS9k=
+
+Name: assets/resource_packs/skins/skinpacks/Villains/frankencrafter.pn
+ g
+SHA-256-Digest: zL5fTidI1NeL/j8OfIsU7289XVDVw7lFSRgfuBTPaxA=
+
+Name: assets/resource_packs/skins/skinpacks/Villains/lava_fiend.png
+SHA-256-Digest: VGLhtYV0N6N0fZDzQSGo7G+WBMoFy3vZFzLuvwevHUM=
+
+Name: assets/resource_packs/skins/skinpacks/Villains/patchkin.png
+SHA-256-Digest: UdhpNveaqlsMHMy5KOpszNyM4xdy9RtRizNzuvdhlpA=
+
+Name: assets/resource_packs/skins/skinpacks/Villains/redstone_zealot.p
+ ng
+SHA-256-Digest: HCX6NrxiPuRqC5cil9054MerVu5cx4uphmTmcWxSnSI=
+
+Name: assets/resource_packs/skins/skinpacks/Villains/silverfish_monger
+ .png
+SHA-256-Digest: N7BnF0OMgJa84XIEwTZ/nfjydaF+jr38ga001E1DkiE=
+
+Name: assets/resource_packs/skins/skinpacks/Villains/slymime.png
+SHA-256-Digest: Uk5ahvKiavNc5Fsi9Dul9b5/p603i+2QA6wi7qP1eq0=
+
+Name: assets/resource_packs/skins/skinpacks/Villains/stronghold_monarc
+ h.png
+SHA-256-Digest: B5J4bQobBm3eWtaeokrtiSsuFRqKaYhXD/Yohz4krss=
+
+Name: assets/resource_packs/skins/skinpacks/Villains/stronghold_seer.p
+ ng
+SHA-256-Digest: AOaeXwO+hOsGSZ2gOdl5lXaw+SUbajGHHkMXJ92DFwk=
+
+Name: assets/resource_packs/skins/skinpacks/Villains/swindler.png
+SHA-256-Digest: h4rRa+ePW7bpuER3N2GbO8Neqvl2qQsT707OVbNDRoc=
+
+Name: assets/resource_packs/skins/skinpacks/Villains/terror_spawner.pn
+ g
+SHA-256-Digest: 6M8QFNs5zmxGxjqWATGdjyZNmSc9jqvFd0fV5kYbTok=
+
+Name: assets/resource_packs/skins/skinpacks/Villains/villains.json
+SHA-256-Digest: fEwHJVFwN23Lp7VcBSczoX4qYO3Ua0DBU/yR2uC3Kcs=
+
+Name: assets/resource_packs/skins/skinpacks/skins.json
+SHA-256-Digest: O5DzU48Fy+RloVpScHpDHnDgAASn1KlGH0Q9fylqk4Y=
+
+Name: assets/resource_packs/skins_premium/AdventurersDream/content.zip
+ e
+SHA-256-Digest: WryHvNBXY2corfo1ZGhcjpkZlegZTCeeRLyYZE7Tp10=
+
+Name: assets/resource_packs/skins_premium/AdventurersDream/contents.js
+ on
+SHA-256-Digest: TXDAlABEm85dYUQMF4cCqEThNRjWRYE72vCM+Bl7Hqg=
+
+Name: assets/resource_packs/skins_premium/AdventurersDream/manifest.js
+ on
+SHA-256-Digest: KIkcI7THx2HL1hcTC5TVJzLgYTwN4z2j4QgLRjHGLL4=
+
+Name: assets/resource_packs/skins_premium/AdventurersDream/texts/en_US
+ .lang
+SHA-256-Digest: 8V80XMDitu/fU2h3aIMyZURvTAWmsZ4Zm0zlgUSQJv0=
+
+Name: assets/resource_packs/skins_premium/AdventurersDream/texts/langu
+ ages.json
+SHA-256-Digest: VM6HEb6kqRHVsetFU8XFR7YhFblsFMMkE3AHEzNWz00=
+
+Name: assets/resource_packs/skins_premium/CyberSpace/content.zipe
+SHA-256-Digest: MBvRAsQzNolO7P1NWySHN+q3DJjTBHZ3aIbeI7rVGlg=
+
+Name: assets/resource_packs/skins_premium/CyberSpace/contents.json
+SHA-256-Digest: 3gmKLjGKS7gtGeIhBDChKhco1NKRvb9pTZaWA/baWGI=
+
+Name: assets/resource_packs/skins_premium/CyberSpace/manifest.json
+SHA-256-Digest: UHyuzFyGkM18iqV1d3f3i0SZoJhKJbJPpSqfOC/S7b4=
+
+Name: assets/resource_packs/skins_premium/CyberSpace/texts/en_US.lang
+SHA-256-Digest: +jftAR6Y+Lgb8XY5PHQLETC76RF7Rc0HTVaFiOQaLDo=
+
+Name: assets/resource_packs/skins_premium/CyberSpace/texts/languages.j
+ son
+SHA-256-Digest: Jwp4syGI1P6VCo8iaMINPhMh98sAE9iofrpCVK+Sj8M=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/content.zipe
+SHA-256-Digest: KErRolRyzICqEXeSd/Sxn68pNID0oXgTDYmdUIYIKm4=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/contents.jso
+ n
+SHA-256-Digest: ck6iCsfyQo7TTjMWOaY2IUXK2+pi5steF91ok4U4u7Q=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/manifest.jso
+ n
+SHA-256-Digest: WeehJI6np1xHDeD4D6T4V7kXoGtjK+eArrTt/8ym3oY=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/bg_BG.
+ lang
+SHA-256-Digest: BkYKIpYvNzyoRiusgkgAzqWUtWhUwORj1Hp3BLsUyNo=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/cs_CZ.
+ lang
+SHA-256-Digest: SIOu8KEcjljkwIL1L2ViA19nPJBiwF4/0hSPb4/L5JM=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/da_DK.
+ lang
+SHA-256-Digest: 2vujgak03BCZcVvto/2qBNoWyeEep7n9E4Z1/5ucKBI=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/de_DE.
+ lang
+SHA-256-Digest: BLfW1tTPiPsw+2k5TDUF2S3521GSavwBiOQeBXuVRJ4=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/el_GR.
+ lang
+SHA-256-Digest: oNDD+vK0FBw/s4VqhAjtDSQy6fbQ/gKyfB+UXIxHJwY=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/en_GB.
+ lang
+SHA-256-Digest: pbJNVEetcv3XT1Fw1jjBzB+CdA3PNFh6kPdSjf0YgDc=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/en_US.
+ lang
+SHA-256-Digest: STmSi8Y/+4M/1KRnUmiwxUwzUuCrFpj/vakI2GWVCnQ=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/es_ES.
+ lang
+SHA-256-Digest: QBFOR+6j3kxvCCacLykWOn64OUjjdfGkpLYVrA30NCs=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/es_MX.
+ lang
+SHA-256-Digest: 88MD8iYtpyXgqmOynNGNm3conRdl80Yud4Cd3k42QQw=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/fi_FI.
+ lang
+SHA-256-Digest: luCrcorDe4F2UGXs9jIlNgyaRNFE9OV1Q4Tt03GeWf0=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/fr_CA.
+ lang
+SHA-256-Digest: FceiclTWDVQ+G75igxHqmssYT/udD7OMdRHRxZNqPQI=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/fr_FR.
+ lang
+SHA-256-Digest: 0NB6sL5BFkUODdlodvSsZ9EgVIbvL+UdkL2y4UwEwxw=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/hu_HU.
+ lang
+SHA-256-Digest: lgcI4OaJtF1F2UaqB1FejCI0TR8vE/osg8rczGnHe4c=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/id_ID.
+ lang
+SHA-256-Digest: f1DLlZjXBeONZ47wtQMu2BBwakkda1DWFrire1vs0PA=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/it_IT.
+ lang
+SHA-256-Digest: qAkN7yEt+jb20LP2/Bw3RMoKlxDhRs1PnMVk3uOf3iY=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/ja_JP.
+ lang
+SHA-256-Digest: mvMTKokzLXh6AqkqXqryjrm527Ms+w12PSRIMCuu9gE=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/ko_KR.
+ lang
+SHA-256-Digest: WDIguvvbrdXXxEcbcGi4NJNGQmJDQ11UlvTz4jHOrA8=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/langua
+ ges.json
+SHA-256-Digest: 5EhQlx2uBie/LA5BuXSMkgkO+/iIx0EFJA7gQTYhDJU=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/nb_NO.
+ lang
+SHA-256-Digest: vY06eb32Pv2uyJZl38GTI7wNHNfu1qZEkBmui34Peho=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/nl_NL.
+ lang
+SHA-256-Digest: f54hUdbkL7XjpYW5XzChJ7vyXZISwa7mUFoB+oXO1kM=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/pl_PL.
+ lang
+SHA-256-Digest: DDqcHq9bGeSOfky7Hhqeqm20V5D4dcKOMlWgm4qy38Q=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/pt_BR.
+ lang
+SHA-256-Digest: R84r9Hl63+pxHDuISuikTfZ8Dz7wxYfPyaZwyboQZuk=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/pt_PT.
+ lang
+SHA-256-Digest: PI8t8gbmiYSdAXAKaD5ivg7V1VSQoDXJWacHOSX5Yj0=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/ru_RU.
+ lang
+SHA-256-Digest: 4EKowjNb9s6+Y99YiH/vSGCeZOGPV2r8Jva41GBoG1Y=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/sk_SK.
+ lang
+SHA-256-Digest: InCW9sDfNQuJ/2aIqSRlAkPrzWqevc4pNV44nWrP9Hw=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/sv_SE.
+ lang
+SHA-256-Digest: zSAbTbywg4mnRYiaQiRYt7rC6xd8Ax7FqkSr9GFZUvI=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/tr_TR.
+ lang
+SHA-256-Digest: zdC/brbtbbp4UEckI6B5HR2sZJ83DW6jlatcFGSyDW0=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/uk_UA.
+ lang
+SHA-256-Digest: f+zIc+o7k9lYLj1k4ghR62KwCD1RXH1X4yMr/W99NTU=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/zh_CN.
+ lang
+SHA-256-Digest: TSbRSaHF8JsWjAYqeK0/mGNzkRAJHhFl/ODDTh3cQ7Q=
+
+Name: assets/resource_packs/skins_premium/EneijaSurvivors/texts/zh_TW.
+ lang
+SHA-256-Digest: S/1i1oKDgGq8vLnR9oL3F/GZSN+wg/AOugy03BGJok4=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/content.zipe
+SHA-256-Digest: WzXMvD6h3Y1Wogk9MZ6fU/LRBNRrKbaaIyeaXVk0j2E=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/contents.json
+SHA-256-Digest: K5iZaOA8GdDfwadevUF/7lxXwQfHbs/WtnYg/h2Dack=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/manifest.json
+SHA-256-Digest: 20fP0H1uzR5LwdPy4iRw223YRzc5ablbDL/5muAJU8k=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/bg_BG.l
+ ang
+SHA-256-Digest: oLDHStt3fsABtvqy022qrAfyxrv5VYQe574UrCOiJOU=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/cs_CZ.l
+ ang
+SHA-256-Digest: b5I2XE05YD797Ptav6CC8ekohPRRq8NY/g4gI9Ao/jU=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/da_DK.l
+ ang
+SHA-256-Digest: RomqPyc07/okq1m0NKz4ipvm/0a8wioZWLbeUQ2hn0o=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/de_DE.l
+ ang
+SHA-256-Digest: kvvhlEEgNyMMyR5jig0kSFoQm7JsH2QSZoxJ9TNdcwI=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/el_GR.l
+ ang
+SHA-256-Digest: pEydvFBf1xKZF+RgwDetyuFQ2hGIXNtjHsbKySBtZYg=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/en_GB.l
+ ang
+SHA-256-Digest: dmtiHzm/UkL/xoLi0lCpwiLQhnqKC1PyqJcBUmMPXJ0=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/en_US.l
+ ang
+SHA-256-Digest: R6d6o8kdtoJd/A1Qv0YTeCSGURqGW6HoGnKU1TF6cNg=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/es_ES.l
+ ang
+SHA-256-Digest: DOabx9Wuq2mSrc2tsT+278+reX7FJhYmU6fGAkE+3KY=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/es_MX.l
+ ang
+SHA-256-Digest: 9/Jj9fjllVoO8ioQB/IFeiNYC5Y7XbQMDS3vx+A7eSY=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/fi_FI.l
+ ang
+SHA-256-Digest: aprSTEEP11Muhm9cjzONKsvoIBXU/4zBI6Usb5C32wQ=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/fr_CA.l
+ ang
+SHA-256-Digest: jN7YcUab/pOO+KV6ZkUVG4ORLzFoTukL3J/1LFGeOIw=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/fr_FR.l
+ ang
+SHA-256-Digest: 87RTaScRDGfG+CvpaowOmoixg8pkvnfrYezRgN5Erms=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/hu_HU.l
+ ang
+SHA-256-Digest: SSFmBsAZAndJ3hcGPKAvGl4PSfxnbd0/vbF2mF8cZG8=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/id_ID.l
+ ang
+SHA-256-Digest: a1DLZzh2NF3Vr6n6+gKjKo/Z4sYXoqZ3Ij/Vt8S1XsM=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/it_IT.l
+ ang
+SHA-256-Digest: jrP/pnF+pbG9PxCW+3tjqi9rIb6QyByGPD5Ejlz4nDk=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/ja_JP.l
+ ang
+SHA-256-Digest: pbmqT2CKINJ4oMx0uX3swy2GfF28DYLsVWYfe2hHbsg=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/ko_KR.l
+ ang
+SHA-256-Digest: jaNKZnS8AA5foOZ2X3ZTqHcJsnMACgXzo9zTPAFIPEQ=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/languag
+ es.json
+SHA-256-Digest: CkZGzpwzOrVYvV0OROm0C+szGtMC2tEQq7YW8mUXpJo=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/nb_NO.l
+ ang
+SHA-256-Digest: r4vn1bkOrjv+wM2KKLvXNm8F+FicFqYYLlKhZn8Z59g=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/nl_NL.l
+ ang
+SHA-256-Digest: itpGhupoZydr97MH53g/XNqRk6/2VX6NrBfUK7cVthE=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/pl_PL.l
+ ang
+SHA-256-Digest: SFzLLR1yPFXMyqhvRJd+i7sGjlvd595v/soOpqidNvc=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/pt_BR.l
+ ang
+SHA-256-Digest: yFCkXrADqR7puSn1/q86LXUiBFHysgWRdB8yakTUtqU=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/pt_PT.l
+ ang
+SHA-256-Digest: t879SvAfNpR981M3eF9lqhTBH5Jt7vi+skvvGQw8MVQ=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/ru_RU.l
+ ang
+SHA-256-Digest: 6EU9LI2MPLha/CZC36kGSV31VZuM2nH8oJ1mSiJYG3c=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/sk_SK.l
+ ang
+SHA-256-Digest: TKKYSc0ctQQnABLQK27TH+TsAV1vrOW/l0oDQd8nh4A=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/sv_SE.l
+ ang
+SHA-256-Digest: QQgPhSx2twVANXOg6v5Y6ozh/GklwgUf1VSbfiqTzWM=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/tr_TR.l
+ ang
+SHA-256-Digest: YRcvZI2WMA1eSJq8na0hfumBM5znGBsnoGtaKgoNAIw=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/uk_UA.l
+ ang
+SHA-256-Digest: EJ7e5Sqvp0kZhgOWK5xwkc1cYVCEscm7lX4RyTS4WVM=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/zh_CN.l
+ ang
+SHA-256-Digest: tcDJ2hQVX9st06yv8Q9EvFQEbrTGdZ218PzQtxUgBtA=
+
+Name: assets/resource_packs/skins_premium/EverydayHeroes/texts/zh_TW.l
+ ang
+SHA-256-Digest: m7zcsF5qe5b/hxZ/KbeklM2ojwU601BNVmJXeeTZNUA=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/content.zipe
+SHA-256-Digest: YUKXdBNSjlq88RPtC2AKQxLLTQakNz868ybxPpkVTKw=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/contents.jso
+ n
+SHA-256-Digest: FtMKnzZ3u23J2cruT07F6d2a0EsD7wrY5to8AYgk//4=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/manifest.jso
+ n
+SHA-256-Digest: CmcDFC2dWbMR9r0Nr4hzxeyCGEQbj5g0orSj4SdjVVc=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/bg_BG.
+ lang
+SHA-256-Digest: bWI2lQ6zM+B6dVh3Kj0h/WlluQHmrjHYpUK27x1z9jk=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/cs_CZ.
+ lang
+SHA-256-Digest: FGWuVJ+NLp98amF2t1jqr9m6VOrbUN0+9anm/HgcQQU=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/da_DK.
+ lang
+SHA-256-Digest: /X0WeMnpZp/zlMbHX6XKZGM78fEtMjv+Ya+GUgJxae8=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/de_DE.
+ lang
+SHA-256-Digest: /kj60f1F8YALSr+hISicSk8k8jYMBwOWy9h2k6g71AI=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/el_GR.
+ lang
+SHA-256-Digest: niKxQjfCSeVFdr+OcOo/ayeq/uVChrLiVGT9/OEQXII=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/en_GB.
+ lang
+SHA-256-Digest: jensFY7/XNwzbaRWV/h5pzz7W969YaSGHVI3Xx8dj1U=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/en_US.
+ lang
+SHA-256-Digest: Cshe5OIsZiBw6DOLCJMhPI3yyKBPIXoaqYd1QZGftfU=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/es_ES.
+ lang
+SHA-256-Digest: VW+Qq62hSGIC44TQViBZbjXOr06im/BLHRezkBU2MKY=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/es_MX.
+ lang
+SHA-256-Digest: M0WsS92ccO34jv+oWEyA5QPQ1eHSzFnNtjETx5xG7T4=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/fi_FI.
+ lang
+SHA-256-Digest: mHRVsoJL0HQqOTi5igstVhYcHhOlmKd8w7HI2XYqO+M=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/fr_CA.
+ lang
+SHA-256-Digest: el1m5fMDZHIFNTtoBO/CEuaiib0fjAMSLGR27FFIuXw=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/fr_FR.
+ lang
+SHA-256-Digest: yAHz4yFszIYyCGMDXSbX29r4NNKQD05VRpfVrTrtSd4=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/hu_HU.
+ lang
+SHA-256-Digest: bLoDlkdgnhONdFpZoezJx6xoUje9IMJU7mLkR5CTSyg=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/id_ID.
+ lang
+SHA-256-Digest: I/VWjU9JEqUGRkXcsdKlGe/bnOM6JMhLcd6boWTCKNI=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/it_IT.
+ lang
+SHA-256-Digest: Py191ZdZNJmxofjEzad2vsr+wDr3RInTPg0PQxD4cFE=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/ja_JP.
+ lang
+SHA-256-Digest: Y6FFLEdfzoOdKbQg0suL8iLJdpaA6vk5/eiBIXfnWxY=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/ko_KR.
+ lang
+SHA-256-Digest: +yw3jPSG0k6PzXw3FvbwAozUhXhINKwmpYBmDZmH6xY=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/langua
+ ges.json
+SHA-256-Digest: jLsYUsT2uUVako7NEY+A4ZEHQeE0VBgDuVQ3BkPA1Qw=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/nb_NO.
+ lang
+SHA-256-Digest: 0+X7glcayy9F4nh9uRM4GePU5NMNDvsN7NQFJrn8V1E=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/nl_NL.
+ lang
+SHA-256-Digest: kkruCmjxcOVWdLljE5eKDp7eEnBMvxiMLdaQydlPfvk=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/pl_PL.
+ lang
+SHA-256-Digest: Q0idXFZ3z5oB223FU2smqM/xq1JOE+49QtREO/d/cV0=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/pt_BR.
+ lang
+SHA-256-Digest: Gw7Vb2OOVPNkPnGyqO8bHk+8vhbEroTpWPbF18Je5Ps=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/pt_PT.
+ lang
+SHA-256-Digest: BtzyGjwQu9iXzucPLKn5DsVPlUCuxAD2J3bdsNI1izk=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/ru_RU.
+ lang
+SHA-256-Digest: Pnb7W+ssNrRsgSd8HR6s5NQrVc8W7sS58yrzXjzubFk=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/sk_SK.
+ lang
+SHA-256-Digest: uD8//t08i7ogAXx54W8MfqNx1LbL7pAk4HLMpW9Di/w=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/sv_SE.
+ lang
+SHA-256-Digest: 5pwPRbH1nJp2WZdhxhQ0t45WelEoKQPXavRdzpEb4qg=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/tr_TR.
+ lang
+SHA-256-Digest: XcdODHtBf97zxq9SWOADw6yM1R/7FvSlP4o7w/avmNA=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/uk_UA.
+ lang
+SHA-256-Digest: K1lNnrPVgq3WqsBBlFHnfZC+3NyS07M1fqs/MYovs90=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/zh_CN.
+ lang
+SHA-256-Digest: lYKr2i30RZG9XRXm8kwLFjC+CMCx3ozfqf8ldbPwffM=
+
+Name: assets/resource_packs/skins_premium/KingsAndPaupers/texts/zh_TW.
+ lang
+SHA-256-Digest: wrzkzMZAa7iHKjSAETR2LING6kORukXmhLTYa8zaIvc=
+
+Name: assets/resource_packs/skins_premium/Pastel/content.zipe
+SHA-256-Digest: gkYz7kXop4KlyWJYRdE7WZlEepKF3x1d1c9qrJ66+3s=
+
+Name: assets/resource_packs/skins_premium/Pastel/contents.json
+SHA-256-Digest: p+DCfZY7Ramut1+fX5Uwl64JtInoluB73KyCn9/hv8o=
+
+Name: assets/resource_packs/skins_premium/Pastel/manifest.json
+SHA-256-Digest: tkhSqSg7RvcnKfgJQc006LULTIPoquD4F0NpFyYlFIQ=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/bg_BG.lang
+SHA-256-Digest: OEskP2BdGDaiYZQ2LqbfuvQxcx/05WNLv9ASKv4TWZ8=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/cs_CZ.lang
+SHA-256-Digest: IAjvpAsmaEX0rgfV8nldYnKMs4egT9nTp8bhSCXnt54=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/da_DK.lang
+SHA-256-Digest: sA0gxmV3gaS+LxBeLPnHDePVEbKlfZq0d44YpEEug28=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/de_DE.lang
+SHA-256-Digest: nxjxP5+W8HlGw1/wPhErDiwF6yELEzoYOiQzqmQowM8=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/el_GR.lang
+SHA-256-Digest: pEV0XHXa8XWum8t/tIe+MuB6ybeJGA+ibOQ+8zJPSwk=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/en_GB.lang
+SHA-256-Digest: BFIL+kMc+SSKKOqWRE7xO6QBOO5v3w4FtITiM0tFpC0=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/en_US.lang
+SHA-256-Digest: 34Tt6/NCCDyVzgRJ+WiozzswfIjVQl+BLOU+NHC8K4I=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/es_ES.lang
+SHA-256-Digest: bMhlPOfsfpqKPx99Ds2yvnwez36XzouWhaxQNIS/BDk=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/es_MX.lang
+SHA-256-Digest: nKQ3VlIe8hGzuha3Rk7l4mey64bz2aV/EbaIrKRmGG4=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/fi_FI.lang
+SHA-256-Digest: PSQom8gnrVOlWSoMy7P5GwN0U2Rr1KNhoomaKtgZr3s=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/fr_CA.lang
+SHA-256-Digest: 9W9Yx9eyjz8B/kqI2iywXl1QWm+2NWDTbkt6fcMYN7M=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/fr_FR.lang
+SHA-256-Digest: IdHKV2qlO8wRYUWQlsemG06qPjohTtF8n5O/81TGCKc=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/hu_HU.lang
+SHA-256-Digest: dfkYyGSnVYkEiU3okpHfJfVgn2o9h+15FPvxtzm5uIo=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/id_ID.lang
+SHA-256-Digest: 5dNmCPZQyf74TGZ/pqgZCwxYQor4dEGDr549Glk6gvo=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/it_IT.lang
+SHA-256-Digest: ClJe8b6izJOx4N0uZtEx/LDXMy/AFwEt2eb3b860lRs=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/ja_JP.lang
+SHA-256-Digest: Sl6M4WXsRvTfq4kolbS6In+Ooj4MUskrkp1hzYUzvVg=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/ko_KR.lang
+SHA-256-Digest: Wrh9JO6L1ILIS13qM6qkGx0CuVvgmqCOvAxVsIb5B70=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/languages.json
+SHA-256-Digest: 65nQvIG4M7Hnzzn5JSk2k7QlFdCZP8zQ5cFCnGpkdnc=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/nb_NO.lang
+SHA-256-Digest: GppWN+UunOBEgkKdgT15FNy6lMHwbUuxyXTJrbMKncs=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/nl_NL.lang
+SHA-256-Digest: lOMHgjwXnVQfCT4LM6RcfB8DJgHol/aw06/qPH+TsJc=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/pl_PL.lang
+SHA-256-Digest: aaDSMqH1QoPdufgx2RY1AgRfIgeNMa5x+8OrTxjAWSI=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/pt_BR.lang
+SHA-256-Digest: vnoEj6pyD/uT6wD55TdWbvencgBg23T7OaTQATTLnjU=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/pt_PT.lang
+SHA-256-Digest: c4kh8pB60a4UTcGAHfCZb2M+rvAXnTf+WLo3w9ZTItQ=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/ru_RU.lang
+SHA-256-Digest: 9BXWV3AidILDS0cPSrj9hJlCHgd5G/CQeSCJ+Z3X1Yc=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/sk_SK.lang
+SHA-256-Digest: e+3SheDZDgy12mBfVmMSMAj577eqEfFAkoS6m8tEsaI=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/sv_SE.lang
+SHA-256-Digest: guR46Kgy5EFN+BYLxoU/J1PykBDV4u+rC/e7QpY4pLk=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/tr_TR.lang
+SHA-256-Digest: KrI7giyeieTF6PlfHsoy/mfUxR0h/Pq7qwGw4Ui4Ya8=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/uk_UA.lang
+SHA-256-Digest: ZRR3UsBW7TjbxydYsHPXm/2cT3gBRKQgzXYKF/0WmW0=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/zh_CN.lang
+SHA-256-Digest: n+I9t2Lcc3WIPjxAozYNUqXut2ADtamtT308dGG3SEM=
+
+Name: assets/resource_packs/skins_premium/Pastel/texts/zh_TW.lang
+SHA-256-Digest: Ff1m5h1PMB3NiJcrmJSN3WMC7pmsYZucHi9lvwiePRE=
+
+Name: assets/resource_packs/skins_premium/PetPack/content.zipe
+SHA-256-Digest: KlkRUsWRnYIxsfsIcAIGTezAT1zyGZPmJtDmrskwh44=
+
+Name: assets/resource_packs/skins_premium/PetPack/contents.json
+SHA-256-Digest: 6mRKJ2yYExHU3eGA6NXTV6To1oThSCPJuQF+elXhvmk=
+
+Name: assets/resource_packs/skins_premium/PetPack/manifest.json
+SHA-256-Digest: NCMaYvhJtjfx41LIbjl6pN4UtYzInSopE3mXiWNb1MU=
+
+Name: assets/resource_packs/skins_premium/PetPack/texts/en_US.lang
+SHA-256-Digest: JMUTZw5zkXX5/9sgUGWdnpn3B6/BOLDSUe5STJ53Cwg=
+
+Name: assets/resource_packs/skins_premium/PetPack/texts/languages.json
+SHA-256-Digest: D7xHZ8rg4oZM/4oBDwyz94L65L/ty2cElaMesYdEyhk=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/content.z
+ ipe
+SHA-256-Digest: Y4KExbLDgc4DNw+td6sUyq62vkCOlYfWjhZRT02WFBg=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/contents.
+ json
+SHA-256-Digest: EfluBPD5MGFGkr4MBV7GmildIz+HdXOruVCKXQ4qlJI=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/manifest.
+ json
+SHA-256-Digest: qCsRuzbKFV96ftANZ3m8VzyJuPcbJl/lbnWpjzAeXC0=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/bg_
+ BG.lang
+SHA-256-Digest: 1CpztoMWYakafq74ddpWRdgcIqF7EX3I3i4uStwcROc=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/cs_
+ CZ.lang
+SHA-256-Digest: V/63BRXplgFJaMclYb7E6B9Dln1uwL/UMnwrKtV0jPA=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/da_
+ DK.lang
+SHA-256-Digest: XWXc1kHi7eZdyURrlSOxmRGU0OEgm43HDRj8D95J6zM=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/de_
+ DE.lang
+SHA-256-Digest: OxZQ87VBvFJDQC+mADBds4TmPaIfh/tOPxr6CS9/fG8=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/el_
+ GR.lang
+SHA-256-Digest: L1oGVi4RTIx7JS6jN41MI8PmzLRVDIBpJTn07J6q2B4=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/en_
+ GB.lang
+SHA-256-Digest: 9u7srI64P3EpMgvYD9zyCg1ggl3pyeNfZubUnRstvfQ=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/en_
+ US.lang
+SHA-256-Digest: jo/cp73Lrh5texQwih/gp3ZpP1SkxsOdzCv4E4RSgrk=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/es_
+ ES.lang
+SHA-256-Digest: RzfbrHq0+klZhRFw08G+w/ZYvwYyXIl9a6KZD/4lbqM=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/es_
+ MX.lang
+SHA-256-Digest: WVQ/rdXB2bLnJ5E0SHvIghqo7GtxWp7eaPfdFr5zloI=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/fi_
+ FI.lang
+SHA-256-Digest: EOTafQAZDvqGsC6d16A+2XRMVl+Tua8Mqxnk0cz7RE4=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/fr_
+ CA.lang
+SHA-256-Digest: QQe6OKjNeK0C3lklxBQss+38s6oAHzN7owZ+0pN9rms=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/fr_
+ FR.lang
+SHA-256-Digest: 75A63hjTH87MQLpWa34v4ltDp8hsZMUk/R+ExoqLuTY=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/hu_
+ HU.lang
+SHA-256-Digest: CXnRg4Xjz423TVE65f6MuDgjkeWJUefkCilS3EkT+rk=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/id_
+ ID.lang
+SHA-256-Digest: 3fX+A4980f207fqnUVL4S66w0GZs+Du2s5Bygp36vlk=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/it_
+ IT.lang
+SHA-256-Digest: ktY7nOW9IxxhDmfaZ5RIJx+kLGHA1i/7nY4Ccw4AWjI=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/ja_
+ JP.lang
+SHA-256-Digest: bMkS0/XQJxjCWnRlTbxWvv6X12FYlnSGaOeQ9QeXMwo=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/ko_
+ KR.lang
+SHA-256-Digest: 6xwvteLj8n6jtx+jzBvPJCMjRM77wM4iKz7+5f/kZv4=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/lan
+ guages.json
+SHA-256-Digest: lEtkHJ0U5VrCXhn/QivG4vmSo4//UCeeme5KeUqr69Y=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/nb_
+ NO.lang
+SHA-256-Digest: 4K7p4Gt+FLw5SPlGtjo3Rm46u9rYHVU7+kCjoieFn0g=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/nl_
+ NL.lang
+SHA-256-Digest: Q/sYRsbaIX4aOWHPLZhnjzI80OL/ffOtribbPsULszo=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/pl_
+ PL.lang
+SHA-256-Digest: 35rRXCUOd7fGZkn2hLYXvXejp2sLJ4fTddiY9FlJkUk=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/pt_
+ BR.lang
+SHA-256-Digest: p1yDqSEtEmdn2314cJLI4s2zMHpxzhiqYFQIpcT+DtU=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/pt_
+ PT.lang
+SHA-256-Digest: ns6MflqHqwZpRs8VsXTouiZnRfzzTESwnRqizy0TRDo=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/ru_
+ RU.lang
+SHA-256-Digest: HaChMDfh7l6gvDBncRH9F4xareBxZzI7exWpdIEpFx0=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/sk_
+ SK.lang
+SHA-256-Digest: 0WnTbYqOJOc5P4p1sdYnv2VG8SX5ODBA1wCv0h7eMJk=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/sv_
+ SE.lang
+SHA-256-Digest: E/u+j5zjnrrU5A5UKZ2iVlyfExEoWNSKktuNTHgrRA0=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/tr_
+ TR.lang
+SHA-256-Digest: PfHaawlq/tB7WGogEs3/O0SpzaICgryMN+aY/mKJE5Q=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/uk_
+ UA.lang
+SHA-256-Digest: Cdx95hCxiosINVnbqEVewATRiV1HpesWpzup0YrqxDg=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/zh_
+ CN.lang
+SHA-256-Digest: Yxg5B6b68faKpdlPvr2wxzh0pg1+WxZ2XQEMtUUspsQ=
+
+Name: assets/resource_packs/skins_premium/PiratesAndFishfolk/texts/zh_
+ TW.lang
+SHA-256-Digest: GJKvxW5vT2iIQkJVAYFzycJ1/eQ9HzrI8BOXI8540Jw=
+
+Name: assets/resource_packs/skins_premium/Sports/content.zipe
+SHA-256-Digest: guXrucEXWuAf9mYZtDb6u7QD9Py3rzRWJsZIs1pyM20=
+
+Name: assets/resource_packs/skins_premium/Sports/contents.json
+SHA-256-Digest: G0CLEDiNrOnRs4p1pV1lmPcTv4Y4mGk+Qt1oB0rbmkE=
+
+Name: assets/resource_packs/skins_premium/Sports/manifest.json
+SHA-256-Digest: hRNhrV1pOhg+nZQw2cWWEV5F+oSy8KTFev6KXvfhBHo=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/bg_BG.lang
+SHA-256-Digest: I6sSxYJuAITxqNduAnaJK26izRwwvZE+qrmafOTkMTQ=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/cs_CZ.lang
+SHA-256-Digest: aGJ6Jg5J620+epC1tyV6k7hBHoWg7FpOHWGjj64kesA=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/da_DK.lang
+SHA-256-Digest: 2Q4W6sd3kndIXj7wd2HG0IvSelSP3qFVUU2SYeoyvaE=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/de_DE.lang
+SHA-256-Digest: 1Hu7LFwnDb/+Szc3FNwEtHfxH6W9jczhiaeGDwkkA8A=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/el_GR.lang
+SHA-256-Digest: QVfKr4WZ1SYFsGJMDmWbOBqRkmqmWggZLkw1mejHPTY=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/en_GB.lang
+SHA-256-Digest: gCsCrcqkHlSdiR1+FTsTOHYguXDFUMwXJoM+HeBzblA=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/en_US.lang
+SHA-256-Digest: ZBPPBahHDt2G9FwWuZFA6wVDBODZIcYdeDRj8fpP5Fc=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/es_ES.lang
+SHA-256-Digest: t3eLiuCA617j1ySbi7jA496EpxyZ24nletUsJBjRCPw=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/es_MX.lang
+SHA-256-Digest: YuSoAGllX3lpx+T4OewB9a9kD0kY49nIqK42e9x45hA=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/fi_FI.lang
+SHA-256-Digest: H5M781OVpV4rnCrB1sEX/txfwVu+zWV02qHcvDqLOhA=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/fr_CA.lang
+SHA-256-Digest: s4K2eXqk7kHaHzDCTSm58O6SRk1M/X79F2htJfNxEMM=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/fr_FR.lang
+SHA-256-Digest: y0UDqpKKyKt99qFJNd+ZR00AeDgvKZznDz1t658CmDQ=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/hu_HU.lang
+SHA-256-Digest: KIA3o5CtOiPFOpTMvyp9IN5bE8BxJD/Odxbm22zuncE=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/id_ID.lang
+SHA-256-Digest: 1ZLxvLuSIZQMYcLMntezCqGn5NMEaOgabCbhPPhFNfU=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/it_IT.lang
+SHA-256-Digest: u3XhMuUdiER28vg933awja5QJ08z1YEQLdCALVlvYYg=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/ja_JP.lang
+SHA-256-Digest: 3+89RBB0oGxY9MA3S8/xiAqgZSkwZP8TKUO0HpVPYPE=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/ko_KR.lang
+SHA-256-Digest: 8uDncAh+oUmnrltBwCZyU4GJ9Q6CPbxDGVTcUoZZGmE=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/languages.json
+SHA-256-Digest: 5WEtpZgUXAdzCy9CKJxyYcMP4rIAcXi5Y/TTTo2K1q0=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/nb_NO.lang
+SHA-256-Digest: xzpM8TYgOAREkzPsgp1sulflg20H2taZIqQ9pqZxE7k=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/nl_NL.lang
+SHA-256-Digest: v3jGCn0922IL+yCiWPAPxE5y53NogezM3R2cPnE16NA=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/pl_PL.lang
+SHA-256-Digest: CdJuEoxF5EBB7v59irQZvvb2HQgtAdPArz+ylkykyMI=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/pt_BR.lang
+SHA-256-Digest: 7/vSPvpJsm4M6AD90wPj/+NvXDdOhWGHWPzQEYx5fIE=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/pt_PT.lang
+SHA-256-Digest: oUsB8vqzIehf1YGPUqVkum37Yph/ATtcAZuo8dNsAKg=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/ru_RU.lang
+SHA-256-Digest: VSfERzwDBwkYQnQlYjdCJWyoOADiekS3J0TyTXgrGsM=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/sk_SK.lang
+SHA-256-Digest: nc2Gn4sMrfM0uTd3miz4T7BNr0H9Yao094wLQonc+VA=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/sv_SE.lang
+SHA-256-Digest: Jr4x5J7sndxIq9OGAlNfaH2O3HGfphJlGUge2gB2I7Q=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/tr_TR.lang
+SHA-256-Digest: dJ92Qql3Q89NNUzQtvznl3uAARVrjhTmWD1h2yhMpR0=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/uk_UA.lang
+SHA-256-Digest: IGhfXOEdmNrDiQHTCzUznR/osCZdpEeEt5VO7NTf2ww=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/zh_CN.lang
+SHA-256-Digest: PR+9zWUMuOxHuiI2nP6tVBrkvaD4d+kj+T2EbL8WIr4=
+
+Name: assets/resource_packs/skins_premium/Sports/texts/zh_TW.lang
+SHA-256-Digest: 6wK6yd8jRmADzIaJGUJbacpwBYjejazpVwpSfNi1waE=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/content.zipe
+SHA-256-Digest: apzl1iRy6YqCNZA3P6ddKtid9RJb6Nj88hZbMHfWLTY=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/contents.json
+SHA-256-Digest: PHupo0bMkc3bd1PcYTUYY8dDvi5nIrJ8v0cmZvN9F1Q=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/manifest.json
+SHA-256-Digest: QcF/V2s8TgBGoOceEGduinjZ7DfR1u3fOdfe8JCQFPU=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/bg_BG.l
+ ang
+SHA-256-Digest: 3IWFDIXjP9jdlaQAcqUzVEvbfjaBtCz/wlr1bdMoTIQ=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/cs_CZ.l
+ ang
+SHA-256-Digest: vbjzofhqbapQ9j5Zo+IrXtUTgSbFUPIzvSBMbdiv0uE=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/da_DK.l
+ ang
+SHA-256-Digest: 34D63XoAi38LczMaxeVcrabab+s9WPBB7DyVZn4I9Pc=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/de_DE.l
+ ang
+SHA-256-Digest: 6LNbvn5WGdvKHS+ezMypQt6udNrlskejmeghJB2bDsQ=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/el_GR.l
+ ang
+SHA-256-Digest: AmnNclaGEp0GgTuuflmpA/WYQuDlII4uK5BNC6ndB98=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/en_GB.l
+ ang
+SHA-256-Digest: a/jRBohiTpsE6OSwx5uOvG+qYx7QeR+RDHPzFnqESWw=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/en_US.l
+ ang
+SHA-256-Digest: gARCQyrnm5JtYvI0A0YHo/OuLj89Py06AlCnO4HNoyM=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/es_ES.l
+ ang
+SHA-256-Digest: aEh0VA8bj8u9ilx4iCqsqsHTTMCNa7HwPJmS82OpEHo=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/es_MX.l
+ ang
+SHA-256-Digest: SnlUHdEQKyhoE1my1Mtab2hrBEqxN5WpTjpJvDzD3Vs=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/fi_FI.l
+ ang
+SHA-256-Digest: b6wOpgbviV2rJt9XFVmnek7YIp7+6F+LwzscVLJPSt0=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/fr_CA.l
+ ang
+SHA-256-Digest: y8uWS/ALPhxDBnZiuuheqdS7PbkequV/4AL1jhUa5JY=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/fr_FR.l
+ ang
+SHA-256-Digest: NaXpdUAnKleHjzs+4Dilx82xBP/arBtdfM8rHXYgdro=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/hu_HU.l
+ ang
+SHA-256-Digest: 6ujhpqcOD+kwOXVLLg9Ks9o2WParWm3hvMaYvOQxY0Q=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/id_ID.l
+ ang
+SHA-256-Digest: YT5M9B6r7CxUT+9J1kWOt/jjHoT5rx5Oim+KYfJ01c4=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/it_IT.l
+ ang
+SHA-256-Digest: JxpVxyUz0A7c0Ek/nhV5MC6pqrcuxmCxZul010fR6X0=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/ja_JP.l
+ ang
+SHA-256-Digest: +duHOp7GNliQdd2lScrsMOel8EUiAFdbCZ513eDCtTo=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/ko_KR.l
+ ang
+SHA-256-Digest: RxhPA+r2zES6l4yAlWkMkLUn1pzIKG7ZFvfoOwgVE+w=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/languag
+ es.json
+SHA-256-Digest: AwqwTnSbadNDcrMMJj697M+eOvvNUtYBaiAzOFjag4c=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/nb_NO.l
+ ang
+SHA-256-Digest: buDxx2bqdPR4VRdD5ssemyfXjTbkmJFkGCY9HJDW2L4=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/nl_NL.l
+ ang
+SHA-256-Digest: k/UEEFE0hMQnTx3oca0e3Jo3fYl4C35zaxW7UtSetnk=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/pl_PL.l
+ ang
+SHA-256-Digest: udw8t587FjqclfUoPEv2WRq1dcquM0DEtBlq50GRFhQ=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/pt_BR.l
+ ang
+SHA-256-Digest: zLOx089BecL4uQOZ/s9lqbJJri9UYzUkw7UawiFKm8M=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/pt_PT.l
+ ang
+SHA-256-Digest: BOjyhgz87a3L9Jd8satPI0deQUIKaPpCiEMoC+3X7yY=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/ru_RU.l
+ ang
+SHA-256-Digest: h6NhjG1Xvc92gWvOX6/T9gCz/fLoBdYaZyQQ2QImaQg=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/sk_SK.l
+ ang
+SHA-256-Digest: smwLXXcar4weMqItnSeY2ZTsWOG/9OtbTSt18+JIz6A=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/sv_SE.l
+ ang
+SHA-256-Digest: tqhstJ/xgBvU2LrytNY5GXN5Wk10hzTs8jvz/BovlaM=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/tr_TR.l
+ ang
+SHA-256-Digest: XuZxEEW3hQ1W3ZizjrNKpgQIUVxTRmFAoW4lG9awizc=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/uk_UA.l
+ ang
+SHA-256-Digest: qiv04/XgrFjRKT42d0kOQ/VzKBqTYiXozWFvcEXK3sA=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/zh_CN.l
+ ang
+SHA-256-Digest: LwraaBnJsfkfeP2mhJP70ahUvIbG4wYSOdUnvBGd9ko=
+
+Name: assets/resource_packs/skins_premium/SummerFestival/texts/zh_TW.l
+ ang
+SHA-256-Digest: G4rE4+tvB9zvMGkniH9bxWu2EcV7sBAqER3J86n8G6Y=
+
+Name: assets/resource_packs/skins_premium/Teamup/content.zipe
+SHA-256-Digest: OvnbkjMk8rVt9zaedPNZfRw1lFEvtKWGvJkCRy9ENCY=
+
+Name: assets/resource_packs/skins_premium/Teamup/contents.json
+SHA-256-Digest: lzyo0S2dnOV5i0N+RWS/hkFmXwT/DuO2xT9B0LB3yYg=
+
+Name: assets/resource_packs/skins_premium/Teamup/manifest.json
+SHA-256-Digest: myCqBNhlxXh9QEINGcApCDlIo+baibwwfl0LESmKO3Y=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/bg_BG.lang
+SHA-256-Digest: DQe5jX4BKXqug6q1Qz25ArXbsGsJypA2B6ple3eHRg8=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/cs_CZ.lang
+SHA-256-Digest: DUdkMi4tAddP3l4l6n65Mq/IZkKa/v5G35BH8SazAGo=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/da_DK.lang
+SHA-256-Digest: G6VrwxtCI0sxfKk1TTjI9PHI9wZcpIDg156+11YjUVA=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/de_DE.lang
+SHA-256-Digest: 9++YHNKu0P/iIyFJhOtgcZno2VhGcl7oNKb9MEY6Zog=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/el_GR.lang
+SHA-256-Digest: sGY2rbr/hkWGae7EwencSU2A9TWIf2oqjOHDQ5M97SA=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/en_GB.lang
+SHA-256-Digest: EfLoPQPUvM6h2ir1yX+iFBgY3eazGw7ENUI2EnN+bF8=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/en_US.lang
+SHA-256-Digest: GNyAt/B1528w3kvexAT7IUfzcXcMJ1HFZP0jxo2dWhw=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/es_ES.lang
+SHA-256-Digest: mJnEJirnBK7QgCMnpVPaJrsSlxmwbbNSItCjXfyMxDg=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/es_MX.lang
+SHA-256-Digest: M28O9UBliPieBs8jNuyvxFviga26dUsRkvaokJ82S1Y=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/fi_FI.lang
+SHA-256-Digest: zAPfLIEBbx2DqhD+jF5yjpeqd89RWIqi5XurfaYGWq8=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/fr_CA.lang
+SHA-256-Digest: lS/+uai4mY3dlHntb2Oa+RzSlxkzByBoXnfhOcKmdRY=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/fr_FR.lang
+SHA-256-Digest: WncBbsFs0UU0L5wlO3w98H9U95B7LIwtFC6nrjMt5cs=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/hu_HU.lang
+SHA-256-Digest: AL7aNOgDOACVhNwMia0rsBISm2YXsLzEf/cJyzDKcus=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/id_ID.lang
+SHA-256-Digest: 4oPn6elh3XFkK8/p12t7BAnNN+I3Y1cOWSo+as67N+s=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/it_IT.lang
+SHA-256-Digest: o/KhPufHhW2aBBIftG+0etEZxhQQ4lC8AJ4OwjqIIjs=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/ja_JP.lang
+SHA-256-Digest: pgs/VeKbEko5uV5PNK72+sC3db0czdUTttmpAb5BckY=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/ko_KR.lang
+SHA-256-Digest: DUwQlwctDyT1X5VVLZK1YbHzDEbDVA/7vPe0JNvZw5E=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/languages.json
+SHA-256-Digest: i5ur9Iei0AByt9Q7TPbSAa2Rxg1Qo7kRM7annIvhN3s=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/nb_NO.lang
+SHA-256-Digest: zeH9wAC+rIG7fpJYa9hMSFLd7UyJf2/O+SDTBn1lh7g=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/nl_NL.lang
+SHA-256-Digest: EFjX/X2w0Ib+MgdamevbWVSj0nZRlvCL/1qzaKzdzWU=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/pl_PL.lang
+SHA-256-Digest: cI0GkJ5PspTRwodyUd7UgMBD9YteTu4WywUhtuS7lFQ=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/pt_BR.lang
+SHA-256-Digest: GOOeF+rLPcDzfbh5fUVSe+j1+pLMrJPcbuR1UTx/RX4=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/pt_PT.lang
+SHA-256-Digest: h8iyxqiPCKJIprfbz7dJJWzHCYkaGAmW6XFRLwrIUbI=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/ru_RU.lang
+SHA-256-Digest: R4ps0uMcBxo3rpzZImGhU0+1Tk9jdDSIbziKrfkBTtw=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/sk_SK.lang
+SHA-256-Digest: MxS4oYPjQC/xFryfGKgON8207enmN0Qjm6MmaGpEcJ8=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/sv_SE.lang
+SHA-256-Digest: 6r4fma1E+zT11riWW/RhpmtpwonSexaG8DwopxexPlo=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/tr_TR.lang
+SHA-256-Digest: OGtwQV31mUqY/KtSulNfvJ3VwV1U9Qiop/ZVFAbNPPk=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/uk_UA.lang
+SHA-256-Digest: 3a3pxEHMp6I8V+t8HCvLNA6pEZWDQTb2D2lI2WQBZcg=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/zh_CN.lang
+SHA-256-Digest: mPvYfxpjxoqOXKJXQR+C1ZSMfJEky/9J7g+5Pf50g0M=
+
+Name: assets/resource_packs/skins_premium/Teamup/texts/zh_TW.lang
+SHA-256-Digest: 6zo7DJL4s9INPv3GkDF+mYCPe627UTAJLQHNKpc3nEU=
+
+Name: assets/resource_packs/skins_premium/TorchwallKingdom/content.zip
+ e
+SHA-256-Digest: tJtSfFhAkpcycL8InsjcFomjfh/IbMmikLF/IL5NCpk=
+
+Name: assets/resource_packs/skins_premium/TorchwallKingdom/contents.js
+ on
+SHA-256-Digest: QIPRyqqvpoji4Bm6isLUYKVzmpk00xdfthrOvRCDcHY=
+
+Name: assets/resource_packs/skins_premium/TorchwallKingdom/manifest.js
+ on
+SHA-256-Digest: kVZPH2ZlkgCxzEqGmx3ZVR2viNpDfGrZbiCOwPGMzOg=
+
+Name: assets/resource_packs/skins_premium/TorchwallKingdom/texts/en_US
+ .lang
+SHA-256-Digest: LicK271p2fHb7aLEaIsIUkshQwDXLdy8Q2c7vGeSIwE=
+
+Name: assets/resource_packs/skins_premium/TorchwallKingdom/texts/langu
+ ages.json
+SHA-256-Digest: 5gl1FEwPU3zL5zDpmKJMKDWaEB5I8ei6jw0miVXvU3s=
+
+Name: assets/resource_packs/skins_premium/WisteriaGrove/content.zipe
+SHA-256-Digest: GFxf1Veg7eB4OzpwyKVdb6/s6YwQPLRjKnqDFWDLsv0=
+
+Name: assets/resource_packs/skins_premium/WisteriaGrove/contents.json
+SHA-256-Digest: X5z6GnWgGbAypeGyuQ9ojeE4x5ILNDKe5MNVC3zQkJg=
+
+Name: assets/resource_packs/skins_premium/WisteriaGrove/manifest.json
+SHA-256-Digest: RGxSI+JKHeqlMYPw+xpMQd89wFFGdfvqSQ9Levujtrc=
+
+Name: assets/resource_packs/skins_premium/WisteriaGrove/texts/en_US.la
+ ng
+SHA-256-Digest: DqMwKbGqSv1OdVOQJY3/GCdSGlMu6RqxS2qw6BMse1E=
+
+Name: assets/resource_packs/skins_premium/WisteriaGrove/texts/language
+ s.json
+SHA-256-Digest: +Y7Wg3iutjsWKea2dFXCovpdng0NbDC880J8N0Z9s/0=
+
+Name: assets/resource_packs/vanilla/splashes.json
+SHA-256-Digest: Mx6cufYE1mdPhnL7uA9iO00cZjgyTuufWUmTX+QBTMM=
+
+Name: classes.dex
+SHA-256-Digest: /YuiYkl3j7Xl67xE+99VIWnUq4F6k2s/czDC6dGFbSU=
+
+Name: lib/armeabi-v7a/libfmod.so
+SHA-256-Digest: Bu8Oxhe32DgSbzjDDuA1hmKQFzzLnlgV2BlV1M1Fl2o=
+
+Name: lib/armeabi-v7a/libhorrible_api.so
+SHA-256-Digest: CCHjI6GUwAHLruehwDxmyMe19d6bk/TLowa5qyCvHig=
+
+Name: lib/armeabi-v7a/liblauncher.so
+SHA-256-Digest: O05xcpMYz/IV7F+VaHBO2h7aJcoaA4s/6Z9ecRo1OYM=
+
+Name: lib/armeabi-v7a/libminecraftpe.so
+SHA-256-Digest: mvcB4P8uMOCCy5RjHytCVVU5TGcpcuJcFXXxngrOgVE=
+
+Name: lib/armeabi-v7a/libsubstrate.so
+SHA-256-Digest: UwloAXthbdXB5KHEKm1Ld7DSjKsnGEXurxaTFBYh4tY=
+
+Name: res/anim/abc_fade_in.xml
+SHA-256-Digest: LfwcodGXxzlqBKFJWwL/Ty/FFmlIqbz+NL2NlUEs/HQ=
+
+Name: res/anim/abc_fade_out.xml
+SHA-256-Digest: t8vao5ejUWb2Y6Pi2bEwr87sBRuJ1vY7hyO38eGPBZw=
+
+Name: res/anim/abc_grow_fade_in_from_bottom.xml
+SHA-256-Digest: bhyFNrjiRoyiYwxTzSFCF90jS/p/qvGw0KA4B6b6Sjc=
+
+Name: res/anim/abc_popup_enter.xml
+SHA-256-Digest: LqQruqy//jhesu11d3emaGRT2pA5oPrjebnBVQ21fw0=
+
+Name: res/anim/abc_popup_exit.xml
+SHA-256-Digest: cwKs/k0sggHtLbl4GQpEIJ3QESYGYuwkAsRQqKcEQLU=
+
+Name: res/anim/abc_shrink_fade_out_from_bottom.xml
+SHA-256-Digest: hqhWfMLnfpn7a6SdYU3ZfyeF6ePXcu3ZxRvZtWdSQ8I=
+
+Name: res/anim/abc_slide_in_bottom.xml
+SHA-256-Digest: MOrZICNVXKlVrmhjWKWKsJUL+YVwK6qqOKADlFGiVPI=
+
+Name: res/anim/abc_slide_in_top.xml
+SHA-256-Digest: 8yCYaZiK/ZBR3WTVBvDLLuoiKAepF/PxB22e6bEenC4=
+
+Name: res/anim/abc_slide_out_bottom.xml
+SHA-256-Digest: 2wrWcQ9r2Jt2CvBjJSai56WA6r0tYtUhA9m4/ynYcog=
+
+Name: res/anim/abc_slide_out_top.xml
+SHA-256-Digest: Du/uFqbV76V7Dh+HKoaKXBoZGfG8+x4qImQpOnGJ2cU=
+
+Name: res/anim/abc_tooltip_enter.xml
+SHA-256-Digest: SE1CZzYqkRXcywlRP+8JBNPuwYDZQpUldkV3taszzaE=
+
+Name: res/anim/abc_tooltip_exit.xml
+SHA-256-Digest: GrJ8dPItfAcY6yDBSZ4kOaqlF/rjhiH/0Dau/6764B0=
+
+Name: res/anim/bind_enter.xml
+SHA-256-Digest: 8iXSIpopKQlkSOfE0jE/vL12pralXFJj0DDGg9D5biM=
+
+Name: res/anim/bind_exit.xml
+SHA-256-Digest: QwzycNP1VdyeLCN6T53bKXpPmo/ZqgJIrLBIYd/tvao=
+
+Name: res/anim/design_bottom_sheet_slide_in.xml
+SHA-256-Digest: ugjKvcIDxqUuZnKKbKXfkT5y4o7IZZEA07nzMHmpmyQ=
+
+Name: res/anim/design_bottom_sheet_slide_out.xml
+SHA-256-Digest: uzfgyNofh+lVFaLNYvnbYz7P1Wrb5Vwp6N2XUc6OD2M=
+
+Name: res/anim/design_snackbar_in.xml
+SHA-256-Digest: 2qF033lFEOfb6/qs7T2lYDhDh3jajQbkksnKRfZfY9M=
+
+Name: res/anim/design_snackbar_out.xml
+SHA-256-Digest: EV5V0HfhibjrAnt3JUsfSUlmv2TnjpLnoWgWzQBm2rA=
+
+Name: res/anim/dialog_enter.xml
+SHA-256-Digest: mSIdJVsRoW6zOrC6fv6jL4S/lvCz9zu28ME42FfNqxE=
+
+Name: res/anim/dialog_exit.xml
+SHA-256-Digest: gkXNQlsLQZrilHv4VssJyqCmLmKBYGp8YV2x1lMhBHU=
+
+Name: res/anim/fade_scale_in.xml
+SHA-256-Digest: 4xFYQuu+XZnxISnFZ4QGJAbD/WTSDPlg6skEpOg0j1M=
+
+Name: res/anim/fade_scale_out.xml
+SHA-256-Digest: IbZNgKunHMZ9e42BPU+XAEV4+Ak+EA5apdTWwUL7ZLI=
+
+Name: res/anim/main_window_enter_center.xml
+SHA-256-Digest: 6JsMaWBGIuHdEU0ICYw8mnhn8QACeXiTuO/cpTKbQQU=
+
+Name: res/anim/main_window_enter_left.xml
+SHA-256-Digest: I+HPD1Wkznw6ZBNjDAB9lUHTf2XfckUjCKzKVjn/ENU=
+
+Name: res/anim/main_window_enter_right.xml
+SHA-256-Digest: zu14XaEIgbJukEh1dulVT0jQ1ypPq0yjnzTUGBci9Og=
+
+Name: res/anim/main_window_exit_center.xml
+SHA-256-Digest: Q2Rpy/5nrUoHKUeZnpUZnPLLfPgKXHp5FRjnmBzDm8I=
+
+Name: res/anim/main_window_exit_left.xml
+SHA-256-Digest: 5WC7qWrZUVepo/W6wxrQX+iqWDesVlCEA1DWA81TgsE=
+
+Name: res/anim/main_window_exit_right.xml
+SHA-256-Digest: bQQPKCVIvqEAI4cUw/E50DUNOoAXTf/s4se0R5RX1Sg=
+
+Name: res/anim/notification_enter.xml
+SHA-256-Digest: EY1Df1qufgBViA4gaoCYtzJ3xjOsuzmcp5LqT/QS57I=
+
+Name: res/anim/notification_exit.xml
+SHA-256-Digest: zTIcaqeJJAUyN8rd1KG+/YzGpT7+hSbjz3n918UWGWg=
+
+Name: res/anim/window_enter_center.xml
+SHA-256-Digest: uCERxZU7DsLUNDoU/2NLl5qldJlDMm5yci6ptvwEAfA=
+
+Name: res/anim/window_enter_left.xml
+SHA-256-Digest: BB7UI6tDJcdkgfwsWo945oUX4e9qdtBSjHP98GlQLhk=
+
+Name: res/anim/window_enter_right.xml
+SHA-256-Digest: /lSRMQET+UiPr1oF5XgKSDD+WXfMpNZhia7ToDa5NY8=
+
+Name: res/anim/window_exit_center.xml
+SHA-256-Digest: vrrQtVwgA/CyNLjBMIkNSzPOD+nttTfrMp7A8T0YYP8=
+
+Name: res/anim/window_exit_left.xml
+SHA-256-Digest: A7YqeQdjSSR8iTCR/DyEX0YcxJGV8DVjur+TBDMRBBU=
+
+Name: res/anim/window_exit_right.xml
+SHA-256-Digest: q9Liw1VL7GTNpvdA0wuSxcEuB4mGkxcEf5OUhrGCSUU=
+
+Name: res/animator/design_appbar_state_list_animator.xml
+SHA-256-Digest: iXOLfEXnB0Ci155lcOdnEFgyYdKTVwFaMANp5YTlq+A=
+
+Name: res/animator/design_fab_hide_motion_spec.xml
+SHA-256-Digest: vUZUwmFaIRQ4PyQ3AZSAgkHYGwyewKbQMn9ojH4evMQ=
+
+Name: res/animator/design_fab_show_motion_spec.xml
+SHA-256-Digest: LkP+AgHhuBDqJa+OSEGFmnaUlcxXWjEDHtBytt6th0o=
+
+Name: res/animator/mtrl_btn_state_list_anim.xml
+SHA-256-Digest: yU7Yt+fiTMCsjVHtoUYQV0MJzbdeCo6CuCs1BxVccso=
+
+Name: res/animator/mtrl_btn_unelevated_state_list_anim.xml
+SHA-256-Digest: OuOZwLjgBqi3ZruF/TP8kAy56svBhKkft6xrH7b0+gA=
+
+Name: res/animator/mtrl_chip_state_list_anim.xml
+SHA-256-Digest: j7KhS9Pfp1D708S+IIibXLHxxUyBqEcb4e71y3/zR+s=
+
+Name: res/animator/mtrl_fab_hide_motion_spec.xml
+SHA-256-Digest: 65HNsFhnQ5ToubHyGPhcUtcgMbIi7MZl8VwDu00ofwc=
+
+Name: res/animator/mtrl_fab_show_motion_spec.xml
+SHA-256-Digest: HM9CLe2O09dX06GI4i4hafFYGOVjsJDHpfT3CF2MjU4=
+
+Name: res/animator/mtrl_fab_transformation_sheet_collapse_spec.xml
+SHA-256-Digest: 1lwp+KYiZRNx9jlpZ202iiYeomCp39DejROJhVdVZp0=
+
+Name: res/animator/mtrl_fab_transformation_sheet_expand_spec.xml
+SHA-256-Digest: noIb8bFcThYh/mDlarul0HtEazZYLwuHndG/TQW74RM=
+
+Name: res/color-v23/abc_btn_colored_borderless_text_material.xml
+SHA-256-Digest: l7usdQe76vfay52EXuoIvuE89vGBUup2NkCufUAu4/Q=
+
+Name: res/color-v23/abc_btn_colored_text_material.xml
+SHA-256-Digest: Etj4yv5ATQIhyGanLccWR6fA30Eb6Arv31AWxFNzjUY=
+
+Name: res/color-v23/abc_color_highlight_material.xml
+SHA-256-Digest: VT2gP+G1/Uj6kYdB18c+9Tx1muU/n+h1VjMBWm0Bvxs=
+
+Name: res/color-v23/abc_tint_btn_checkable.xml
+SHA-256-Digest: 7vlwARkQAeYw/YWEyy7DcXneJ1LjHN1mNSr+g+xEjLw=
+
+Name: res/color-v23/abc_tint_default.xml
+SHA-256-Digest: yaDKh5aaW35YfgabH1t30fsjTYNK+Poa7ucUt91YiTk=
+
+Name: res/color-v23/abc_tint_edittext.xml
+SHA-256-Digest: Mx/LcUvEBn7pnUa9PnaWYWERVP+AHRYGHfG4c8FbNUc=
+
+Name: res/color-v23/abc_tint_seek_thumb.xml
+SHA-256-Digest: oJwpYwAPxgfDTateVisPd2TUL/+z2aghDneGIjlkues=
+
+Name: res/color-v23/abc_tint_spinner.xml
+SHA-256-Digest: fxw6tODisiAdqfuzTtylPL5FsDiZT5yVSkOfQuOtZjU=
+
+Name: res/color-v23/abc_tint_switch_track.xml
+SHA-256-Digest: Z9mmZxXPtDXxGf1UL+ekjgKnWhK+T8k0eRdETSbPdHg=
+
+Name: res/color-v23/design_tint_password_toggle.xml
+SHA-256-Digest: y70Cx7ALirOpuk9ivjw+4uSYvLZ6/d3P0y0xEGu+0pM=
+
+Name: res/color/abc_background_cache_hint_selector_material_dark.xml
+SHA-256-Digest: OLPMpvnXSHo+sLca7IMm3rFReQSC8AORS0EEZKQJqW0=
+
+Name: res/color/abc_background_cache_hint_selector_material_light.xml
+SHA-256-Digest: W5aKjEw6YN6cXH1ZyS6MWSciaeK0a1gbPuJ6i9tkgYU=
+
+Name: res/color/abc_btn_colored_borderless_text_material.xml
+SHA-256-Digest: i7ici1vK8b64ciVDmxUyCNAEZ8w4n1crZ6x3X0ipdso=
+
+Name: res/color/abc_btn_colored_text_material.xml
+SHA-256-Digest: GVhlJHE6oLeCRZ8OsIgoiI0rim7fsd9UQ7aoMuz3PMs=
+
+Name: res/color/abc_hint_foreground_material_dark.xml
+SHA-256-Digest: ElHUY5CnWpTgJkBsqz+O79khuAUD735cwU67rb/9hTA=
+
+Name: res/color/abc_hint_foreground_material_light.xml
+SHA-256-Digest: 74+Rui+p8LwugdpxuKkN0ROQaZkFhwa080eN5VUwhjY=
+
+Name: res/color/abc_primary_text_disable_only_material_dark.xml
+SHA-256-Digest: eVl2FJObjw/UAujgu++6MWtkOFOiXbnNik7v/YP6tWY=
+
+Name: res/color/abc_primary_text_disable_only_material_light.xml
+SHA-256-Digest: V/Y2TZtRHVyzDCN8U2Ouvnr3/6ZMaB7I0gGbdKAmfRQ=
+
+Name: res/color/abc_primary_text_material_dark.xml
+SHA-256-Digest: PVmxXt1FEpwWMwaF4dIxL9lf0GWue1/rxtPqPVLHXMA=
+
+Name: res/color/abc_primary_text_material_light.xml
+SHA-256-Digest: YMd/W7mwhY4Vo99z8LS2tfIuIyb3DAGCMt55nNQreBQ=
+
+Name: res/color/abc_search_url_text.xml
+SHA-256-Digest: goP7CldiVNDpvqnGHjmTSpDXDBov8TUNX4YMyocOK8g=
+
+Name: res/color/abc_secondary_text_material_dark.xml
+SHA-256-Digest: 4hCrTaE7Ec94ioXp23EcHA+MUa0iBOa9KUJCp0woxmo=
+
+Name: res/color/abc_secondary_text_material_light.xml
+SHA-256-Digest: MJBxJFSP4NRVdquLwKPSShgSFTPWIPyBC/vDqy9PPCk=
+
+Name: res/color/abc_tint_btn_checkable.xml
+SHA-256-Digest: 3bDXWiVLOs6Pv7O3YAJOqPrUQca8BMfRKi7W+3u8/1s=
+
+Name: res/color/abc_tint_default.xml
+SHA-256-Digest: sHHNJB0Ink3O0rU3ttT/LIRusQMzERdw9IhHJ48iNTs=
+
+Name: res/color/abc_tint_edittext.xml
+SHA-256-Digest: jO5P2Ourgb5QbMoO8+mHB0HuwekoYLdlMXfvwyI1Q8g=
+
+Name: res/color/abc_tint_seek_thumb.xml
+SHA-256-Digest: gcTvIgKW5wAybu7lDN3c/ONIGvq89rFQTkHMrMLorkE=
+
+Name: res/color/abc_tint_spinner.xml
+SHA-256-Digest: gmqyCR9pHn2Lm6K+/VlzDImDgU2HvyyNVNSUgRgqgwo=
+
+Name: res/color/abc_tint_switch_track.xml
+SHA-256-Digest: jCWlUuRAHWeHlhbxQGoEX/sxSi8ZxdLWymvPpUIQF28=
+
+Name: res/color/design_error.xml
+SHA-256-Digest: pk80QzSvA5B/0UT+QNgAiC2sbms+HTIEcLiiLJ7aJLM=
+
+Name: res/color/design_tint_password_toggle.xml
+SHA-256-Digest: LLuP6ZKdQinD5ijhcVnnASjqvWArrpeVudJVa1bWnb0=
+
+Name: res/color/mtrl_bottom_nav_colored_item_tint.xml
+SHA-256-Digest: fQKpFq+BVAJNRYsvVIZwehMyQe3d/aI5XnY0tCWCpEQ=
+
+Name: res/color/mtrl_bottom_nav_item_tint.xml
+SHA-256-Digest: 73ekIjz9LOUrXYc59HalOItVIsu9//qMW2rW6MVpmUY=
+
+Name: res/color/mtrl_btn_bg_color_selector.xml
+SHA-256-Digest: udiDKxDXAxrAcjDCxrQekCCElBujc89KaSLzqpf8Sss=
+
+Name: res/color/mtrl_btn_ripple_color.xml
+SHA-256-Digest: BmpFoEQKE7vunKrShxFt11JSbKUq5qRMBbAr5yVFqxs=
+
+Name: res/color/mtrl_btn_stroke_color_selector.xml
+SHA-256-Digest: /mwKm3VDl7mMByRM+cBeFWFX1qOl8Bcnn2nOjtz8bX4=
+
+Name: res/color/mtrl_btn_text_btn_ripple_color.xml
+SHA-256-Digest: WtXoZ3EGpm1RUHJYtSUY4VfhgvV2BFr3SDCtp4Q8XrU=
+
+Name: res/color/mtrl_btn_text_color_selector.xml
+SHA-256-Digest: yVTB1FZypQZ+4HFf7nqwxV7BoSmIIwszArdfQjnCogg=
+
+Name: res/color/mtrl_chip_background_color.xml
+SHA-256-Digest: 3l8hzApfOqofkyZooxGdZ2fI8OM4lj+485+95ajzrXg=
+
+Name: res/color/mtrl_chip_close_icon_tint.xml
+SHA-256-Digest: tTNMwoSul2EQiMNFnF5BtuvGXt7nW+iYQ3UkPxQtqDU=
+
+Name: res/color/mtrl_chip_ripple_color.xml
+SHA-256-Digest: bMvC/SUKwDmOym7N5sM0uhqdLghKgXSTZKpcIVax7uE=
+
+Name: res/color/mtrl_chip_text_color.xml
+SHA-256-Digest: 6mzVCWH4272+vF10rgHTFRCNrIlk61sWxp5puosR/ak=
+
+Name: res/color/mtrl_fab_ripple_color.xml
+SHA-256-Digest: Xb8t9Qr9+I8fKsp6pRuncv8/cFVPJqEj2VL8dCGCq7w=
+
+Name: res/color/mtrl_tabs_colored_ripple_color.xml
+SHA-256-Digest: XDViPUKy0HCkg3DLcp0Q9SNZhoACUWsXDyTL8UJkgbU=
+
+Name: res/color/mtrl_tabs_icon_color_selector.xml
+SHA-256-Digest: 3hXEYAnAJtmQzZLoSWJuUJYdAIdlDBx8CIzz5h4lFf0=
+
+Name: res/color/mtrl_tabs_icon_color_selector_colored.xml
+SHA-256-Digest: eBVqS7u3EsDydrFOv+UKJIsEiIDLJ2yRzDHcKIG8MdY=
+
+Name: res/color/mtrl_tabs_legacy_text_color_selector.xml
+SHA-256-Digest: 9UEjafz814rzTGbVSs7Hxwwk1EI9XlZYQnQZY/Ip3bA=
+
+Name: res/color/mtrl_tabs_ripple_color.xml
+SHA-256-Digest: 3PGKXWlPJzoBsNWV0jSiKYZaM4/zw7/EAN0Eal5iBu0=
+
+Name: res/color/mtrl_text_btn_text_color_selector.xml
+SHA-256-Digest: RZEVWiaClSIiPfk3optsnfQLsg21n+oin+mLnmYpApQ=
+
+Name: res/color/switch_thumb_material_dark.xml
+SHA-256-Digest: 8UIjJDIK7LeHJgPqiE3fUg7sniOBnznMDTq00dynhTk=
+
+Name: res/color/switch_thumb_material_light.xml
+SHA-256-Digest: cGzfl6zFHw5Y934ClvARlBMvNTFpiPd9VPYSPWNEKo0=
+
+Name: res/drawable-anydpi/design_ic_visibility.xml
+SHA-256-Digest: fMEZg2tR0OKcptkV0ExpVU3hCg9lvk9+6qHXOQ4+izo=
+
+Name: res/drawable-anydpi/design_ic_visibility_off.xml
+SHA-256-Digest: d7ChcNEgIC/1xblnWvP25JRpHrD9mYbfr8vlY1JY87o=
+
+Name: res/drawable-hdpi/abc_ab_share_pack_mtrl_alpha.9.png
+SHA-256-Digest: Swc71vjMLnF2U7UN6xriYeTHKTg3O/FFsqs9l3289pA=
+
+Name: res/drawable-hdpi/abc_btn_check_to_on_mtrl_000.png
+SHA-256-Digest: s3tgjl9tdHxx58AS1tECebDtdhHrClJobpDvQ9fwUbE=
+
+Name: res/drawable-hdpi/abc_btn_check_to_on_mtrl_015.png
+SHA-256-Digest: vgRj14xMrQdmuhpyQrQijPhXthnfFWBeezYmSg9n++4=
+
+Name: res/drawable-hdpi/abc_btn_radio_to_on_mtrl_000.png
+SHA-256-Digest: Flo0tBE7pqo33mGGQ6nfpCUHfU3ZpXG+jGc8Xitw08o=
+
+Name: res/drawable-hdpi/abc_btn_radio_to_on_mtrl_015.png
+SHA-256-Digest: 6kdvi91FJFgMq7qdnKejec4CdhLY1bA3xptSS1m3Xoc=
+
+Name: res/drawable-hdpi/abc_btn_switch_to_on_mtrl_00001.9.png
+SHA-256-Digest: caYIRV98/kaiKGGnt+5GSaS23hsSRfzE1ywOhZmZYwM=
+
+Name: res/drawable-hdpi/abc_btn_switch_to_on_mtrl_00012.9.png
+SHA-256-Digest: bZyYR+TbaLJUGGOmx5w9tPuZgO3BNPkQkjcF5ziUE6Y=
+
+Name: res/drawable-hdpi/abc_cab_background_top_mtrl_alpha.9.png
+SHA-256-Digest: /iEUGVk8O2fg1aO6Vi3NRErLXXlPfZ9P8Y0h1FSC0tA=
+
+Name: res/drawable-hdpi/abc_ic_commit_search_api_mtrl_alpha.png
+SHA-256-Digest: RNx3cDzCcKKOSUh43tLbcYkMR2wmR4EOshL3Hyd3PgE=
+
+Name: res/drawable-hdpi/abc_ic_menu_copy_mtrl_am_alpha.png
+SHA-256-Digest: ockFsBFpjKX3Mj25cYAnlgrVMa9Mnfc9lDLLwaf27no=
+
+Name: res/drawable-hdpi/abc_ic_menu_cut_mtrl_alpha.png
+SHA-256-Digest: 9J22Dh784j1ZeC0aurCVBYrrdpSP4x9XBqAS/vJNylg=
+
+Name: res/drawable-hdpi/abc_ic_menu_paste_mtrl_am_alpha.png
+SHA-256-Digest: bjzPW1clp6LYstyVVk5uIYJrxe+/OGSYj1sEONPEBUQ=
+
+Name: res/drawable-hdpi/abc_ic_menu_selectall_mtrl_alpha.png
+SHA-256-Digest: dfIAT+QzSZqu2RPR8Bk2k6BWaB7IdqSKrOf3GP0aokc=
+
+Name: res/drawable-hdpi/abc_ic_menu_share_mtrl_alpha.png
+SHA-256-Digest: /Qu+WkOnFgiKK6FLTYwWYhEJCTDfHXlM/go8T3QvYcc=
+
+Name: res/drawable-hdpi/abc_ic_star_black_16dp.png
+SHA-256-Digest: k2kzSN/wm+stCT3HCW6FaMkzZZQuJVUoewtYfSioWno=
+
+Name: res/drawable-hdpi/abc_ic_star_black_36dp.png
+SHA-256-Digest: Vfv+gJQjEG9zSsNPZRaaf3tizY6t28fG9YiilQYgz8I=
+
+Name: res/drawable-hdpi/abc_ic_star_black_48dp.png
+SHA-256-Digest: eSNxi6+ShKl2q1ouOZaOr6JDgNgv2TXkmxnkTANcO8I=
+
+Name: res/drawable-hdpi/abc_ic_star_half_black_16dp.png
+SHA-256-Digest: jVxPjsAHIdKunfo5ZAw6K1lNC7t45jtzSG9TZ84lsmA=
+
+Name: res/drawable-hdpi/abc_ic_star_half_black_36dp.png
+SHA-256-Digest: +mYUI6WorFFL6L/WHHPMPK1wte00kT6GefWYH/36Op0=
+
+Name: res/drawable-hdpi/abc_ic_star_half_black_48dp.png
+SHA-256-Digest: kGRKGVovRmB6hXGe4Bzc8MnWm0QYandORUOhLJsnvDs=
+
+Name: res/drawable-hdpi/abc_list_divider_mtrl_alpha.9.png
+SHA-256-Digest: 3d3NhYAKOQWEJQg77GAnFSyXG5IA5O7xBJu5TuTjj3I=
+
+Name: res/drawable-hdpi/abc_list_focused_holo.9.png
+SHA-256-Digest: bI0uncQOjOFlEMTU08uFL4zWsdStw6LK0wr/PAOCpH4=
+
+Name: res/drawable-hdpi/abc_list_longpressed_holo.9.png
+SHA-256-Digest: DDji3E/V16LTWj/FMNK4G+T3B5dYnc6d5UIGSmEoP2w=
+
+Name: res/drawable-hdpi/abc_list_pressed_holo_dark.9.png
+SHA-256-Digest: 8FXYgrxBpxl3u6JPr0+HpG7+I3Wd3XMrWGMFPkA/Q8I=
+
+Name: res/drawable-hdpi/abc_list_pressed_holo_light.9.png
+SHA-256-Digest: CL/OWj8QUn5fGof0zUXq2jiVldLmbkjJBM0y99b+wK4=
+
+Name: res/drawable-hdpi/abc_list_selector_disabled_holo_dark.9.png
+SHA-256-Digest: Dx98/bUyOdEBSHS4YIv2YmF3JqtSeSzgGrM4bgz+n58=
+
+Name: res/drawable-hdpi/abc_list_selector_disabled_holo_light.9.png
+SHA-256-Digest: ozv9FkL2VPx/+mmevivl4HPUM7p7PdgERlwsQx/Bt7Q=
+
+Name: res/drawable-hdpi/abc_menu_hardkey_panel_mtrl_mult.9.png
+SHA-256-Digest: EiSLfH6dV3l0fhHib3I4UMEDW/SLadnXVaPG5+Btf9k=
+
+Name: res/drawable-hdpi/abc_popup_background_mtrl_mult.9.png
+SHA-256-Digest: LodBhQLnCEg8aVmG3eCxyuJV/ejnhPjXZSY6/zoKcyQ=
+
+Name: res/drawable-hdpi/abc_scrubber_control_off_mtrl_alpha.png
+SHA-256-Digest: Ogu7Ck4G4O6pJPTAa4X59vCPBnD9RHE+KL5r1eSG2i0=
+
+Name: res/drawable-hdpi/abc_scrubber_control_to_pressed_mtrl_000.png
+SHA-256-Digest: jSazc34sk85Y9gDYKExBBKd0EQTPvHLAXjsNjCDe8xI=
+
+Name: res/drawable-hdpi/abc_scrubber_control_to_pressed_mtrl_005.png
+SHA-256-Digest: cQevxIjHyZQClcLT0CQ0NXqwQzerdYcUp4rDv9LIKLg=
+
+Name: res/drawable-hdpi/abc_scrubber_primary_mtrl_alpha.9.png
+SHA-256-Digest: /xhffEEAjuUkITseBt4gHfmqGhlQRwxLJTGpTkP4kgY=
+
+Name: res/drawable-hdpi/abc_scrubber_track_mtrl_alpha.9.png
+SHA-256-Digest: aUUhEgvGyu7kO7c5h03a9xdqEW9Sj0QE3fcvSlXAk5M=
+
+Name: res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png
+SHA-256-Digest: qst/5By1/mVkYmsThpScAY+x9bJRE4RUXt2Dm6tqlsI=
+
+Name: res/drawable-hdpi/abc_switch_track_mtrl_alpha.9.png
+SHA-256-Digest: LWpQAnNEOPKRKsI/S9mLeUvg7hra7Z/SavXKmvpF9hM=
+
+Name: res/drawable-hdpi/abc_tab_indicator_mtrl_alpha.9.png
+SHA-256-Digest: /RMz4UyvsaZxquV+6/j6psqSgVDo52WN8riiRqH+lJk=
+
+Name: res/drawable-hdpi/abc_text_select_handle_left_mtrl_dark.png
+SHA-256-Digest: YjHLOkLgKpKlkxFNAvVLL5E0y8C6UW6r0bT107zdhpM=
+
+Name: res/drawable-hdpi/abc_text_select_handle_left_mtrl_light.png
+SHA-256-Digest: Vv+tP/65G2UP33fr7gNj6F6xAebTGZnmEa7/ht79drE=
+
+Name: res/drawable-hdpi/abc_text_select_handle_middle_mtrl_dark.png
+SHA-256-Digest: kM9s+cw9GJauIXXXvIaNmLH6Jk6ngz5GMC6c44gf6aw=
+
+Name: res/drawable-hdpi/abc_text_select_handle_middle_mtrl_light.png
+SHA-256-Digest: QLW1VSImPABbB5k0uQpPgASMjsgMilTh1pWaQ8F2NLw=
+
+Name: res/drawable-hdpi/abc_text_select_handle_right_mtrl_dark.png
+SHA-256-Digest: yOpNck8TQ+v1XjjI+MWtCr0PIufkS00g00BytN1lreQ=
+
+Name: res/drawable-hdpi/abc_text_select_handle_right_mtrl_light.png
+SHA-256-Digest: rrCBaYXzXLMpBkqOT6R09hcjWudcGMgMyBgHMcM8Nvg=
+
+Name: res/drawable-hdpi/abc_textfield_activated_mtrl_alpha.9.png
+SHA-256-Digest: fjulgoBT/kTxI2gICeN9kBTDWolB0mHZGP6pBu4sdus=
+
+Name: res/drawable-hdpi/abc_textfield_default_mtrl_alpha.9.png
+SHA-256-Digest: Ik8zIyD/IWMkFdQAzQ5E4u0+mvqSZ9oXdC8Qzl0351U=
+
+Name: res/drawable-hdpi/abc_textfield_search_activated_mtrl_alpha.9.pn
+ g
+SHA-256-Digest: RxX3jtRsa/AHt5QT9GSTVetHVCu6bxcjJY7mVno/UvY=
+
+Name: res/drawable-hdpi/abc_textfield_search_default_mtrl_alpha.9.png
+SHA-256-Digest: lsNqEskAmlvm7Fod96oORxVTAzdP966ziEj9lUreTwc=
+
+Name: res/drawable-hdpi/design_ic_visibility.png
+SHA-256-Digest: amjIIc43Uj5HSrMpDauHhlbAaXt68a7Wy6NNPfJwMvE=
+
+Name: res/drawable-hdpi/design_ic_visibility_off.png
+SHA-256-Digest: ns1bh39KNss1Sch+1e8E4HeFT7EzmQsU8V/FGmFpP4A=
+
+Name: res/drawable-hdpi/notification_bg_low_normal.9.png
+SHA-256-Digest: jl5SIR018pDHpWnSOxoCQYgOFf03hGbZk66XnMpQgZU=
+
+Name: res/drawable-hdpi/notification_bg_low_pressed.9.png
+SHA-256-Digest: BQ0KyL4atdnRh0/WpiPnzDLOJ6RijKX0eCvdEotWhE0=
+
+Name: res/drawable-hdpi/notification_bg_normal.9.png
+SHA-256-Digest: KJ1/MUH3bPfJyxd/HbUfjumb7vX0vVD0n9xTlEgIl6Y=
+
+Name: res/drawable-hdpi/notification_bg_normal_pressed.9.png
+SHA-256-Digest: dA614WgSURP3K/gq+crUiCnF1YnTmGxLEe7/f71TSSw=
+
+Name: res/drawable-hdpi/notify_panel_notification_icon_bg.png
+SHA-256-Digest: Pbqo8YonOQJTbg3F6X0nS4RG4j5fV/J2FGlvVTq5Rjo=
+
+Name: res/drawable-ldrtl-hdpi/abc_ic_menu_copy_mtrl_am_alpha.png
+SHA-256-Digest: r+Qq9fE+YN8NbVzia7H6DIRL7r6AeKGK8JvN0VNbQUc=
+
+Name: res/drawable-ldrtl-hdpi/abc_ic_menu_cut_mtrl_alpha.png
+SHA-256-Digest: O/rkgkQFN3Uj3t0YJT2vY7dH0KulACZzqbU0DjY6r9Y=
+
+Name: res/drawable-ldrtl-hdpi/abc_spinner_mtrl_am_alpha.9.png
+SHA-256-Digest: of53wnATQF5FHa1MJ8+mT1Uq1cxN4SW/3e1vaRI+ncQ=
+
+Name: res/drawable-ldrtl-mdpi/abc_ic_menu_copy_mtrl_am_alpha.png
+SHA-256-Digest: RqCtcrDlEU5n5VRd8TQQsdeOFZNVG1lQax+s0I1q3Zc=
+
+Name: res/drawable-ldrtl-mdpi/abc_ic_menu_cut_mtrl_alpha.png
+SHA-256-Digest: Wkji96PUILt4I7UufqYHaBWH0taDGPTxzad+Jx2blHU=
+
+Name: res/drawable-ldrtl-mdpi/abc_spinner_mtrl_am_alpha.9.png
+SHA-256-Digest: aQS4kkwCFe4momR76JVPzTophcnkhAVHSMInyc3Cw4g=
+
+Name: res/drawable-ldrtl-xhdpi/abc_ic_menu_copy_mtrl_am_alpha.png
+SHA-256-Digest: V95OyoxwRokq81cmmuQIh+QKjQuGmDV+J40LJDbbyU8=
+
+Name: res/drawable-ldrtl-xhdpi/abc_ic_menu_cut_mtrl_alpha.png
+SHA-256-Digest: PiN7a9+ypMmeP7HdXd3UsDzrFV77II5UD6nPoONm9TU=
+
+Name: res/drawable-ldrtl-xhdpi/abc_spinner_mtrl_am_alpha.9.png
+SHA-256-Digest: VKxWlC3uh4o2aptxTX5smpHiq1WaCE5p4nLcRY45Aco=
+
+Name: res/drawable-ldrtl-xxhdpi/abc_ic_menu_copy_mtrl_am_alpha.png
+SHA-256-Digest: 8xfsXKRwpwaHrLjYImzgwUomOmIiEOqHed4BR4n5alk=
+
+Name: res/drawable-ldrtl-xxhdpi/abc_ic_menu_cut_mtrl_alpha.png
+SHA-256-Digest: Pt8UWEwTqpj6SnaYvuzDAuOlyApOCfEXqnCpYbctSAM=
+
+Name: res/drawable-ldrtl-xxhdpi/abc_spinner_mtrl_am_alpha.9.png
+SHA-256-Digest: ez99GVl/8RE8kixcrpghD4tyzeKE0OQKJlWEGl3Pr2o=
+
+Name: res/drawable-ldrtl-xxxhdpi/abc_ic_menu_copy_mtrl_am_alpha.png
+SHA-256-Digest: OWz3NOZMiHDICdS1R730wz/zekhIn7dHSO65H+DZfcw=
+
+Name: res/drawable-ldrtl-xxxhdpi/abc_ic_menu_cut_mtrl_alpha.png
+SHA-256-Digest: jQKKz97SgehBt7jczHTwfSlibLb6sOjyagor46l/93k=
+
+Name: res/drawable-ldrtl-xxxhdpi/abc_spinner_mtrl_am_alpha.9.png
+SHA-256-Digest: gSVUEID4J6xswIqfjkMZofSUnE/ybx8IQw61EQ/uT5M=
+
+Name: res/drawable-mdpi/abc_ab_share_pack_mtrl_alpha.9.png
+SHA-256-Digest: ITd1SmNZN44EP7IFEA+U58yRRGKF0XatekiPRPe8wwk=
+
+Name: res/drawable-mdpi/abc_btn_check_to_on_mtrl_000.png
+SHA-256-Digest: xAbQvrBJAJZb3ULs+50ShowUfk4GTaAiyTcTZpufKeE=
+
+Name: res/drawable-mdpi/abc_btn_check_to_on_mtrl_015.png
+SHA-256-Digest: 1LRIdUIFMBvJqWbcIGlG4/cahcN7N4pMRLzUFW6RhF8=
+
+Name: res/drawable-mdpi/abc_btn_radio_to_on_mtrl_000.png
+SHA-256-Digest: Ep9ASN4voMNIbqzrmdH7bD+yV7crhjy0Y6GTkIK5WS4=
+
+Name: res/drawable-mdpi/abc_btn_radio_to_on_mtrl_015.png
+SHA-256-Digest: 6Sh9zWAhqYDOUwvEq1kiupMokfFMGkywbKEzWIeraT0=
+
+Name: res/drawable-mdpi/abc_btn_switch_to_on_mtrl_00001.9.png
+SHA-256-Digest: vAV9EffdEzIJpDtvpaqPhd452qcDXkDWYp64vwsFn1s=
+
+Name: res/drawable-mdpi/abc_btn_switch_to_on_mtrl_00012.9.png
+SHA-256-Digest: f2tVgLbx0OYq6SraJFhOk1o3DKmZKMkZL4XV1+408HE=
+
+Name: res/drawable-mdpi/abc_cab_background_top_mtrl_alpha.9.png
+SHA-256-Digest: zVBMGQiaao5C0PJnUQnwi5Z+RNlbDNBOBJMx3W2tq5s=
+
+Name: res/drawable-mdpi/abc_ic_commit_search_api_mtrl_alpha.png
+SHA-256-Digest: zjejKfhZoUCTBukqey6UeG3lsCJNrr9N7IdFMFTYxh8=
+
+Name: res/drawable-mdpi/abc_ic_menu_copy_mtrl_am_alpha.png
+SHA-256-Digest: eQv4j+SRpJSkWzKKarlE+JdMvJaiwMxCNBfVY2BQXP4=
+
+Name: res/drawable-mdpi/abc_ic_menu_cut_mtrl_alpha.png
+SHA-256-Digest: SzRlX58lbK99OkH+X0qR0LJr5nfDWXtHUNr7RKVvA2o=
+
+Name: res/drawable-mdpi/abc_ic_menu_paste_mtrl_am_alpha.png
+SHA-256-Digest: tIJM6vevn4tCfSMFBYqqTJf3CrzF+vXbCPxbQJrJNeA=
+
+Name: res/drawable-mdpi/abc_ic_menu_selectall_mtrl_alpha.png
+SHA-256-Digest: US5MKMBLZIQU8c4JMk80Ufx5J+FGGLc1WOyowMMZFL0=
+
+Name: res/drawable-mdpi/abc_ic_menu_share_mtrl_alpha.png
+SHA-256-Digest: WvFN4qQQYIpdd1TkV0F46mKK/3NMd4l9UbHlsf3S0lw=
+
+Name: res/drawable-mdpi/abc_ic_star_black_16dp.png
+SHA-256-Digest: ZKHhFWBiuVsZ39bjtI8Uf/1SpsWRIMMVTq/1BCPfyro=
+
+Name: res/drawable-mdpi/abc_ic_star_black_36dp.png
+SHA-256-Digest: J0GxfwQ19d6PVnrBwjGcuJsn01HmhaxxnLwx8hkPKa4=
+
+Name: res/drawable-mdpi/abc_ic_star_black_48dp.png
+SHA-256-Digest: bbwA07orvlYa37NSO87STKxutTeeW+P4nbgjea1+sVs=
+
+Name: res/drawable-mdpi/abc_ic_star_half_black_16dp.png
+SHA-256-Digest: UytTaGVPJABgemcRVl5k2GkqsBnh4A0fw9wseKzpg+I=
+
+Name: res/drawable-mdpi/abc_ic_star_half_black_36dp.png
+SHA-256-Digest: OhUdkdJyYS/GHO7sIZfdQDsDz+4AMeD1mZNHOp6mEH4=
+
+Name: res/drawable-mdpi/abc_ic_star_half_black_48dp.png
+SHA-256-Digest: b2aTJKfH8dhAoGEMk1U4PtFZerIuHwK4Rl4VEAAvKDg=
+
+Name: res/drawable-mdpi/abc_list_divider_mtrl_alpha.9.png
+SHA-256-Digest: 6wl44xxasWQ6EccPsBYCAbFnbFrzVdKgw/kMjPNihOY=
+
+Name: res/drawable-mdpi/abc_list_focused_holo.9.png
+SHA-256-Digest: 98iMWFxR//5w3mlOD7L/Rlei9kiz4hs7r2dOV6gjGcQ=
+
+Name: res/drawable-mdpi/abc_list_longpressed_holo.9.png
+SHA-256-Digest: N5e9A9eHhfoRVMCPITSn75a+qEgB6/73d0y00P52WnE=
+
+Name: res/drawable-mdpi/abc_list_pressed_holo_dark.9.png
+SHA-256-Digest: 1CTXpUMNHokv5p+fMKTMX8JXQJcjJPsFXZcQY2T/gC8=
+
+Name: res/drawable-mdpi/abc_list_pressed_holo_light.9.png
+SHA-256-Digest: S9gPrKBEz0n0g67SSElNY4NC4OHbu2lIYMF0gFfuIN4=
+
+Name: res/drawable-mdpi/abc_list_selector_disabled_holo_dark.9.png
+SHA-256-Digest: INJ80xzPclnuEPoBzh328huKj9xg8xofafhhBI+IPvo=
+
+Name: res/drawable-mdpi/abc_list_selector_disabled_holo_light.9.png
+SHA-256-Digest: qCaqf7kvA8upEAsf6HS0eSuPd2Z1O3PfuC2WXzcAhcM=
+
+Name: res/drawable-mdpi/abc_menu_hardkey_panel_mtrl_mult.9.png
+SHA-256-Digest: EPcOloZFMKTLfPv/i3Rma1Psqmmv9x2fFgStN7Yi3As=
+
+Name: res/drawable-mdpi/abc_popup_background_mtrl_mult.9.png
+SHA-256-Digest: /Q6XvQipMIg5zR5e4pIRC8A5GtVaKyITHgkTKYVreJY=
+
+Name: res/drawable-mdpi/abc_scrubber_control_off_mtrl_alpha.png
+SHA-256-Digest: GYausVy+3kO0NO+3ksvd1r9Uj2oQZ1eDXxpEkbPm97c=
+
+Name: res/drawable-mdpi/abc_scrubber_control_to_pressed_mtrl_000.png
+SHA-256-Digest: x8J3YvNob3/jvZ4ICtKhIqFHihxIWZjqARpf2XDAAxQ=
+
+Name: res/drawable-mdpi/abc_scrubber_control_to_pressed_mtrl_005.png
+SHA-256-Digest: QQHuCEM/tRKvWwsyTBhnKCSVegcYTqgx6HDMUEuGDcU=
+
+Name: res/drawable-mdpi/abc_scrubber_primary_mtrl_alpha.9.png
+SHA-256-Digest: ckz40q8SPSPLwg3tqMAytXrIB5aHBW67yCsiKxvISVs=
+
+Name: res/drawable-mdpi/abc_scrubber_track_mtrl_alpha.9.png
+SHA-256-Digest: MFCA10bsf+tyvAgFbr2z8HK591vVeNdS9OUOBZbveLM=
+
+Name: res/drawable-mdpi/abc_spinner_mtrl_am_alpha.9.png
+SHA-256-Digest: BqqlJFVwdlLx+jQsoYUB1X3baCJSLBWcOQuEdeliqls=
+
+Name: res/drawable-mdpi/abc_switch_track_mtrl_alpha.9.png
+SHA-256-Digest: r4eSlBaQWQKVxdba0yTi6kIgrOD0mvqBYNsbQysTDCI=
+
+Name: res/drawable-mdpi/abc_tab_indicator_mtrl_alpha.9.png
+SHA-256-Digest: Rvd1fA5RBpqLgWuYzZdCYLsDr0DYeNLInmYhbjjZ6fU=
+
+Name: res/drawable-mdpi/abc_text_select_handle_left_mtrl_dark.png
+SHA-256-Digest: /rWpvWNBorc34VTLFxLVOg0/ImeMKlZWyf8iXOPUq54=
+
+Name: res/drawable-mdpi/abc_text_select_handle_left_mtrl_light.png
+SHA-256-Digest: PuuL3EgQERGX9oKO3X6aF2HQjsTffnm6XNHSnYuromo=
+
+Name: res/drawable-mdpi/abc_text_select_handle_middle_mtrl_dark.png
+SHA-256-Digest: MRSV4QBZVcGzjjx12ieK47xLcdMkKf3YKQSyrKcdTBw=
+
+Name: res/drawable-mdpi/abc_text_select_handle_middle_mtrl_light.png
+SHA-256-Digest: LHYij4NwEDOhwD+QKf1jUiRPKUGVjdGQBk6KcOCK+js=
+
+Name: res/drawable-mdpi/abc_text_select_handle_right_mtrl_dark.png
+SHA-256-Digest: pbu83f1dMEr9XNHOAUBwid+nEMVvcFahH4CmrjgTyys=
+
+Name: res/drawable-mdpi/abc_text_select_handle_right_mtrl_light.png
+SHA-256-Digest: uBLql6P16UAkuR4sqGKbwUrglSCr/loITBNoO6NPHCk=
+
+Name: res/drawable-mdpi/abc_textfield_activated_mtrl_alpha.9.png
+SHA-256-Digest: 68iH9t46dkFoyl6l+0/96AVp1ROoWMxGwAokuYUBsMU=
+
+Name: res/drawable-mdpi/abc_textfield_default_mtrl_alpha.9.png
+SHA-256-Digest: RryJfDcRI32GPHXS8c0VtUONUdeZFTEP5F50Y1PcFmc=
+
+Name: res/drawable-mdpi/abc_textfield_search_activated_mtrl_alpha.9.pn
+ g
+SHA-256-Digest: UKA5c7qroTO9F8tj3PIycG7lySBAqrNI5cP8bdtg+yU=
+
+Name: res/drawable-mdpi/abc_textfield_search_default_mtrl_alpha.9.png
+SHA-256-Digest: g2tmqqZpE+mAYLfHelLTKwgUR4cxMLLmyE5+pULYKkI=
+
+Name: res/drawable-mdpi/design_ic_visibility.png
+SHA-256-Digest: 920Qo4eewc+5Ya89QlOXXeBEbggXKHkzA4IwS6IWy/E=
+
+Name: res/drawable-mdpi/design_ic_visibility_off.png
+SHA-256-Digest: fEsUvWAkpsfjsH1FKBGQGfViB10l2xQ0UFKOVwUejOk=
+
+Name: res/drawable-mdpi/notification_bg_low_normal.9.png
+SHA-256-Digest: guz3Dkb/1nFOvtn+Gy5ycrHdSgljWGEX7tVQhH5iyvM=
+
+Name: res/drawable-mdpi/notification_bg_low_pressed.9.png
+SHA-256-Digest: WvUzvlACfjAh4SO9AgE9UAzaQGEzPudc3catR52gAtg=
+
+Name: res/drawable-mdpi/notification_bg_normal.9.png
+SHA-256-Digest: s3wC7Lezx3bDEhl8gJ9Da00I5QewDbXCEL316UvY8JU=
+
+Name: res/drawable-mdpi/notification_bg_normal_pressed.9.png
+SHA-256-Digest: HD+zmIsgOAp5lWsRIOKuYzGCj3SmGr8Hz3IWR9uqWgk=
+
+Name: res/drawable-mdpi/notify_panel_notification_icon_bg.png
+SHA-256-Digest: kWCvF9R9kneooCiqumwhvMGvZK//YDuO24fII/MN05c=
+
+Name: res/drawable-v23/abc_control_background_material.xml
+SHA-256-Digest: tjSYScCJ6u90yExeYZo01dzmzQsyMOpFan28l/f53So=
+
+Name: res/drawable-watch/abc_dialog_material_background.xml
+SHA-256-Digest: 3fv/qW1MyO6HXMr0IgdyeTSzQH81i4juiLCc9lXYiLQ=
+
+Name: res/drawable-xhdpi/abc_ab_share_pack_mtrl_alpha.9.png
+SHA-256-Digest: nN0ECYjysOGnewyKkJgFggKxFDIaAcjv+OiAnn6mDdY=
+
+Name: res/drawable-xhdpi/abc_btn_check_to_on_mtrl_000.png
+SHA-256-Digest: JSKNSBBKyWGSxHUlFE0/4VpYIjJqDCJ8gyttXZ/gNJs=
+
+Name: res/drawable-xhdpi/abc_btn_check_to_on_mtrl_015.png
+SHA-256-Digest: JWqMx0D8F2pAIffgDD/Hi1MAZ5wSFfwHe3EAgKjlVHI=
+
+Name: res/drawable-xhdpi/abc_btn_radio_to_on_mtrl_000.png
+SHA-256-Digest: cXQiPTm3vHtKZ2D6J3LsOD2OQZWjNz/4B+xymCmvQh0=
+
+Name: res/drawable-xhdpi/abc_btn_radio_to_on_mtrl_015.png
+SHA-256-Digest: LgPRRa6ZgCP3+vL2yM2UoNImCJhxHDrR/o+Uh8tEYUU=
+
+Name: res/drawable-xhdpi/abc_btn_switch_to_on_mtrl_00001.9.png
+SHA-256-Digest: V0Zbf6aGzikN2U0PzTXPfos5RuyYEcOdd5403AZkVzQ=
+
+Name: res/drawable-xhdpi/abc_btn_switch_to_on_mtrl_00012.9.png
+SHA-256-Digest: 8t4bysiWPOpk0rhYnXYbkdZY40iHmYZBr9GSXYJjkO0=
+
+Name: res/drawable-xhdpi/abc_cab_background_top_mtrl_alpha.9.png
+SHA-256-Digest: YN7VvcCVqXWb27OLvL3shBYb8UHqPBMS9piwp0Xp9pE=
+
+Name: res/drawable-xhdpi/abc_ic_commit_search_api_mtrl_alpha.png
+SHA-256-Digest: Vu6yqeSBBsh2QNErDjXdfyAEaGvtb4Umj+4ajXVTb3I=
+
+Name: res/drawable-xhdpi/abc_ic_menu_copy_mtrl_am_alpha.png
+SHA-256-Digest: nYbaBJwJECxe3M6CjLWdlMWDPrDHNY4ONk2WXmHYeD4=
+
+Name: res/drawable-xhdpi/abc_ic_menu_cut_mtrl_alpha.png
+SHA-256-Digest: IMnGD3kPAnfFaToHAYhckH7d+107Vmvkw2VfpdqKzTA=
+
+Name: res/drawable-xhdpi/abc_ic_menu_paste_mtrl_am_alpha.png
+SHA-256-Digest: P6V05n18ACPm7HQlJOGAtEeL870gVquLeGVfWCSI76s=
+
+Name: res/drawable-xhdpi/abc_ic_menu_selectall_mtrl_alpha.png
+SHA-256-Digest: RZ3CN0KgyuwNemgslxaSIkp3z3Ygxd6u1bG3VEFGQCg=
+
+Name: res/drawable-xhdpi/abc_ic_menu_share_mtrl_alpha.png
+SHA-256-Digest: hdrr6XkluBS2oC35wS5VclW04sC77J+oXFr04oN2SDg=
+
+Name: res/drawable-xhdpi/abc_ic_star_black_16dp.png
+SHA-256-Digest: y4AilLG2XoaclrXZdl14QyQzZIA7aQJUWNdNhVPdTfw=
+
+Name: res/drawable-xhdpi/abc_ic_star_black_36dp.png
+SHA-256-Digest: YjQQicd+DopoNE3pioJDxl+v6Mfi+BmN00z39iAjNjs=
+
+Name: res/drawable-xhdpi/abc_ic_star_black_48dp.png
+SHA-256-Digest: vjD1scxlL5tCXiBQ0M3VchOStFAbFGqZssvf6WZvA1A=
+
+Name: res/drawable-xhdpi/abc_ic_star_half_black_16dp.png
+SHA-256-Digest: z7xrxWC09VTYekTVGU7MNxPXYc2zW/4G+sc5KmfDRPw=
+
+Name: res/drawable-xhdpi/abc_ic_star_half_black_36dp.png
+SHA-256-Digest: gIMEqapk34aQrTvVBcPzkgqCGoZau05LRWkSgeewOQk=
+
+Name: res/drawable-xhdpi/abc_ic_star_half_black_48dp.png
+SHA-256-Digest: G6LUVw13W2NcefR4p6LUavIafxaATFqA4JSnG2no8ag=
+
+Name: res/drawable-xhdpi/abc_list_divider_mtrl_alpha.9.png
+SHA-256-Digest: iVIbPcxSll2APhv6nvw/ac+Mw68UKxI9jM1pkT8tGdM=
+
+Name: res/drawable-xhdpi/abc_list_focused_holo.9.png
+SHA-256-Digest: VBMCbHsdL0iD6Y6qtKlAzTSYAAo0NOMzCY59g3pqFBg=
+
+Name: res/drawable-xhdpi/abc_list_longpressed_holo.9.png
+SHA-256-Digest: QmLrCS6A/odUgvkZlWlliJP3dxvf1GIccumnuBTLLK0=
+
+Name: res/drawable-xhdpi/abc_list_pressed_holo_dark.9.png
+SHA-256-Digest: pbbL/bo83+M6p13pkdSgnYZuvHELSQC7j8+YZgBTiJo=
+
+Name: res/drawable-xhdpi/abc_list_pressed_holo_light.9.png
+SHA-256-Digest: qDESJe5zK/x1QDmAwqx9PnFNjVAaVF5hyC9YmpFyfNY=
+
+Name: res/drawable-xhdpi/abc_list_selector_disabled_holo_dark.9.png
+SHA-256-Digest: 9LescRdFKmtXAA9nioBUxzlg469FD4UnFdFN3kDFluU=
+
+Name: res/drawable-xhdpi/abc_list_selector_disabled_holo_light.9.png
+SHA-256-Digest: 6w4GQrPO3Bwtk210LZIg5eiou7K0AQZrBqQj8uhqQvc=
+
+Name: res/drawable-xhdpi/abc_menu_hardkey_panel_mtrl_mult.9.png
+SHA-256-Digest: SSXC5NACHeTvZUiwgITojEhv7/7QDu99WoqRvMZeBr4=
+
+Name: res/drawable-xhdpi/abc_popup_background_mtrl_mult.9.png
+SHA-256-Digest: 7WHMIbWP2avZ3EIgLtU0qyP1cgzpFsb9kzGBoyshssU=
+
+Name: res/drawable-xhdpi/abc_scrubber_control_off_mtrl_alpha.png
+SHA-256-Digest: yUYv8NEKzKrHlJtGjc+For6GLWrQ7pqnLkC/3xbrFO4=
+
+Name: res/drawable-xhdpi/abc_scrubber_control_to_pressed_mtrl_000.png
+SHA-256-Digest: ZopmzQVO5Y9PWxITxJWyBxPL5t9QZgeMf9dAc5KA09s=
+
+Name: res/drawable-xhdpi/abc_scrubber_control_to_pressed_mtrl_005.png
+SHA-256-Digest: WMHuGaxq4jy3NoIZJZYKIBT1x/yA6V7EulwT9pA40Vw=
+
+Name: res/drawable-xhdpi/abc_scrubber_primary_mtrl_alpha.9.png
+SHA-256-Digest: NlqmrYZwN/D+lmbXgdR96IgXSGgSd75rLzZs+IxXohc=
+
+Name: res/drawable-xhdpi/abc_scrubber_track_mtrl_alpha.9.png
+SHA-256-Digest: p+u409UAeN5dDZSPoCpqkQe4qIN1KPkNJrx1srPPRt4=
+
+Name: res/drawable-xhdpi/abc_spinner_mtrl_am_alpha.9.png
+SHA-256-Digest: Ux3PIpNxGiEgAXcQEgKUsrSDFhMl3+CRyH2qFPwf1QU=
+
+Name: res/drawable-xhdpi/abc_switch_track_mtrl_alpha.9.png
+SHA-256-Digest: KEvvbntlLw1ZKp5ahhSPn7lxiUkDND3FqWqUgaS0JqY=
+
+Name: res/drawable-xhdpi/abc_tab_indicator_mtrl_alpha.9.png
+SHA-256-Digest: rwDrg0CfZcg/Y7u43JjUzhT1VZ0crOO73p68QsRFXoo=
+
+Name: res/drawable-xhdpi/abc_text_select_handle_left_mtrl_dark.png
+SHA-256-Digest: lLUyKSXPEOTe8yUhyI0RXtqjs2oLJ8l7mnvhGpWObGI=
+
+Name: res/drawable-xhdpi/abc_text_select_handle_left_mtrl_light.png
+SHA-256-Digest: LxyjsJtYtUSwnxfoywZ+74mcCjt++cUZ/EtjqW8a7ZU=
+
+Name: res/drawable-xhdpi/abc_text_select_handle_middle_mtrl_dark.png
+SHA-256-Digest: RdfKYSb9wgMjdlOLu/z9jcU+ONZmQM5CdpYgKe/lk94=
+
+Name: res/drawable-xhdpi/abc_text_select_handle_middle_mtrl_light.png
+SHA-256-Digest: Dp7Ly2hglsbiVSXx709/0iZ5EVmLMHR5LQwnvXH8Mwg=
+
+Name: res/drawable-xhdpi/abc_text_select_handle_right_mtrl_dark.png
+SHA-256-Digest: S0vYvJr4aNLxvzeh5pqwXc4gwfDTXTIlfpU5C9ruW3w=
+
+Name: res/drawable-xhdpi/abc_text_select_handle_right_mtrl_light.png
+SHA-256-Digest: Ym9cuF7MBwsw5FsGDEhRCBbJxQ3IXN6fubvaftFNuW4=
+
+Name: res/drawable-xhdpi/abc_textfield_activated_mtrl_alpha.9.png
+SHA-256-Digest: myGLpe/RXa9s6xVOgBnbo9ZcFYIpVALZ6mKWxcmMU1k=
+
+Name: res/drawable-xhdpi/abc_textfield_default_mtrl_alpha.9.png
+SHA-256-Digest: KMWCb/u1yB+jlIAhqxnax1J5rqkd0m0kA0nThGHF00U=
+
+Name: res/drawable-xhdpi/abc_textfield_search_activated_mtrl_alpha.9.p
+ ng
+SHA-256-Digest: W2fHnnUOpb2P2woAIRMlWexJ6NgMpE6is7xw830QMxE=
+
+Name: res/drawable-xhdpi/abc_textfield_search_default_mtrl_alpha.9.png
+SHA-256-Digest: Ro02noZCZ/1jUp37WKnBicIoVg4SU5hnFrkDNGNw66M=
+
+Name: res/drawable-xhdpi/design_ic_visibility.png
+SHA-256-Digest: Cpj623bRsFzQt2IeIheQ8o7yeYBdp9nn7/HDN/9x4S8=
+
+Name: res/drawable-xhdpi/design_ic_visibility_off.png
+SHA-256-Digest: FBvWMa6+IFQKvhWUQ42wXE3O5jR1Fd8Q74Ygla9+bWg=
+
+Name: res/drawable-xhdpi/notification_bg_low_normal.9.png
+SHA-256-Digest: +eZke3B396U98UCRWItlEsEBfiqx6bKb18BnNafizZ4=
+
+Name: res/drawable-xhdpi/notification_bg_low_pressed.9.png
+SHA-256-Digest: B7wAiGDdGGoPZkOAOsN9qSFBP49HhKz9M1Nll5lGxtE=
+
+Name: res/drawable-xhdpi/notification_bg_normal.9.png
+SHA-256-Digest: M5ZT4Vg9nrycF1l8DoI0ztXN+DwnDGRTvIY5tdh9oQA=
+
+Name: res/drawable-xhdpi/notification_bg_normal_pressed.9.png
+SHA-256-Digest: oFPwNfC87aTcpo6tYJ4VZQFPU55hStAGE4AFnUpvpfo=
+
+Name: res/drawable-xhdpi/notify_panel_notification_icon_bg.png
+SHA-256-Digest: djuhKur7aHbDzZsvSRB63uozCTPxuy3flD6MOvsUneo=
+
+Name: res/drawable-xxhdpi/abc_ab_share_pack_mtrl_alpha.9.png
+SHA-256-Digest: 6v0EfslyTUdSN7kBmesDhqSmmLA3X+GETAlTm92ZF/M=
+
+Name: res/drawable-xxhdpi/abc_btn_check_to_on_mtrl_000.png
+SHA-256-Digest: DkrDYl/V1mhhxfjNmqjhLrX4+Avuy/8JfieGl0b94Zw=
+
+Name: res/drawable-xxhdpi/abc_btn_check_to_on_mtrl_015.png
+SHA-256-Digest: Qmc0fIzqXtJ2lCic34hPXGcnWAc2eF9nyVLHtd2KSpc=
+
+Name: res/drawable-xxhdpi/abc_btn_radio_to_on_mtrl_000.png
+SHA-256-Digest: HIv+jAgAXhq233q6OZEBz3RXQmLXYLr5vZtuCSUE0Zo=
+
+Name: res/drawable-xxhdpi/abc_btn_radio_to_on_mtrl_015.png
+SHA-256-Digest: eOjIzuBy/1lCKCjW8SMAAIKMnLosmFz/VoHdgxSg6sY=
+
+Name: res/drawable-xxhdpi/abc_btn_switch_to_on_mtrl_00001.9.png
+SHA-256-Digest: llR8iRpmQ16+/fUi2PZ+s9Uc2PzYOUPUBtlD+4cUNVw=
+
+Name: res/drawable-xxhdpi/abc_btn_switch_to_on_mtrl_00012.9.png
+SHA-256-Digest: jsb61OxKbn3jGxSMtiOW3qEtQDUWOuB1ELjzkAlCQgg=
+
+Name: res/drawable-xxhdpi/abc_cab_background_top_mtrl_alpha.9.png
+SHA-256-Digest: 7FEHfVlWMqbJ6Uz41YFMhIFCNK+Y1nimPh+5i4AIbn8=
+
+Name: res/drawable-xxhdpi/abc_ic_commit_search_api_mtrl_alpha.png
+SHA-256-Digest: qPWiWFgTEKa2Rx6at7mGqZZOm4x0rEUHj7qzjuSKboA=
+
+Name: res/drawable-xxhdpi/abc_ic_menu_copy_mtrl_am_alpha.png
+SHA-256-Digest: 6envHmLJHVYMO9LHLx38zRnyqBDfhMRzQmH+uP3Z1Pg=
+
+Name: res/drawable-xxhdpi/abc_ic_menu_cut_mtrl_alpha.png
+SHA-256-Digest: l0CA5RkVnIWjZSvbJP7XfMa5d8Hbt2/V6vmO2Z6V6e8=
+
+Name: res/drawable-xxhdpi/abc_ic_menu_paste_mtrl_am_alpha.png
+SHA-256-Digest: rmJK+l8eg3+alEfLhMHUE1vn+KuSAF03ZSBbmn09gbg=
+
+Name: res/drawable-xxhdpi/abc_ic_menu_selectall_mtrl_alpha.png
+SHA-256-Digest: k65NhJusGKFNJUkYg4F+yXmfEkEvknp3CZh7g36N08I=
+
+Name: res/drawable-xxhdpi/abc_ic_menu_share_mtrl_alpha.png
+SHA-256-Digest: zCzoLH59+QZ0QR6CHi1GUON4+x4ef0MokCpeM0s3kbQ=
+
+Name: res/drawable-xxhdpi/abc_ic_star_black_16dp.png
+SHA-256-Digest: IvoefIRr65xzUBxojhiifDEk0FlkYxQ0hNlq3qgJ9mg=
+
+Name: res/drawable-xxhdpi/abc_ic_star_black_36dp.png
+SHA-256-Digest: gHi96k8Fc8ekGlfgKqf6sSufuWy6gJ2RmPmWIgbDDgc=
+
+Name: res/drawable-xxhdpi/abc_ic_star_black_48dp.png
+SHA-256-Digest: w9sgQ4KcEKNkw+PN0ix0ix/ZySQKAN8fDn5BvSa4XBs=
+
+Name: res/drawable-xxhdpi/abc_ic_star_half_black_16dp.png
+SHA-256-Digest: uYK32+kgBOISvvmH4htDEWEEWnDP77TuqQrI2BhE7eY=
+
+Name: res/drawable-xxhdpi/abc_ic_star_half_black_36dp.png
+SHA-256-Digest: l05GHLjjsl8e3ztT8RQGTAeSihUSLEI1AWiK5aHRlxY=
+
+Name: res/drawable-xxhdpi/abc_ic_star_half_black_48dp.png
+SHA-256-Digest: IEvPonrZlS6gwN7Ky3xb1QA9b/1gnOP2U30fyfwXC7U=
+
+Name: res/drawable-xxhdpi/abc_list_divider_mtrl_alpha.9.png
+SHA-256-Digest: M3x09RFLIm7Cuz240B91G5T1UN4glXzFjvJzRJMZ1hU=
+
+Name: res/drawable-xxhdpi/abc_list_focused_holo.9.png
+SHA-256-Digest: 6LOa1Z78CSKRonp7GuepM1YZFpnfIILOju4IE6uQr94=
+
+Name: res/drawable-xxhdpi/abc_list_longpressed_holo.9.png
+SHA-256-Digest: oCnrh8TfFw4/W/DkJKBweqq8rZwuftjTZnvxmUIX3c4=
+
+Name: res/drawable-xxhdpi/abc_list_pressed_holo_dark.9.png
+SHA-256-Digest: JuUjpTVTN9ao0fsMTgH2vQ6YYwv1SovNaVG1jbqdr+s=
+
+Name: res/drawable-xxhdpi/abc_list_pressed_holo_light.9.png
+SHA-256-Digest: WT1touc6QQFJNcrMJYy3aHefmYkt5X0dRXBLVZqm6xY=
+
+Name: res/drawable-xxhdpi/abc_list_selector_disabled_holo_dark.9.png
+SHA-256-Digest: pL963hAM8fu36zSvd15CGGLkInnTQLhCy30x9efiUKo=
+
+Name: res/drawable-xxhdpi/abc_list_selector_disabled_holo_light.9.png
+SHA-256-Digest: YJfXDtyEUGx3tQy9KWvpGaoFPs8Vrwa702AWCuDMZts=
+
+Name: res/drawable-xxhdpi/abc_menu_hardkey_panel_mtrl_mult.9.png
+SHA-256-Digest: SPPxJ+NheR7AUOAnzR2Rpu/2UViNlyG+p4wH4LROtdg=
+
+Name: res/drawable-xxhdpi/abc_popup_background_mtrl_mult.9.png
+SHA-256-Digest: XYGCLhSP+fE4cZJNsEFl1EgZU/hjWobmqa8IIkkHDd8=
+
+Name: res/drawable-xxhdpi/abc_scrubber_control_off_mtrl_alpha.png
+SHA-256-Digest: CfrkUdFWqWbmWbPlTBH192y/rObS+RVX6iv+Wew3lCE=
+
+Name: res/drawable-xxhdpi/abc_scrubber_control_to_pressed_mtrl_000.png
+SHA-256-Digest: NFvcp2KzTQtPuwf91gnRajBT1NvaAZJ/4Zaw1XMNbe8=
+
+Name: res/drawable-xxhdpi/abc_scrubber_control_to_pressed_mtrl_005.png
+SHA-256-Digest: QJnyKtKEDpI1RE+UkEA6yujPtqry5U3hi2ISVJod/5s=
+
+Name: res/drawable-xxhdpi/abc_scrubber_primary_mtrl_alpha.9.png
+SHA-256-Digest: KC1Cs+nMscq8InzaKnF0/6Nr9WQDzU8qCZxgZH3ITC0=
+
+Name: res/drawable-xxhdpi/abc_scrubber_track_mtrl_alpha.9.png
+SHA-256-Digest: Ps8V/Hkp8uPRXyeYQg24KAMWpkTmDU7+mlPeOPBDq2E=
+
+Name: res/drawable-xxhdpi/abc_spinner_mtrl_am_alpha.9.png
+SHA-256-Digest: +GWcgF/08Fo5ElnfZBV1pJVroOUlb4/TNW3wkSkKSlA=
+
+Name: res/drawable-xxhdpi/abc_switch_track_mtrl_alpha.9.png
+SHA-256-Digest: e0xtIwY+hZ+GiWO2qLdUhz4r1qVTzBOEc7stmu1KgOs=
+
+Name: res/drawable-xxhdpi/abc_tab_indicator_mtrl_alpha.9.png
+SHA-256-Digest: HBaSDhIT6GlseEsem9U8R6CfMrSOu+mrLMnDzhT+dSk=
+
+Name: res/drawable-xxhdpi/abc_text_select_handle_left_mtrl_dark.png
+SHA-256-Digest: fjuVfVKV+CstodIcigERxCFY+GrliDSOB7jeEAmx/ts=
+
+Name: res/drawable-xxhdpi/abc_text_select_handle_left_mtrl_light.png
+SHA-256-Digest: FXpN169X1mB1iV3UnaRTwqwc6tIs5FqOS4IT/kjA2xU=
+
+Name: res/drawable-xxhdpi/abc_text_select_handle_middle_mtrl_dark.png
+SHA-256-Digest: IgAsoGWmUeCCeZOgeHi1/lXnsYQh6E5DeQ6322KaFd8=
+
+Name: res/drawable-xxhdpi/abc_text_select_handle_middle_mtrl_light.png
+SHA-256-Digest: hdcxlo80GEgCO0wNEGnvYUwOMozdlvSoVd1X8GYfihY=
+
+Name: res/drawable-xxhdpi/abc_text_select_handle_right_mtrl_dark.png
+SHA-256-Digest: E9QQwioCYfmPZg3wHGkTfO5k1Vhqzjp2TgHqxA7cs+Y=
+
+Name: res/drawable-xxhdpi/abc_text_select_handle_right_mtrl_light.png
+SHA-256-Digest: VoKgLjw6uJ48QXsMMRLiyjLjwEjsm2GabP5UUguQeHw=
+
+Name: res/drawable-xxhdpi/abc_textfield_activated_mtrl_alpha.9.png
+SHA-256-Digest: mfzZ/EINJZCj44DI4wTC7R8YOSKA4U41sSrJYNk/4dg=
+
+Name: res/drawable-xxhdpi/abc_textfield_default_mtrl_alpha.9.png
+SHA-256-Digest: z7uPgBoxwb0n1HWJIKwFAGWJws+M8ycgctbPBGmzPro=
+
+Name: res/drawable-xxhdpi/abc_textfield_search_activated_mtrl_alpha.9.
+ png
+SHA-256-Digest: tgSlWyd9EaTkBZ1ZmPJjV36795LxxsjR9T3qhi6aPac=
+
+Name: res/drawable-xxhdpi/abc_textfield_search_default_mtrl_alpha.9.pn
+ g
+SHA-256-Digest: xj/jX+W1g2WgsFEzLKYTLjIEtEfSaT2hDoa/2VEsMhY=
+
+Name: res/drawable-xxhdpi/design_ic_visibility.png
+SHA-256-Digest: jhO7JRL+XmDBifjudzVJH9qq6mBBh5qpJL3EbNeq7No=
+
+Name: res/drawable-xxhdpi/design_ic_visibility_off.png
+SHA-256-Digest: TfVNgFbjnNNe6OKwRj3MtfNRbQNd3ujWHwHBjqFXKYk=
+
+Name: res/drawable-xxxhdpi/abc_btn_check_to_on_mtrl_000.png
+SHA-256-Digest: s3d7WGsnOBmLlU7RdiSO2nyXkRaemIaBTpdTAD1Kx/k=
+
+Name: res/drawable-xxxhdpi/abc_btn_check_to_on_mtrl_015.png
+SHA-256-Digest: PNulXetCxk05daNHfJr1+lfA+DA2kmp/k30A66BpgpU=
+
+Name: res/drawable-xxxhdpi/abc_btn_radio_to_on_mtrl_000.png
+SHA-256-Digest: aeFns4tkSqHjapyKvZO7E04eb8pr/7RpxW0uFQMqEf8=
+
+Name: res/drawable-xxxhdpi/abc_btn_radio_to_on_mtrl_015.png
+SHA-256-Digest: TVoIK2PvJAU9VIQOKlPEleNvlR0726I93dSfuenVRMs=
+
+Name: res/drawable-xxxhdpi/abc_btn_switch_to_on_mtrl_00001.9.png
+SHA-256-Digest: aiblWJZJxEvlWtSW9EyBnVv1ft13gyBAVkCwnpNG+84=
+
+Name: res/drawable-xxxhdpi/abc_btn_switch_to_on_mtrl_00012.9.png
+SHA-256-Digest: nALLaJCa4Mmfcp0vIE89kAlgTyyvxlHh7vqpcgEo5YE=
+
+Name: res/drawable-xxxhdpi/abc_ic_menu_copy_mtrl_am_alpha.png
+SHA-256-Digest: TlASOjSkwqeRw/8Kh+oa9ZtK1KYonPoN3CGhSWOGf1I=
+
+Name: res/drawable-xxxhdpi/abc_ic_menu_cut_mtrl_alpha.png
+SHA-256-Digest: hNjmxymP7aMwnho0KS88IsrHUh8AVuR4ZDxs15Wy2qw=
+
+Name: res/drawable-xxxhdpi/abc_ic_menu_paste_mtrl_am_alpha.png
+SHA-256-Digest: XmctWA6PbaTeuMg/chf0mrxISOTH+FANl2G1VndaAdg=
+
+Name: res/drawable-xxxhdpi/abc_ic_menu_selectall_mtrl_alpha.png
+SHA-256-Digest: SZh+/5Iq4y3vwfPu1yJfxehJq8VYyAmwD/66JSbWgko=
+
+Name: res/drawable-xxxhdpi/abc_ic_menu_share_mtrl_alpha.png
+SHA-256-Digest: K+3ks6t5Q304FvRb+botHX3EIpp0daZn9jVm3W3AMT4=
+
+Name: res/drawable-xxxhdpi/abc_ic_star_black_16dp.png
+SHA-256-Digest: eMTNQulPMNmiEQOHxtV8B5GuEipZUxcp7exXT/IyQ4E=
+
+Name: res/drawable-xxxhdpi/abc_ic_star_black_36dp.png
+SHA-256-Digest: NxkfhBwMBSqiVRPWEoEztB6S7V4cDGyABCu7sT8rl6M=
+
+Name: res/drawable-xxxhdpi/abc_ic_star_black_48dp.png
+SHA-256-Digest: PPAeUstgUUB/5gXdpsKqygLwdoeNSQvt7c9dwdXaQdk=
+
+Name: res/drawable-xxxhdpi/abc_ic_star_half_black_16dp.png
+SHA-256-Digest: Q8VMAJSRQD09WCB7EzXQpbjRogDrOLvYXyExJhPWAAM=
+
+Name: res/drawable-xxxhdpi/abc_ic_star_half_black_36dp.png
+SHA-256-Digest: XKwi9/T6bFfNZu3DCFzMLzPVaLpS4hWUS57rNTjlp00=
+
+Name: res/drawable-xxxhdpi/abc_ic_star_half_black_48dp.png
+SHA-256-Digest: BdNBHZznRJjABWj2QrecWJS2MXO7na9MlAE7kaOKSX4=
+
+Name: res/drawable-xxxhdpi/abc_scrubber_control_to_pressed_mtrl_000.pn
+ g
+SHA-256-Digest: PplkN33DB4CDNGQU2MxItv5gnNi3Sht+sUCItozCNPA=
+
+Name: res/drawable-xxxhdpi/abc_scrubber_control_to_pressed_mtrl_005.pn
+ g
+SHA-256-Digest: o1Q11U+cLQTMH1QrK0j7xbxGAJf3FQmstnW+SrAmGAI=
+
+Name: res/drawable-xxxhdpi/abc_spinner_mtrl_am_alpha.9.png
+SHA-256-Digest: mKpVIx8DtSYK3cr2JwB9h/UGL9Ihd6mM51kE1Dba88I=
+
+Name: res/drawable-xxxhdpi/abc_switch_track_mtrl_alpha.9.png
+SHA-256-Digest: y7PLjwMXlTk60FUG6CuKHd4Yzb9QUpGU2Fy6V4uu8M4=
+
+Name: res/drawable-xxxhdpi/abc_tab_indicator_mtrl_alpha.9.png
+SHA-256-Digest: Ez8CubWvJptFVwzWWf7T+I4opD/we8eDLHHWdISYl5A=
+
+Name: res/drawable-xxxhdpi/abc_text_select_handle_left_mtrl_dark.png
+SHA-256-Digest: cknebwUUXC88g3Sy+e35EW0ElXbaCbpe+LsTglEYQ3o=
+
+Name: res/drawable-xxxhdpi/abc_text_select_handle_left_mtrl_light.png
+SHA-256-Digest: HRb0Bg6nbbJtxEbf8hTLRcW00HPkBg3L2Z7Hz5iGptU=
+
+Name: res/drawable-xxxhdpi/abc_text_select_handle_right_mtrl_dark.png
+SHA-256-Digest: QVbO5Jaw1/pCDHoSLkOa/2oMpJSZsdHASGgpMXs/8Gk=
+
+Name: res/drawable-xxxhdpi/abc_text_select_handle_right_mtrl_light.png
+SHA-256-Digest: iCBCqokzsw+ffJGDPtbbqPMIBdSHKsXJWG69bjcvxpM=
+
+Name: res/drawable-xxxhdpi/design_ic_visibility.png
+SHA-256-Digest: xBBF/aZQNurOX0+WZhM8IWiLDvOVXvJdCD2q3WRNKGY=
+
+Name: res/drawable-xxxhdpi/design_ic_visibility_off.png
+SHA-256-Digest: p4jbAXKbMMoNq9xmnvfrqfDP/AopNbkF0vXdO1VhKUQ=
+
+Name: res/drawable/$avd_hide_password__0.xml
+SHA-256-Digest: bkrPLcdX01xlFxp1/ldvgafTEn9HYIPBVLUGo+/dYyA=
+
+Name: res/drawable/$avd_hide_password__1.xml
+SHA-256-Digest: nHOaZP9OyK2001WLAMc7yaxOecMbEpxlBkNUxpqhMVk=
+
+Name: res/drawable/$avd_hide_password__2.xml
+SHA-256-Digest: RqUJWlHGCrfWz10TRuYNcyAPDvMJzTZWkHV2kqG9ZI0=
+
+Name: res/drawable/$avd_show_password__0.xml
+SHA-256-Digest: aSJQXZlQJpAKbI53whxbiS5iHCMHCGeOqoRepvLBrig=
+
+Name: res/drawable/$avd_show_password__1.xml
+SHA-256-Digest: nHqercA0oNjOH2UVRdCHVz7lc5LAwspfDWVgK7+P6CU=
+
+Name: res/drawable/$avd_show_password__2.xml
+SHA-256-Digest: 1rfzoOhdwVDVQJemeukiFstH0lwcd6URCO+8JmGKnxU=
+
+Name: res/drawable/abc_action_bar_item_background_material.xml
+SHA-256-Digest: ImoXPevNMYcaUOHQw4sqR+sI8mC3ZO2U3OiOfrIEcgA=
+
+Name: res/drawable/abc_btn_borderless_material.xml
+SHA-256-Digest: mH/k725xN+H87CQLob9zoirhwAQrTEicMN5rF7LkKmI=
+
+Name: res/drawable/abc_btn_check_material.xml
+SHA-256-Digest: 4scVeh+imePVgA9dPQdfztHzrhr1BwRfOPWs2myrLrY=
+
+Name: res/drawable/abc_btn_colored_material.xml
+SHA-256-Digest: OTFELRW3FHXVWAVPHIIj/NdH19F4FiDr3/MdtGQRYd0=
+
+Name: res/drawable/abc_btn_default_mtrl_shape.xml
+SHA-256-Digest: F0Ym6Y8c8TSLbuc4gh9O3Nvy1e0T6ijl+WAyN9lSKLY=
+
+Name: res/drawable/abc_btn_radio_material.xml
+SHA-256-Digest: w/QfYGjVN9jcwUBYZia2792dww94erXD6uiF2ZWfUFE=
+
+Name: res/drawable/abc_cab_background_internal_bg.xml
+SHA-256-Digest: 3TlS/f/06RQR7yOpxtsYH2nV/ZmoG0JgRFl4E4NzJd8=
+
+Name: res/drawable/abc_cab_background_top_material.xml
+SHA-256-Digest: /43+zlD9faXEbsJnxalLwZJXvcrDqJjkWdef9lg3cbk=
+
+Name: res/drawable/abc_dialog_material_background.xml
+SHA-256-Digest: htQB6slXpUcC0OjdTwSp+lzyF9/g83EyfW5geH8+o8E=
+
+Name: res/drawable/abc_edit_text_material.xml
+SHA-256-Digest: miI4fSUo28sLQeksggQJZbhuc+SqIWx9umIBsBF6vhM=
+
+Name: res/drawable/abc_ic_ab_back_material.xml
+SHA-256-Digest: kBGMdgk4b0qAkg5x2zBdv7P9EurJfWr4yhnsLmutpS0=
+
+Name: res/drawable/abc_ic_arrow_drop_right_black_24dp.xml
+SHA-256-Digest: dC6SaWd8aZw9bo54KxLUb9w3/IS7e7LbB/v9XxCptpg=
+
+Name: res/drawable/abc_ic_clear_material.xml
+SHA-256-Digest: AgtFGjE0/6/zwnsUrDSQKEv2B9vB4j/AdBvxunWDBxA=
+
+Name: res/drawable/abc_ic_go_search_api_material.xml
+SHA-256-Digest: 8PVO7/mBbbRxqCWZUGi9NRGkOtrraUYeVrDo0Jmk6j0=
+
+Name: res/drawable/abc_ic_menu_overflow_material.xml
+SHA-256-Digest: wwMx2vRJbo+mG/6q3PzFxPr0/S2khtj0nWPwdjFtqIQ=
+
+Name: res/drawable/abc_ic_search_api_material.xml
+SHA-256-Digest: dt4m1oHabG8MzTRsDgAiPpyLNUG8eBaxE55/gsZJyOY=
+
+Name: res/drawable/abc_ic_voice_search_api_material.xml
+SHA-256-Digest: rqwtl5wkr3aYOhXkOCJzY5TS3vACZx8Wdjy8BETxhtE=
+
+Name: res/drawable/abc_item_background_holo_dark.xml
+SHA-256-Digest: 8ZKggWh6rZsuPdu7ZKhc7tfbxA9cAX7eibgPHp2E1Ys=
+
+Name: res/drawable/abc_item_background_holo_light.xml
+SHA-256-Digest: b4dfEsea/ALgK4CViUlwVYg+BHw5HZPRwcJIxzWbQc4=
+
+Name: res/drawable/abc_list_divider_material.xml
+SHA-256-Digest: 5GEPmJWZKPWCMYPgNMwgxq8NxEnwLlzv1UusfcLfFC4=
+
+Name: res/drawable/abc_list_selector_background_transition_holo_dark.x
+ ml
+SHA-256-Digest: pZPfcMpEvM4JLll7JPo+tS3uV+whagfdszYbeCZpBA0=
+
+Name: res/drawable/abc_list_selector_background_transition_holo_light.
+ xml
+SHA-256-Digest: 5t90/qxxiAJmU6L1EfvpwQIY7W/U6A6ycIlKTfj7GNY=
+
+Name: res/drawable/abc_list_selector_holo_dark.xml
+SHA-256-Digest: ey8YDKQXsb+1yUYRmjFlLZxWMAo8V2iK6ZNEglWeJ0A=
+
+Name: res/drawable/abc_list_selector_holo_light.xml
+SHA-256-Digest: yWgsR6yg3DAqCJNugi5VJ85az6ywnyLf6cfX/KbJ07w=
+
+Name: res/drawable/abc_ratingbar_indicator_material.xml
+SHA-256-Digest: 5BXfGKRcrbiG14F73U50mUdarI5YZl6Bzv95yOip0iY=
+
+Name: res/drawable/abc_ratingbar_material.xml
+SHA-256-Digest: 2R7+ngDwyklf29WJDxBPdy0jWJlS+lIrlBmnrHW9H0M=
+
+Name: res/drawable/abc_ratingbar_small_material.xml
+SHA-256-Digest: Cfo99dUISskddlPMps6kG7qAmZiYH3zyOg5BZLs6s3I=
+
+Name: res/drawable/abc_seekbar_thumb_material.xml
+SHA-256-Digest: w1DZFkOSlecPXqxJ+zYldXPbGVg1HtUo9stacF8dL7Q=
+
+Name: res/drawable/abc_seekbar_tick_mark_material.xml
+SHA-256-Digest: UNQAm91AalHIRSVpMDzDpqTlo7+QTERGBFZHBeVyfW8=
+
+Name: res/drawable/abc_seekbar_track_material.xml
+SHA-256-Digest: UZvmZXw+YmyJkSCJjVSTvXM2Y2zTcPBWGcve/CstOB4=
+
+Name: res/drawable/abc_spinner_textfield_background_material.xml
+SHA-256-Digest: bra933fTYFpkjM5qGFm+blmziOFCNVppWNsRGR8w8I8=
+
+Name: res/drawable/abc_switch_thumb_material.xml
+SHA-256-Digest: ReeXIkAbFdjyXwsKoWKrSt+eaDxKo60X+Tam1W9pOsw=
+
+Name: res/drawable/abc_tab_indicator_material.xml
+SHA-256-Digest: 50E4WP1CGT/tAE0z164Ga4VDNDw6zAbWkV/tUQaUunA=
+
+Name: res/drawable/abc_text_cursor_material.xml
+SHA-256-Digest: kAnWWfN3pehDML05VjPfGLBCADZgMSEncXj19KMNgrM=
+
+Name: res/drawable/abc_textfield_search_material.xml
+SHA-256-Digest: drXEYqHlMzNogEsifEwVoqUBvqamgACgv7gLy85iRhc=
+
+Name: res/drawable/abc_vector_test.xml
+SHA-256-Digest: KJXWDV4VEI/Vo1Zv27JdpWkDgkYtqvCk9jUeQXbAlos=
+
+Name: res/drawable/avd_hide_password.xml
+SHA-256-Digest: BgSxAh270D0h0dw5Y8NSJESjDIICgoruPOhIEi9BQGs=
+
+Name: res/drawable/avd_show_password.xml
+SHA-256-Digest: 2WP5zolRPmG+xoL+yIpfys1VIaxoQeKvrdJKvGxbWdw=
+
+Name: res/drawable/button_background.xml
+SHA-256-Digest: APfLPPzhUpjeDWlPFFXCca0VJb9zTKCFZcoTRIg9ay0=
+
+Name: res/drawable/button_background__normal.xml
+SHA-256-Digest: cwK9iBb0qWn7yAY+cFkJ65WSdzqTaf/NcEcLSZYsnj4=
+
+Name: res/drawable/button_background__pressed.xml
+SHA-256-Digest: ar2QCCX2goA12dt+J0sgvkhkJ+Rwl3CcGfKHdEH4268=
+
+Name: res/drawable/design_bottom_navigation_item_background.xml
+SHA-256-Digest: gwXkWSgNIjT6VibDyCm/yqrBmFrEiaRs5imhxBmnlNQ=
+
+Name: res/drawable/design_fab_background.xml
+SHA-256-Digest: +nzq3xTQyLGtwrd/HIO8o1gdQyjYLbZbn2OJ6ZtAPJk=
+
+Name: res/drawable/design_password_eye.xml
+SHA-256-Digest: hsylLlI7rIsqq8svSrbGA+Ac9KlrVK6whGtSakzVgrY=
+
+Name: res/drawable/design_snackbar_background.xml
+SHA-256-Digest: 6mhkUZVcvo+63fdIYiq96Lo4lLIfriD8SQRF1+HSz+I=
+
+Name: res/drawable/edit_text_cursor.xml
+SHA-256-Digest: 1/LvFlmEcQaT0YWZThsdddf7iiIbe2ElmlLldU4aPNE=
+
+Name: res/drawable/ic_arrow_back.xml
+SHA-256-Digest: UdNBDcNdn/jB7ggipHjeVZZkoxnz1llIKyQ5/VCfGDs=
+
+Name: res/drawable/ic_arrow_down.xml
+SHA-256-Digest: n7SHo1J2FBWDt+6OCWkvPg7Iv/bwIcgymLu9g1KstKU=
+
+Name: res/drawable/ic_arrow_left.xml
+SHA-256-Digest: j7quV7boaTSzYOZE0X6o2kFciZhYEw6oE/wdqIaN0Ks=
+
+Name: res/drawable/ic_arrow_right.xml
+SHA-256-Digest: cGXteZBoseVUTM4YfWo9+RCnwBYRqIoWP2cX15zQTbA=
+
+Name: res/drawable/ic_arrow_up.xml
+SHA-256-Digest: cQ7rZKinsNZ6982ZvNKD7FeaEKphJNkT6ZLE+KQSCsU=
+
+Name: res/drawable/ic_check.xml
+SHA-256-Digest: a9CugItAixiVW0HNxuGa7rV/mqJhexGOQlWck1M3vl0=
+
+Name: res/drawable/ic_combat.xml
+SHA-256-Digest: eVvsFTYiCNOXsDnPnvPYCg+oDCY/FpCsv2gbKuxyODI=
+
+Name: res/drawable/ic_cross.xml
+SHA-256-Digest: ntJlM5hkxvkacfifCEs+4OBoxME+o1A1HhZ3SqZBFKs=
+
+Name: res/drawable/ic_delete.xml
+SHA-256-Digest: 2NxIzCElhVaokxB4eHuA6lQTqTslaFqeif4g0vtEfhM=
+
+Name: res/drawable/ic_launcher.png
+SHA-256-Digest: Ji3tj6OVRtm5+5Z/yQlMnpJJjG0fBU2Z5Gwccfi/m2g=
+
+Name: res/drawable/ic_launcher_1280x1280.png
+SHA-256-Digest: Am/k+VxSpJ9q4w+ImmCyuBc4ohh0+YMSNOgtHc91YX8=
+
+Name: res/drawable/ic_launcher_round.png
+SHA-256-Digest: 5He08RxkUQ3o98F+P24FuNrJBMjzvaoGRLv2lV+jv5o=
+
+Name: res/drawable/ic_launcher_round_1280x1280.png
+SHA-256-Digest: 9Za/IVG766MfCpBi4R9gDUosSmDziQ3JXsuO918vnKI=
+
+Name: res/drawable/ic_misc.xml
+SHA-256-Digest: CX1aUJQbwDDeDwdwPO5nYpuZL1olnJJ3qNaSkAyEico=
+
+Name: res/drawable/ic_movement.xml
+SHA-256-Digest: qw23AX9NpWqg363mcFVPDCm3gEyxcN/y54xeMiM1udY=
+
+Name: res/drawable/ic_mtrl_chip_checked_black.xml
+SHA-256-Digest: FvMz2eFaIFIXIOM0PpoP1VbEBMvwlX2pSb1IMIB5pIc=
+
+Name: res/drawable/ic_mtrl_chip_checked_circle.xml
+SHA-256-Digest: JNUi+pXL7SQzpitm9VAwOCZMF2JZexknyM/ubI9fkK4=
+
+Name: res/drawable/ic_mtrl_chip_close_circle.xml
+SHA-256-Digest: p6mQ9lVcOD952DZRPWNukYNi4Z0im48wzX7McEOCESs=
+
+Name: res/drawable/ic_other.xml
+SHA-256-Digest: 8Z9lbQcBg1XLLXuowj7bWkDX5j2h14HglDm290UJ/P0=
+
+Name: res/drawable/ic_player.xml
+SHA-256-Digest: OEYN1kLzh4VZVS5UgTF1LfjzCl2Y1CfiICUik0+6MlU=
+
+Name: res/drawable/ic_refresh.xml
+SHA-256-Digest: l146tjCjP73KYtlquanVxSSsONj+fxcXusRC/W57wGc=
+
+Name: res/drawable/ic_scripting.xml
+SHA-256-Digest: kAD/aDGeyNUzNOrvbOkUZ1hGomuSKVR/LuZKISR4YMs=
+
+Name: res/drawable/ic_settings.xml
+SHA-256-Digest: cJmznoqvg6F2J1qpL9ZBgLBAgQCdWu/ZZlmrvNUa1sA=
+
+Name: res/drawable/main_button_background__closed_center.xml
+SHA-256-Digest: OMeYiAb1YB1td1deAwyq83hcIOt1sArmt/DNA9yXiv8=
+
+Name: res/drawable/main_button_background__closed_left.xml
+SHA-256-Digest: rH2d1b/TBl4L+SKbOul+cX3OEnqlpbbIUQ803tMs18o=
+
+Name: res/drawable/main_button_background__closed_right.xml
+SHA-256-Digest: yB1vnp3kOTuNVQACnaddiDgEJ1iK9gOB0yLthRfQ3Pk=
+
+Name: res/drawable/main_button_background__closed_top.xml
+SHA-256-Digest: bGDLPdEknSHllBRoS5CXNfuSiEBboqG8HIxlMQDG+DE=
+
+Name: res/drawable/main_button_background__open_center.xml
+SHA-256-Digest: VC2Wl687cLOu6GJGrCXcScd47Cxgt7oBFrGHOZ2IlAY=
+
+Name: res/drawable/main_button_background__open_left.xml
+SHA-256-Digest: DFRlGUNDjnCH6aIrYskcuHEjSKhFzcmXNJKlAKMYgDM=
+
+Name: res/drawable/main_button_background__open_right.xml
+SHA-256-Digest: /dxXSxJvLYaPUrPIGwcIM65NXhqYl9MJQnZFS20fZSw=
+
+Name: res/drawable/main_button_background__open_top.xml
+SHA-256-Digest: TiHbu4ENIQAlmkpLX0Z0yu68neN15gvBI8jHOU0AzuY=
+
+Name: res/drawable/module_bind_background__disabled.xml
+SHA-256-Digest: QoI5MBhcAf0cmbTusSZrPpnh8yUqptjGU1+D56XYtnQ=
+
+Name: res/drawable/module_bind_background__enabled.xml
+SHA-256-Digest: ArqcU20OMMR8tNfJbZj7F+htOYZWwcEgzVSkahGSZqU=
+
+Name: res/drawable/mtrl_snackbar_background.xml
+SHA-256-Digest: Q3MMLcvpKHh0JEQiGgMzxPB3P3EOc2qecAZPouEcpss=
+
+Name: res/drawable/mtrl_tabs_default_indicator.xml
+SHA-256-Digest: 4zPUqEr4mowm4rl5OhCOPs5Gp8n8iC8EovoCFeD2jw8=
+
+Name: res/drawable/navigation_empty_icon.xml
+SHA-256-Digest: eP5lFlTOAkcrRDvVqfawrC2Vn7DEsSiKzMHSMKO1igI=
+
+Name: res/drawable/notification_action_background.xml
+SHA-256-Digest: u/+4kJpmV76eHqPJ13rZ4pdmrkuibjeNOVFGsJFJZBA=
+
+Name: res/drawable/notification_bg.xml
+SHA-256-Digest: S+MpawXNQLAab0I5jUpyXCSWxq/tfvifs9ZVpATTt6c=
+
+Name: res/drawable/notification_bg_low.xml
+SHA-256-Digest: ekEwUbu9vCjRYtdPeNROQTb0n5zmFBvc0mBJiHrTBDo=
+
+Name: res/drawable/notification_icon_background.xml
+SHA-256-Digest: LvewAUuXo1EkZXBVkL/demZFJvg/EwDdc1el/GD20aI=
+
+Name: res/drawable/notification_tile_bg.xml
+SHA-256-Digest: TOXHBeby+7WyhjmrTZuvrNkp4voNhewZvw2EXDZGoLU=
+
+Name: res/drawable/rounded_bottom_corners_background.xml
+SHA-256-Digest: K36FV2RXHX9nDlKN226MzVaVFPrRNn8WZZ0qrZeOeqE=
+
+Name: res/drawable/rounded_corners_background.xml
+SHA-256-Digest: EqiZX9GrB6MLpO0tJXaGb09oWew3KWQxLEtVbJSjgLU=
+
+Name: res/drawable/rounded_left_bottom_corners_background.xml
+SHA-256-Digest: DuXvK/RBSIhBvNMtVDU/oOQtnOjnkfpCdmVjvzx+4DE=
+
+Name: res/drawable/rounded_left_corners_background.xml
+SHA-256-Digest: YLTd3FPUeU3gBrSqtlLhT6BTFAsA1XB5vdzVjNwnxrM=
+
+Name: res/drawable/rounded_left_top_corners_background.xml
+SHA-256-Digest: fn0om6syMKrsLUzXAWhgPbmfBl+dT9G3kFksuKJuB8E=
+
+Name: res/drawable/rounded_right_bottom_corners_background.xml
+SHA-256-Digest: Gj5glINc5ChAkeV8fyWJEKinC/0GF3gYBUJfMgxe2+g=
+
+Name: res/drawable/rounded_right_corners_background.xml
+SHA-256-Digest: pluuRyF4GnTrPp6O1DF916pRC3dDmdZ/+ZVmofVMahk=
+
+Name: res/drawable/rounded_right_top_corners_background.xml
+SHA-256-Digest: Net+6EVN1SJR1hw3aZJ3J3+RYPHdXYRLJfSOzvjx5TQ=
+
+Name: res/drawable/rounded_top_corners_background.xml
+SHA-256-Digest: ghNPrPgOhCBakBcxFfPzY26aPMQp7HBE5zsnv9DGWxs=
+
+Name: res/drawable/seekbar_progress.xml
+SHA-256-Digest: kES9Fg3c9zAi2dYm9fv8c1UVSROMGOMqwuX10KK/D28=
+
+Name: res/drawable/seekbar_thumb.xml
+SHA-256-Digest: Xq0axrSeQ8rF8mpXjFx3DtA5yTOGkSfjdrDYqF9ZTGU=
+
+Name: res/drawable/tooltip_frame_dark.xml
+SHA-256-Digest: pqdG2SRhskZvwQoDBy8G+aQrLuz5CXPeqF+2qFJ5JUE=
+
+Name: res/drawable/tooltip_frame_light.xml
+SHA-256-Digest: iRRp3q/3Pb+FqtudzjXXt3jDqI1crlMl8+UIKfxfKtI=
+
+Name: res/drawable/transparent_background.xml
+SHA-256-Digest: Ote3C7R83XTxQzSkE6pGgNZJ1CdYZxp0yorIZKPJUYc=
+
+Name: res/drawable/transparent_clickable_background.xml
+SHA-256-Digest: XlIm6P6CO1MIezPQiFmj4LpFmV5f4EakjhLLopWLekw=
+
+Name: res/drawable/views_container_background.xml
+SHA-256-Digest: CpcJcH32ZPx9m9GcycIeo1gg/2o9AFQGMzeEX0vur70=
+
+Name: res/interpolator/mtrl_fast_out_linear_in.xml
+SHA-256-Digest: kIK9a5+sOBckXss7kZjpoTcsIa7t2ond6g9XVhJPkpU=
+
+Name: res/interpolator/mtrl_fast_out_slow_in.xml
+SHA-256-Digest: xoSxWbmAoctuAgR28PRd51Xv+ViOfnHiUhboVgU0AOA=
+
+Name: res/interpolator/mtrl_linear.xml
+SHA-256-Digest: xksrfxc3El6JarLZZlzxGOsooSl8S4MiqGPktr343t8=
+
+Name: res/interpolator/mtrl_linear_out_slow_in.xml
+SHA-256-Digest: 7F6LBNSAy2ADqoYQe5tq4zEfKVSHeLxQNmoR6NT7Vd8=
+
+Name: res/interpolator/smooth_accelerate.xml
+SHA-256-Digest: gVQNE2DccoAW8R+Iwrb0UH9p/wfmEM9dZBIA7KsbbHk=
+
+Name: res/interpolator/smooth_decelerate.xml
+SHA-256-Digest: bTARYtSUyLQXFJMkJL9BeQc1XZmFpdG/1/JvQ/qjJ9A=
+
+Name: res/interpolator/smooth_overshoot.xml
+SHA-256-Digest: BocFfxZ27M6Lm9QjNWHlYB28GIRb9KOlkFNHO3Cm1D0=
+
+Name: res/layout-sw600dp/design_layout_snackbar.xml
+SHA-256-Digest: ugVCXB3tUrvUjVMuozZcyj9kXod8okpD0M4nplWgwDY=
+
+Name: res/layout-sw600dp/mtrl_layout_snackbar.xml
+SHA-256-Digest: JAMq3WFQXzfJ81ZkAT7BsatoMg9RVZxLWN/BI4eN6vA=
+
+Name: res/layout-v22/abc_alert_dialog_button_bar_material.xml
+SHA-256-Digest: 2kyLNxsIID/waldSAOtTzoOC+ctsuIDm2PvDsEcmbKU=
+
+Name: res/layout-v22/activity_update.xml
+SHA-256-Digest: dYOQ3LQ+0+6kA2c0xqQtZjxP0pF8RMaXqmvHdLRqQmI=
+
+Name: res/layout-v22/module_coordinates_layout.xml
+SHA-256-Digest: wdeNiC7FlCwdMW+Measg7k4yMBLbmhsJk1/UWZC631k=
+
+Name: res/layout-v22/module_elevator_buttons_layout.xml
+SHA-256-Digest: yt0dOQ0zoFDA9viQgOWfmg6vJB3WzazG3aLzZmdlaso=
+
+Name: res/layout-v22/module_ping_meter_layout.xml
+SHA-256-Digest: AYRGW1BkNEzY9GfvLkTPHtYnRGgNQ642Ep/jVKDxLiQ=
+
+Name: res/layout-v26/abc_screen_toolbar.xml
+SHA-256-Digest: aXSukM/Ztk08uz/GfMKV53LSY9/4nZJ/6sM6JNesJp8=
+
+Name: res/layout-watch/abc_alert_dialog_button_bar_material.xml
+SHA-256-Digest: LbKHH+T+uhZSZ7ruX2mPYODRzcw4N9gdPbPhQTwTmL8=
+
+Name: res/layout-watch/abc_alert_dialog_title_material.xml
+SHA-256-Digest: Oh48y5AQHmcP4WPCX8Ajw8kd/BUc6OLIKCIdav0dQiM=
+
+Name: res/layout/abc_action_bar_title_item.xml
+SHA-256-Digest: gV4BcvFmGXKgvbCR3tiR75MU3+1B9VaQuBVUJ1bAWW8=
+
+Name: res/layout/abc_action_bar_up_container.xml
+SHA-256-Digest: vtFDE20cyzEaCNxEaUSWzYtz3X/pAJ/PeCWiRVXyFYM=
+
+Name: res/layout/abc_action_menu_item_layout.xml
+SHA-256-Digest: jpVyUnn+Z+0hlq4qLnqglCho4n3q2miw+LMvJYIBKVQ=
+
+Name: res/layout/abc_action_menu_layout.xml
+SHA-256-Digest: beoJQnUvHqjrqxYX74JyDjx1Wf08IWBDxNBPxAl7N9Q=
+
+Name: res/layout/abc_action_mode_bar.xml
+SHA-256-Digest: qZUUVfyctm394xT2SFF3fNVHXAT2X2J96QMVZUMKjSw=
+
+Name: res/layout/abc_action_mode_close_item_material.xml
+SHA-256-Digest: bfZzTz372aPxoJDqYe3Nx5l+6SPtRZGU2/58ukJ7WTg=
+
+Name: res/layout/abc_activity_chooser_view.xml
+SHA-256-Digest: h3jbJu4mp5+p6O6fiTTQqvMMYqLnuplmhs1QCAiFoc4=
+
+Name: res/layout/abc_activity_chooser_view_list_item.xml
+SHA-256-Digest: /Gq3YDmkTQQIWAXFGyG248NFvfMf9J/mOAyKN1urcoI=
+
+Name: res/layout/abc_alert_dialog_button_bar_material.xml
+SHA-256-Digest: tJtrEQkxP5o/NpmYALiuBc2y+r/VlRlzexQhI5tPaD4=
+
+Name: res/layout/abc_alert_dialog_material.xml
+SHA-256-Digest: d5OdryfrOy7E3DVOwMsxuavGdLp+ureweGkZ5dqlkLQ=
+
+Name: res/layout/abc_alert_dialog_title_material.xml
+SHA-256-Digest: vmi28OgxNLFrRVNGomsV2JAwYvpyOJOAyeLTFqQZ9Bs=
+
+Name: res/layout/abc_cascading_menu_item_layout.xml
+SHA-256-Digest: imgMnpGeaW0q4l4DzkyP+majSKSHK3/toBUyzvYynB4=
+
+Name: res/layout/abc_dialog_title_material.xml
+SHA-256-Digest: o/dRe2hw3EykqrPbwMFhlbvNDFHnmWqCrR6CgCr0/mw=
+
+Name: res/layout/abc_expanded_menu_layout.xml
+SHA-256-Digest: ujd2TjIC/Ob+CcW1goksJgwulqMpVn5gbyYsfjMDYUU=
+
+Name: res/layout/abc_list_menu_item_checkbox.xml
+SHA-256-Digest: pLkQpaOcsIWvpZjxKxx10RdS5yKHsrLUuPpYxuVD6Zw=
+
+Name: res/layout/abc_list_menu_item_icon.xml
+SHA-256-Digest: L2BiqIgh+1Y/Az4XPksnEvX/MuwQ9pjhZrAKwz9OHMU=
+
+Name: res/layout/abc_list_menu_item_layout.xml
+SHA-256-Digest: x4KThjPCItME4JRbQ6tH9qPXeIKW/rKl8W/GutxB524=
+
+Name: res/layout/abc_list_menu_item_radio.xml
+SHA-256-Digest: vUIgEaXGoZ+evAmV2IHO5mFLnTtLVrxfmGHLqgLxXNE=
+
+Name: res/layout/abc_popup_menu_header_item_layout.xml
+SHA-256-Digest: hOcZ0rJpe5skzwkSMEszNTO62CYX0LoimwSjvHRaWTs=
+
+Name: res/layout/abc_popup_menu_item_layout.xml
+SHA-256-Digest: PS1fYcgslkgBamm9a/DaO20KdgWMxZZZ3wquJHWMoGI=
+
+Name: res/layout/abc_screen_content_include.xml
+SHA-256-Digest: hOGwceWSrhEoXKQskxuaL3WA/ILK5W602O/QQdS5oXk=
+
+Name: res/layout/abc_screen_simple.xml
+SHA-256-Digest: qsGph/MPpIzPrwdJbeg8/agGRkCD88U9g7BA18nU3Z8=
+
+Name: res/layout/abc_screen_simple_overlay_action_mode.xml
+SHA-256-Digest: n03i25784RUUOrY3JiKAPLVbluRZfVapf3UG3uev72A=
+
+Name: res/layout/abc_screen_toolbar.xml
+SHA-256-Digest: s7Wg4B0GYLeoyMTlvhy6vFd3X06dtArIA8TfkC0xo4Y=
+
+Name: res/layout/abc_search_dropdown_item_icons_2line.xml
+SHA-256-Digest: 7SDBVpGrZg+CBlHMdVEgIh9N+eaf8ozgtqpQYCaOz0I=
+
+Name: res/layout/abc_search_view.xml
+SHA-256-Digest: zo56YSBtyN5q8BRzcmkOuWwNcQGMPK6OIL904eOH8dI=
+
+Name: res/layout/abc_select_dialog_material.xml
+SHA-256-Digest: tDrfAfUizs0li9Ci6A5jttYFoOWGlsBI49atdYKkycw=
+
+Name: res/layout/abc_tooltip.xml
+SHA-256-Digest: eKu268ToijBsuxxWagQ6giOorn+S+EccaWDnfZBMrOY=
+
+Name: res/layout/activity_interface.xml
+SHA-256-Digest: sjNMT0qiNT7o4+ylH9RbhTIBByQCwMNcEYl9M96XPyM=
+
+Name: res/layout/activity_loading.xml
+SHA-256-Digest: k8ozpCQIl3/sWwrWPsNdgKFl9TVgn3C99e3SYYGPrkk=
+
+Name: res/layout/activity_main.xml
+SHA-256-Digest: 6MYsWi4B72qu3rfpgsFi6J8E1sklznHUEvQiqHUFGFY=
+
+Name: res/layout/activity_no_minecraft.xml
+SHA-256-Digest: apbjktOwTXw5AOz+Oc266JpWjioa/SV+2rQ2NL++HSA=
+
+Name: res/layout/activity_script_manager.xml
+SHA-256-Digest: kqVxgezfnjTNWjFJjq7p3/U3H6bXUMmtLJgWhdi1Azo=
+
+Name: res/layout/activity_unsupported_minecraft.xml
+SHA-256-Digest: VjAT2YAq9016PJwB2pkSNdV3dF0ZfGiPEQT+o7lIYM4=
+
+Name: res/layout/activity_update.xml
+SHA-256-Digest: tRFStp14jDEpengi2lyqQojcTLnEASRQ0tkhMIQSUWE=
+
+Name: res/layout/category_window_layout.xml
+SHA-256-Digest: /EdxbTue1L2/UueEbZG2floeCmbHckEaMdaud49VJOU=
+
+Name: res/layout/chat_history_window_layout.xml
+SHA-256-Digest: cslFRPBFwY0xLB0XkCbMUzGi6bovKN3vnIHrwYhcfG8=
+
+Name: res/layout/design_bottom_navigation_item.xml
+SHA-256-Digest: snsUlQe3WOCeMT0uhI4IbkLog/LRq2jVfalT8UsFmP0=
+
+Name: res/layout/design_bottom_sheet_dialog.xml
+SHA-256-Digest: Vgw6nL9uPaa2Q4jS1bUd/r+FCW0esXPtnLrUn+/x5Yk=
+
+Name: res/layout/design_layout_snackbar.xml
+SHA-256-Digest: sDwMHjaWdngdmR1BGPokLk234PWIeHkPmPx2KazC/cA=
+
+Name: res/layout/design_layout_snackbar_include.xml
+SHA-256-Digest: o1mXYSle6Egmu5VML6FIaySpZ80pd1DAJzjrW020ZaU=
+
+Name: res/layout/design_layout_tab_icon.xml
+SHA-256-Digest: ZUUI2q3JxCj5jSPJyJ/fxoTCGZxTr40/LBUPFU0c5RE=
+
+Name: res/layout/design_layout_tab_text.xml
+SHA-256-Digest: GeP1rvVigyCao4iRcu7GldjklVx3Ujrc/c+JA3dmNF0=
+
+Name: res/layout/design_menu_item_action_area.xml
+SHA-256-Digest: oHAevHxs7gy1Tk8irTIgfsO0g3DKqIvG9uoDnIkXmLA=
+
+Name: res/layout/design_navigation_item.xml
+SHA-256-Digest: 7kEzNyu8Mazs6ZzK13sMd2UvDG7+WJPxW47GAVxO6n0=
+
+Name: res/layout/design_navigation_item_header.xml
+SHA-256-Digest: Po8DOLcUTNzwwBnTnsnBpcYJf5eDPqTfVMkN/RwtBvU=
+
+Name: res/layout/design_navigation_item_separator.xml
+SHA-256-Digest: a0uXno+Mz9Yq+rTcI0B9SGEjAfbV/OwSJ9TtIbjqpiI=
+
+Name: res/layout/design_navigation_item_subheader.xml
+SHA-256-Digest: WsigDqxmK49Hw+8v4D9s2Fux5yfTxG3r5aeTIjcngp8=
+
+Name: res/layout/design_navigation_menu.xml
+SHA-256-Digest: Q99PbNRx5Sn8nc3Ny+bafxI2kEEFByz9l95QAum6elc=
+
+Name: res/layout/design_navigation_menu_item.xml
+SHA-256-Digest: lYuIai6uISfj54NfVpEzre006Iupp6ruS90a9XWUnTw=
+
+Name: res/layout/design_text_input_password_icon.xml
+SHA-256-Digest: HTWyhPQPriJl/TssWEqPaa/qWw19l0qPspfKgqwU5zg=
+
+Name: res/layout/main_button.xml
+SHA-256-Digest: 6hZbSyO+AYQHN1bDAv1XqhuL6W6bupHHAVEd4JKLTT8=
+
+Name: res/layout/module_bind_button.xml
+SHA-256-Digest: f59zZKNCUayHK/QMVKy0ZIwe5c4TxHXVfrq+adn83Eg=
+
+Name: res/layout/module_bind_check_layout.xml
+SHA-256-Digest: ZnOJbw37otK+F9pD75cSnXKxeV2t3+OLHw4jSQOOfYs=
+
+Name: res/layout/module_chat_macros_window_layout.xml
+SHA-256-Digest: vwVj/MyHRzuL11wd/XRnw2cZdkCwsNWAlux0jhUxurg=
+
+Name: res/layout/module_configs_window_layout.xml
+SHA-256-Digest: DsPPffWWFhUOonZV5lK2XrOBr2Eoo1mBrB9+GHaY1zo=
+
+Name: res/layout/module_coordinates_layout.xml
+SHA-256-Digest: rScMV13ZQwVJEaLnSCuzBiL8zBzlYtKJFYtEd4509Z4=
+
+Name: res/layout/module_elevator_buttons_layout.xml
+SHA-256-Digest: dRF7qSbwLOSl+aX+qZLWwt/v78oxTOXLB3Apj6osyLQ=
+
+Name: res/layout/module_fast_pearl_button.xml
+SHA-256-Digest: HabKhjlNu8DOs0JosdRfrBUpvdk2QAr1xd8lKdGL0HQ=
+
+Name: res/layout/module_fast_potion_button.xml
+SHA-256-Digest: TLpVeqR+LVwsUA/gEGfUkhru0fSZnZNLnVTlI8yR/OE=
+
+Name: res/layout/module_friend_list_window_layout.xml
+SHA-256-Digest: vC8K7IWQv/Z72wxZ9uOKM29K0i5062HlobNZDXFkYFo=
+
+Name: res/layout/module_layout.xml
+SHA-256-Digest: dxz5PFedkLp1mys4SbCeKpP3b/xzFm9LGqUDrKEiojY=
+
+Name: res/layout/module_move_button.xml
+SHA-256-Digest: r3b2Anq4HAB0/VP2yPU4CmseaA8ZiAbU0CxyhLCzWCM=
+
+Name: res/layout/module_ping_meter_layout.xml
+SHA-256-Digest: AE+ElYnc0FpMp7W0riivyCia8e5nqI+TcoeTQr/07AE=
+
+Name: res/layout/module_setting_button_layout.xml
+SHA-256-Digest: RkTtyGBGnRSUp4ncYHiOlCGKalm4YE/8xWq9POzmDMc=
+
+Name: res/layout/module_setting_mode_layout.xml
+SHA-256-Digest: TQqqnW1a88RN8Skd7ASAu0B9lUIkWkiZx3Fc1zOfF1c=
+
+Name: res/layout/module_setting_mode_window_layout.xml
+SHA-256-Digest: xhgr32ESDSPVPN+cG011BptLNnVfBVzILVgBW9t+HfQ=
+
+Name: res/layout/module_setting_slider_layout.xml
+SHA-256-Digest: +w5mBqlqa7SwZwFud+mz3F2hDKh1hjb7kSr9H97sSM0=
+
+Name: res/layout/module_setting_state_layout.xml
+SHA-256-Digest: +a/SrWsWhQ0z1+39mSprTsX3tD9PsBzQ9Um865uPeL8=
+
+Name: res/layout/module_setting_textfield_layout.xml
+SHA-256-Digest: +Qw3XSiL/JgiFbdwYgT7roAT4wZClzNEqiCVjPu32dU=
+
+Name: res/layout/module_setting_textfield_window_layout.xml
+SHA-256-Digest: b6kKeV409FiMLDv9FmX3a3cWmx+H/UgcIhovBM0VIfs=
+
+Name: res/layout/mtrl_layout_snackbar.xml
+SHA-256-Digest: bKJacDYKeonrW/PXdNuYK+bWTVT8NfqlH9zYvCChtQU=
+
+Name: res/layout/mtrl_layout_snackbar_include.xml
+SHA-256-Digest: 8Fotbxdffp6AgMVYljB0os1Ampw3SO5Wz3MXcWABPdI=
+
+Name: res/layout/notification_action.xml
+SHA-256-Digest: etlVtKLBrK6BXeYnSnJ9SSVImqyNH6wQiEEY7+MZTlI=
+
+Name: res/layout/notification_action_tombstone.xml
+SHA-256-Digest: e4EHMMr/s5XIm6Yc3SaAU++llKV8wyyuaZjBoHjpX+Y=
+
+Name: res/layout/notification_layout.xml
+SHA-256-Digest: iZvUZv9QG1ADDQWQ8J6fKrRm4/VRSwpaFrzQIXg+6yw=
+
+Name: res/layout/notification_media_action.xml
+SHA-256-Digest: D6Iud5pLzaFULNj0duE2iz/wQNkeUnOOe0canxr34d4=
+
+Name: res/layout/notification_media_cancel_action.xml
+SHA-256-Digest: uQw43yl+gtI08o0Qc/vGK9Hs3ktDNb40rY7DyObStkU=
+
+Name: res/layout/notification_template_big_media.xml
+SHA-256-Digest: 9SSYbACtXD/h9Dz6UGRm8YHVozCBvqSxoSEuqsS5Cn0=
+
+Name: res/layout/notification_template_big_media_custom.xml
+SHA-256-Digest: avykR+ZNIp439vIw+jLDuVzfXyqWIG1Wu/QhbuxTIWU=
+
+Name: res/layout/notification_template_big_media_narrow.xml
+SHA-256-Digest: E8upblk1oXOe2akdKjPFx1XIG4RSUqEvrW7z1huTOAM=
+
+Name: res/layout/notification_template_big_media_narrow_custom.xml
+SHA-256-Digest: FmCaZIg70pBQ3SZ35z8k6euAU2Fh0HJYAuOnXvZqaAA=
+
+Name: res/layout/notification_template_custom_big.xml
+SHA-256-Digest: jiDTdfK9lcIOdYa0w0G6PVM2/0ZsxUJXTgPGPG4jBmw=
+
+Name: res/layout/notification_template_icon_group.xml
+SHA-256-Digest: /T+lcDfQCIgh1Xo7MyrN11AN/jXm5VPI9lMBnAWQfBc=
+
+Name: res/layout/notification_template_lines_media.xml
+SHA-256-Digest: lxJwa7STLYTRhOrYn+Rk8XRXIDn6X7V4eTNJm99DCpo=
+
+Name: res/layout/notification_template_media.xml
+SHA-256-Digest: xXFykVXh9vWF2F2S0i+lp1V6dMgfR2o/TX5yFnA5wZM=
+
+Name: res/layout/notification_template_media_custom.xml
+SHA-256-Digest: ZWXW3NxTLB1oKjuKNiAN9eb5DdMxBzY7qdACiNr0wSw=
+
+Name: res/layout/notification_template_part_chronometer.xml
+SHA-256-Digest: pw0ptcvNtLxa6LcNcdOBn5c6yRnt5vuya1JnI6ob5KA=
+
+Name: res/layout/notification_template_part_time.xml
+SHA-256-Digest: xkmNdatuxOZyMYirtN0F/vbq36jm5/wKJK6aL6SNzZQ=
+
+Name: res/layout/scripting_error_dialog.xml
+SHA-256-Digest: mueBfuNUkKNy0XtLzk/R9badfHm34tSptp/x8P4A5b0=
+
+Name: res/layout/scripting_script_button.xml
+SHA-256-Digest: M5WqgvElqnzQA2u0TRaKTyTKPbC6x1VatcpQSzJSPng=
+
+Name: res/layout/select_dialog_item_material.xml
+SHA-256-Digest: 5Hi0s/gTWcjuBr7MuK92SwhlqtAQ7iG6WmxfcvO3pOU=
+
+Name: res/layout/select_dialog_multichoice_material.xml
+SHA-256-Digest: f6ETi8osJjdkvHS/BUkvbnDuDhlNCgFPcCsqIt+0ALQ=
+
+Name: res/layout/select_dialog_singlechoice_material.xml
+SHA-256-Digest: cUB545wdEPoO9Fe2d+Bg+Aff1nrn/YhUxxRAMzgoTWA=
+
+Name: res/layout/selection_window_layout_center.xml
+SHA-256-Digest: vFzv++MZuaVPvvY4gymvOLxk1wPY9EuvNpXzq6RAjQg=
+
+Name: res/layout/selection_window_layout_default.xml
+SHA-256-Digest: eRwzgdGL+LsL2xA7rxed3n434S4JeeourwPLlmWyvtA=
+
+Name: res/layout/setting_mode_spinner_dropdown_item.xml
+SHA-256-Digest: hond0FRPd3d6DTh8V7Nw+YcfKm3sgJ02AM++yilCXpA=
+
+Name: res/layout/setting_mode_spinner_item.xml
+SHA-256-Digest: QxDKeY6fHEA23bN0zNHIq3iGjTWJUmjzu//0N9JE/Nc=
+
+Name: res/layout/support_simple_spinner_dropdown_item.xml
+SHA-256-Digest: 2dwFDgzHmg3l15pu7+N12FcwRW88b3jHsaL6W2etEU0=
+
+Name: res/layout/window_layout.xml
+SHA-256-Digest: 0qQybDUywQRtqKTZagzsgx1reT7vLyIAHvrb3/HkFxs=
+
+Name: res/layout/zoom_slider_layout.xml
+SHA-256-Digest: Uj/2tN0BKjOa9BOZcfHZ3v0INUksxHdWE9+y9mX+oJg=
+
+Name: res/raw/_0.mp3
+SHA-256-Digest: TeSL1CTAV0kttFBRJ311aMXYjCnh0eZrbh3U3ZnXq1I=
+
+Name: res/raw/xbox_live_notification.mp3
+SHA-256-Digest: UvHkYj6pjo6ttWM7UMYvL0PUxCg+MvreUuZsYIEM240=
+
+Name: res/raw/xboxservices.config
+SHA-256-Digest: j1IbsuXEgLIpjlXhUwg4PoqXTuMFu4tDAkDOwVzipgA=
+
+Name: res/xml/backup_rules.xml
+SHA-256-Digest: WxtE3WTyNzIYT82LYBTucISMtI7JP9eBzDtYeIR3W+Q=
+
+Name: res/xml/data_extraction_rules.xml
+SHA-256-Digest: O+mLIi4ox5ne1BgZmz6iIo9XXi0ygKEOjbeV0pzMN68=
+
+Name: res/xml/file_provider_paths.xml
+SHA-256-Digest: h/fQx/cssU3CscalX+1wFNsTFEJd1WoKPJXtJxYr18c=
+
+Name: resources.arsc
+SHA-256-Digest: yYLxO9aDdou3XUi45gQrpgvK4eWUAnHOfhryJQ1jbj0=
+

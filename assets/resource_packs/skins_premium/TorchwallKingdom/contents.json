@@ -1,0 +1,67 @@
+{
+   "content" : [
+      {
+         "path" : "amira_elena.png"
+      },
+      {
+         "path" : "black_knight.png"
+      },
+      {
+         "path" : "ernest_the_hermit.png"
+      },
+      {
+         "path" : "fiona_the_ferocious.png"
+      },
+      {
+         "path" : "gold_knight.png"
+      },
+      {
+         "path" : "harold_ironfist.png"
+      },
+      {
+         "path" : "harry_hollowpockets.png"
+      },
+      {
+         "path" : "igor_alexander.png"
+      },
+      {
+         "path" : "iris_budwell.png"
+      },
+      {
+         "path" : "king_reaves.png"
+      },
+      {
+         "path" : "mad_eustace.png"
+      },
+      {
+         "path" : "marek_the_merciless.png"
+      },
+      {
+         "path" : "omar_alabaster.png"
+      },
+      {
+         "path" : "phillipa_latreaux.png"
+      },
+      {
+         "path" : "princess_celine.png"
+      },
+      {
+         "path" : "prince_edmund.png"
+      },
+      {
+         "path" : "prince_of_puns.png"
+      },
+      {
+         "path" : "queen_julia.png"
+      },
+      {
+         "path" : "roland_mossfoot.png"
+      },
+      {
+         "path" : "silver_knight.png"
+      },
+      {
+         "path" : "skins.json"
+      }
+   ]
+}
